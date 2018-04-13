@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            width: 420px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 4px solid #00a1f5;
+        }
+        .clearfix:after {
+            display: block;
+            clear: both;
+            content: '';
+            font-size: 0;
+            height: 0;
+        }
+        #box .item {
+            width: 200px;
+            margin: 5px;
+            float: left;
+        }
+        #box .item .pic {
+            position: relative;
+            height: 110px;
+            border:1px solid #00a1f5;
+        }
+        #box .item .play {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            background: url(http://s2.music.126.net/style/web2/img/frame/playbar.png?9fc87e82ebe56c6209d7fbce80273f7c) no-repeat 0 -204px;
+        }
+        #box .item .playing {
+            background-position: 0 -165px;
+        }
+        #box .item .pic img {
+            width: 100%;
+            height: 100%;
+        }
+        #box .item .pic:before {
+            content: '';
+        }
+        #box .item .pic:after {
+            content: attr(data-time);
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            color: #fff;
+            font-size: 12px;
+        }
+        #box .item h4 {
+            font-size: 16px;
+            color: #333;
+            font-weight: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        #box .item p {
+            color: #0c73c2;
+            font-size: 14px;
+        }
+        #search_bar {
+            margin: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        #search_inp {
+            height: 24px;
+            line-height: 24px;
+            border: none;
+            border-bottom:1px solid #00a1f5;
+            outline: none;
+        }
+        #btn {
+            padding: 0 15px;
+            height: 30px;
+            margin-top: -5px;
+            background: #00a1f5;
+            border: none;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+            outline: none;
+        }
+        @keyframes fade {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" class="clearfix">
+        <div id="search_bar">
+            <input type="text" id="search_inp" placeholder="输入想查找的歌手"><input type="button" id="btn" value="搜索">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./zepto.js"></script>
+<script src="./2.fn.js"></script>

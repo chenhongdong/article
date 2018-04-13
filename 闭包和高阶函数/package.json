@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "closer",
+  "description": "- 函数可以作为参数传递\r - 函数可以作为返回值输出",
+  "version": "",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3"
+  }
+}

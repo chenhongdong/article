@@ -9,6 +9,7 @@ let getInfo = function (keywords, callback) {
         data: {
             keywords
         },
+        dataType: 'jsonp',
         success: function (res) {
             callback && callback(res.result.songs);
         }
@@ -58,7 +59,7 @@ let initDom = function (tmp, callback) {
     $('#box').append(tmp);
     // 这里因为不知道dom合适才会被完全插入到页面中
     // 所以用callback当参数，等dom插入后再执行callback
-    callback && callback(box);
+    callback && callback($('#box'));
 }
 
 let render = function (data) {
@@ -104,6 +105,7 @@ let play = function(wrap) {
             $allAudio[i].pause();
         }
         $audio[0].play();
+        $allPlay.removeClass('playing');
         $playIcon.addClass('playing');
     });
 };

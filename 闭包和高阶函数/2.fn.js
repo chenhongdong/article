@@ -17,19 +17,19 @@ let getInfo = function (keywords, callback) {
 
 $('#btn').on('click', function() {
     let keywords = $(this).prev().val();
+    $('#loading').show();
     getInfo(keywords, getData);
 });
 // 加入回车
 $("#search_inp").on('keyup', function(e){
     if (e.keyCode === 13) {
+        $('#loading').show();
         getInfo(this.value, getData);
     }
 });
 
 function getData(data) {
     if (data && data.length) {
-        // todo
-        // console.log(data);  // 得到的数据
         let html = render(data);
         // 初始化Dom结构
         initDom(html, function(wrap) {
@@ -55,17 +55,18 @@ function fillIn(n) {
 
 let initDom = function (tmp, callback) {
     $('.item').remove();
+    $('#loading').hide();
     $('#box').append(tmp);
     // 这里因为不知道dom合适才会被完全插入到页面中
     // 所以用callback当参数，等dom插入后再执行callback
     callback && callback(box);
-}
+};
 
 let render = function (data) {
     let template = '';
     let set = new Set(data);
     data = [...set];    // 可以利用Set去做下简单的去重，可忽略这步
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 20; i++) {
         let item = data[i];
         let name = item.name;
         let singer = item.artists[0].name;
@@ -75,7 +76,7 @@ let render = function (data) {
         template += `
             <div class="item">
                 <div class="pic" data-time="${time}">
-                    <span class="play"></span>
+                    <span></span>
                     <img src="${pic}" />
                 </div>
                 <h4>${name}</h4>
@@ -84,26 +85,19 @@ let render = function (data) {
             </div>`;
     }
     return template;
-}
+};
 
 let play = function(wrap) {
-    console.log($('.play'))
-    $('.play').each(function(i) {
-        $('.play').removeClass('playing');
-    })
     wrap = $(wrap);
     wrap.on('click', '.item', function() {
         let self = $(this),
             $audio = self.find('audio'),
-            $allAudio = wrap.find('audio'),
-            $playIcon = self.find('.play');
-            $allPlay = wrap.find('.play');
-            console.log($playIcon);
+            $allAudio = wrap.find('audio');
 
         for (let i = 0; i < $allAudio.length; i++) {
             $allAudio[i].pause();
         }
         $audio[0].play();
-        $playIcon.addClass('playing');
+        self.addClass('play').siblings('.item').removeClass('play');
     });
 };

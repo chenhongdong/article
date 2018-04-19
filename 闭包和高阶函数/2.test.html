@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body style="height: 3000px;">
+    <div id="box">点点</div>
+    <!-- <script src="2.高阶函数.js"></script> -->
+</body>
+
+</html>
+<script>
+    let single = function (fn) {
+        let ret;
+        return function () {
+            console.log(ret);   // render一次undefined,render二次true,render三次true
+            // 所以之后每次都执行ret，就不会再次绑定了
+            return ret || (ret = fn.apply(this, arguments));
+        }
+    };
+
+    let bindEvent = single(function () {
+        // 虽然下面的renders函数执行3次，bindEvent也执行了3次
+        // 但是根据单例模式的特点，函数在被第一次调用后，之后就不再调用了
+        document.getElementById('box').onclick = function () {
+            alert('click');
+        }
+        return true;
+    });
+
+    let renders = function () {
+        console.log('渲染');
+        bindEvent();
+    }
+
+    renders();
+    renders();
+    renders();
+
+
+    function fn() {
+        let a = {}, b = {};
+
+        a.obj = b;
+        b.obj = a;
+    }
+    fn();
+</script>

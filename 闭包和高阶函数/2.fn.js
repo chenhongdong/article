@@ -33,6 +33,7 @@ function getData(data) {
         let html = render(data);
         // 初始化Dom结构
         initDom(html, function(wrap) {
+            console.log(wrap);
             play(wrap);
         });
     }

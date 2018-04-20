@@ -42,25 +42,32 @@ function ArrayList() {
     };
     // 插入排序
     this.insertSort = function () {
-        let len = arr.length,
+        let len = arr.length,       // arr = [3, 5, 1, 4, 2]为例
             num, tmp;
         // 这里默认第一项已经排序了，直接从第二项开始
         for (let i = 1; i < len; i++) {
-            num = i;        // 用来记录一个索引 // 1
-            tmp = arr[i];   // 储存一个临时变量，方便之后插入位置   // 1
+            num = i;        // 用来记录一个索引 // 1    next  2   3   4
+            tmp = arr[i];   // 储存一个临时变量，方便之后插入位置   // 5    next  1   4   2
             // 索引必须是大于0，并且数组前一项的值如果大于临时变量的值
             // 就将前一项的值赋给当期项，并且num--
-            while (num > 0 && arr[num - 1] > tmp) { // 1>0 && 2 > 1
-                arr[num] = arr[num - 1];    //arr[1] = 2
-                num--;  // 0
+            while (num > 0 && arr[num - 1] > tmp) { // 1>0 && 3 > 5 不成立
+                // next  2>0 && 5 > 1  
+                //       1>0 && 3 > 1
+                arr[num] = arr[num - 1];
+                //arr[2] = arr[1] -> 5      
+                //arr[3] = arr[2] -> 5
+                //arr[1] = arr[0] -> 3
+                num--;  // 1  0
             }
-            arr[num] = tmp; // 最后在一顿替换后插入到了正确的位置上 // arr[0] = 1
+            arr[num] = tmp; // 最后在一顿替换后插入到了正确的位置上 // arr[1] = 5   next  arr[1] = 1  arr[0] = 1
+            // [1, 3, 5, 4, 2]
+
         }
     };
     // 归并排序  采用的是一种分治算法 不明白分治算法？很简单，你就当做是二分法。之后会讲，就是将一个大问题拆成小问题来解决，等每个小问题都解决了，大问题也就搞定了
     // 思想：将原数组切分成小数组，直到每个数组只有一项，然后再将小数组合并成大数组，最后得到一个排好序的大数组
 
-    this.mergeSort = function() {   
+    this.mergeSort = function () {
         arr = mergeRecurve(arr);    // 由于需要不停的拆分直到数组只有一项，所以使用递归来做
     };
     // 递归
@@ -99,9 +106,115 @@ function ArrayList() {
 
         return res;
     }
+
+    // 快速排序
+    this.quickSort = function () {
+        quick(arr, 0, arr.length - 1);
+    }
+    function quick(arr, left, right) {
+        let index;
+        if (arr.length > 1) {
+            index = partition(arr, left, right);  // 划分
+
+            if (left < index - 1) {
+                quick(arr, left, index - 1)
+            }
+            if (index < right) {
+                quick(arr, index, right);
+            }
+        }
+    }
+    // 划分函数
+    function partition(arr, left, right) {
+        let point = arr[Math.floor((left + right) / 2)],
+            i = left,
+            j = right;  // 双指针
+
+        while (i <= j) {
+            while (arr[i] < point) {
+                i++;
+            }
+            while (arr[j] > point) {
+                j--;
+            }
+            if (i <= j) {
+                [arr[i], arr[j]] = [arr[j], arr[i]];  // 交换位置
+                i++;
+                j--;
+            }
+        }
+        return i;
+    }
+
+    // 堆排序
+    this.heapSort = function () {
+        let len = arr.length;
+        buildHeap(arr);
+
+        while (len > 1) {
+            len--;
+            [arr[0], arr[len]] = [arr[len], arr[0]];
+            heapify(arr, len, 0);
+        }
+    };
+    function buildHeap(arr) {
+        let len = arr.length,
+            i = Math.floor(len / 2);
+        for (i; i >= 0; i--) {
+            heapify(arr, len, i);
+        }
+    }
+    function heapify(arr, len, i) {
+        let left = i * 2 + 1,
+            right = i * 2 + 2,
+            largest = i;
+
+        if (left < len && arr[left] > arr[largest]) {
+            largest = left;
+        }
+        if (right < len && arr[right] > arr[largest]) {
+            largest = right;
+        }
+        if (largest !== i) {
+            [arr[i], arr[largest]] = [arr[largest], arr[i]];
+            heapify(arr, len, largest);
+        }
+    }
+    // 顺序搜索
+    this.indexOf = function (item) {
+        for (let i = 0; i < arr.length; i++) {
+            if (item === arr[i]) {
+                return i;
+            }
+        }
+        return -1;
+    };
+    // 二分查找法
+    this.binarySearch = function (item) {
+        this.quickSort();
+
+        let low = 0,
+            high = arr.length - 1,
+            mid, ele;
+
+        while (low <= high) {
+            mid = Math.floor((low + high) / 2);
+            ele = arr[mid];
+            if (ele < item) {
+                low = mid + 1;
+            } else if (ele > item) {
+                high = mid - 1;
+            } else {
+                return mid;
+            }
+        }
+        return -1;
+    };
 }
 
-let arr = [2, 1, 3, 11, 4, 7, 5];
+let arr = [5, 4, 3, 2, 1];
+// arr = [3, 5, 1, 4, 2];
+// arr = [7, 9, 8];
 let createList = function (arr) {
     let list = new ArrayList();
     for (let i = 0; i < arr.length; i++) {
@@ -111,5 +224,6 @@ let createList = function (arr) {
 };
 let item = createList(arr);
 console.log(item.string());
-item.mergeSort();
+console.log(item.indexOf(3))
+item.heapSort();
 console.log(item.string());

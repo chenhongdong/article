@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./1排序.js"></script>
+</body>
+</html>
+
+<script>
+    this.quickSort = function () {
+        quick(arr, 0, arr.length - 1);
+    }
+    function quick(arr, left, right) {
+        let index;
+        if (arr.length > 1) {
+            index = partition(arr, left, right);  // 划分
+
+            if (left < index - 1) {
+                quick(arr, left, index - 1)
+            }
+            if (index < right) {
+                quick(arr, index, right);
+            }
+        }
+    }
+    // 划分函数
+    function partition(arr, left, right) {
+        let point = arr[Math.floor((left+right)/2)],
+            i = left,
+            j = right;  // 双指针
+        
+            while (i <= j) {
+                while (arr[i] < point) {
+                    i++;
+                }
+                while (arr[j] > point) {
+                    j--;
+                }
+                if (i<=j) {
+                    [arr[i], arr[j]] = [arr[j], arr[i]];  // 交换位置
+                    i++;
+                    j--;
+                }
+            }
+            return i;
+    }
+    /*
+        let arr = [3, 1, 5, 2];
+        
+    */
+</script>

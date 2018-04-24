@@ -156,6 +156,7 @@ let bindEvent = single(function () {
 let renders = function() {
     console.log('渲染');
     bindEvent();
+    bindEvent();    
 }
 
 renders();

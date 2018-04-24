@@ -171,3 +171,20 @@ function curry(fn) {
 
     return g;
 }
+
+
+function curry(fn) {
+    let slice = Array.prototype.slice,  // 将slice缓存起来
+        args = slice.call(arguments, 1);   // 这里将arguments转成数组并保存
+        
+    return function() {
+        // 将新旧的参数拼接起来
+        let newArgs = args.concat(slice.call(arguments));    
+        // console.log(newArgs)
+        return fn.apply(null, newArgs); // 返回执行的fn并传递最新的参数
+    }
+}
+
+curry(function(a, b) {
+    console.log(a, b);
+}, 1,2,3,4,5)(6,7,8,9);

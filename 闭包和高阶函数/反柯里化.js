@@ -1,10 +1,3 @@
-(function() {
-    // arguments就借用了数组的push方法
-    console.log(arguments);
-    let result = Array.prototype.slice.call(arguments);
-    console.log(result);     // [1, 2, 3, '木头人']
-})(1, 2, 3, 'hi');
-
 Function.prototype.uncurrying = function() {
     let self = this;
     return function() {

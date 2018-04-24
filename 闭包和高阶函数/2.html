@@ -29,12 +29,14 @@
             margin: 5px;
             float: left;
         }
+
         #box .item .pic {
             position: relative;
             height: 110px;
-            border:1px solid #00a1f5;
+            border: 1px solid #00a1f5;
         }
-        #box .item .play {
+
+        #box .item .pic span {
             position: absolute;
             width: 36px;
             height: 36px;
@@ -43,15 +45,14 @@
             transform: translate3d(-50%, -50%, 0);
             background: url(http://s2.music.126.net/style/web2/img/frame/playbar.png?9fc87e82ebe56c6209d7fbce80273f7c) no-repeat 0 -204px;
         }
-        #box .item .playing {
+
+        #box .play .pic span {
             background-position: 0 -165px;
         }
+
         #box .item .pic img {
             width: 100%;
             height: 100%;
-        }
-        #box .item .pic:before {
-            content: '';
         }
         #box .item .pic:after {
             content: attr(data-time);
@@ -83,9 +84,10 @@
             height: 24px;
             line-height: 24px;
             border: none;
-            border-bottom:1px solid #00a1f5;
+            border-bottom: 1px solid #00a1f5;
             outline: none;
         }
+
         #btn {
             padding: 0 15px;
             height: 30px;
@@ -98,9 +100,34 @@
             font-size: 13px;
             outline: none;
         }
+
+        #loading {
+            width: 30px;
+            height: 30px;
+            border: 4px solid lightgray;
+            border-top-color: #00a1f5;
+            border-radius: 50%;
+            margin: 20px auto 0;
+            animation: rotates 1s linear infinite;
+            display: none;
+        }
+
         @keyframes fade {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotates {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg)
+            }
         }
     </style>
 </head>
@@ -108,11 +135,37 @@
 <body>
     <div id="box" class="clearfix">
         <div id="search_bar">
-            <input type="text" id="search_inp" placeholder="输入想查找的歌手"><input type="button" id="btn" value="搜索">
+            <input type="text" id="search_inp" placeholder="输入想查找的歌手">
+            <input type="button" id="btn" value="搜索">
         </div>
+        <div id="loading"></div>
     </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./2.fn.js"></script>
 </body>
 
 </html>
-<script src="./zepto.js"></script>
-<script src="./2.fn.js"></script>
+<script>
+    let getSingle = function (fn) {
+        let ret;
+        return function () {
+            return ret || (ret = fn.apply(this, arguments));
+        }
+    };
+
+    let bindEvent = getSingle(function () {
+        document.getElementById('box').onclick = function() {
+            console.log('点击')
+        }
+        return true;
+    });
+
+    let renders = function() {
+        console.log('渲染');
+        bindEvent();
+    }
+
+    renders();
+    renders();
+    renders();
+</script>

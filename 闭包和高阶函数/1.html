@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        var aLi = document.getElementsByTagName('li');
+        for (var i = 0; i < aLi.length; i++) {
+            (function(n) {
+                aLi[i].onclick = function() {  // i为对应的索引值
+                    console.log(n);     // 0, 1, 2, 3
+                };
+            })(i);
+        }
+
+        var sum = (function() {
+            var cache = {};
+            return function() {
+                var args = Array.prototype.join.call(arguments, ',');
+                if (args in cache) {
+                    return cache[args];
+                }
+                var a = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    a += arguments[i];
+                }
+                return cache[args] = a;
+            }
+        })();
+
+        sum(1,2,3);
+    </script>
+</body>
+</html>

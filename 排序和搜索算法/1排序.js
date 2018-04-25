@@ -66,10 +66,6 @@ function ArrayList() {
     };
     // 归并排序  采用的是一种分治算法 不明白分治算法？很简单，你就当做是二分法。之后会讲，就是将一个大问题拆成小问题来解决，等每个小问题都解决了，大问题也就搞定了
     // 思想：将原数组切分成小数组，直到每个数组只有一项，然后再将小数组合并成大数组，最后得到一个排好序的大数组
-<<<<<<< HEAD
-=======
-
->>>>>>> b2c56e81dc1a5a9c1eba89cc5520e17b00bdf371
     this.mergeSort = function () {
         arr = mergeRecurve(arr);    // 由于需要不停的拆分直到数组只有一项，所以使用递归来做
     };
@@ -253,14 +249,8 @@ function ArrayList() {
     };
 }
 
-<<<<<<< HEAD
 // let arr = [2, 1, 3, 11, 4, 7, 5];
 let arr = [3, 5, 1, 6];
-=======
-let arr = [5, 4, 3, 2, 1];
-// arr = [3, 5, 1, 4, 2];
-// arr = [7, 9, 8];
->>>>>>> b2c56e81dc1a5a9c1eba89cc5520e17b00bdf371
 let createList = function (arr) {
     let list = new ArrayList();
     for (let i = 0; i < arr.length; i++) {
@@ -269,12 +259,6 @@ let createList = function (arr) {
     return list;
 };
 let item = createList(arr);
-<<<<<<< HEAD
 // console.log(item.string());
 item.quickSort();
-=======
-console.log(item.string());
-console.log(item.indexOf(3))
-item.heapSort();
->>>>>>> b2c56e81dc1a5a9c1eba89cc5520e17b00bdf371
 console.log(item.string());

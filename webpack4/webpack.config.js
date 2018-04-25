@@ -2,9 +2,9 @@
 
 let path = require('path');
 let webpack = require('webpack');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let CleanWebpackPlugin = require('clean-webpack-plugin');
-
+let HtmlPlugin = require('html-webpack-plugin');
+let CleanPlugin = require('clean-webpack-plugin');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     // 入口文件
@@ -33,14 +33,26 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
+                use: ExtractTextPlugin.extract({     // 通过ExtractText拆分成link形式引用
+                    use: ['css-loader', 'postcss-loader']
+                })
+            },
+            // {
+            //     test: /\.less$/,
+            //     // use: ['style-loader', 'css-loader', 'less-loader']  // 编译less
+            //     use: ExtractTextPlugin.extract({    // 通过ExtractText拆分成link形式引用
+            //         use: [
+            //             'css-loader',
+            //             'less-loader'
+            //         ]
+            //     })
+            // }
         ]
     },
     // webpack对应的插件
     plugins: [
         // 实现html打包功能 可以通过一个模板实现打包出引用好路径的html
-        new HtmlWebpackPlugin({
+        new HtmlPlugin({
             // 用哪个html作为模板
             template: './src/index.html',   
             hash: true,
@@ -53,14 +65,18 @@ module.exports = {
             filename: 'index.html',
             chunks: ['index']
         }),
-        new HtmlWebpackPlugin({
+        new HtmlPlugin({
             template: './src/login.html',
             filename: 'login.html',
             chunks: ['login']
         }),
-        new CleanWebpackPlugin('dist'),
-        // 热替换
+        new CleanPlugin('dist'),
+        // 热替换，热替换不是刷新
         new webpack.HotModuleReplacementPlugin(),
+        // 拆分css文件
+        new ExtractTextPlugin({
+            filename: 'css/[name].css'
+        })
     ],
     // 开发服务器的配置
     // 启动一个静态服务器
@@ -70,7 +86,7 @@ module.exports = {
         host: 'localhost',
         port: 3000,
         open: true,
-        hot: true   // 还需要配置一个插件
+        hot: true   // 还需要配置一个插件,除此之外还需要在写入的js文件里判断一下module.hot
     },
     // 模式的配置
     mode: 'development'

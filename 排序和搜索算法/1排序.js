@@ -109,44 +109,6 @@ function ArrayList() {
     // 快速排序
     this.quickSort = function () {
         quick(arr, 0, arr.length - 1);
-    };
-    function quick(arr, left, right) {
-        let index;
-        if (arr.length > 1) {
-            index = partition(arr, left, right);
-
-            if (left < index - 1) {
-                quick(arr, left, index - 1);
-            }
-            if (index < right) {
-                quick(arr, index, right);
-            }
-        }
-    }
-    function partition(arr, left, right) {
-        let mid = arr[Math.floor((left + right) / 2)],
-            i = left,
-            j = right;
-
-        while (i <= j) {
-            while (arr[i] < mid) {
-                i++;
-            }
-            while (arr[j] > mid) {
-                j--;
-            }
-            if (i <= j) {
-                [arr[i], arr[j]] = [arr[j], arr[i]];
-                i++;
-                j--;
-            }
-        }
-        return i;        
-    }
-
-    // 快速排序
-    this.quickSort = function () {
-        quick(arr, 0, arr.length - 1);
     }
     function quick(arr, left, right) {
         let index;
@@ -159,6 +121,9 @@ function ArrayList() {
             if (index < right) {
                 quick(arr, index, right);
             }
+            // 第一次递归1,二次4,三次是2，四次是3，第四次的情况下不走if条件
+            // 返回上一层递归index为2继续比较
+            console.log(index); 
         }
     }
     // 划分函数
@@ -180,6 +145,7 @@ function ArrayList() {
                 j--;
             }
         }
+        debugger;
         return i;
     }
 

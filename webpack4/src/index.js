@@ -1,4 +1,9 @@
 const str = require('./login');
 require('./css/style.css');
-console.log(str);
+// import './css/index.less';
+console.log(str, '热烈欢迎');
+console.log(123)
 
+if (module.hot) {
+    module.hot.accept();
+}

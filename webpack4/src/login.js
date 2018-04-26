@@ -1,1 +1,0 @@
-module.exports = '欢迎欢迎';

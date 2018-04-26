@@ -77,7 +77,7 @@ module.exports = {
 这时候需要把css拆分出来
 npm i extract-text-webpack-plugin -D
 ```
-let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin);
+let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -103,3 +103,50 @@ module.exports = {
     ]
 }
 ```
+
+## 启动静态服务器
+默认自动刷新
+```
+module.exports = {
+    devServer: {
+        contentBase: './dist',
+        host: 'localhost',      // 默认是localhost
+        port: 3000,             // 端口
+        open: true,             // 自动打开浏览器
+        hot: true               // 开启热更新
+    }
+}
+```
+
+## 热更新和热刷新的区别
+if (module.hot) {
+    module.hot.accept();    // 开启热更新
+}
+不过如果将css样式拆分后就失效了，解决这个问题的方法就是通过环境变量来判断
+new ExtractTextWebpackPlugin({
+    filename: 'css/style.css',
+    disable: isDev
+})
+
+## 编译ES6
+npm i babel-core babel-loader babel-preset-env babel-prese-stage-0 -D
+```
+module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader'
+            }
+        ]
+    }
+}
+```
+
+## resolve
+
+## optimization
+
+## DllPlugin
+动态链接库  写代码时 会编译很多包 我们有很多的第三方包
+先打好包

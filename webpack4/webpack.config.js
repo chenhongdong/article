@@ -1,93 +1,89 @@
-// webpack是基于Node的  用的语法都是CommonJS规范
-
 let path = require('path');
 let webpack = require('webpack');
-let HtmlPlugin = require('html-webpack-plugin');
-let CleanPlugin = require('clean-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+let CleanWebpackPlugin = require('clean-webpack-plugin');
+let isDev = process.env.NODE_ENV === 'development';
+console.log(isDev);
 module.exports = {
-    // 入口文件
-    // entry: './src/index.js',
-
-    // 多个入口 是没有关系的但是打包要到一起去 可以写一个数组，实现多个文件打包
-    // entry: ['./src/index.js', './src/utils.js'],
-
-    // 多页面开发，怎么配置多页面
     entry: {
-        index: './src/index.js',
-        login: './src/login.js'
+        a: './src/a.js',
+        b: './src/b.js',
+        index: './src/index.js'
     },
-    // 出口文件  
-    output: {                       
-        // filename: 'bundle.js',  // bundle.[hash:4].js  加个4位的md5戳
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {   // 抽离第三方插件
+                    test: /node_modules/,
+                    chunks: 'initial',
+                    name: 'vendor',
+                    priority: 10
+                },
+                utils: {   // 抽离自己写的公共代码，common这个名字可以随意起
+                    chunks: 'initial',
+                    name: 'utils',
+                    minSize: 0      // 只要超出0字节就生成一个新包
+                }
+            }
+        }
+    },
+    output: {
         filename: '[name].js',
-        // 必须是绝对路径
         path: path.resolve('dist')
     },
-    // resolve: {
-    //     extensition: ['.js', '.css', '.json']
-    // },
-    // 对模块的处理 loader加载器
+    resolve: {
+        // 别名
+        alias: {
+            q: './src/jquery.js'
+        },
+        // 省略后缀
+        extensions: ['.js', '.json', '.css']
+    },
     module: {
         rules: [
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({     // 通过ExtractText拆分成link形式引用
+                use: ExtractTextWebpackPlugin.extract({
+                    fallback: 'style-loader',
                     use: ['css-loader', 'postcss-loader']
                 })
             },
-            // {
-            //     test: /\.less$/,
-            //     // use: ['style-loader', 'css-loader', 'less-loader']  // 编译less
-            //     use: ExtractTextPlugin.extract({    // 通过ExtractText拆分成link形式引用
-            //         use: [
-            //             'css-loader',
-            //             'less-loader'
-            //         ]
-            //     })
-            // }
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                include: /src/,
+                exclude: /node_modules/
+            }
         ]
     },
-    // webpack对应的插件
     plugins: [
-        // 实现html打包功能 可以通过一个模板实现打包出引用好路径的html
-        new HtmlPlugin({
-            // 用哪个html作为模板
-            template: './src/index.html',   
-            hash: true,
-            minify: {
-                // 可以去除换行打包成一行
-                //collapseWhitespace: true,
-                // 删除双引号
-                //removeAttributeQuotes: true
-            },
+        // new webpack.DllReferencePlugin({
+        //     manifest: path.join(__dirname, 'dist', 'vendor.manifest.json')
+        // }),
+        new CleanWebpackPlugin('dist'),
+        new HtmlWebpackPlugin({
             filename: 'index.html',
+            template: './src/index.html',
             chunks: ['index']
         }),
-        new HtmlPlugin({
-            template: './src/login.html',
-            filename: 'login.html',
-            chunks: ['login']
+        new HtmlWebpackPlugin({
+            filename: 'b.html',
+            template: './src/index.html',
+            chunks: ['vendor', 'b']
         }),
-        new CleanPlugin('dist'),
-        // 热替换，热替换不是刷新
-        new webpack.HotModuleReplacementPlugin(),
-        // 拆分css文件
-        new ExtractTextPlugin({
-            filename: 'css/[name].css'
-        })
+        new ExtractTextWebpackPlugin({
+            filename: 'css/style.css',
+            disable: isDev
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
-    // 开发服务器的配置
-    // 启动一个静态服务器
-    // 默认自动刷新，热更新
     devServer: {
         contentBase: './dist',
-        host: 'localhost',
         port: 3000,
-        open: true,
-        hot: true   // 还需要配置一个插件,除此之外还需要在写入的js文件里判断一下module.hot
+        hot: true,
+        open: true
     },
-    // 模式的配置
     mode: 'development'
 }
+

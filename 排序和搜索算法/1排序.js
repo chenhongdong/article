@@ -216,8 +216,7 @@ function ArrayList() {
 }
 
 // let arr = [2, 1, 3, 11, 4, 7, 5];
-let arr = [2, 3, 1, 4, 6, 5];
-// let arr = [3,5,1,6,4,7,2]
+let arr = [3, 5, 1, 6];
 let createList = function (arr) {
     let list = new ArrayList();
     for (let i = 0; i < arr.length; i++) {

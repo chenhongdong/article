@@ -6,7 +6,7 @@ let Event = {
         }
         this.list[key].push(fn);
     },
-    trigger() {
+    emit() {
         let key = [].shift.call(arguments),
             fns = this.list[key];
 
@@ -33,3 +33,14 @@ let Event = {
         }
     }
 };
+
+function play() {
+    console.log('玩游戏');
+}
+function study() {
+    console.log('学习');
+}
+
+// Event.remove('smile', study);
+Event.on('smile', play);
+Event.on('smile', study);

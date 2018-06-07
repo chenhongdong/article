@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event</title>
+</head>
+
+<body>
+    <div id="app">
+        <button id="open">open</button>
+        <button id="close">close</button>
+        <div class="mask"></div>
+    </div>
+    <script src="./1.event.js"></script>
+    <script src="./switch.js"></script>
+    <script src="./close.js"></script>
+    <script src="./mask.js"></script>
+    <script>
+        // 哈哈，我这里来接受一下看看
+        Event.emit('smile', ['开心', '儿童节', '乐园']);
+    </script>
+</body>
+
+</html>

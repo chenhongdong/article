@@ -68,6 +68,7 @@ EventEmitter.prototype.once = function (type, cb, flag) {
 EventEmitter.prototype.removeListener = function (type, cb) {
     if (this._events[type]) {
         this._events[type] = this._events[type].filter(listener => {
+            console.log(listener);
             return cb !== listener && cb !== listener.listen;
         });
     }
@@ -94,12 +95,12 @@ let eat = (who) =>{console.log(who+'吃');};
 let smile=(who)=>{console.log(who+'笑')};
 
 let girl1 = new EventEmitter();
-girl1.on('失恋',cry); 
+girl1.once('失恋',cry);
 girl1.on('失恋',eat);
 girl1.on('失恋',shopping);
+girl1.emit('失恋','小明');
 girl1.emit('失恋','小明');  
-console.log(girl1.listeners());
-let girl2 = new EventEmitter();
-girl2.on('恋爱',shopping);
-girl2.on('恋爱',smile);
-girl2.emit('恋爱','小华');  
+// let girl2 = new EventEmitter();
+// girl2.on('恋爱',shopping);
+// girl2.on('恋爱',smile);
+// girl2.emit('恋爱','小华');  

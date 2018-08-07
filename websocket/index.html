@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock"></div>
+</body>
+</html>
+<script>
+    // 普通轮询做法
+    /*setTimeout(function() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:9999');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('clock').innerHTML = xhr.responseText;
+            }
+        }
+        xhr.send();
+    }, 1000);*/
+</script>
+<script>
+    (function poll() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:9999');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('clock').innerHTML = xhr.responseText;
+                poll();
+            }
+        };
+        xhr.send();
+    })();
+</script>

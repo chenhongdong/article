@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "webpack",
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
     "vue": "webpack --config webpack.config.vue.js"
   },
@@ -20,7 +20,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^5.1.4",
+    "cross-env": "^5.1.6",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.0.0",

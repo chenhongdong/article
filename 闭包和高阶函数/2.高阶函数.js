@@ -8,6 +8,8 @@ function throttle (fn, wait) {
         let args = arguments,
             self = this;
 
+        console.log(_fn);
+        console.log(fn);
         if (flags) {    // 如果是第一次调用不用延迟，直接执行即可
             _fn.apply(self, args);
             flags = false;
@@ -19,6 +21,7 @@ function throttle (fn, wait) {
         timer = setTimeout(function() { // 延迟执行
             clearTimeout(timer);    // 清空上次的定时器
             timer = null;           // 销毁变量
+            console.log(fn);
             _fn.apply(self, args);
         }, wait);
     }

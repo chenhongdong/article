@@ -7,8 +7,8 @@ let isDev = process.env.NODE_ENV === 'development';
 console.log(isDev);
 module.exports = {
     entry: {
-        a: './src/a.js',
-        b: './src/b.js',
+        // a: './src/a.js',
+        // b: './src/b.js',
         index: './src/index.js'
     },
     optimization: {
@@ -50,6 +50,10 @@ module.exports = {
                 })
             },
             {
+                test: /\.less$/,
+                use: ['css-loader', 'less-loader']
+            },
+            {
                 test: /\.js$/,
                 use: ['babel-loader', 'eslint-loader'],
                 include: /src/,
@@ -67,11 +71,11 @@ module.exports = {
             template: './src/index.html',
             chunks: ['index']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'b.html',
-            template: './src/index.html',
-            chunks: ['vendor', 'b']
-        }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'b.html',
+        //     template: './src/index.html',
+        //     chunks: ['vendor', 'b']
+        // }),
         new ExtractTextWebpackPlugin({
             filename: 'css/style.css',
             disable: isDev

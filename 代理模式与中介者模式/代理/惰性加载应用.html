@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // 未加载真正的miniConsole之前的代码如下
+    // let cache = [];
+    // let miniConsole = {
+    //     log() {
+    //         const args = arguments;
+    //         cache.push(function() {
+    //             return miniConsole.log.apply(miniConsole, args);
+    //         });
+    //     }
+    // }
+
+    // miniConsole.log(123);
+
+    var miniConsole = (function() {
+        var cache = [];
+        var handler = function(ev) {
+            if (ev.keyCode === 113) {
+                let script = document.createElement('script');
+                script.onload = function() {
+                    for (let i = 0; i < cache.length; i++) {
+                        let fn = cache[i];
+                        fn();
+                    }
+                };
+                script.src = './miniConsole.js';
+                document.getElementsByTagName('head')[0].appendChild(script);
+                // 只加载一次miniConsole.js
+                document.removeEventListener('keydown', handler);
+            }
+        };
+
+        document.body.addEventListener('keydown', handler);
+
+        return {
+            log() {
+                var args = arguments;
+                cache.push(function() {
+                    return miniConsole.log.apply(miniConsole, args);
+                })
+            }
+        }
+    })();
+    
+    miniConsole.log(123);
+</script>

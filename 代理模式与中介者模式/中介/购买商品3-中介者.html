@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购买商品</title>
+</head>
+
+<body>
+    <div id="box">
+        <div class="form-item">
+            <label for="colorSelect">选择颜色：</label>
+            <select id="colorSelect">
+                <option value="">请选择</option>
+                <option value="red">红色</option>
+                <option value="blue">蓝色</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="memorySelect">选择内存：</label>
+            <select id="memorySelect">
+                <option value="">请选择</option>
+                <option value="64G">64G</option>
+                <option value="128G">128G</option>
+            </select>
+        </div>
+        <div class="form-item">
+                <label for="cpuSelect">选择CPU：</label>
+                <select id="cpuSelect">
+                    <option value="">请选择</option>
+                    <option value="海思麒麟">海思麒麟</option>
+                    <option value="高通">高通</option>
+                </select>
+            </div>
+        <div class="form-item">
+            <label for="numberInput">购买数量：</label>
+            <input type="text" id="numberInput">
+        </div>
+        <div class="form-item">
+            <label for="colorInfo">您选择了颜色：</label>
+            <div id="colorInfo"></div>
+        </div>
+        <div class="form-item">
+            <label for="memoryInfo">您选择了内存：</label>
+            <div id="memoryInfo"></div>
+        </div>
+        <div class="form-item">
+            <label for="cpuInfo">您选择了CPU：</label>
+            <div id="cpuInfo"></div>
+        </div>
+        <div class="form-item">
+            <label for="numberInfo">您输入了数量：</label>
+            <div id="numberInfo"></div>
+        </div>
+        <button id="btn" disabled="true">请选择手机颜色和购买数量</button>
+    </div>
+    
+</body>
+
+</html>
+<script>
+    const doc = document;
+    // 如果再加个CPU型号，只需要改动mediator即可
+    let goods = {   // 手机库存
+        'red|64G|海思麒麟': 0,
+        'red|128G|高通': 3,
+        'blue|64G|海思麒麟': 2,
+        'blue|128G|高通': 6
+    };
+
+    let mediator = (function () {
+        let colorSelect = doc.getElementById('colorSelect'),
+            memorySelect = doc.getElementById('memorySelect'),
+            numberInput = doc.getElementById('numberInput'),
+            cpuSelect = doc.getElementById('cpuSelect'),
+            colorInfo = doc.getElementById('colorInfo'),
+            memoryInfo = doc.getElementById('memoryInfo'),
+            numberInfo = doc.getElementById('numberInfo'),
+            cpuInfo = doc.getElementById('cpuInfo'),
+            oBtn = doc.getElementById('btn');
+
+        return {
+            changed(obj) {
+                let color = colorSelect.value,
+                    memory = memorySelect.value,
+                    number = numberInput.value,
+                    cpu = cpuSelect.value,
+                    stock = goods[color + '|' + memory + '|' + cpu];
+
+                    if (obj === colorSelect) {
+                        colorInfo.innerHTML = color;
+                    } else if (obj === memorySelect) {
+                        memoryInfo.innerHTML = memory;
+                    } else if (obj === numberInput) {
+                        numberInfo.innerHTML = number;
+                    } else if (obj === cpuSelect) {
+                        cpuInfo.innerHTML = cpu;
+                    }
+                    
+                    if (!color) {
+                        oBtn.disabled = true;
+                        oBtn.innerHTML = '请选择手机颜色';
+                        return;
+                    }
+                    if (!memory) {
+                        oBtn.disabled = true;
+                        oBtn.innerHTML = '请选择内存大小';
+                        return;
+                    }
+                    if (!cpu) {
+                        oBtn.disabled = true;
+                        oBtn.innerHTML = '请选择CPU型号';
+                        return false;
+                    }
+                    if ((number - 0 | 0) !== number - 0) {
+                        oBtn.disabled = true;
+                        oBtn.innerHTML = '请输入正确的购买数量';
+                        return;
+                    }
+                    if (number > stock) {
+                        oBtn.disabled = true;
+                        oBtn.innerHTML = '库存不足';
+                        return;
+                    }
+                    oBtn.disabled = false;
+                    oBtn.innerHTML = '放入购物车';
+            }
+        }
+    })();
+
+    // 事件函数
+    colorSelect.onchange = function() {
+        mediator.changed(this);
+    };
+    memorySelect.onchange = function() {
+        mediator.changed(this);
+    };
+    numberInput.oninput = function() {
+        mediator.changed(this);
+    };
+    cpuSelect.onchange = function() {
+        mediator.changed(this);
+    }
+</script>

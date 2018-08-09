@@ -73,4 +73,32 @@
         oBtn.disabled = false;
         oBtn.innerHTML = '放入购物车';
     }
+    // IE9支持oninput事件,oninput不支持select下拉框触发
+    numberInput.oninput = function() {
+        let color = colorSelect.value,
+            number = this.value,
+            stock = goods[color];
+
+        numberInfo.innerHTML = number;
+
+        if (!color) {
+            oBtn.disabled = true;
+            oBtn.innerHTML = '请选择手机颜色';
+            return;
+        }
+
+        if ((number - 0 | 0) !== number - 0) {
+            oBtn.disabled = true;
+            oBtn.innerHTML = '请输入正确的购买数量';
+            return;
+        }
+
+        if (number > stock) {
+            oBtn.disabled = true;
+            oBtn.innerHTML = '库存不足';
+            return;
+        }
+        oBtn.disabled = false;
+        oBtn.innerHTML = '放入购物车';
+    };
 </script>

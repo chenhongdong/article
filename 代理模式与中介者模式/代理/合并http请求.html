@@ -22,7 +22,12 @@
     // 在web开发中，最大的开销莫过于就是网络请求了
 
     function syncFile(id) {
-        console.log('开始同步文件，id为： ' + id);
+        const url = 'xxx.com/index.php';
+        axios.get(url, {
+            params: {
+                id
+            }
+        });
     }
 
     // 非代理的情况下，是每次点击都发给服务器

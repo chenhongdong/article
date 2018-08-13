@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 最少找零问题
+        function makeChange(money, coins) {
+            let res = [],
+                total = 0;
+            for (let i = coins.length; i >=0; i--) {
+                let coin = coins[i];
+                while (total+coin <= money) {
+                    res.push(coin);
+                    total+=coin;
+                    console.log(res);
+                        console.log(total);
+                }
+            }
+            return res;
+        }
+
+        // 100 50 20 10 5 1
+        makeChange(36, [1, 5, 10, 20, 50, 100]);
+    </script>
+</body>
+
+</html>

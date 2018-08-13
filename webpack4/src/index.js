@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 import './style.less';
 import './reset.css';
+=======
+<<<<<<< HEAD
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+=======
+import v from 'vue';
+>>>>>>> 959131a25cc64a8e1c87140def50a186404bd9d4
 
 console.log('这是webpack打包的入口文件');
+>>>>>>> cd004795e2c4a6468d31c23744451e62ba83ccc0
 
+<<<<<<< HEAD
 let list = document.getElementById('list');
 let li = document.createElement('li');
 li.innerHTML = '新的li';
@@ -64,3 +74,17 @@ function test(cb) {
 test(function() {
     test()
 })
+=======
+// class App extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 <h3>烟雨年代</h3>
+//                 <p>孙露</p>
+//             </div>
+//         )
+//     }
+// }
+
+// render(<App />, window.app);
+>>>>>>> 959131a25cc64a8e1c87140def50a186404bd9d4

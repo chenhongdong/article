@@ -31,7 +31,13 @@ module.exports = {
             },
             {
                 test: /\.js$/,
+<<<<<<< HEAD
                 use: ['babel-loader', 'eslint-loader']
+=======
+                use: ['babel-loader', 'eslint-loader'],
+                include: /src/,
+                exclude: /node_modules/
+>>>>>>> 959131a25cc64a8e1c87140def50a186404bd9d4
             }
         ]
     },

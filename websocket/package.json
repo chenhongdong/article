@@ -1,0 +1,18 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "- 它是有特点的\r     - HTTP是半双工通信的，同一时刻数据是单向流动的，客户端向服务端请求数据->单向，服务端向客户端返回数据->单向\r     - 服务器不能主动的推送数据给客户端\r ## 双工通信\r ### 先说轮询",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {}
+}

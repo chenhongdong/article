@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket.IO</title>
+</head>
+<body>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        window.onload = function() {
+            const socket = io.connect('/');
+            // 监听与服务端的连接成功事件
+            socket.on('connect', () => {
+                console.log('连接成功了');
+                // 连接成功后发送消息
+                socket.send('三国杀');
+            });
+
+            // 监听收到服务端发来的消息事件
+            socket.on('message', msg => {
+                console.log(msg);
+            });
+
+            // 监听与服务端断开连接事件
+            socket.on('disconnect', () => {
+                console.log('断开连接');
+            });
+        };
+    </script>
+</body>
+</html>

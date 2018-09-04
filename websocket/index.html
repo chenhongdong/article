@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock"></div>
+    <div>I do</div>
+</body>
+</html>
+<script>
+    // 普通轮询做法
+    /*setTimeout(function() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:9999');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('clock').innerHTML = xhr.responseText;
+            }
+        }
+        xhr.send();
+    }, 1000);*/
+</script>
+<script>
+    /* (function poll() {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:9999');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('clock').innerHTML = xhr.responseText;
+                poll();
+            }
+        };
+        xhr.send();
+    })(); */
+</script>
+
+<script>
+    // websocket
+    const ws = new WebSocket('ws://localhost:7777');
+    ws.onopen = function() {
+        console.log('客户端连接成功');
+        ws.send('发给未来的自己 ')
+    };
+    ws.onmessage = function(event) {
+        console.log('收到的消息' + event.data);
+    };
+</script>

@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="clock"></div>
+    <div>I do</div>
 </body>
 </html>
 <script>
@@ -24,7 +25,7 @@
     }, 1000);*/
 </script>
 <script>
-    (function poll() {
+    /* (function poll() {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', 'http://localhost:9999');
         xhr.onreadystatechange = function () {
@@ -34,5 +35,17 @@
             }
         };
         xhr.send();
-    })();
+    })(); */
+</script>
+
+<script>
+    // websocket
+    const ws = new WebSocket('ws://localhost:7777');
+    ws.onopen = function() {
+        console.log('客户端连接成功');
+        ws.send('发给未来的自己 ')
+    };
+    ws.onmessage = function(event) {
+        console.log('收到的消息' + event.data);
+    };
 </script>

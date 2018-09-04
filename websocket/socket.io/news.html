@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <title>聊天室</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <button class="btn btn-danger">红房间</button>
+                        <button class="btn btn-success">绿房间</button>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="list">
+
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input type="text" id="textMsg" class="form-control">
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-primary">发言</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    window.onload = function () {
+        let textMsg = document.getElementById('textMsg');
+        let msgList = document.getElementById('list');
+        let btn = document.querySelector('.btn-primary');
+
+        btn.onclick = function() {
+            send();
+        };
+
+        const socket = io.connect('/news');
+
+        socket.on('connect', () => {
+            console.log('连接新闻成功');
+            socket.send('发新闻')
+        });
+
+        socket.on('message', msg => {
+            console.log('client: '+ msg);
+            let li = document.createElement('li');
+            li.innerHTML = msg;
+            li.className = 'list-group-item';
+            msgList.appendChild(li);
+        });
+
+        // 发言方法send
+        
+
+        function send() {
+            let content = textMsg.value;
+            if (!content) {
+                return alert('请输入内容');
+            }
+            socket.send(content);
+        }
+    }
+</script>

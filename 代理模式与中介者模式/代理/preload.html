@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // 非代理的情况，直接给src设置会导致空白时间
+    let myImg = (function() {
+        let img = document.createElement('img');
+        document.body.appendChild(img);
+
+        return {
+            setSrc(src) {
+                img.src = src;
+            }
+        }
+    })();
+    // 直接设置src
+    // myImg.setSrc('http://p0.so.qhimgs1.com/bdr/326__/t015b81c99692979474.jpg');
+
+    // 代理对象proxyImg
+    let proxyImg = (function() {
+        let img = new Image();
+        img.onload = function() {
+            myImg.setSrc(this.src);
+        }
+
+        return {
+            setSrc(src) {
+                myImg.setSrc('https://p.ssl.qhimg.com/t0103b3b9a54ba2c6f5.gif');
+                img.src = src;
+            }
+        }
+    })();
+
+    proxyImg.setSrc('http://p0.so.qhimgs1.com/bdr/326__/t015b81c99692979474.jpg');
+</script>

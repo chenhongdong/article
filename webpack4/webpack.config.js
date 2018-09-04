@@ -10,7 +10,32 @@ let styleLess = new ExtractTextWebpackPlugin('css/style.css');
 let resetCss = new ExtractTextWebpackPlugin('css/reset.css');
 
 module.exports = {
+<<<<<<< HEAD
     entry: './src/index.js',
+=======
+    entry: {
+        // a: './src/a.js',
+        // b: './src/b.js',
+        index: './src/index.js'
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {   // 抽离第三方插件
+                    test: /node_modules/,
+                    chunks: 'initial',
+                    name: 'vendor',
+                    priority: 10
+                },
+                utils: {   // 抽离自己写的公共代码，common这个名字可以随意起
+                    chunks: 'initial',
+                    name: 'utils',
+                    minSize: 0      // 只要超出0字节就生成一个新包
+                }
+            }
+        }
+    },
+>>>>>>> d153b84bda05aa59e9b4036117a7ffd5aac39d88
     output: {
         filename: 'index.js',
         path: path.resolve('dist')
@@ -28,6 +53,10 @@ module.exports = {
                 use: styleLess.extract({
                     use: 'css-loader'
                 })
+            },
+            {
+                test: /\.less$/,
+                use: ['css-loader', 'less-loader']
             },
             {
                 test: /\.js$/,
@@ -56,12 +85,21 @@ module.exports = {
             template: './src/index.html',
             chunks: ['index']
         }),
+<<<<<<< HEAD
         new HtmlWebpackPlugin({
             filename: 'b.html',
             template: './src/index.html',
             chunks: ['vendor', 'b']
         }), */
         /* new ExtractTextWebpackPlugin({
+=======
+        // new HtmlWebpackPlugin({
+        //     filename: 'b.html',
+        //     template: './src/index.html',
+        //     chunks: ['vendor', 'b']
+        // }),
+        new ExtractTextWebpackPlugin({
+>>>>>>> d153b84bda05aa59e9b4036117a7ffd5aac39d88
             filename: 'css/style.css',
             disable: isDev
         }), */

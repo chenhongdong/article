@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="1">1
+    <input type="checkbox" id="2">2
+    <input type="checkbox" id="3">3
+    <input type="checkbox" id="4">4
+    <input type="checkbox" id="5">5
+    <input type="checkbox" id="6">6
+    <input type="checkbox" id="7">7
+    <input type="checkbox" id="8">8
+    <input type="checkbox" id="9">9
+</body>
+</html>
+<script>
+    // 在web开发中，最大的开销莫过于就是网络请求了
+
+    function syncFile(id) {
+        const url = 'xxx.com/index.php';
+        axios.get(url, {
+            params: {
+                id
+            }
+        });
+    }
+
+    // 非代理的情况下，是每次点击都发给服务器
+    /* for (let i = 0; i < checkbox.length; i++) {
+        let c = checkbox[i];
+        c.onclick = function() {
+            if (this.checked === true) {
+                syncFile(this.id);
+            }
+        }
+    } */
+
+    let proxySyncFile = (function() {
+        let cache = [],     // 保存一段时间内需要同步的id
+            timer;          // 定时器
+
+        return function(id) {
+            cache.push(id);
+            // 保证不会覆盖之前的定时器
+            if (timer) return;
+
+            timer = setTimeout(function() {
+                syncFile(cache.join(','));  // 向2秒后本体发送需要同步的id集合
+                clearTimeout(timer);
+                timer = null;
+                cache.length = 0;   // 清空id集合
+            }, 2000);
+        }
+    })();
+
+    let checkbox = document.getElementsByTagName('input');
+
+    for (let i = 0; i < checkbox.length; i++) {
+        let c = checkbox[i];
+
+        c.onclick = function() {
+            if (this.checked === true) {
+                proxySyncFile(this.id);
+            }
+        };
+    }
+</script>

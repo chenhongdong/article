@@ -20,10 +20,10 @@ console.log(add1(7));
 function curry(fn) {
     let slice = Array.prototype.slice,  y7ttttttt2// 将slice缓存起来
         args = slice.call(arguments, 1);   // 这里将arguments转成数组并保存
-        console.log(args);
+        
     return function() {
         // 将新旧的参数拼接起来
-        let newArgs = args.concat(slice.call(arguments));    
+        let newArgs = args.concat(slice.call(arguments));
         return fn.apply(null, newArgs); // 返回执行的fn并传递最新的参数
     }
 }
@@ -33,7 +33,8 @@ function add(a, b) {
 }
 
 let sum = curry(add);
-console.log(sum(1)(3))
+console.log(sum);
+console.log(sum(1)(2)());
 
 let add1 = add.curry(1);
 console.log(add1(7));
@@ -145,3 +146,21 @@ let div2 = getDiv();
 console.log(div1 === div2);
 console.log(div1);
 console.log(div2);
+
+
+
+function curry(fn) {
+    const g = (...allArgs) => allArgs.length >= fn.length ?
+        fn(...allArgs) : 
+        (...args) => g(...allArgs, ...args)
+
+    return g;
+}
+
+// 测试用例
+const foo = curry((a, b, c, d) => {
+    console.log(a, b, c, d);
+});
+foo(1)(2)(3)(4);    // 1 2 3 4
+const f = foo(1)(2)(3);
+f(5);               // 1 2 3 5

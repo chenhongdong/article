@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './style.less';
 import './reset.css';
 =======
@@ -9,8 +10,13 @@ import { render } from 'react-dom';
 import v from 'vue';
 >>>>>>> 959131a25cc64a8e1c87140def50a186404bd9d4
 
+=======
+// import './style';
+import './css/main.less';
+let b = 'hello h';
+document.body.innerHTML = b;
+>>>>>>> d153b84bda05aa59e9b4036117a7ffd5aac39d88
 console.log('这是webpack打包的入口文件');
->>>>>>> cd004795e2c4a6468d31c23744451e62ba83ccc0
 
 <<<<<<< HEAD
 let list = document.getElementById('list');

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // 非代理模式
+    /* function Flower(){}
+
+    let xiaoming =  {
+        sendFlower(target) {
+            let flower = new Flower();
+            target.receiveFlower( flower );
+        }
+    };
+
+    let MM = {
+        receiveFlower(flower) {
+            console.log('收到花：' + flower);
+        }
+    };
+
+    xiaoming.sendFlower( MM ); */
+
+
+    // 代理模式(最简单的)
+    /* function Flower() {}
+
+    let xiaoming = {
+        sendFlower(target) {
+            let flower = new Flower();
+            target.receiveFlower( flower );
+        }
+    };
+
+    let MM = {
+        receiveFlower(flower) {
+            console.log('收到花 ' + flower);
+        }
+    };
+
+    let friend = {
+        receiveFlower( flower ) {
+            MM.receiveFlower( flower );
+        }
+    };
+
+    xiaoming.sendFlower( friend ); */
+</script>
+
+<script>
+    // 通过代理来监听MM的心情
+    function Flower() {}
+
+    let xiaoming = {
+        sendFlower(target) {
+            const flower = new Flower();
+            target.receiveFlower( flower );
+        }
+    };
+
+    let MM = {
+        receiveFlower(flower) {
+            console.log('收到花 ' + flower);
+        },
+        goodMood(fn) {
+            // 假设5秒后心情好
+            setTimeout(() => {
+                fn();
+            }, 5000);
+        }
+    };
+
+    let friend = {
+        receiveFlower(flower) {
+            MM.goodMood(() => {
+                MM.receiveFlower( flower );
+            });
+        }
+    };
+
+    // 送花
+    xiaoming.sendFlower( friend );
+</script>
+
+<script>
+    // 代理也分保护代理和虚拟代理
+    // 1.保护代理
+        // 来控制不同权限的对象对目标对象的访问,但在js中并不容易实现保护代理，因为无法判断谁访问了某个对象，而虚拟代理是最常用的一种代理模式，主要讲它
+    // 2.虚拟代理会把一些开销很大的对象，延迟到真正需要它的时候才去创建
+    let friend = {
+        receiveFlower(flower) {
+            MM.goodMood(() => {                 // 监听MM的好心情
+                const flower = new Flower();    // 延迟创建flower对象
+                MM.receiveFlower( flower );
+            });
+        }
+    }
+</script>

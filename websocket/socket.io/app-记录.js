@@ -28,28 +28,16 @@ io.on('connection', socket => {
             // 如果说在某个房间内的话，那么说的话只能在该房间内可以看到
             if (roomsLen) {
                 for (let i = 0; i < roomsLen; i++) {
-                    io.in(rooms[i]).emit('message', {
-                        username,
-                        msg,
-                        createAt: new Date()
-                    });
+                    io.in(rooms[i]).emit('message', msg);
                 }
             } else {
                 // 如果此用户不在任何一个房间的话，就全局广播
-                io.emit('message', {
-                    username,
-                    msg,
-                    createAt: new Date()
-                });
+                io.emit('message', msg);
             }
         } else {
             // 如果还没有设置用户名，那这就是该用户的第一次发言
             username = msg;
-            socket.broadcast.emit('message', {
-                username: '系统',
-                msg: `${username} 加入了群聊`,
-                createAt: new Date()
-            });
+            socket.broadcast.emit('message', `${username}加入了群聊`);
         }
     });
 

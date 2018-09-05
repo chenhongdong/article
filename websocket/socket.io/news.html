@@ -14,8 +14,17 @@
             <div class="col-md-12 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading text-center">
-                        <button class="btn btn-danger">红房间</button>
-                        <button class="btn btn-success">绿房间</button>
+                        <div>
+                            <button class="btn btn-danger" onclick="join('red')">进入红房间</button>
+                            <button class="btn btn-danger" onclick="leave('red')">离开红房间</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-success" onclick="join('green')">进入绿房间</button>
+                            <button class="btn btn-success" onclick="leave('green')">离开绿房间</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-info" onclick="getRoomInfo">获取房间信息</button>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <ul class="list-group" id="list">
@@ -50,24 +59,21 @@
             send();
         };
 
-        const socket = io.connect('/news');
+        const socket = io.connect('/');
 
         socket.on('connect', () => {
             console.log('连接新闻成功');
-            socket.send('发新闻')
         });
 
-        socket.on('message', msg => {
-            console.log('client: '+ msg);
+        socket.on('message', msgObj => {
+            console.log('client: '+ msgObj);
             let li = document.createElement('li');
-            li.innerHTML = msg;
+            li.innerHTML = `${msgObj.username}:${msgObj.msg} <span class="text-right">${msgObj.createAt.toLocaleString()}</span>`;
             li.className = 'list-group-item';
             msgList.appendChild(li);
         });
 
         // 发言方法send
-        
-
         function send() {
             let content = textMsg.value;
             if (!content) {
@@ -75,5 +81,17 @@
             }
             socket.send(content);
         }
+
+        // 进入房间
+        function join(room) {
+            // 向服务器发送一个消息,join 
+            // room是房间名
+            socket.emit('join', room);
+        }
+        // 离开房间
+        function leave(room) {
+            socket.emit('leave', room);
+        }
+        
     }
 </script>

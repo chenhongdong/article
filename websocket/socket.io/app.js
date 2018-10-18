@@ -73,6 +73,11 @@ io.on('connection', socket => {
             rooms.splice(oldIndex, 1);
         }
     });
+
+    // 监听获取房间信息的事件
+    socket.on('getRoomInfo', () => {
+        console.log('监听到了房间');
+    });
 });
 
 io.of('/goods').on('connection', socket => {
@@ -89,7 +94,11 @@ server.listen(3000);
 
 
 /* 
+    // send方法的实现
     Socket.prototype.send = function() {
-        
+        let args = Array.from(arguments);
+        args.unshift('message');
+        this.emit.apply(this, args);
+        return this;
     }
 */

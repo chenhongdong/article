@@ -1,11 +1,22 @@
 ## 三言两语说说HTTP
+### HTTP是半双工通信
 - 它是有特点的
     - HTTP是半双工通信的，同一时刻数据是单向流动的，客户端向服务端请求数据->单向，服务端向客户端返回数据->单向
     - 服务器不能主动的推送数据给客户端
 ## 双工通信
-### 先说轮询
-轮询是通过浏览器定时的向服务器发送get请求，服务器收到后，就把最新的数据返回给客户端
-客户端拿到数据后，再展示数据，然后再定期重复此过程
+### websocket
+在H5的websocket出现之前，为了实现这种推送技术，大家最常用的实现方式有这三种：轮询、长轮询和iframe流，但是他们三兄弟或多或少都有些美中不足
+于是乎，在大神们的不断努力下，定义了websocket这个API
+一语概括就是websocket实现了，在客户端和服务端上建立了一个长久的连接，两边可以任意发数据嗨皮
+当然如果知道的更深一层的话，要知道它属于应用层的协议，它基于TCP传输协议，并复用HTTP的握手通道
+说的再多，不如懂它，下面来看看websocket的优势何在
+### websocket的优势
+1. 支持双向通信，实时性更强(你可以来做个QQ，微信了，老铁)
+2. 更好的二进制支持
+3. 较少的控制开销(连接创建后，ws客户端、服务端进行数据交换时，协议控制的数据包头部较少)
+
+那么废话说到这里了，接下来开始实战，检验一下成果
+
 
 
 ## socket.io
@@ -22,11 +33,30 @@
 
 ### 启动服务，手写服务端
 ```
+// server.js文件
+const express = require('express');
+const app = express();
+// 设置静态文件夹
+app.use(express.static(__dirname));
+// 创建一个server服务
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
 
+io.on('connection', function(socket) {
+    socket.on('message', function(msg) {
+        console.log(msg);   // 客户端发来的消息
+        // send方法来给客户端发消息
+        socket.send('你好我是服务端');      
+    });
+});
+
+server.listen(3000);
 ```
 
+### 简单分析和常用的API 
 
-## socket.io注意事项
+
+### socket.io注意事项
 1. 可以把服务分成多个命名空间，默认/，不同空间内不能通信
 2. 可以把一个命名空间分成多个房间，一个客户端可以同时进入多个房间
 3. 如果在大厅里广播，那么所有人都能看到消息

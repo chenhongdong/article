@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket.io</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    let socket = io.connect('/');
+    // 监听与服务器连接成功事件
+    socket.on('connect', () => {
+        console.log('连接成功');
+        // 通过send方法来发送消息
+        socket.send('jay chou');
+    });
+    // 监听服务端发来的消息
+    socket.on('message', msg => {
+        console.log(`客户端接收到的消息： ${msg}`);
+    });
+
+    // 监听与服务器连接断开事件
+    socket.on('disconnect', () => {
+        console.log('连接断开成功');
+    });
+
+</script>

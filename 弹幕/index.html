@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹幕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            width: 320px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #canvas {
+            position: absolute;
+        }
+        input {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content">
+            <canvas id="canvas"></canvas>
+            <video src="./source/mv.mp4" width="320" height="160" controls></video>
+        </div>
+    </div>
+    <input type="text"> <button>添加</button>
+    <input type="color"> <input type="range" max="40" min="20">
+</body>
+</html>
+<script>
+    // 弹幕假数据
+    let data = [
+        // value是值， speed速度, time是出现的时间
+        {value: '杨丽萍拄双拐现身', speed: 2, time: 0, fontSize: 20},
+        {value: '安东尼今夏加盟火箭队', speed: 3, time: 1, fontSize: 20},
+        {value: '姚明当选中国篮协主席', speed: 2, time: 2, fontSize: 20}
+    ];
+</script>

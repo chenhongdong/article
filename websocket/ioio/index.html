@@ -12,12 +12,12 @@
 </html>
 <script src="/socket.io/socket.io.js"></script>
 <script>
-    let socket = io.connect('/');
+    let socket = io();
     // 监听与服务器连接成功事件
     socket.on('connect', () => {
         console.log('连接成功');
         // 通过send方法来发送消息
-        socket.send('jay chou');
+        socket.send('one day');
     });
     // 监听服务端发来的消息
     socket.on('message', msg => {

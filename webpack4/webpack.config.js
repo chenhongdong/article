@@ -10,9 +10,6 @@ let styleLess = new ExtractTextWebpackPlugin('css/style.css');
 let resetCss = new ExtractTextWebpackPlugin('css/reset.css');
 
 module.exports = {
-<<<<<<< HEAD
-    entry: './src/index.js',
-=======
     entry: {
         // a: './src/a.js',
         // b: './src/b.js',
@@ -35,7 +32,6 @@ module.exports = {
             }
         }
     },
->>>>>>> d153b84bda05aa59e9b4036117a7ffd5aac39d88
     output: {
         filename: 'index.js',
         path: path.resolve('dist')

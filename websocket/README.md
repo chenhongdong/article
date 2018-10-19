@@ -40,6 +40,7 @@ const app = express();
 app.use(express.static(__dirname));
 // 创建一个server服务
 const server = require('http').createServer(app);
+// websocket是依赖http协议进行握手
 const io = require('socket.io')(server);
 
 io.on('connection', function(socket) {
@@ -53,7 +54,15 @@ io.on('connection', function(socket) {
 server.listen(3000);
 ```
 
-### 简单分析和常用的API 
+### 划分命名空间
+可以把websocket的服务划分成多个命名空间，默认是/，不同空间内是不能通信的，
+io.of()方法是来划分空间的
+```
+// 因为是默认的，所以可以不用写成io.of('/').on('connection')的形式
+io.on('connection', socket => {});
+// 访问/music空间
+io.on('/music').on('connection', socket => {});
+```
 
 
 ### socket.io注意事项

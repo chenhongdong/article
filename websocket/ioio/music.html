@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>新闻</title>
+    <title>音乐</title>
 </head>
 <body>
     
@@ -12,7 +12,7 @@
 </html>
 <script src="/socket.io/socket.io.js"></script>
 <script>
-    let socket = io('/news');
+    let socket = io('/music');
 
     socket.on('connect', () => {
         socket.send('我的天');

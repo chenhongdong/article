@@ -16,10 +16,14 @@ const io = require('socket.io')(server);
 const SYSTEM = '系统';
 
 let sockets = {};
+let mySockets = {};
 // 监听客户端与服务端的连接
 io.on('connection', function(socket) {
+    mySockets[socket.id] = socket;
     // 用户名，默认为undefined
     let username;
+    // 用rooms数组记录进入的房间
+    let rooms = [];
     socket.on('message', function(msg) {
         if (username) {
             // 首先要判断是私聊还是公聊
@@ -44,12 +48,34 @@ io.on('connection', function(socket) {
                     });
                 }
             } else {
-                // 服务器要向所有的客户端进行广播
-                io.emit('message', {
-                    user: username,
-                    content: msg,
-                    createAt: new Date().toLocaleString()
-                });
+                if (rooms.length) {
+                    
+                    let targetSockets = {};
+                    rooms.forEach(room => {
+                        let roomSockets = io.sockets.adapter.rooms[room].sockets;
+                        console.log(roomSockets);
+                        Object.keys(roomSockets).forEach(socketId => {
+                            if (!targetSockets[socketId]) {
+                                targetSockets[socketId] = 1;
+                            }
+                        });
+                    });
+
+                    Object.keys(targetSockets).forEach(socketId => {
+                        mySockets[socketId].emit('message', {
+                            user: username,
+                            content: msg,
+                            createAt: new Date().toLocaleString()
+                        });
+                    });
+                } else {
+                    // 服务器要向所有的客户端进行广播
+                    io.emit('message', {
+                        user: username,
+                        content: msg,
+                        createAt: new Date().toLocaleString()
+                    });
+                }
             }
         } else {
             // 如果第一次进来没有用户名，就把msg当做用户名
@@ -66,8 +92,37 @@ io.on('connection', function(socket) {
     });
     // 监听进入某个房间
     socket.on('join', function(roomName) {
-        // socket.join表示进入某个房间
-        socket.join(roomName);
+        if (rooms.indexOf(roomName) === -1) {
+            // socket.join表示进入某个房间
+            // 如果是第一次进入房间，就把该房间名push到rooms数组中
+            socket.join(roomName);
+            rooms.push(roomName);
+
+            socket.send({
+                user: SYSTEM,
+                content: `你已经进入了${roomName}房间`,
+                createAt: new Date().toLocaleString()
+            });
+
+            socket.emit('joined', roomName);
+        }
+    });
+    // 监听离开某个房间
+    socket.on('leave', function(roomName) {
+        // 获取进入房间在rooms中的索引
+        const index = rooms.indexOf(roomName);
+        if (index !== -1) {
+            socket.leave(roomName);
+            rooms.splice(index, 1); // 从rooms数组中删除该房间
+
+            socket.send({
+                user: SYSTEM,
+                content: `你已经离开${roomName}房间了`,
+                createAt: new Date().toLocaleString()
+            });
+
+            socket.emit('leaved', roomName);
+        }
     });
 });
 

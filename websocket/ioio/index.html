@@ -22,12 +22,12 @@
                         <h4 class="text-center">欢迎来到聊天室</h4>
                         <div class="row">
                             <div class="col-xs-6 text-center">
-                                <button class="btn btn-primary" onclick="join('qq')">进入QQ群</button>
-                                <button class="btn btn-primary" onclick="leave('qq')">离开QQ群</button>
+                                <button id="join-qq" class="btn btn-primary" onclick="join('qq')">进入QQ学习群</button>
+                                <button id="leave-qq" class="btn btn-primary" onclick="leave('qq')" style="display: none;">离开QQ学习群</button>
                             </div>
                             <div class="col-xs-6 text-center">
-                                <button class="btn btn-success" onclick="join('wx')">进入微信群</button>
-                                <button class="btn btn-success" onclick="leave('wx')">离开微信群</button>
+                                <button id="join-qq2" class="btn btn-success" onclick="join('qq2')">进入QQ学习2群</button>
+                                <button id="leave-qq2" class="btn btn-success" onclick="leave('qq2')" style="display: none;">离开QQ学习2群</button>
                             </div>
                         </div>
                     </div>
@@ -97,11 +97,26 @@
             contentInput.value = `@${username} `;
         }
     }
-    // 进入某个群
+    // 进入某个房间(群)
     function join(roomName) {
         // 告诉服务器，我这个客户端将要在服务器进入某个房间
-        socket.join('join', roomName);
+        socket.emit('join', roomName);
     }
+    // 监听是否进入房间
+    socket.on('joined', roomName => {
+        document.getElementById(`leave-${roomName}`).style.display = 'inline-block';
+        document.getElementById(`join-${roomName}`).style.display = 'none';
+    });
+
+    // 离开某个房间(群)
+    function leave(roomName) {
+        socket.emit('leave', roomName);
+    }
+    // 监听是否离开房间
+    socket.on('leaved', roomName => {
+        document.getElementById(`join-${roomName}`).style.display = 'inline-block';
+        document.getElementById(`leave-${roomName}`).style.display = 'none';
+    });
     
 
     // 监听与服务器连接断开事件

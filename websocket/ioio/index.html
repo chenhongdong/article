@@ -16,20 +16,30 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="text-center">欢迎来到聊天室</h4>
+                        <div class="row">
+                            <div class="col-xs-6 text-center">
+                                <button class="btn btn-primary" onclick="join('qq')">进入QQ群</button>
+                                <button class="btn btn-primary" onclick="leave('qq')">离开QQ群</button>
+                            </div>
+                            <div class="col-xs-6 text-center">
+                                <button class="btn btn-success" onclick="join('wx')">进入微信群</button>
+                                <button class="btn btn-success" onclick="leave('wx')">离开微信群</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <ul id="list" class="list-group" onclick="talkTo(event)"></ul>
                     </div>
                     <div class="panel-footer">
                         <div class="row">
-                            <div class="col-md-10">
+                            <div class="col-xs-10">
                                 <input type="text" class="form-control" id="content" onkeydown="keyDown(event)">
                             </div>
-                            <div class="col-md-1">
+                            <div class="col-xs-1">
                                 <button class="btn btn-primary" onclick="send()">发言</button>
                             </div>
                         </div>
@@ -87,7 +97,11 @@
             contentInput.value = `@${username} `;
         }
     }
-
+    // 进入某个群
+    function join(roomName) {
+        // 告诉服务器，我这个客户端将要在服务器进入某个房间
+        socket.join('join', roomName);
+    }
     
 
     // 监听与服务器连接断开事件

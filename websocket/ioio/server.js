@@ -17,17 +17,24 @@ const SYSTEM = '系统';
 
 let sockets = {};
 let mySockets = {};
+let msgArr = [];    // 从旧往新的 slice
 // 监听客户端与服务端的连接
-io.on('connection', function(socket) {
+io.on('connection', function (socket) {
     mySockets[socket.id] = socket;
     // 用户名，默认为undefined
     let username;
     // 用rooms数组记录进入的房间
     let rooms = [];
-    socket.on('message', function(msg) {
+    socket.on('message', function (msg) {
         if (username) {
             // 首先要判断是私聊还是公聊
             let result = msg.match(/@([^ ]+) (.+)/);
+            // 将之前聊天的记录存到数组中
+            if (msg.indexOf('@') === -1) {
+                msgArr.push({ user: username, content: msg, createAt: new Date().toLocaleString() });
+            }
+            
+            console.log(msgArr);
             if (result) {
                 let toUser = result[1];
                 let content = result[2];
@@ -47,9 +54,10 @@ io.on('connection', function(socket) {
                         createAt: new Date().toLocaleString()
                     });
                 }
+
             } else {
                 if (rooms.length) {
-                    
+
                     let targetSockets = {};
                     rooms.forEach(room => {
                         let roomSockets = io.sockets.adapter.rooms[room].sockets;
@@ -80,6 +88,7 @@ io.on('connection', function(socket) {
         } else {
             // 如果第一次进来没有用户名，就把msg当做用户名
             username = msg;
+            // 在sockets对象中缓存 key是用户名 value是socket
             sockets[username] = socket;
             // socket.broadcast表示向除自己以为的所有人广播
             socket.broadcast.emit('message', {
@@ -88,10 +97,10 @@ io.on('connection', function(socket) {
                 createAt: new Date().toLocaleString()
             });
         }
-        
+
     });
     // 监听进入某个房间
-    socket.on('join', function(roomName) {
+    socket.on('join', function (roomName) {
         if (rooms.indexOf(roomName) === -1) {
             // socket.join表示进入某个房间
             // 如果是第一次进入房间，就把该房间名push到rooms数组中
@@ -108,7 +117,7 @@ io.on('connection', function(socket) {
         }
     });
     // 监听离开某个房间
-    socket.on('leave', function(roomName) {
+    socket.on('leave', function (roomName) {
         // 获取进入房间在rooms中的索引
         const index = rooms.indexOf(roomName);
         if (index !== -1) {
@@ -123,6 +132,11 @@ io.on('connection', function(socket) {
 
             socket.emit('leaved', roomName);
         }
+    });
+    // 
+    socket.on('getAllMsgs', function () {
+        let latest = msgArr.slice(msgArr.length - 20);
+        socket.emit('allMsgs', latest);
     });
 });
 

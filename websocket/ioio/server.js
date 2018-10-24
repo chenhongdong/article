@@ -29,12 +29,7 @@ io.on('connection', function (socket) {
         if (username) {
             // 首先要判断是私聊还是公聊
             let result = msg.match(/@([^ ]+) (.+)/);
-            // 将之前聊天的记录存到数组中
-            if (msg.indexOf('@') === -1) {
-                msgArr.push({ user: username, content: msg, createAt: new Date().toLocaleString() });
-            }
             
-            console.log(msgArr);
             if (result) {
                 let toUser = result[1];
                 let content = result[2];
@@ -47,7 +42,7 @@ io.on('connection', function (socket) {
                         createAt: new Date().toLocaleString()
                     });
                 } else {
-                    // 私聊的用户不在线的话，自己说一下
+                    // 私聊的用户不在线的话，告诉自己一声
                     socket.send({
                         user: SYSTEM,
                         content: '您私聊的用户不在线',
@@ -56,12 +51,22 @@ io.on('connection', function (socket) {
                 }
 
             } else {
-                if (rooms.length) {
+                // 将之前聊天的记录存到数组中
+                msgArr.push({ user: username, content: msg, createAt: new Date().toLocaleString() });
 
+                let msgObj = {
+                    user: username,
+                    content: msg,
+                    createAt: new Date().toLocaleString()
+                };
+
+                if (rooms.length) {
                     let targetSockets = {};
                     rooms.forEach(room => {
                         let roomSockets = io.sockets.adapter.rooms[room].sockets;
-                        console.log(roomSockets);
+                        console.log('io.sockets.adapter.rooms[room]');
+                        console.log(io.sockets.adapter.rooms);
+                        // console.log(roomSockets);
                         Object.keys(roomSockets).forEach(socketId => {
                             if (!targetSockets[socketId]) {
                                 targetSockets[socketId] = 1;
@@ -70,19 +75,11 @@ io.on('connection', function (socket) {
                     });
 
                     Object.keys(targetSockets).forEach(socketId => {
-                        mySockets[socketId].emit('message', {
-                            user: username,
-                            content: msg,
-                            createAt: new Date().toLocaleString()
-                        });
+                        mySockets[socketId].emit('message', msgObj);
                     });
                 } else {
                     // 服务器要向所有的客户端进行广播
-                    io.emit('message', {
-                        user: username,
-                        content: msg,
-                        createAt: new Date().toLocaleString()
-                    });
+                    io.emit('message', msgObj);
                 }
             }
         } else {

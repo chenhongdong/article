@@ -69,9 +69,34 @@
                     alert('输入的内容不能为空！');
                 }
             }
+            // 回车发言的方法
+            function keySend(event) {
+                const key = event.keyCode;
+                if (key === 13) {
+                    send();
+                }
+            }
+            // 私聊的方法
+            function privateChat(event) {
+                let target = event.target;
+                let user = target.innerHTML;
+                if (target.className === 'user') {
+                    socket.emit('message', user);
+                    input.value = `@${user} `;
+                }
+            }
 
             // 点击按钮进行发言
             sendBtn.onclick = send;
+            // 按回车进行发言
+            input.onkeydown = function(event) {
+                keySend(event);
+            };
+            // 添加私聊
+            list.onclick = function(event) {
+                privateChat(event);
+            };
+
             // 监听与服务端的连接
             socket.on('connect', () => {
                 console.log('连接成功');

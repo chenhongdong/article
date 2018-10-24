@@ -9,8 +9,13 @@
     <title>聊天</title>
     <style>
     .user {
-        color: #00a1f4;
         cursor: pointer;
+    }
+    .content {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 8px;
+        color: #fff;
     }
     </style>
 </head>
@@ -18,22 +23,22 @@
     <div class="container" style="margin-top: 30px;">
         <div class="row">
             <div class="col-xs-12">
-                <div class="panel panel-default">
+                <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4 class="text-center">欢迎来到聊天室</h4>
-                        <!-- <div class="row">
+                        <div class="row">
                             <div class="col-xs-6 text-center">
-                                <button id="join-qq" class="btn btn-primary" onclick="join('qq')">进入QQ学习群</button>
-                                <button id="leave-qq" class="btn btn-primary" onclick="leave('qq')" style="display: none;">离开QQ学习群</button>
+                                <button id="join-zone" class="btn btn-primary" onclick="join('jay')">进入杰伦战队群</button>
+                                <button id="leave-zone" class="btn btn-primary" onclick="leave('jay')" style="display: none;">离开杰伦战队群</button>
                             </div>
                             <div class="col-xs-6 text-center">
-                                <button id="join-qq2" class="btn btn-success" onclick="join('qq2')">进入QQ学习2群</button>
-                                <button id="leave-qq2" class="btn btn-success" onclick="leave('qq2')" style="display: none;">离开QQ学习2群</button>
+                                <button id="join-zone2" class="btn btn-success" onclick="join('qq2')">进入霆锋战队群</button>
+                                <button id="leave-zone2" class="btn btn-success" onclick="leave('qq2')" style="display: none;">离开霆锋战队群</button>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="panel-body">
-                        <ul id="list" class="list-group" style="height: 250px;overflow: auto;"></ul>
+                        <ul id="list" class="list-group" style="height: 300px;overflow: auto;"></ul>
                     </div>
                     <div class="panel-footer">
                         <div class="row">
@@ -41,7 +46,7 @@
                                 <input type="text" class="form-control" id="input">
                             </div>
                             <div class="col-xs-1">
-                                <button class="btn btn-primary" id="sendBtn">发言</button>
+                                <button class="btn btn-info" id="sendBtn">发送</button>
                             </div>
                         </div>
                     </div>
@@ -52,7 +57,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         window.onload = function() {
-            let socket = io('http://localhost:4000');
+            let socket = io();
             // 列表list，输入框content，按钮sendBtn
             let list = document.getElementById('list'),
                 input = document.getElementById('input'),
@@ -79,11 +84,14 @@
             // 私聊的方法
             function privateChat(event) {
                 let target = event.target;
-                let user = target.innerHTML;
+                let user = target.innerText;
                 if (target.className === 'user') {
-                    socket.emit('message', user);
                     input.value = `@${user} `;
                 }
+            }
+            // 进入群(房间)聊天
+            function join(room) {
+                socket.emit('join', room);
             }
 
             // 点击按钮进行发言
@@ -100,19 +108,20 @@
             // 监听与服务端的连接
             socket.on('connect', () => {
                 console.log('连接成功');
+                console.log(socket.connected);
             });
             // 接收服务端传过来的消息
             socket.on('message', data => {
                 let li = document.createElement('li');
                 li.className = 'list-group-item';
-                li.innerHTML = `<p>
-                                    <span class="user">${data.user} </span>${data.createAt}
-                                </p>
-                                <p>${data.content}</p>`;
+                li.innerHTML = `<p style="color: #ccc;"><span class="user" style="color:${data.color}">${data.user} </span>${data.createAt}</p>
+                                <p class="content" style="background-color: ${data.color}">${data.content}</p>`;
                 list.appendChild(li);
                 // 将聊天区域的滚动条设置到最新内容的位置
                 list.scrollTop = list.scrollHeight;
             });
+
+            
         };
     </script>
 </body>

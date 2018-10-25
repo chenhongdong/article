@@ -85,7 +85,7 @@ socket.on('message', data => {
     let li = document.createElement('li');
     li.className = 'list-group-item';
     li.innerHTML = `<p style="color: #ccc;"><span class="user" style="color:${data.color}">${data.user} </span>${data.createAt}</p>
-                            <p class="content" style="background-color: ${data.color}">${data.content}</p>`;
+                    <p class="content" style="background-color: ${data.color}">${data.content}</p>`;
     list.appendChild(li);
     // 将聊天区域的滚动条设置到最新内容的位置
     list.scrollTop = list.scrollHeight;

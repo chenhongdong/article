@@ -100,11 +100,57 @@ io.on('connection', socket => {
 ```
 
 ### 判断是不是有username
-
+这里我们可以知道，当用户是第一次进来的时候，是没有用户名的，需要在设置之后才会显示对应的名字，那么我们先来写下第一次进入设置用户名的情况
 #### username不存在
+```
+const SYSTEM = '系统';
 
+io.on('connection', socket => {
+    // 记录用户名，用来记录是不是第一次进入
+    let username;
+    socket.on('message', msg => {
+        if (username) {
+
+        } else {
+            // 如果是第一次进入的话，就将输入的内容当做用户名
+            username = msg;
+            // 向除了自己的所有人广播，毕竟进没进入自己当然是知道的，没必要跟自己再说
+            socket.broadcast.emit('message', {
+                user: SYSTEM,
+                content: `${username}加入了聊天！`,
+                createAt: new Date().toLocaleString()
+            });
+        }
+    });
+});
+```
 #### username存在
+```
+const SYSTEM = '系统';
 
+io.on('connection', socket => {
+    // 记录用户名，用来记录是不是第一次进入
+    let username;
+    socket.on('message', msg => {
+        if (username) {
+            io.emit('message', {
+                user: username,
+                content: msg,
+                createAt: new Date().toLocaleString()
+            });
+        } else {
+            // 如果是第一次进入的话，就将输入的内容当做用户名
+            username = msg;
+            // 向除了自己的所有人广播，毕竟进没进入自己当然是知道的，没必要跟自己再说
+            socket.broadcast.emit('message', {
+                user: SYSTEM,
+                content: `${username}加入了聊天！`,
+                createAt: new Date().toLocaleString()
+            });
+        }
+    });
+});
+```
 ### 添加私聊
 
 #### @一下

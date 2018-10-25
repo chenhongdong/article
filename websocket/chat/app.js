@@ -10,12 +10,15 @@ const io = require('socket.io')(server);
 let socketObj = {};
 // 上来记录一个socket.id用来查找对应的用户
 let mySocket = {};
+// 创建一个数组用来保存最近的20条消息记录，真实项目中会存到数据库中
+let msgHistory = [];
 
 const SYSTEM = '系统';
 // 设置一些颜色的数组，让每次进入聊天的用户颜色都不一样
 let userColor = ['#00a1f4', '#0cc', '#f44336', '#795548', '#e91e63', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#ffc107', '#607d8b', '#ff9800', '#ff5722'];
 
 io.on('connection', socket => {
+    // 这是所有连接到服务端的socket.id
     mySocket[socket.id] = socket;
     console.log('id', socket.id);
 
@@ -38,21 +41,16 @@ io.on('connection', socket => {
                         content,
                         createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
                     });
-                } else {
-                    socket.send({
-                        user: SYSTEM,
-                        color,
-                        content: `您私聊的用户不在线`,
-                        createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
-                    });
                 }
             } else {
+                // 房间内和房间外都是一样的消息对象，直接存成msgObj变量使用
                 let msgObj = {
                     user: username,
                     color,
                     content: msg,
                     createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
                 };
+
                 // 如果rooms数组有值，就代表有用户进入了房间
                 if (rooms.length) {
                     // 用来存储进入房间内的对应的socket.id
@@ -78,6 +76,10 @@ io.on('connection', socket => {
                     // 如果不是私聊的
                     // 向所有人广播
                     io.emit('message', msgObj);
+
+                    // 把发送的消息push到msgHistory中
+                    // 真实情况是存到数据库里的
+                    msgHistory.push(msgObj);
                 }
             }
         } else {
@@ -98,7 +100,7 @@ io.on('connection', socket => {
     // 监听进入房间的事件
     socket.on('join', room => {
         // 判断一下用户是否进入了房间，如果没有才让其进到房间里
-        if (rooms.indexOf(room) === -1) {
+        if (username && rooms.indexOf(room) === -1) {
             // socket.join表示进入某个房间
             socket.join(room);
             rooms.push(room);
@@ -130,8 +132,16 @@ io.on('connection', socket => {
                 createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
             });
         }
-    }); 
+    });
 
+    // 监听获取历史消息的事件
+    socket.on('getHistory', () => {
+        // 通过数组的slice方法截取最新的20条消息
+        if (msgHistory.length) {
+            let history = msgHistory.slice(msgHistory.length - 20);
+            socket.emit('history', history);
+        }
+    });
 });
 
 

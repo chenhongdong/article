@@ -6,6 +6,7 @@ let list = document.getElementById('list'),
 
 // 发言的方法
 function send() {
+    console.log(socket.connected);
     let value = input.value;
     if (value) {
         // 发送消息给服务器
@@ -89,3 +90,15 @@ socket.on('message', data => {
     // 将聊天区域的滚动条设置到最新内容的位置
     list.scrollTop = list.scrollHeight;
 });
+
+// 断开连接
+socket.on('disconnect', () => {
+    console.log('断开连接');
+    setTimeout(() => {
+        socket.open();
+    }, 2000);
+});
+
+document.getElementById('test').onclick = function() {
+    socket.disconnect();
+};

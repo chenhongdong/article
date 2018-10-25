@@ -47,8 +47,15 @@ io.on('connection', socket => {
                     });
                 }
             } else {
+                let msgObj = {
+                    user: username,
+                    color,
+                    content: msg,
+                    createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
+                };
                 // 如果rooms数组有值，就代表有用户进入了房间
                 if (rooms.length) {
+                    // 用来存储进入房间内的对应的socket.id
                     let socketJson = {};
 
                     rooms.forEach(room => {
@@ -56,31 +63,21 @@ io.on('connection', socket => {
                         let roomSockets = io.sockets.adapter.rooms[room].sockets;
                         Object.keys(roomSockets).forEach(socketId => {
                             console.log('socketId', socketId);
-                            // 进行一个去重
+                            // 进行一个去重，在socketJson中只有对应唯一的socketId
                             if (!socketJson[socketId]) {
                                 socketJson[socketId] = 1;
                             }
                         });
-                        // 遍历socketJson，在mySocket里找到对应的id，然后发送消息
-                        Object.keys(socketJson).forEach(socketId => {
-                            mySocket[socketId].emit('message', {
-                                user: username,
-                                color,
-                                content: msg,
-                                createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
-                            });
-                        });
+                    });
 
+                    // 遍历socketJson，在mySocket里找到对应的id，然后发送消息
+                    Object.keys(socketJson).forEach(socketId => {
+                        mySocket[socketId].emit('message', msgObj);
                     });
                 } else {
                     // 如果不是私聊的
                     // 向所有人广播
-                    io.emit('message', {
-                        user: username,
-                        color,
-                        content: msg,
-                        createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
-                    });
+                    io.emit('message', msgObj);
                 }
             }
         } else {

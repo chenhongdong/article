@@ -1,5 +1,56 @@
 ## 聊天室的开发过程
+```
+// index.html文件
+
+// 引入bootstrap.css文件
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<style>
+/*这里简单写下用户名和发送内容的样式*/
+.user { color: #00a1f4; cursor: pointer; }
+.content { display: inline-block; padding: 6px 10px; background-color: #00a1f4; border-radius: 8px; color: #fff; }
+</style>
+
+// 主内容结构
+<div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h4 class="text-center">放轻松，聊聊天</h4>
+                    <div class="row">
+                        <div class="col-xs-6 text-center">
+                            <button id="join-Jay" class="btn btn-primary" onclick="join('Jay')">进入杰伦战队群</button>
+                            <button id="leave-Jay" class="btn btn-primary" onclick="leave('Jay')" style="display: none;">离开杰伦战队群</button>
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            <button id="join-Tse" class="btn btn-success" onclick="join('Tse')">进入霆锋战队群</button>
+                            <button id="leave-Tse" class="btn btn-success" onclick="leave('Tse')" style="display: none;">离开霆锋战队群</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <ul id="list" class="list-group" style="height: 300px;overflow: auto;"></ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="input">
+                        </div>
+                        <div class="col-xs-1">
+                            <button class="btn btn-info" id="sendBtn">发送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引入socket.io.js -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="./index.js"></script>
+```
 ### 建立连接
+
 #### 客户端
 ```
 let socket = io();

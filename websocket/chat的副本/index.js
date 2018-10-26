@@ -44,8 +44,8 @@ socket.on('connect', () => {
 socket.on('message', data => {
     let li = document.createElement('li');
     li.className = 'list-group-item';
-    li.innerHTML = `<p style="color: #ccc;"><span class="user">${data.user} </span>${data.createAt}</p>
-                    <p class="content">${data.content}</p>`;
+    li.innerHTML = `<p style="color: #ccc;"><span class="user" style="color:${data.color}">${data.user} </span>${data.createAt}</p>
+                    <p class="content" style="background:${data.color}">${data.content}</p>`;
     list.appendChild(li);
     // 将聊天区域的滚动条设置到最新内容的位置
     list.scrollTop = list.scrollHeight;
@@ -65,3 +65,22 @@ function privateChat(event) {
 list.onclick = function(event) {
     privateChat(event);
 };
+// 进入房间
+function join(room) {
+    console.log(room);
+    socket.emit('join', room);
+}
+// 监听是否已进入房间
+socket.on('joined', room => {
+    document.getElementById(`join-${room}`).style.display = 'none';
+    document.getElementById(`leave-${room}`).style.display = 'inline-block';
+});
+
+// 离开房间
+function leave(room) {
+    socket.emit('leave', room);
+}
+socket.on('leaved', room => {
+    document.getElementById(`leave-${room}`).style.display = 'none';
+    document.getElementById(`join-${room}`).style.display = 'inline-block';
+});

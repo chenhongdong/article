@@ -25,6 +25,7 @@ function shuffle(arr) {
 io.on('connection', socket => {
     let username;
     let color;
+    let rooms = [];
 
     socket.on('message', msg => {
         if (username) {
@@ -41,6 +42,7 @@ io.on('connection', socket => {
                     // 向私聊的用户发消息
                     toSocket.send({
                         user: username,
+                        color,
                         content: content,
                         createAt: new Date().toLocaleString()
                     });
@@ -48,6 +50,7 @@ io.on('connection', socket => {
             } else {
                 io.emit('message', {
                     user: username,
+                    color,
                     content: msg,
                     createAt: new Date().toLocaleString()
                 });
@@ -55,9 +58,44 @@ io.on('connection', socket => {
         } else {
             username = msg;
             socketObj[username] = socket;
+            // 随机取出颜色数组中的第一个，分配给对应用户
+            color = shuffle(userColor)[0];
             socket.broadcast.emit('message', {
-                user: '系统',
+                user: SYSTEM,
+                color,
                 content: `${username}加入了聊天！`,
+                createAt: new Date().toLocaleString()
+            });
+        }
+    });
+
+    socket.on('join', room => {
+        if (rooms.indexOf(room) === -1) {
+            socket.join(room);
+            rooms.push(room);
+
+            socket.emit('joined', room);
+
+            socket.send({
+                user: SYSTEM,
+                content: `你已加入${room}战队群`,
+                createAt: new Date().toLocaleString()
+            });
+        }
+    });
+
+    socket.on('leave', room => {
+        let index = rooms.indexOf(room);
+
+        if (index !== -1) {
+            socket.leave(room);
+            rooms.splice(index, 1);
+
+            socket.emit('leaved', room);
+
+            socket.send({
+                user: SYSTEM,
+                content: `你已经离开${room}战队群`,
                 createAt: new Date().toLocaleString()
             });
         }

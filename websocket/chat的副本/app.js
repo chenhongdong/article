@@ -12,8 +12,20 @@ const SYSTEM = '系统';
 // 设置一些颜色的数组，让每次进入聊天的用户颜色都不一样
 let userColor = ['#00a1f4', '#0cc', '#f44336', '#795548', '#e91e63', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#ffc107', '#607d8b', '#ff9800', '#ff5722'];
 
+// 乱序排列
+function shuffle(arr) {
+    let len = arr.length, random;
+    while (0 !== len) {
+        random = (Math.random() * len--) >>> 0;			// 右移位运算符向下取整
+        [arr[len], arr[random]] = [arr[random], arr[len]];	// 解构赋值实现变量互换
+    }
+    return arr;
+}
+
 io.on('connection', socket => {
     let username;
+    let color;
+
     socket.on('message', msg => {
         if (username) {
             let private = msg.match(/@([^ ]+) (.+)/);
@@ -22,6 +34,17 @@ io.on('connection', socket => {
                 let other = private[1];
                 // 私聊的内容，正则匹配的第二个分组
                 let content = private[2];
+                // 从socketObj中获取私聊用户的socket
+                let toSocket = socketObj[other];
+               
+                if (toSocket) {
+                    // 向私聊的用户发消息
+                    toSocket.send({
+                        user: username,
+                        content: content,
+                        createAt: new Date().toLocaleString()
+                    });
+                }
             } else {
                 io.emit('message', {
                     user: username,

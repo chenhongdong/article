@@ -96,6 +96,8 @@ io.on('connection', socket => {
                     <p class="content" style="background-color: ${data.color}">${data.content}</p>`;
     // 将li添加到list列表中
 +     list.appendChild(li);
+    // 将聊天区域的滚动条设置到最新内容的位置
++    list.scrollTop = list.scrollHeight;
 + });
 ```
 
@@ -187,7 +189,17 @@ io.on('connection', socket => {
             let private = msg.match(/@([^ ]+) (.+)/);
 
             if (private) {  // 私聊消息
+                let toUser = private[1];
+                let content = private[2];
+                let toSocket = socketObj[toUser];
 
+                if (toSocket) {
+                    toSocket.send({
+                        user: username,
+                        content,
+                        createAt: new Date().toLocaleString()
+                    });
+                }
             } else {    // 公聊消息
                 io.emit('message', {
                     user: username,
@@ -198,11 +210,22 @@ io.on('connection', socket => {
 
         } else {
             ...省略
+            // 把socketObj对象上对应的用户名赋为一个socket
+            /*
+                如： socketObj = {
+                        '周杰伦': socket
+                    }
+            */
             socketObj[username] = socket;
         }
     });
 });
 ```
+写到这里，我们已经完成了群聊和私聊的功能了，可喜可贺，非常了不起了已经，但是不能傲娇，我们再完善一些**小细节**
+
+现在所有用户名和发送消息的气泡都是一个颜色，其实这样也不好区分用户之间的差异
+
+SO，我们来改下颜色的部分
 ### 加入指定房间(群)
 
 #### 进入房间

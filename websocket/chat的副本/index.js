@@ -50,3 +50,18 @@ socket.on('message', data => {
     // 将聊天区域的滚动条设置到最新内容的位置
     list.scrollTop = list.scrollHeight;
 });
+
+// 私聊的方法
+function privateChat(event) {
+    let target = event.target;
+    // 拿到对应的用户名
+    let user = target.innerHTML;
+    // 只有class为user的才是目标元素
+    if (target.className === 'user') {
+        input.value = `@${user} `;
+    }
+}
+// 点击进行私聊
+list.onclick = function(event) {
+    privateChat(event);
+};

@@ -152,11 +152,57 @@ io.on('connection', socket => {
 });
 ```
 ### 添加私聊
-
+在群里大家都知道@一下就代表这条消息是专属被@的那个人的，我们在消息列表list中点击对方的用户名，就可以进行私聊了，所以废话不多说，开写吧
 #### @一下
+```
+// index.js文件
 
+// 私聊的方法
+function privateChat(event) {
+    let target = event.target;
+    // 拿到对应的用户名
+    let user = target.innerHTML;
+    // 只有class为user的才是目标元素
+    if (target.className === 'user') {
+        socket.emit('message', `@${user} `);
+    }
+}
+// 点击进行私聊
+list.onclick = function(event) {
+    privateChat(event);
+};
+```
 #### 服务端处理私聊
+```
+// app.js文件
 
+// 用来保存对应的socket，就是记录对方的socket实例
+let socketObj = {};
+
+io.on('connection', socket => {
+    let username;
+    socket.on('message', msg => {
+        if (username) {
+            // 正则判断消息是否为私聊专属
+            let private = msg.match(/@([^ ]+) (.+)/);
+
+            if (private) {  // 私聊消息
+
+            } else {    // 公聊消息
+                io.emit('message', {
+                    user: username,
+                    content: msg,
+                    createAt: new Date().toLocaleString()
+                });
+            }
+
+        } else {
+            ...省略
+            socketObj[username] = socket;
+        }
+    });
+});
+```
 ### 加入指定房间(群)
 
 #### 进入房间

@@ -6,6 +6,8 @@ app.use(express.static(__dirname));
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
+let socketObj = {};
+
 const SYSTEM = '系统';
 // 设置一些颜色的数组，让每次进入聊天的用户颜色都不一样
 let userColor = ['#00a1f4', '#0cc', '#f44336', '#795548', '#e91e63', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#ffc107', '#607d8b', '#ff9800', '#ff5722'];
@@ -14,13 +16,22 @@ io.on('connection', socket => {
     let username;
     socket.on('message', msg => {
         if (username) {
-            io.emit('message', {
-                user: username,
-                content: msg,
-                createAt: new Date().toLocaleString()
-            });
+            let private = msg.match(/@([^ ]+) (.+)/);
+            if (private) {
+                // 私聊的用户，正则匹配的第一个分组
+                let other = private[1];
+                // 私聊的内容，正则匹配的第二个分组
+                let content = private[2];
+            } else {
+                io.emit('message', {
+                    user: username,
+                    content: msg,
+                    createAt: new Date().toLocaleString()
+                });
+            }
         } else {
             username = msg;
+            socketObj[username] = socket;
             socket.broadcast.emit('message', {
                 user: '系统',
                 content: `${username}加入了聊天！`,

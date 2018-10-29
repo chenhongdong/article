@@ -84,3 +84,15 @@ socket.on('leaved', room => {
     document.getElementById(`leave-${room}`).style.display = 'none';
     document.getElementById(`join-${room}`).style.display = 'inline-block';
 });
+
+socket.on('history', history => {
+    let html = history.map(data => {
+        return `<li class="list-group-item">
+            <p style="color: #ccc;"><span class="user" style="color:${data.color}">${data.user} </span>${data.createAt}</p>
+            <p class="content" style="background:${data.color}">${data.content}</p>
+        </li>`;
+    }).join('');
+
+    list.innerHTML = html + '<li style="margin: 12px 0;text-align: center;">以上为历史消息</li>';
+    list.scrollTop = list.scrollHeight;
+});

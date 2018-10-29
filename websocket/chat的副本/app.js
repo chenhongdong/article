@@ -7,6 +7,8 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 let socketObj = {};
+let mySocket = {};
+let msgHistory = [];
 
 const SYSTEM = '系统';
 // 设置一些颜色的数组，让每次进入聊天的用户颜色都不一样
@@ -26,6 +28,7 @@ io.on('connection', socket => {
     let username;
     let color;
     let rooms = [];
+    mySocket[socket.id] = socket;
 
     socket.on('message', msg => {
         if (username) {
@@ -48,12 +51,42 @@ io.on('connection', socket => {
                     });
                 }
             } else {
-                io.emit('message', {
-                    user: username,
-                    color,
-                    content: msg,
-                    createAt: new Date().toLocaleString()
-                });
+                
+                if (rooms.length) {
+                    let targetSocket = {};
+                    rooms.forEach(room => {
+                        let roomSockets = io.sockets.adapter.rooms[room].sockets;
+                        Object.keys(roomSockets).forEach(socketId => {
+                            if (!targetSocket[socketId]) {
+                                targetSocket[socketId] = 1;
+                            }
+                        });
+                    });
+
+                    Object.keys(targetSocket).forEach(socketId => {
+                        mySocket[socketId].emit('message', {
+                            user: username,
+                            color,
+                            content: msg,
+                            createAt: new Date().toLocaleString()
+                        });
+                    });
+                } else {
+                    io.emit('message', {
+                        user: username,
+                        color,
+                        content: msg,
+                        createAt: new Date().toLocaleString()
+                    });
+
+                    msgHistory.push({
+                        user: username,
+                        color,
+                        content: msg,
+                        createAt: new Date().toLocaleString()
+                    });
+                    console.log(msgHistory);
+                }
             }
         } else {
             username = msg;
@@ -78,7 +111,8 @@ io.on('connection', socket => {
 
             socket.send({
                 user: SYSTEM,
-                content: `你已加入${room}战队群`,
+                color,
+                content: `你已加入${room}战队`,
                 createAt: new Date().toLocaleString()
             });
         }
@@ -95,9 +129,17 @@ io.on('connection', socket => {
 
             socket.send({
                 user: SYSTEM,
-                content: `你已经离开${room}战队群`,
+                color,
+                content: `你已离开${room}战队`,
                 createAt: new Date().toLocaleString()
             });
+        }
+    });
+
+    socket.on('getHistory', () => {
+        if (msgHistory.length) {
+            let history = msgHistory.slice(msgHistory.length - 20);
+            socket.emit('history', history);
         }
     });
 });

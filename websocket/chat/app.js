@@ -122,7 +122,7 @@ io.on('connection', socket => {
         if (index !== -1) {
             socket.leave(room); // 离开该房间
             rooms.splice(index, 1); // 删掉该房间
-            // 这里发送个joined事件，让前端监听后，控制房间按钮
+            // 这里发送个leaved事件，让前端监听后，控制房间按钮
             socket.emit('leaved', room);
             // 通知一下自己
             socket.send({
@@ -141,11 +141,6 @@ io.on('connection', socket => {
             let history = msgHistory.slice(msgHistory.length - 20);
             socket.emit('history', history);
         }
-    });
-
-    socket.on('disconnection', reason => {
-        console.log(reason);
-        socket.open();
     });
 });
 

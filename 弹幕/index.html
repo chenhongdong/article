@@ -1,49 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>弹幕</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #content {
-            width: 320px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        #canvas {
-            position: absolute;
-        }
-        input {
-            vertical-align: middle;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>弹幕</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 640px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+#content {
+    width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+#canvas {
+    position: absolute;
+}
+input {
+    vertical-align: middle;
+}
+</style>
 </head>
 
 <body>
     <div class="container">
+        <h1>听妈妈的话-周杰伦</h1>
         <div id="content">
             <canvas id="canvas"></canvas>
-            <video src="./source/mv.mp4" width="320" height="160" controls></video>
+            <video src="./source/mv.mp4" width="640" height="320" id="video" controls></video>
         </div>
+        <input type="text"> <button>添加</button>
+        <input type="color"> <input type="range" max="40" min="20">
     </div>
-    <input type="text"> <button>添加</button>
-    <input type="color"> <input type="range" max="40" min="20">
 </body>
 </html>
 <script>
     // 弹幕假数据
     let data = [
         // value是值， speed速度, time是出现的时间
-        {value: '杨丽萍拄双拐现身', speed: 2, time: 0, fontSize: 20},
-        {value: '安东尼今夏加盟火箭队', speed: 3, time: 1, fontSize: 20},
-        {value: '姚明当选中国篮协主席', speed: 2, time: 2, fontSize: 20}
+        {value: '可是杰伦，听妈妈的话晚点再恋爱吧，结果就嫁不出去了[流泪][流泪]', speed: 2, time: 0, fontSize: 20},
+        {value: '愚人节群发了200条＂我爱你＂收到了199条＂呵呵＂和一句＂妈妈也爱你＂', speed: 3, time: 1, fontSize: 20},
+        {value: '别嫌弃教你妈妈用手机，她曾教你用筷子。', speed: 2, time: 2, fontSize: 20},
+        {value: '高一主题班会放这首歌 台下的语文老师突然就冲出去了 后来跟班长要了歌词 晚自修在讲台上边抄歌词边落泪 她告诉我们其实她想她在外地读书的儿子了 儿子还在身边的时候 经常放这首歌给她听', time: 2},
+        {value: '可是那个小子，歌里却都是满满的正能量，正确的价值观。', time: 3},
+        {value: '周杰棍最具教育意义的一首脍炙人口的歌曲。', time: 4},
+        {value: '自古网上孝子多，可惜你妈不上网。[大哭][大哭]', time: 1},
+        {value: '你真的做到了"大家唱的都是我写的歌"[爱心][强]', time: 2},
+        {value: '听完这首歌给我妈打了个电话', time: 5},
+        {value: '现在真的长大了[流泪]', time: 2},
+        {value: '那些年每次拆专辑都很兴奋。', time: 1},
+        {value: '在没版权前先评论', time: 1},
+        {value: '七里香14周年，我只能来这里开心了[大哭]', time: 3},
+        {value: '会好好努力 不辜负您对我的期望', time: 2}
     ];
+
+    let $ = document.querySelector.bind(document);
+    let canvas = $('#canvas');
+    let video = $('#video');
+
+    class Barrage { // 之所以用类是更方便扩展，不需要在对象上加方法和属性
+        constructor(obj, ctx) {
+            this.value = obj.value; // 这是弹幕的内容
+            this.time = obj.time;   // 这是弹幕的时间
+            this.obj = obj;
+            this.ctx = ctx;
+        }
+
+        init() {
+            this.opacity = this.obj.opacity || this.ctx.opacity;
+            this.color = this.obj.color || this.ctx.color;
+            this.fontSize = this.obj.fontSize || this.ctx.fontSize;
+            this.speed = this.obj.speed || this.ctx.speed;
+
+            // 求自己的宽度，目的是用来校验当前是否还需要继续绘制
+            let span = document.createElement('span');
+            span.innerText = this.value;
+            span.style.fontSize = this.fontSize;
+            span.style.position = 'absolute';
+            document.body.appendChild(span);
+            // 记录弹幕有多宽
+            this.width = span.clientWidth;
+            document.body.removeChild(span);
+            // 弹幕的出现位置
+            this.x = this.ctx.canvas.width;
+            this.y = this.ctx.canvas.height * Math.random();
+            if (this.y < this.fontSize) {
+                this.y = this.fontSize;
+            }
+            if (this.y > this.ctx.canvas.height - this.fontSize) {
+                this.y = this.ctx.canvas.height - this.fontSize;
+            }
+        }
+
+        render() {
+            
+        }
+    }
+
+    class CanvasBarrage {
+        constructor(canvas, video, options = {}) {
+            if(!canvas || !video) return;
+            
+            this.canvas = canvas;
+            this.video = video;
+            // 默认选项，放一些弹幕的默认值
+            let defOptions = {
+                fontSize: 20,
+                color: 'gold',
+                speed: 2,
+                opacity: 0.3,
+                data: []
+            };
+            // 对象的合并，将属性全部挂载在实例上
+            Object.assign(this, defOptions, options);
+            // 获取画布
+            this.context = canvas.getContext('2d');
+            // 设置canvas和video等比例
+            this.canvas.width = video.clientWidth;
+            this.canvas.height = video.clientHeight;
+            // 是否暂停
+            this.isPaused = true;   // 默认暂停播放，表示不渲染弹幕
+            // 存放所有弹幕,Barrage是创造弹幕实例的类
+            this.barrages = this.data.map(obj => new Barrage(obj, this));
+            console.log(this.barrages);
+            // 渲染所有弹幕
+            this.render();
+        }
+        // 渲染弹幕方法
+        render() {
+            // 第一次先进行清空操作，执行渲染弹幕，如果没有暂停继续渲染
+            this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            this.renderBarrage(); // 渲染弹幕
+            // 如果没有暂停继续渲染
+            if (!this.isPaused) {
+                // 递归渲染
+                requestAnimationFrame(this.render.bind(this));
+            }
+        }
+        renderBarrage() {
+            // 将数组中的弹幕依次取出，然后判断时间和视频的时间是否符合，符合就执行渲染此弹幕
+            let time = this.video.currentTime;
+            this.barrages.forEach(barrage => {
+                if (!barrage.flag && time >= barrage.time) {
+                    // 先去初始化，初始化后再进行绘制
+                    // 1.如果没有初始化，就初始化一下
+                    if (barrage.isInited) {
+                        barrage.init();
+                        barrage.isInited = true;
+                    }
+                    barrage.x -= barrage.speed;
+                    barrage.render();   // 渲染自己
+                    if (barrage.x <= barrage.width * -1) {
+                        barrage.flag = true;    // 停止渲染的标记
+                    }
+                }
+            });
+        }
+    }
+
+    let canvasBarrage = new CanvasBarrage(canvas, video, {
+        data
+    });
 </script>

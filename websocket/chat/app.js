@@ -35,7 +35,14 @@ io.on('connection', socket => {
                 let toSocket = socketObj[user];
                 // 对方的socket存在，就发送消息
                 if (toSocket) {
+                    console.log('私聊');
                     toSocket.send({
+                        user: username,
+                        color,
+                        content,
+                        createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
+                    });
+                    socket.send({
                         user: username,
                         color,
                         content,

@@ -56,13 +56,9 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-<<<<<<< HEAD
-                use: ['babel-loader', 'eslint-loader']
-=======
                 use: ['babel-loader', 'eslint-loader'],
                 include: /src/,
                 exclude: /node_modules/
->>>>>>> 959131a25cc64a8e1c87140def50a186404bd9d4
             }
         ]
     },
@@ -81,21 +77,12 @@ module.exports = {
             template: './src/index.html',
             chunks: ['index']
         }),
-<<<<<<< HEAD
-        new HtmlWebpackPlugin({
-            filename: 'b.html',
-            template: './src/index.html',
-            chunks: ['vendor', 'b']
-        }), */
-        /* new ExtractTextWebpackPlugin({
-=======
         // new HtmlWebpackPlugin({
         //     filename: 'b.html',
         //     template: './src/index.html',
         //     chunks: ['vendor', 'b']
         // }),
         new ExtractTextWebpackPlugin({
->>>>>>> d153b84bda05aa59e9b4036117a7ffd5aac39d88
             filename: 'css/style.css',
             disable: isDev
         }), */

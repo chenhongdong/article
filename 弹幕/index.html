@@ -83,7 +83,7 @@ input {
             // 求自己的宽度，目的是用来校验当前是否还需要继续绘制
             let span = document.createElement('span');
             span.innerText = this.value;
-            span.style.fontSize = this.fontSize;
+            span.style.fontSize = this.fontSize + 'px';
             span.style.position = 'absolute';
             document.body.appendChild(span);
             // 记录弹幕有多宽

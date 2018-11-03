@@ -21,6 +21,7 @@ io.on('connection', socket => {
     // 这是所有连接到服务端的socket.id
     mySocket[socket.id] = socket;
     console.log('id', socket.id);
+    socket.emit('getId', socket.id);
 
     // 记录用户名，用来记录是不是第一次进入
     let username, color, rooms = [];
@@ -55,6 +56,7 @@ io.on('connection', socket => {
                     user: username,
                     color,
                     content: msg,
+                    id: socket.id,
                     createAt: `${addZero(new Date().getHours())}:${addZero(new Date().getMinutes())}:${addZero(new Date().getSeconds())}`
                 };
 

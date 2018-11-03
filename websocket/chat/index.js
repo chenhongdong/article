@@ -4,6 +4,8 @@ let list = document.getElementById('list'),
     input = document.getElementById('input'),
     sendBtn = document.getElementById('sendBtn');
 
+let userId = '';
+
 // 发言的方法
 function send() {
     console.log(socket.connected);
@@ -64,7 +66,6 @@ socket.on('leaved', room => {
 // 监听与服务端的连接
 socket.on('connect', () => {
     console.log('连接成功');
-    console.log(socket.connected);
     socket.emit('getHistory');
 });
 // 接收历史消息
@@ -82,11 +83,19 @@ socket.on('history', history => {
 });
 // 接收服务端传过来的消息
 socket.on('message', data => {
+    console.log(data);
+    console.log('userId', userId);
     let li = document.createElement('li');
     li.className = 'list-group-item';
+    // 如果用户id与传过来的id相同就表示是自己
+    li.style.textAlign = userId === data.id ? 'right' : 'left';
     li.innerHTML = `<p style="color: #ccc;"><span class="user" style="color:${data.color}">${data.user} </span>${data.createAt}</p>
                     <p class="content" style="background-color: ${data.color}">${data.content}</p>`;
     list.appendChild(li);
     // 将聊天区域的滚动条设置到最新内容的位置
     list.scrollTop = list.scrollHeight;
+});
+// 获取对应的用户id
+socket.on('getId', id => {
+    userId = id;
 });

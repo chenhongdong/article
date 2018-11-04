@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>弹幕</title>
-<style>
-* {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹幕</title>
+    <style>
+        * {
     margin: 0;
     padding: 0;
 }
@@ -37,29 +37,30 @@ input {
             <canvas id="canvas"></canvas>
             <video src="./source/mv.mp4" width="640" height="320" id="video" controls></video>
         </div>
-        <input type="text"> <button>添加</button>
-        <input type="color"> <input type="range" max="40" min="20">
+        <input type="text" id="text"> <button id="add">发弹幕</button>
+        <input type="color" id="color"> <input type="range" max="40" min="20" id="range">
     </div>
 </body>
+
 </html>
 <script>
     // 弹幕假数据
     let data = [
         // value是值， speed速度, time是出现的时间
-        {value: '可是杰伦，听妈妈的话晚点再恋爱吧，结果就嫁不出去了[流泪][流泪]', speed: 2, time: 0, fontSize: 20},
-        {value: '愚人节群发了200条＂我爱你＂收到了199条＂呵呵＂和一句＂妈妈也爱你＂', speed: 3, time: 1, fontSize: 20},
-        {value: '别嫌弃教你妈妈用手机，她曾教你用筷子。', speed: 2, time: 2, fontSize: 20},
-        {value: '高一主题班会放这首歌 台下的语文老师突然就冲出去了 后来跟班长要了歌词 晚自修在讲台上边抄歌词边落泪 她告诉我们其实她想她在外地读书的儿子了 儿子还在身边的时候 经常放这首歌给她听', time: 2},
-        {value: '可是那个小子，歌里却都是满满的正能量，正确的价值观。', time: 3},
-        {value: '周杰棍最具教育意义的一首脍炙人口的歌曲。', time: 4},
-        {value: '自古网上孝子多，可惜你妈不上网。[大哭][大哭]', time: 1},
-        {value: '你真的做到了"大家唱的都是我写的歌"[爱心][强]', time: 2},
-        {value: '听完这首歌给我妈打了个电话', time: 5},
-        {value: '现在真的长大了[流泪]', time: 2},
-        {value: '那些年每次拆专辑都很兴奋。', time: 1},
-        {value: '在没版权前先评论', time: 1},
-        {value: '七里香14周年，我只能来这里开心了[大哭]', time: 3},
-        {value: '会好好努力 不辜负您对我的期望', time: 2}
+        { value: '可是杰伦，听妈妈的话晚点再恋爱吧，结果就嫁不出去了[流泪][流泪]', speed: 1, time: 0, fontSize: 20 },
+        { value: '愚人节群发了200条＂我爱你＂收到了199条＂呵呵＂和一句＂妈妈也爱你＂', speed: 0, time: 1, fontSize: 20 },
+        { value: '别嫌弃教你妈妈用手机，她曾教你用筷子。', speed: 0, time: 2, fontSize: 20 },
+        { value: '高一主题班会放这首歌 台下的语文老师突然就冲出去了 后来跟班长要了歌词 晚自修在讲台上边抄歌词边落泪 她告诉我们其实她想她在外地读书的儿子了 儿子还在身边的时候 经常放这首歌给她听', time: 2 },
+        { value: '可是那个小子，歌里却都是满满的正能量，正确的价值观。', time: 3 },
+        { value: '周杰棍最具教育意义的一首脍炙人口的歌曲。', time: 8 },
+        { value: '自古网上孝子多，可惜你妈不上网。[大哭][大哭]', time: 6 },
+        { value: '你真的做到了"大家唱的都是我写的歌"[爱心][强]', time: 2 },
+        { value: '听完这首歌给我妈打了个电话', time: 10 },
+        { value: '现在真的长大了[流泪]', time: 2 },
+        { value: '那些年每次拆专辑都很兴奋。', time: 1 },
+        { value: '在没版权前先评论', time: 10, speed: 0 },
+        { value: '七里香14周年，我只能来这里开心了[大哭]', time: 3 },
+        { value: '会好好努力 不辜负您对我的期望', time: 12 }
     ];
 
     let $ = document.querySelector.bind(document);
@@ -72,6 +73,8 @@ input {
             this.time = obj.time;   // 这是弹幕的时间
             this.obj = obj;
             this.ctx = ctx;
+
+            this.init();
         }
 
         init() {
@@ -83,7 +86,7 @@ input {
             // 求自己的宽度，目的是用来校验当前是否还需要继续绘制
             let span = document.createElement('span');
             span.innerText = this.value;
-            span.style.fontSize = this.fontSize + 'px';
+            span.style.font = this.fontSize + 'px "Microsoft Yahei"';
             span.style.position = 'absolute';
             document.body.appendChild(span);
             // 记录弹幕有多宽
@@ -101,20 +104,23 @@ input {
         }
 
         render() {
-            
+            // 渲染自己，绘制在画布上
+            this.ctx.context.font = this.fontSize + 'px "Microsoft Yahei"';
+            this.ctx.context.fillStyle = this.color;
+            this.ctx.context.fillText(this.value, this.x, this.y);
         }
     }
 
     class CanvasBarrage {
         constructor(canvas, video, options = {}) {
-            if(!canvas || !video) return;
-            
+            if (!canvas || !video) return;
+
             this.canvas = canvas;
             this.video = video;
             // 默认选项，放一些弹幕的默认值
             let defOptions = {
                 fontSize: 20,
-                color: 'gold',
+                color: 'purple',
                 speed: 2,
                 opacity: 0.3,
                 data: []
@@ -140,7 +146,7 @@ input {
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.renderBarrage(); // 渲染弹幕
             // 如果没有暂停继续渲染
-            if (!this.isPaused) {
+            if (this.isPaused === false) {
                 // 递归渲染
                 requestAnimationFrame(this.render.bind(this));
             }
@@ -152,21 +158,82 @@ input {
                 if (!barrage.flag && time >= barrage.time) {
                     // 先去初始化，初始化后再进行绘制
                     // 1.如果没有初始化，就初始化一下
-                    if (barrage.isInited) {
+                    if (!barrage.isInited) {
                         barrage.init();
                         barrage.isInited = true;
                     }
                     barrage.x -= barrage.speed;
                     barrage.render();   // 渲染自己
-                    if (barrage.x <= barrage.width * -1) {
+                    if (barrage.x <= -barrage.width) {
                         barrage.flag = true;    // 停止渲染的标记
                     }
                 }
             });
         }
+        add(obj) {
+            this.barrages.push(new Barrage(obj, this));
+        }
+        reset() {
+            this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            let time = this.video.currentTime;
+            this.barrages.forEach(barrage => {
+                barrage.flag = false;
+                if (time <= barrage.time) {
+                    // 重新初始化
+                    barrage.isInited = false;
+                } else {
+                    // 其他弹幕不再渲染
+                    barrage.flag = true;
+                }
+            });
+        }
     }
 
-    let canvasBarrage = new CanvasBarrage(canvas, video, {
+    /* let canvasBarrage = new CanvasBarrage(canvas, video, {
         data
+    }); */
+    let canvasBarrage;
+
+    let ws = new WebSocket('ws://localhost:9999');
+    ws.onopen = function() {
+        ws.onmessage = function(event) {
+            let msg = JSON.parse(event.data);
+            console.log(msg);
+            if (msg.type === 'init') {
+                console.log('init');
+                canvasBarrage = new CanvasBarrage(canvas, video, {
+                    data: msg.data
+                });
+            } else if (msg.type === 'add') {
+                canvasBarrage.add(msg.data);
+            }
+        }
+    };
+
+    video.addEventListener('play', () => {
+        canvasBarrage.isPaused = false;
+        canvasBarrage.render();
+    });
+    video.addEventListener('pause', () => {
+        canvasBarrage.isPaused = true;
+    });
+
+    // 点击发送弹幕
+    $('#add').addEventListener('click', () => {
+        let value = $('#text').value;
+        let time = video.currentTime;
+        let color = $('#color').value;
+        let fontSize = $('#range').value;
+        let obj = { time, value, color, fontSize };
+
+        // 添加弹幕，实现添加的功能
+        // canvasBarrage.add(obj);
+
+        ws.send(JSON.stringify(obj));
+    });
+
+    // 拖动进度条
+    video.addEventListener('seeked', () => {
+        canvasBarrage.reset();
     });
 </script>

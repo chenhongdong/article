@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "danmu",
+  "version": "0.0.1",
+  "dependencies": {
+    "redis": "^2.8.0",
+    "ws": "^6.1.0"
+  }
+}

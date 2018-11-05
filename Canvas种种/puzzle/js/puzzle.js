@@ -21,10 +21,15 @@ $(function() {
     }
 
     // 封装画圆函数
-    function drawCircle(ctx, x, y, r) {
-        ctx.fillStyle = 'rgba(200, 200, 100, .9)';
+    function drawCircle(ctx, x, y) {
+        // +++5.1.2 填充径向渐变
+        let circle_gradient = ctx.createRadialGradient(x-3, y-3, 1, x, y, untangleGame.circleRadius)
+        circle_gradient.addColorStop(0, '#fff');
+        circle_gradient.addColorStop(1, '#00a1f4');
+        ctx.fillStyle = circle_gradient;
+        // --- ctx.fillStyle = 'rgba(200, 200, 100, .9)';
         ctx.beginPath();
-        ctx.arc(x, y, r, 0, Math.PI*2);
+        ctx.arc(x, y, untangleGame.circleRadius, 0, Math.PI*2);
         ctx.fill();
     }
     // 封装画直线函数
@@ -64,6 +69,14 @@ $(function() {
         // 重绘前清空一下
         clear(ctx);
 
+        // +++5.1.1 绘制渐变背景
+        let bg_gradient =  ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+        bg_gradient.addColorStop(0, '#0cc');
+        bg_gradient.addColorStop(0.5, 'rgba(255, 0, 0, .5)');
+        bg_gradient.addColorStop(1, '#00a1f4');
+        ctx.fillStyle = bg_gradient;
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
         // 绘制所有保存的线
         for (let i = 0; i < untangleGame.lines.length; i++) {
             let line = untangleGame.lines[i];
@@ -75,7 +88,7 @@ $(function() {
         // 绘制所有保存的圆
         for (let i = 0; i < untangleGame.circles.length; i++) {
             let circle = untangleGame.circles[i];
-            drawCircle(ctx, circle.x, circle.y, circle.radius);
+            drawCircle(ctx, circle.x, circle.y);
         }
     }
 
@@ -85,7 +98,8 @@ $(function() {
         thinLineThickness: 1,   // 细线的厚度
         boldLineThickness: 5,   // 粗细的厚度
         lines: [],      // 存储直线的位置
-        currentLevel: 0
+        currentLevel: 0,
+        circleRadius: 10
     };
     // 添加关卡数据
     untangleGame.levels = [

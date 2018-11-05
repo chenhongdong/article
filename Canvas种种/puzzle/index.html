@@ -15,7 +15,24 @@
     </canvas>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <!-- <script src="js/untangle.js"></script> -->
     <script src="js/puzzle.js"></script>
+    
+    <!-- <script>
+        let cvs = document.getElementById('canvas');
+        console.log(cvs);
+        let c = cvs.getContext('2d');
+        
+        let radial = c.createRadialGradient(400, 400, 20, 200, 200, 200);
+        radial.addColorStop(0, '#fff');
+        radial.addColorStop(0.9, '#666');
+        radial.addColorStop(1, '#fff');
+        // let linear = c.createLinearGradient(50, 0, 50, 100);
+        // linear.addColorStop(0, '#fff'); // 如果只定义一个色标，就是纯色，非渐变了
+        // 如果不添加色标，就没有颜色
+        c.fillStyle = radial;
+        c.beginPath();
+        c.arc(200, 200, 200, 0, Math.PI*2);   
+        c.fill();
+    </script> -->
 </body>
 </html>

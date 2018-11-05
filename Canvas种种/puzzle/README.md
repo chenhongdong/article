@@ -60,3 +60,37 @@ closePath会在终点和起点之间绘制一条直线，用来闭合整个路�
 描边的方法
 
 #### 交点方程式
+
+
+### 给解谜游戏添加好东西
+#### 用渐变色来填充图形
+用线性渐变填充矩形，首先先设置渐变的起点和终点，然后再在这之间添加上几个色标
+- 创建线性渐变的用法
+```
+let bg_gradient = ctx.createLinearGradient(x1, y1, x2, y2);
+// x1, y1为渐变的起点坐标
+// x2, y2为渐变的终点坐标
+```
+- 添加色标
+```
+bg_gradient.addColorStop(0, '#000');
+bg_gradient.addColorStop(0.3, 'rgba(255, 0, 0, 0.5)');
+bg_gradient.addColorStop(0.6, 'orange');
+bg_gradient.addColorStop(1, 'skyblue');
+```
+    - addColorStop(pos, color)两个参数
+        - pos: 0~1之间的浮点数，0是起点，1是终点
+        - color: 颜色
+- 创建径向渐变的用法
+```
+let circle_gradient = ctx.createRadialGradient(x1, y1, r1, x2, y2, r2);
+// x1, y1起始圆的圆心x，y坐标
+// r1起始圆的半径
+// x2, y2结束圆的圆心x，y坐标
+// r2结束圆的半径
+
+circle_gradient.addColorStop(0, '#fff');
+circle_gradient.addColorStop(1, 'skyblue');
+ctx.fillStyle = circle_gradient;
+```
+

@@ -14,6 +14,8 @@
         Sorry, your web browser does not support Canvas content.
     </canvas>
 
+    <canvas id="test" width="300" height="300"></canvas>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <script src="js/puzzle.js"></script>
     
@@ -34,5 +36,51 @@
         c.arc(200, 200, 200, 0, Math.PI*2);   
         c.fill();
     </script> -->
+    <!-- <script>
+        let cvs = document.getElementById('test');
+        let ctx = cvs.getContext('2d');
+        
+        // 画条基线来区分每个textAlign
+        ctx.beginPath();
+        ctx.moveTo(200, 0);
+        ctx.lineTo(200, 100);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = '#00a1f4';
+        ctx.closePath();
+        ctx.stroke();
+        
+        ctx.font = '20px Arial';
+        ctx.fillStyle = '#0cc';
+        ctx.fillText('textAlign的5种对齐方式', 25, 250);
+
+        // textAlign = 'start'
+        ctx.textAlign = 'start';
+        ctx.fillText('start', 200, 20);
+        // textAlign = 'end'
+        ctx.textAlign = 'end';
+        ctx.fillText('end', 200, 40);
+        // textAlign = 'left'
+        ctx.textAlign = 'left';
+        ctx.fillText('left', 200, 60);
+        // textAlign = 'center'
+        ctx.textAlign = 'center';
+        ctx.fillText('center', 200, 80);
+        // textAlign = 'right'
+        ctx.textAlign = 'right';
+        ctx.fillText('right', 200, 100);
+        
+    </script> -->
+
+    <script>
+        let cvs = document.getElementById('test');
+        let ctx = cvs.getContext('2d');
+
+        let img = new Image();
+
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, 300, 300);
+        }
+        img.src = 'images/board.jpg';
+    </script>
 </body>
 </html>

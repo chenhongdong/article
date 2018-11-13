@@ -69,6 +69,25 @@ $(function() {
         // 重绘前清空一下
         clear(ctx);
 
+        // ++++5.3 绘制图像
+        // 在加载背景时绘制启动画面
+        let load_gradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+        load_gradient.addColorStop(0, '#ccc');
+        load_gradient.addColorStop(1, '#efefef');
+        ctx.fillStyle = load_gradient;
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        // 绘制加载中的文本
+        ctx.font = '34px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#333';
+        ctx.fillText('loading...', ctx.canvas.width/2, ctx.canvas.height/2);
+        // 加载背景图
+        // untangleGame.background = new Image();
+        // untangleGame.background.onload = function() {
+        //     setInterval(gameLoop, 30);
+        // };
+        // untangleGame.background.src = './images/board.jpg';
+
         // +++5.1.1 绘制渐变背景
         let bg_gradient =  ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
         bg_gradient.addColorStop(0, '#0cc');
@@ -76,6 +95,18 @@ $(function() {
         bg_gradient.addColorStop(1, '#00a1f4');
         ctx.fillStyle = bg_gradient;
         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+        // +++5.2
+        // 绘制标题文本
+        ctx.font = '26px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#fff';
+        ctx.fillText('解谜游戏', ctx.canvas.width/2, 50);
+
+        // 绘制关卡进度文本
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(`关卡 ${untangleGame.currentLevel}, 完成： ${untangleGame.progressPercentage}%`, ctx.canvas.width, ctx.canvas.height - 5);
 
         // 绘制所有保存的线
         for (let i = 0; i < untangleGame.lines.length; i++) {
@@ -99,7 +130,9 @@ $(function() {
         boldLineThickness: 5,   // 粗细的厚度
         lines: [],      // 存储直线的位置
         currentLevel: 0,
-        circleRadius: 10
+        circleRadius: 10,
+        // +++5.2 百分比作为全局变量使用
+        progressPercentage: 0
     };
     // 添加关卡数据
     untangleGame.levels = [
@@ -182,8 +215,9 @@ $(function() {
                 progress++;
             }
         }
-        let progressPercentage = Math.floor(progress/untangleGame.lines.length*100);
-        $('#progress').html(progressPercentage);
+        
+        untangleGame.progressPercentage = Math.floor(progress/untangleGame.lines.length*100);
+        $('#progress').html(untangleGame.progressPercentage);
 
         // 显示当前关卡
         $('#level').html(untangleGame.currentLevel);

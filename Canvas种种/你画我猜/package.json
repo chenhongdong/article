@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "draw",
+  "version": "0.0.1",
+  "dependencies": {
+    "ws": "^6.1.0"
+  }
+}

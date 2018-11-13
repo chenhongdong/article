@@ -94,3 +94,16 @@ circle_gradient.addColorStop(1, 'skyblue');
 ctx.fillStyle = circle_gradient;
 ```
 
+#### 绘制文本
+```
+// 字体样式和CSS写法一致
+ctx.font = '20px Arial';
+// 文本颜色
+ctx.fillStyle = 'blue';
+// 对齐方式
+ctx.textAlign = 'start | end | left | right | center;
+// 填充文本及其对应x,y坐标   
+ctx.fillText('hello world', x, y);
+```
+
+#### BigBig大功能，绘制图像

@@ -18,8 +18,10 @@
 </head>
 <body>
     <canvas id="drawing-pad" width="500" height="400"></canvas>
+    <ul id="chat-history"></ul>
     <input type="text" id="chat-input">
     <input type="button" id="btn" value="发送">
+
 
     <script>
         let wsGame = {
@@ -27,7 +29,29 @@
             isDrawing: false,
             // 绘制下一条线的起点
             startX: 0,
-            startY: 0
+            startY: 0,
+            LINE_SEGMENT: 0,
+            CHAT_MESSAGE: 1
+        };
+
+        wsGame.socket = new WebSocket('ws://localhost:9999');
+        
+        wsGame.socket.onopen = function() {
+            console.log('客户端连接成功');
+        };
+
+        wsGame.socket.onmessage = function(e) {
+            console.log(e.data);
+            let data = JSON.parse(e.data);
+            if (data.dataType === wsGame.CHAT_MESSAGE) {
+                list.appendChild(`<li>${data.message}</li>`);
+            } else if (data.dataType === wsGame.LINE_SEGMENT) {
+                drawLine(ctx, data.startX, data.startY, data.endX, data.endY, 1);
+            }
+        };
+
+        wsGame.socket.onclose = function() {
+            console.log('连接断开');
         };
 
         let canvas = document.getElementById('drawing-pad');
@@ -35,6 +59,7 @@
 
         let btn = document.getElementById('btn');
         let txt = document.getElementById('chat-input');
+        let list = document.getElementById('chat-history');
         
         btn.addEventListener('click', sendMsg);
 
@@ -45,8 +70,15 @@
 
         function sendMsg() {
             let msg = txt.value;
-            wsGame.socket.send(msg);
-            txt.value = '';
+            if (msg !== '') {
+                // 将聊天消息放到对象中
+                let data = {};
+                data.dataType = wsGame.CHAT_MESSAGE;
+                data.message = msg;
+
+                wsGame.socket.send(JSON.stringify(data));
+                txt.value = '';
+            }
         }
 
         canvas.addEventListener('mousedown', e => {
@@ -72,6 +104,15 @@
 
                 if (!(wsGame.startX === X && wsGame.startY === Y)) {
                     drawLine(ctx, wsGame.startX, wsGame.startY, X, Y, 1);
+                    // 发送线段数据到服务器
+                    let data = {};
+                    data.dataType = wsGame.LINE_SEGMENT;
+                    data.startX = wsGame.startX;
+                    data.startY = wsGame.startY;
+                    data.endX = X;
+                    data.endY = Y;
+                    console.log(data);
+                    // wsGame.socket.send(JSON.stringify(data));
 
                     wsGame.startX = X;
                     wsGame.startY = Y;
@@ -92,19 +133,7 @@
             ctx.stroke();
         }
 
-        wsGame.socket = new WebSocket('ws://localhost:9999');
         
-        wsGame.socket.onopen = function() {
-            console.log('客户端连接成功');
-        };
-
-        wsGame.socket.onmessage = function(e) {
-            console.log(e.data);
-        };
-
-        wsGame.socket.onclose = function() {
-            console.log('连接断开');
-        };
     </script>
 </body>
 </html>

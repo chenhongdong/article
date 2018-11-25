@@ -16,95 +16,17 @@
         }
     </style>
 </head>
+
 <body>
     <canvas id="drawing-pad" width="500" height="400"></canvas>
     <input type="text" id="chat-input">
     <input type="button" id="btn" value="发送">
+    <input type="button" id="restart" value="重新开始">
+    <ul id="chat-history"></ul>
 
-    <script>
-        let wsGame = {
-            // 指示当前是否正在进行绘图
-            isDrawing: false,
-            // 绘制下一条线的起点
-            startX: 0,
-            startY: 0
-        };
 
-        let canvas = document.getElementById('drawing-pad');
-        let ctx = canvas.getContext('2d');
-
-        let btn = document.getElementById('btn');
-        let txt = document.getElementById('chat-input');
-        
-        btn.addEventListener('click', sendMsg);
-
-        txt.addEventListener('keypress', e => {
-            let key = e.keyCode;
-            key === 13 && sendMsg();
-        });
-
-        function sendMsg() {
-            let msg = txt.value;
-            wsGame.socket.send(msg);
-            txt.value = '';
-        }
-
-        canvas.addEventListener('mousedown', e => {
-            // 获取相对于canvas左上角位置鼠标的x和y坐标
-            let top = canvas.offsetTop;
-            let left = canvas.offsetLeft;
-
-            let mouseX = (e.clientX - left) || 0;
-            let mouseY = (e.clientY - top) || 0;
-            wsGame.startX = mouseX;
-            wsGame.startY = mouseY;
-            wsGame.isDrawing = true;
-            console.log(wsGame);
-        });
-
-        canvas.addEventListener('mousemove', e => {
-            // 当开始进行绘图时，就进行画线操作
-            if (wsGame.isDrawing) {
-                let top = canvas.offsetTop;
-                let left = canvas.offsetTop;
-                let X = (e.clientX - left) || 0;
-                let Y = (e.clientY - top) || 0;
-
-                if (!(wsGame.startX === X && wsGame.startY === Y)) {
-                    drawLine(ctx, wsGame.startX, wsGame.startY, X, Y, 1);
-
-                    wsGame.startX = X;
-                    wsGame.startY = Y;
-                }
-            }
-        });
-
-        canvas.addEventListener('mouseup', () => {
-            wsGame.isDrawing = false;
-        });
-
-        function drawLine(ctx, x1, y1, x2, y2, thickness) {
-            ctx.beginPath();
-            ctx.moveTo(x1, y1);
-            ctx.lineTo(x2, y2);
-            ctx.lineWidth = thickness;
-            ctx.strokeStyle = '#444';
-            ctx.stroke();
-        }
-
-        wsGame.socket = new WebSocket('ws://localhost:9999');
-        
-        wsGame.socket.onopen = function() {
-            console.log('客户端连接成功');
-        };
-
-        wsGame.socket.onmessage = function(e) {
-            console.log(e.data);
-        };
-
-        wsGame.socket.onclose = function() {
-            console.log('连接断开');
-        };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>

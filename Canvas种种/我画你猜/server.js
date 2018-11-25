@@ -1,3 +1,6 @@
+const LINE_SEGMENT = 0;
+const CHAT_MESSAGE = 1;
+
 const WebSocket = require('ws');
 const ws = new WebSocket.Server({ port: 9999});
 

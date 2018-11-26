@@ -18,6 +18,7 @@
 </head>
 <body>
     <canvas id="drawing-pad" width="500" height="400"></canvas>
+    <ul id="chat-history"></ul>
     <input type="text" id="chat-input">
     <input type="button" id="btn" value="发送">
 
@@ -32,9 +33,11 @@
 
         let canvas = document.getElementById('drawing-pad');
         let ctx = canvas.getContext('2d');
-
+        
         let btn = document.getElementById('btn');
         let txt = document.getElementById('chat-input');
+
+        let list = document.getElementById('chat-history');
         
         btn.addEventListener('click', sendMsg);
 
@@ -100,6 +103,7 @@
 
         wsGame.socket.onmessage = function(e) {
             console.log(e.data);
+            list.appendChild(`<li>${e.data}</li>`);
         };
 
         wsGame.socket.onclose = function() {

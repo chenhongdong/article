@@ -21,6 +21,8 @@ body {
     padding: 0;
 }
 #chat-history li {
+    height: 200px;
+    overflow: auto;
     border-bottom: 1px dashed rgba(20, 20, 20, .2);
     margin: 10px 0;
 }

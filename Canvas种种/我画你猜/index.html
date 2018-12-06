@@ -5,28 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        canvas {
-            position: relative;
-            background: #eee;
-        }
-        #restart {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="game.css">
 </head>
 
 <body>
-    <canvas id="drawing-pad" width="500" height="400"></canvas>
-    <ul id="chat-history"></ul>
-    <input type="text" id="chat-input">
-    <input type="button" id="btn" value="发送">
-    <input type="button" id="restart" value="重新开始">
-    <ul id="chat-history"></ul>
+    <section id="game">
+        <h1>我画 & 你猜</h1>
+        <canvas id="drawing-pad" width="500" height="400"></canvas>
+        <ul id="chat-history"></ul>
+        <input type="text" id="chat-input">
+        <input type="button" id="btn" value="发送">
+        <input type="button" id="restart" value="重新开始">
+        <ul id="chat-history"></ul>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>

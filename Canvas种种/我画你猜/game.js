@@ -23,8 +23,8 @@ $(function () {
     });
 
     websocketGame.socket.on('message', msg => {
-        console.log(msg);
         let data = JSON.parse(msg);
+        console.log(data);
 
         if (data.dataType === websocketGame.CHAT_MESSAGE) {
             $('#chat-history').append(`<li>${data.sender} 说： ${data.message}</li>`);
@@ -33,13 +33,13 @@ $(function () {
         } else if (data.dataType === websocketGame.GAME_LOGIC) {    // ++ 如果是游戏逻辑
             if (data.gameState === websocketGame.GAME_OVER) { // 游戏结束
                 websocketGame.isTurnToDraw = false;
-                $('#chat-history').append(`<li>获胜者是${data.winner}！回答的答案是： ${data.answer}</li>`);
+                $('#chat-history').append(`<li>获胜者是<span class="winner">${data.winner}</span>！回答的答案是： ${data.answer}</li>`);
                 $('#restart').show();
             }
             // 游戏开始
             if (data.gameState === websocketGame.GAME_START) {
                 // 清除canvas
-                clearRect(0, 0, canvas.width, canvas.height);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
                 // 隐藏restart按钮
                 $('#restart').hide();
                 // 清除聊天记录

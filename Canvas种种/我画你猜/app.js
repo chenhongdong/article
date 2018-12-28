@@ -6,6 +6,9 @@ app.use(express.static(__dirname));
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
+// 随机设置用户的名称
+let nameList = ['皮卡丘', '小火龙', '妙蛙种子', '杰尼龟', '卡比兽', '鲤鱼王', '暴鲤龙', '伊布', '比比鸟', '烈雀', '大岩蛇', '小拳石', '宝石海星', '墨海马', '角金鱼', '雷丘', '电击兽', '臭臭花', '霸王花', '口袋花', '勇吉拉', '鬼斯通', '耿鬼', '火爆猴', '艾比郎', '沙瓦浪', '末入蛾', '毛球', '怪力', '迷你龙', '乘龙', '胡地', '铁甲暴龙', '尼多王', '鸭嘴火龙', '快龙', '超梦', '梦幻', '哈克龙', '海星星', '波克比'];
+let user = nameList[Math.floor(Math.random() * nameList.length)];
 // 设置常量
 const LINE_SEGMENT = 0;
 const CHAT_MESSAGE = 1;
@@ -35,7 +38,7 @@ io.on('connection', socket => {
         len = client.length;
     });
     console.log('服务端连接成功');
-    let message = `欢迎${socket.id}加入《我画你猜》游戏当中`;
+    let message = `欢迎${user}加入《我画你猜》游戏当中`;
 
     // + 设置数据
     let data = {};

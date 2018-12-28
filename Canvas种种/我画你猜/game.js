@@ -23,9 +23,8 @@ $(function () {
     });
 
     websocketGame.socket.on('message', msg => {
-        console.log(msg);
         let data = JSON.parse(msg);
-
+        console.log(data);
         if (data.dataType === websocketGame.CHAT_MESSAGE) {
             $('#chat-history').append(`<li>${data.sender} 说： ${data.message}</li>`);
         } else if (data.dataType === websocketGame.LINE_SEGMENT) {
@@ -39,7 +38,7 @@ $(function () {
             // 游戏开始
             if (data.gameState === websocketGame.GAME_START) {
                 // 清除canvas
-                clearRect(0, 0, canvas.width, canvas.height);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
                 // 隐藏restart按钮
                 $('#restart').hide();
                 // 清除聊天记录

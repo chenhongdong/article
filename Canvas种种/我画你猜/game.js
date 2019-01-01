@@ -24,7 +24,6 @@ $(function () {
 
     websocketGame.socket.on('message', msg => {
         let data = JSON.parse(msg);
-        console.log(data);
 
         if (data.dataType === websocketGame.CHAT_MESSAGE) {
             $('#chat-history').append(`<li>${data.sender} 说： ${data.message}</li>`);
@@ -33,7 +32,7 @@ $(function () {
         } else if (data.dataType === websocketGame.GAME_LOGIC) {    // ++ 如果是游戏逻辑
             if (data.gameState === websocketGame.GAME_OVER) { // 游戏结束
                 websocketGame.isTurnToDraw = false;
-                $('#chat-history').append(`<li>获胜者是<span class="winner">${data.winner}</span>！回答的答案是： ${data.answer}</li>`);
+                $('#chat-history').append(`<li>获胜者是： <span class="winner">${data.winner}</span>！正确的答案是： ${data.answer}</li>`);
                 $('#restart').show();
             }
             // 游戏开始
@@ -73,6 +72,8 @@ $(function () {
 
         websocketGame.socket.send(JSON.stringify(data));
         $('#chat-input').val('');
+        console.log($('#chat-history').outerHeight());
+        $('#chat-history').scrollTop($('#chat-history').height());
     }
     // 用原生去获取canvas的上下文，jq获取被转成了jq对象，获取不到的
     let canvas = document.getElementById('drawing-pad');
@@ -112,7 +113,6 @@ $(function () {
         }
     }).on('mouseup', function () {
         websocketGame.isDrawing = false;
-        // $(this).off('mousemove mouseup');
     });
 
     function drawLine(ctx, x1, y1, x2, y2, thickness) {

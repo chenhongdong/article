@@ -35,7 +35,7 @@ io.on('connection', socket => {
     // 随机设置用户名
     let nameList = ['皮卡丘', '比比鸟', '巴大蝴','妙蛙种子', '小火龙', '杰尼龟'];
     let user = nameList[Math.floor(Math.random() * nameList.length)];
-    console.log('用户： ' + user);
+
     io.clients((err, client) => {
         if (err) throw err;
         len = client.length;
@@ -58,7 +58,6 @@ io.on('connection', socket => {
 
     // ++ 如果有两个以上的连接接入，就开始游戏
     if (currentGameState === WAITING_TO_START && len >= 2) {
-        console.log('游戏开始了');
         startGame(socket);
     }
 
@@ -72,6 +71,7 @@ io.on('connection', socket => {
         if (data.dataType === CHAT_MESSAGE) {
             data.sender = user;
         }
+        
         io.emit('message', JSON.stringify(data));
 
         // ++ 检测是否猜中答案
@@ -137,7 +137,7 @@ function startGame(socket) {
         let gameData = {};
         gameData.dataType = GAME_LOGIC;
         gameData.gameState = GAME_OVER;
-        gameData.winner = '遗憾，没有人猜对啊！！！';
+        gameData.winner = '没有人';
         gameData.answer = currentAnswer;
         io.emit('message', JSON.stringify(gameData));
 

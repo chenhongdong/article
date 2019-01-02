@@ -16,14 +16,17 @@ body {
     background: #f1f3ef;
     box-shadow: 0 3px 5px #333;
 }
+#history-wrapper {
+    height: 200px;
+    overflow: auto;
+}
 #chat-history {
     list-style: none;
     padding: 0;
 }
 #chat-history li {
-    overflow: auto;
     border-bottom: 1px dashed rgba(20, 20, 20, .2);
-    margin: 10px 0;
+    padding: 10px 0;
 }
 canvas {
     position: relative;

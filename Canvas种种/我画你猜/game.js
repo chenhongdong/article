@@ -32,7 +32,7 @@ $(function () {
         } else if (data.dataType === websocketGame.GAME_LOGIC) {    // ++ 如果是游戏逻辑
             if (data.gameState === websocketGame.GAME_OVER) { // 游戏结束
                 websocketGame.isTurnToDraw = false;
-                $('#chat-history').append(`<li>获胜者是${data.winner}！回答的答案是： ${data.answer}</li>`);
+                $('#chat-history').append(`<li>获胜者是<span class="winner">${data.winner}</span>！回答的答案是： ${data.answer}</li>`);
                 $('#restart').show();
             }
             // 游戏开始

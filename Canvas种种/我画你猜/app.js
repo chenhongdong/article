@@ -21,7 +21,7 @@ const GAME_RESTART = 3;
 
 // ++ 当前进行绘制的玩家的索引
 let palyerTurn = 0;
-let wordsList = ['apple', 'idea', 'wisdom', 'angry'];
+let wordsList = ['苹果', '火箭', '鸡蛋', '小鸟'];
 let currentAnswer;
 let currentGameState = WAITING_TO_START;
 let gameOverTimeout;
@@ -32,13 +32,16 @@ let mySocket = {};
 
 io.on('connection', socket => {
     mySocket[socket.id] = socket;
+
+    // 随机设置用户名
+    let nameList = ['皮卡丘', '比比鸟', '巴大蝴','妙蛙种子', '小火龙', '杰尼龟'];
+    let user = nameList[Math.floor(Math.random() * nameList.length)];
+    console.log('用户： ' + user);
     io.clients((err, client) => {
         if (err) throw err;
-        console.log(client);
         len = client.length;
     });
-    console.log('服务端连接成功');
-    let message = `欢迎${user}加入《我画你猜》游戏当中`;
+    let message = `欢迎 “${user}” 加入《我画你猜》游戏当中`;
 
     // + 设置数据
     let data = {};
@@ -56,6 +59,7 @@ io.on('connection', socket => {
 
     // ++ 如果有两个以上的连接接入，就开始游戏
     if (currentGameState === WAITING_TO_START && len >= 2) {
+        console.log('游戏开始了');
         startGame(socket);
     }
 
@@ -67,7 +71,7 @@ io.on('connection', socket => {
         // + 
         let data = JSON.parse(msg);
         if (data.dataType === CHAT_MESSAGE) {
-            data.sender = socket.id;
+            data.sender = user;
         }
         io.emit('message', JSON.stringify(data));
 
@@ -76,7 +80,7 @@ io.on('connection', socket => {
             let gameData = {};
             gameData.dataType = GAME_LOGIC;
             gameData.gameState = GAME_OVER;
-            gameData.winner = socket.id;
+            gameData.winner = user;
             gameData.answer = currentAnswer;
             io.emit('message', JSON.stringify(gameData));
 
@@ -93,12 +97,12 @@ io.on('connection', socket => {
 
 });
 
+
+
 // 开始游戏方法
 function startGame(socket) {
     // 选择一个玩家让他进行绘制
     palyerTurn = (palyerTurn + 1) % len;
-
-    console.log(palyerTurn);
 
     // 选择一个答案
     let answerIndex = Math.floor(Math.random() * wordsList.length);
@@ -110,7 +114,7 @@ function startGame(socket) {
     let gameData1 = {};
     gameData1.dataType = GAME_LOGIC;
     gameData1.gameState = GAME_START;
-    gameData1.isPlayerTurn = false;
+    gameData1.isTurnToDraw = false;
     io.emit('message', JSON.stringify(gameData1));
 
     // 游戏开始，玩家依次回答
@@ -118,11 +122,11 @@ function startGame(socket) {
     io.clients((err, client) => {
         client.forEach(() => {
             if (index === palyerTurn) {
-                let gameData2 = {};
+                let gameData2 = {}; // 需要绘图的玩家
                 gameData2.dataType = GAME_LOGIC;
                 gameData2.gameState = GAME_START;
                 gameData2.answer = currentAnswer;
-                gameData2.isPlayerTurn = true;
+                gameData2.isTurnToDraw = true;
                 socket.send(JSON.stringify(gameData2));
             }
             index++;
@@ -132,7 +136,8 @@ function startGame(socket) {
     // 1分钟后游戏结束
     gameOverTimeout = setTimeout(function() {
         let gameData = {};
-        gameData.dataType = GAME_OVER;
+        gameData.dataType = GAME_LOGIC;
+        gameData.gameState = GAME_OVER;
         gameData.winner = '遗憾，没有人猜对啊！！！';
         gameData.answer = currentAnswer;
         io.emit('message', JSON.stringify(gameData));

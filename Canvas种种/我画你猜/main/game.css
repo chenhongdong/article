@@ -1,0 +1,40 @@
+body {
+    background: #ccd6e1;
+    font-family: Arial, sans-serif;
+}
+#game {
+    width: 500px;
+    margin: 0 auto;
+}
+#game h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 0 #fff;
+}
+#drawing-pad {
+    border: 10px solid #fffeff;
+    background: #f1f3ef;
+    box-shadow: 0 3px 5px #333;
+}
+#history-wrapper {
+    overflow: auto;
+}
+#chat-history {
+    list-style: none;
+    padding: 0;
+}
+#chat-history li {
+    border-bottom: 1px dashed rgba(20, 20, 20, .2);
+    padding: 10px 0;
+}
+canvas {
+    position: relative;
+    background: #eee;
+}
+#restart {
+    display: none;
+}
+.winner {
+    color: #00a1f5;
+    font-size: 16px;
+}

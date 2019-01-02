@@ -17,7 +17,6 @@ body {
     box-shadow: 0 3px 5px #333;
 }
 #history-wrapper {
-    height: 200px;
     overflow: auto;
 }
 #chat-history {
@@ -27,6 +26,12 @@ body {
 #chat-history li {
     border-bottom: 1px dashed rgba(20, 20, 20, .2);
     padding: 10px 0;
+}
+#chat-history li .user {
+    color: #00a1f5;
+}
+#chat-history li .winner {
+    color: red;
 }
 canvas {
     position: relative;

@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>我画你猜</title>
     <link rel="stylesheet" href="./game.css">
 </head>
+
 <body>
     <section id="game">
         <h1>我画 & 你猜</h1>
         <canvas id="canvas" width="500" height="400"></canvas>
         <div id="history-wrapper">
-            <ul id="chat-history"></ul>
+            <ul id="history"></ul>
         </div>
-        <input type="text" id="chat-input">
+        <input type="text" id="input">
         <input type="button" id="btn" value="发送">
         <input type="button" id="restart" value="重新开始">
     </section>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="index.js"></script>
+<script src="./socket.io/socket.io.js"></script>
+<script src="./index.js"></script>

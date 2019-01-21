@@ -7,18 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="./game.css">
 </head>
+
 <body>
     <section id="game">
         <h1>我画 & 你猜</h1>
-        <canvas id="canvas" width="500" height="400"></canvas>
-        <div id="history-wrapper">
-            <ul id="chat-history"></ul>
+        <div class="wrap clearfix">
+            <canvas id="canvas" width="500" height="400"></canvas>
+            <div id="history-wrapper">
+                <ul id="chat-history"></ul>
+            </div>
         </div>
-        <input type="text" id="chat-input">
-        <input type="button" id="btn" value="发送">
-        <input type="button" id="restart" value="重新开始">
+        <div class="operate">
+            <input type="text" id="chat-input">
+            <input type="button" id="btn" value="发送">
+            <input type="button" id="restart" value="重新开始">
+        </div>
     </section>
 </body>
+
 </html>
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>

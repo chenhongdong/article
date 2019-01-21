@@ -24,10 +24,9 @@ let gameObj = {
 const cvs = document.getElementById('canvas');
 const ctx = cvs.getContext('2d');
 
-
 // ### 绘制画板
 // 在canvas上进行绘图
-if (gameObj.isTurnToDraw) {
+// if (gameObj.isTurnToDraw) {
     $('#canvas').on('mousedown', function(e) {
         let pos = $(this).offset();
 
@@ -66,7 +65,7 @@ if (gameObj.isTurnToDraw) {
     }).on('mouseup', () => {
         gameObj.isDrawing = false;
     });
-}
+// }
 // 在起点和终点之间绘制线段
 function drawLine(ctx, x1, y1, x2, y2, thick) {
     ctx.beginPath();
@@ -89,11 +88,11 @@ gameObj.socket.on('connect', () => {
 });
 
 gameObj.socket.on('message', msg => {
-    console.log(JSON.parse(msg));
     // #### 接收画线数据来绘制到画板上
     let data = JSON.parse(msg);
     if (data.type === gameObj.MESSAGE) {
         $('#chat-history').append(`<li><span class="user">${data.sender}</span>： ${data.message}</li>`)
+        $('#history-wrapper').scrollTop($('#history-wrapper')[0].scrollHeight);
     } else if (data.type === gameObj.LINE) {
         drawLine(ctx, data.startX, data.startY, data.endX, data.endY, 1);
     } else if (data.type === gameObj.GAME_LOGIC) { // ## 构建多人游戏
@@ -139,7 +138,7 @@ $('#chat-input').keypress(e => {
 });
 
 function sendMsg() {
-    let val = $('#chat-input').val();
+    let val = $('#chat-input').val().trim();
     let data = {};
     data.type = gameObj.MESSAGE;
     data.message = val;
@@ -147,6 +146,7 @@ function sendMsg() {
         gameObj.socket.send(JSON.stringify(data));
         $('#chat-input').val('');
     }
+    
 }
 // #### 发送消息
 

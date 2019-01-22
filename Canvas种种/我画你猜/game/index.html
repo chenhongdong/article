@@ -11,13 +11,17 @@
 <body>
     <section id="game">
         <h1>我画 & 你猜</h1>
-        <canvas id="canvas" width="500" height="400"></canvas>
-        <div id="history-wrapper">
-            <ul id="history"></ul>
+        <div class="wrap clearfix">
+            <canvas id="canvas" width="500" height="400"></canvas>
+            <div id="history-wrapper">
+                <ul id="history"></ul>
+            </div>
         </div>
-        <input type="text" id="input">
-        <input type="button" id="btn" value="发送">
-        <input type="button" id="restart" value="重新开始">
+        <div class="operate">
+            <input type="text" id="input">
+            <input type="button" id="btn" value="发送">
+            <input type="button" id="restart" value="重新开始">
+        </div>
     </section>
 </body>
 </html>

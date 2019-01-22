@@ -32,7 +32,7 @@ gameObj.socket.on('connect', () => {
 });
 ```
 
-### 发送|接受|展示消息
+### 发送|接收|展示消息
 #### 服务端
 无论是发送还是接收消息，服务端首先要给访问页面的用户分配个名字，我们可以通过随机分配userList来做到
 ```
@@ -77,11 +77,101 @@ io.on('connection', socket => {
 
 server.listen(8888);
 ```
+上面代码里把消息数据都打包成json的格式是为了方便处理，毕竟消息数据只能接收字符串的格式
 
-## Canvas来绘制画板
+然后在发送的时候再通过`JSON.stringify`给转成json字符串，这样就不会导致报错了
 
+当然解析对应的消息数据时再通过`JSON.parse`来转换成真正的json即可了
+
+服务端发送和接收消息都搞完了，那么接下来该客户端出场了，客户端除了上述两个功能之外还会展示消息，听起来屌屌的
+
+那么，不啰嗦了，赶紧开始吧
+#### 客户端
 ```
-<canvas id="canvas" width="500" height="400"></canvas>
+// index.js文件
+
++++++++++++++++++++++++++++
+const LINE = 0;
+const MESSAGE = 1;
++++++++++++++++++++++++++++
+
+let gameObj = {};
+...省略
+
++++++++++++++++++++++++++++
+// 监听服务端发来的消息
+gameObj.socket.on('message', msg => {
+    // 需要先用JSON.parse转一下
+    let data = JSON.parse(msg);
+    console.log(data);  // {type: 1, sender: "系统", message: "欢迎皮卡丘进入游戏"}
+    
+    // 如果类型为聊天
+    if (data.type === MESSAGE) {
+        let li = `<li><span>${data.sender}： </span>${data.message}</li>`;
+        $('#history').append(li);
+        $('#history-wrapper').scrollTop($('#history-wrapper')[0].scrollHeight);
+    }
+});
+
+// 点击发送按钮发消息
+$('#btn').click(sendMsg);
+// 按回车键发送消息
+$('#input').keyup(e => {
+    let keyCode = e.keyCode;
+    if (keyCode === 13) {
+        sendMsg();
+    }
+});
+
+// 发送消息函数
+function sendMsg() {
+    let value = $.trim($('#input').val());
+    if (value !== '') {
+        let data = {};
+        data.type = MESSAGE;
+        data.message = value;
+        gameObj.socket.send(JSON.stringify(data));
+        $('#input').val('');
+    }
+}
+
++++++++++++++++++++++++++++
+```
+## Canvas来绘制画板
+canvas这个元素已经等候多时了，终于轮到它大展身手了，用过canvas的都知道，我们常见的都是在2d上进行对应操作，所以在此之前先来获取一下
+```
+// index.js文件
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// 用原生来获取，jq对象中并没有我们需要的2d
+let cvs = document.getElementById('canvas');
+let ctx = cvs.getContext('2d');
+
+let gameObj = {
+    // 当前用户是否在绘图
+    isDrawing: false,
+    // 下一条线的起始点
+    startX: 0,
+    startY: 0
+};
+
+...省略
+
+gameObj.socket.on('message', msg => {
+    let data = JSON.parse(msg);
+
+    if (data.type === MESSAGE) {
+        let li = `<li><span>${data.sender}： </span>${data.message}</li>`;
+        $('#history').append(li);
+        $('#history-wrapper').scrollTop($('#history-wrapper')[0].scrollHeight);
+    }
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    else if (data.type === LINE) {
+        drawLine(ctx, data.startX, data.startY, data.endX, data.endY, 1);
+    }
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+});
+
 ```
  ### 绘制画板逻辑
 

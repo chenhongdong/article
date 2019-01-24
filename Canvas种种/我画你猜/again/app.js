@@ -67,20 +67,17 @@ io.on('connection', socket => {
         io.emit('message', JSON.stringify(data));
 
         // ## 构建多人游戏
-        // 检测是否猜中答案
-        if (data.type === MESSAGE) {
-            // 走这里表示猜对了
-            if (currentState === GAME_START && data.message === currentAnswer) {
-                let gameData = {};
-                gameData.type = GAME_LOGIC;
-                gameData.gameState = GAME_OVER
-                gameData.winner = user;
-                gameData.answer = currentAnswer;
+        // 检测是否猜中答案，走这里表示猜对了
+        if (currentState === GAME_START && data.message === currentAnswer) {
+            let gameData = {};
+            gameData.type = GAME_LOGIC;
+            gameData.gameState = GAME_OVER
+            gameData.winner = user;
+            gameData.answer = currentAnswer;
 
-                io.emit('message', JSON.stringify(gameData));
+            io.emit('message', JSON.stringify(gameData));
 
-                clearTimeout(gameOverTimeout);
-            }
+            clearTimeout(gameOverTimeout);
         }
 
         if (data.type === GAME_LOGIC && data.gameState === GAME_RESTART) {

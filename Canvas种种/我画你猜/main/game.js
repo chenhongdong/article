@@ -71,8 +71,6 @@ $(function () {
 
         websocketGame.socket.send(JSON.stringify(data));
         $('#chat-input').val('');
-        console.log($('#chat-history').outerHeight());
-        $('#chat-history').scrollTop($('#chat-history').height());
     }
     // 用原生去获取canvas的上下文，jq获取被转成了jq对象，获取不到的
     let canvas = document.getElementById('drawing-pad');

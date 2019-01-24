@@ -28,11 +28,8 @@ let gameOverTimeout;
 
 // 连接数
 let len = 0;
-let mySocket = {};
 
 io.on('connection', socket => {
-    mySocket[socket.id] = socket;
-
     // 随机设置用户名
     let nameList = ['皮卡丘', '比比鸟', '巴大蝴','妙蛙种子', '小火龙', '杰尼龟'];
     let user = nameList[Math.floor(Math.random() * nameList.length)];

@@ -172,11 +172,86 @@ gameObj.socket.on('message', msg => {
     ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 });
 
+
+// 发送消息函数
+...省略
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// 开始在画板上画画了
+// 鼠标按下时的操作
+$('#canvas').on('mousedown', function(e) {
+    let cvsPos = $(this).offset(),
+        mouseX = e.pageX - cvsPos.left || 0,
+        mouseY = e.pageY - cvsPos.top || 0;
+
+    // 更新一下startX和startY
+    gameObj.startX = mouseX;
+    gameObj.startY = mouseY;
+    // 更新为绘图状态
+    gameObj.isDrawing = true;
+});
+// 鼠标移动时的操作
+$('#canvas').on('mousemove', function(e) {
+    // 当绘图状态为true的时候才可以绘制
+    if (gameObj.isDrawing) {
+        let cvsPos = $(this).offset(),
+            mouseX = e.pageX - cvsPos.left || 0,
+            mouseY = e.pageY - cvsPos.top || 0;
+
+        if (gameObj.startX !== mouseX && gameObj.startY !== mouseY) {
+            // 开始绘制线段，drawLine为画线函数
+            drawLine(ctx, gameObj.startX, gameObj.startY, mouseX, mouseY, 1, $('#color').val());
+
+            // 既然画线了，那就把画的线段数据也打包成json传给服务端
+            let data = {};
+            data.startX = gameObj.startX;
+            data.startY = gameObj.startY;
+            data.endX = mouseX;
+            data.endY = mouseY;
+            data.type = LINE;
+            // 别犹豫，直接通过socket发给服务端
+            socket.send(JSON.stringify(data));
+
+            // 这里还要更新一下startX和startY
+            gameObj.startX = mouseX;
+            gameObj.startY = mouseY;
+        }
+    }
+});
+
+// 鼠标抬起时的操作
+$('#canvas').on('mouseup', function() {
+    gameObj.isDrawing = false;
+});
+
+// 画线函数
+function drawLine(ctx, x1, y1, x2, y2, thick, color) {
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.lineWidth = thick;
+    ctx.strokeStyle = color;
+    ctx.stroke();
+}
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ```
- ### 绘制画板逻辑
+### 绘制画板逻辑
 
- ### 通过socket发送绘图数据
- #### 将画线数据打包成json
- #### 接收画线数据来绘制到画板上
+### 通过socket发送绘图数据
+#### 将画线数据打包成json
+#### 接收画线数据来绘制到画板上
 
- ## 构建多人游戏
+## 构建多人游戏
+
+### 游戏逻辑
+### 游戏状态
+### 获胜者及答案
+#### 开始游戏
+- 分配一个人来画画
+- 随机分配个图案
+- 通知所有玩家游戏开始
+- 遍历客户端，然后找到画画的那个用户告诉他相关data
+- 1分钟后游戏结束
+- 恢复当前状态为START
+#### 判断结果

@@ -16,7 +16,7 @@ let gameObj = {
     START: 1,
     OVER: 2,
     RESTART: 3,
-    // 表示谁来绘图
+    // 由谁来画
     isPlayer: false
 }
 let socket = io();
@@ -35,31 +35,28 @@ socket.on('message', msg => {
     } else if (data.type === LINE) {
         drawLine(ctx, data.startX, data.startY, data.endX, data.endY, 1);
     } else if (data.type === GAME) {
+        // 判断游戏状态
+        if (data.state === gameObj.START) {
+            // 清空画布
+            ctx.clearRect(0, 0, cvs.width, cvs.height);
+            // 隐藏重新开始和清空聊天
+            $('#restart').hide();
+            $('#history').html('');
+
+            // 判断是不是画画的还是猜图的
+            if (data.isPlayer) {
+                gameObj.isPlayer = true;
+                $('#history').append(`<li>轮到你了，请画出<span class="answer">${data.answer}</span>吧</li>`);
+            } else {
+                $('#history').append(`<li>游戏即将开始，请准备，有一分钟时间猜答案哦~</li>`);
+            }
+        }
+
         // 游戏结束
         if (data.state === gameObj.OVER) {
             gameObj.isPlayer = false;
             $('#restart').show();
-            $('#history').append(`<li>本轮游戏的获胜者是：<span class="winner">${data.winner}</span>，正确答案是：${data.answer}</li>`);
-        }
-
-        // 游戏开始
-        if (data.state === gameObj.START) {
-            // 先清空整个画布
-            ctx.clearRect(0, 0, cvs.width, cvs.height);
-            
-            $('#restart').hide();
-            $('#history').html('');
-
-            if (data.isPlayer) {
-                gameObj.isPlayer = true;
-                $('#history').append(`轮到你了，请画出${data.answer}`);
-            } else {
-                $('#history').append('游戏即将开始，你有一分钟的时间用来作答，请准备！');
-            }
-        }
-
-        if (data.state === gameObj.RESTART) {
-            ctx.clearRect(0, 0, cvs.width, cvs.height);
+            $('#history').append(`<li>本轮游戏的获胜者是： <span class="winner">${data.winner}</span>，正确答案是： ${data.answer}</li>`);
         }
     }
 });

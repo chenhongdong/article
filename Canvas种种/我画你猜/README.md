@@ -138,7 +138,10 @@ function sendMsg() {
 +++++++++++++++++++++++++++
 ```
 ## Canvas来绘制画板
+
 canvas这个元素已经等候多时了，终于轮到它大展身手了，用过canvas的都知道，我们常见的都是在2d上进行对应操作，所以在此之前先来获取一下
+#### 将画线数据打包成json
+#### 接收画线数据来绘制到画板上
 ```
 // index.js文件
 
@@ -236,15 +239,92 @@ function drawLine(ctx, x1, y1, x2, y2, thick, color) {
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ```
-### 绘制画板逻辑
-
-### 通过socket发送绘图数据
-#### 将画线数据打包成json
-#### 接收画线数据来绘制到画板上
-
 ## 构建多人游戏
 
 ### 游戏逻辑
+游戏逻辑在客户端方面的实现相对来说还是比较简单的，更多的操作还是要靠服务端那里了，
+
+那么就先由简到难的实现一下吧
+#### 客户端
+```
+// index.js文件
+
+const LINE = 0;
+const MESSAGE = 1;
+
+// 添加个游戏常量
+const GAME = 2;
+
+let gameObj = {
+    ...省略
+
+    // 游戏状态
+    WAITTING: 0,
+    START: 1,
+    OVER: 2,
+    RESTART: 3,
+    // 当前轮到谁来绘图
+    isPlayer: false
+};
+
+...省略
+
+socket.on('message', msg => {
+    let data = JSON.parse(msg);
+
+    if (data.type === MESSAGE) {
+        ...省略
+    } else if (data.type === LINE) {
+        ...省略
+    } else if (data.type === GAME) { // 如果进行游戏，传过来的type值必须是GAME
+        // 通过data.state来判断游戏当前的进度
+
+        // 游戏开始的逻辑
+        if (data.state === gameObj.START) {
+            // 游戏要是开始了就需要清空画布
+            ctx.clearRect(0, 0, cvs.width, cvs.height);
+
+            // 清空聊天记录和隐藏重新开始
+            $('#restart').hide();
+            $('#history').html('');
+
+            // 区分一下是当前画图的玩家还是猜图的玩家
+            if (data.isPlayer) {
+                gameObj.isPlayer = true;
+                $('#history').append(`<li>轮到你了，请你画出<span class="answer">${data.answer}</span></li>`);
+            } else {
+                $('#history').append(`<li>游戏即将开始，请准备，你们有一分钟的时间去猜答案哦</li>`);
+            }
+        }
+
+        // 游戏结束的逻辑
+        if (data.state === gameObj.OVER) {
+            gameObj.isPlayer = false;
+            $('#restart').show();
+            $('#history').append(`<li>本轮游戏的获胜者是<span class="winner">${data.winner}</span>，正确答案是： ${data.answer}</li>`);
+        }
+
+        if (data.state === gameObj.RESTART) {
+            $('#restart').hide();
+            ctx.clearRect(0, 0, cvs.width, cvs.height);
+        }
+    }
+});
+
+...省略
+
+// 画线函数
+...省略
+
+
+// 重玩
+$('#restart').on('click', function() {
+    let data = {};
+    data.type = GAME;
+    data.state = gameObj.RESTART;
+    socket.send(JSON.stringify(data));
+});
+```
 ### 游戏状态
 ### 获胜者及答案
 #### 开始游戏

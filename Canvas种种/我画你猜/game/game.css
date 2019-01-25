@@ -40,7 +40,8 @@ body {
     border-bottom: 1px solid rgba(20, 20, 20, .1);
     padding: 10px 0;
 }
-#history li .user {
+#history li .user,
+#history li .answer {
     color: #00a1f5;
 }
 #history li .winner {

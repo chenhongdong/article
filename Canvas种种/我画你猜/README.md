@@ -160,7 +160,7 @@ let gameObj = {
 
 ...省略
 
-gameObj.socket.on('message', msg => {
+socket.on('message', msg => {
     let data = JSON.parse(msg);
 
     if (data.type === MESSAGE) {

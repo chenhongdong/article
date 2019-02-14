@@ -22,7 +22,7 @@ const OVER = 2;
 const RESTART = 3;
 
 let player = 0;
-let wordsList = ['苹果', '运动鞋', '火箭', '足球', '小黄人'];
+let wordsList = ['苹果', '运动鞋', '火箭', '足球', '小黄人', '汽车', '小鸟'];
 let currentAnswer;
 let currentState = WAITTING;
 let timer;

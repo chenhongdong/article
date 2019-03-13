@@ -19,6 +19,7 @@ let numbers:Array<number> = [4, 5, 6];
 let str:Array<string> = ['1', 'a', 'c'];
 let students:Array<object> = [{name: 'chd'}, {name: 'lv'}];
 
+
 let fullname:[string, string, number] = ['张', '三', 100];
 let arr2:Array<string|number> = [1, 'www'];
 
@@ -35,4 +36,15 @@ enum OrderStatus {
     WaitForSend = '等待发货',
     Sended = '已发货',
     Signed = '已签收'
+}
+
+
+let array:string[] = ['1', '2', 'bobo'];
+
+for (let i in array) {
+    console.log(i);
+}
+
+for (let j of array) {
+    console.log(j);
 }

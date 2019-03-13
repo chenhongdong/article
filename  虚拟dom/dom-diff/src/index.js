@@ -1,5 +1,6 @@
 import { createElement, render, renderDom } from './element';
 import diff from './diff';
+import patch from './patch';
 
 let virtualDom = createElement('ul', { class: 'list' }, [
     createElement('li', { class: 'item' }, ['a']),
@@ -10,13 +11,16 @@ let virtualDom = createElement('ul', { class: 'list' }, [
 let virtualDom2 = createElement('ul', { class: 'list-group' }, [
     createElement('li', { class: 'item' }, ['1']),
     createElement('li', { class: 'item' }, ['b']),
-    createElement('li', { class: 'item' }, ['3']),
+    createElement('div', { class: 'item' }, ['3']),
 ]);
 
 console.log(virtualDom);
 // 将虚拟dom转化成了真实dom并渲染到页面
 let el = render(virtualDom);
 renderDom(el, window.root);
-console.log(el);
 
-let patch = diff(virtualDom, virtualDom2);
+let patches = diff(virtualDom, virtualDom2);
+console.log(patches);
+
+// 给元素打补丁，重新更新视图
+patch(el, patches);

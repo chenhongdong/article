@@ -27,10 +27,10 @@ function diffAttr(oldAttrs, newAttrs) {
     return patch;
 }
 
-function diffChildren(oldChildren, newChildren, index, patches) {
+function diffChildren(oldChildren, newChildren, patches) {
     // 比较老的第一个和新的第一个
-    oldChildren.forEach((child, idx) => {
-        walk(child, newChildren[idx], ++index, patches);
+    oldChildren.forEach((child, index) => {
+        walk(child, newChildren[index], ++num, patches);
     });
 }
 
@@ -40,30 +40,40 @@ function isString(node) {
 
 const ATTRS = 'ATTRS';
 const TEXT = 'TEXT';
+const REMOVE = 'REMOVE';
+const REPLACE = 'REPLACE';
+// 所有都基于一个序号来实现
+let num = 0;
+
+
 function walk(oldNode, newNode, index, patches) {
     // 每个元素都有一个补丁
     let current = [];
-    if (isString(oldNode) && isString(newNode)) {
+
+    if (!newNode) {
+        current.push({ type: REMOVE, index });
+    } else if (isString(oldNode) && isString(newNode)) {
         // 判断文本是否一致
         if (oldNode !== newNode) {
-            current.push({ type: TEXT, text: newNode});
+            current.push({ type: TEXT, text: newNode });
         }
 
     } else if (oldNode.type === newNode.type) {
         // 比较属性是否有更改
         let attrs = diffAttr(oldNode.props, newNode.props);
         if (Object.keys(attrs).length > 0) {
-            current.push({ type: ATTRS, attrs});
+            current.push({ type: ATTRS, attrs });
         }
         // 如果有子节点，遍历子节点
-        diffChildren(oldNode.children, newNode.children, index, patches);
+        diffChildren(oldNode.children, newNode.children, patches);
+    } else {    // 说明节点被替换了
+        current.push({ type: REPLACE, newNode});
     }
     // 当前元素确实有补丁
     if (current.length > 0) {
         // 将元素和补丁对应起来，放到大补丁包中
         patches[index] = current;
     }
-    console.log(patches);
 
 }
 

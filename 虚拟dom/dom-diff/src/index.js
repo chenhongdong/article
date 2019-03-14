@@ -11,10 +11,15 @@ let virtualDom = createElement('ul', { class: 'list' }, [
 let virtualDom2 = createElement('ul', { class: 'list-group' }, [
     createElement('li', { class: 'item' }, ['1']),
     createElement('li', { class: 'item' }, ['b']),
-    createElement('div', { class: 'item' }, ['3']),
+    createElement('div', { class: 'item' }, ['3'])
 ]);
 
-console.log(virtualDom);
+
+// 如果平级元素有互换，那会导致重新渲染
+// 新增节点也不会被更新
+
+
+
 // 将虚拟dom转化成了真实dom并渲染到页面
 let el = render(virtualDom);
 renderDom(el, window.root);

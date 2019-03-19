@@ -35,3 +35,11 @@ var OrderStatus;
     OrderStatus["Sended"] = "\u5DF2\u53D1\u8D27";
     OrderStatus["Signed"] = "\u5DF2\u7B7E\u6536";
 })(OrderStatus || (OrderStatus = {}));
+var array = ['1', '2', 'bobo'];
+for (var i in array) {
+    console.log(i);
+}
+for (var _i = 0, array_1 = array; _i < array_1.length; _i++) {
+    var j = array_1[_i];
+    console.log(j);
+}

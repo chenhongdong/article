@@ -60,6 +60,28 @@ function diff(oldTree, newTree) {
 }
 ```
 - walk方法是个关键先生
+```
+/* 
+    每个元素都有一个补丁，所以需要创建一个放当前补丁的数组
+
+        如果没有new节点的话，就直接将type为REMOVE的类型放到当前补丁里
+
+        如果新老节点是文本的话，判断一下文本是否一致，再指定类型TEXT并把新节点放到当前补丁
+
+        如果新老节点的类型相同，那么就来比较一下他们的属性props
+            然后如果有子节点的话就再比较一下子节点的不同，再调一次walk
+
+        上面三个如果都没有发生的话，那就表示节点单纯的被替换了，type为REPLACE，直接用newNode
+
+    当前补丁里确实有值的情况，就将对应的补丁放进大补丁包里
+*/
+```
+    - diffAttr
+        - 去比较新老Attr是否相同
+        - 把newAttr的键值对赋给patch对象上并返回此对象
+    - diffChildren
+        - 遍历oldChildren，然后递归调用walk再通过child和newChildren[index]去diff
+    
 
 
 

@@ -1,33 +1,35 @@
-import { Element, render, setAttr } from './element';
+import { setAttr, Element, render } from './element';
 
 let allPatches;
-let index = 0;  // 默认哪个需要打补丁
+let index = 0;
 
 function patch(node, patches) {
     allPatches = patches;
 
     walk(node);
-    // 给某个元素打补丁
 }
 
 function walk(node) {
-    let current = allPatches[index++];
+    let curPatch = allPatches[index++];
     let childNodes = node.childNodes;
 
-    // 深度先序
     childNodes.forEach(child => walk(child));
 
-    if (current) {
-        doPatch(node, current);
+    if (curPatch) {
+        doPatch(node, curPatch);
     }
 }
 
 function doPatch(node, patches) {
     patches.forEach(patch => {
         switch (patch.type) {
-            case 'ATTRS':
-                for (let key in patch.attrs) {
-                    let value = patch.attrs[key];
+            case 'TEXT':
+                node.textContent = patch.text;
+                break;
+            case 'ATTR':
+                for (let key in patch.attr) {
+                    let value = patch.attr[key];
+
                     if (value) {
                         setAttr(node, key, value);
                     } else {
@@ -35,11 +37,9 @@ function doPatch(node, patches) {
                     }
                 }
                 break;
-            case 'TEXT':
-                node.textContent = patch.text;
-                break;
             case 'REPLACE':
-                let newNode = (patch.newNode instanceof Element) ? render(patch.newNode) : document.createTextNode(patch.newNode);
+                let newNode = patch.newNode;
+                newNode = (newNode instanceof Element) ? render(newNode) : document.createTextNode(newNode);
                 node.parentNode.replaceChild(newNode, node);
                 break;
             case 'REMOVE':

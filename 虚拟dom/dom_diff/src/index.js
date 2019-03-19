@@ -1,11 +1,9 @@
-import { createElement, render } from './element';
+import { createElement } from './element';
 
-let virtualDom = createElement('ul', { class: 'list' }, [
-    createElement('li', { class: 'item' }, ['周杰伦']),
-    createElement('li', { class: 'item' }, ['林俊杰']),
-    createElement('li', { class: 'item' }, ['王力宏'])
+let virtualDom = createElement('ul', {class: 'list'}, [
+    createElement('li', {class: 'item'}, ['阿里']),
+    createElement('li', {class: 'item'}, ['腾讯']),
+    createElement('li', {class: 'item'}, ['百度'])    
 ]);
 
 console.log(virtualDom);
-
-let el = render(virtualDom);

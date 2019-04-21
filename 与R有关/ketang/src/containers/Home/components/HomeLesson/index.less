@@ -1,0 +1,43 @@
+.home-lesson {
+    box-sizing: border-box;
+    padding: 8px;
+    width: 100%;
+    .all-lessons {
+        margin: 10px 0;
+        span {
+            margin-left: 8px;
+        }
+    }
+    .lesson {
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px 1px #ccc, -1px -1px 2px 1px #cfcfcf;
+        margin-bottom: 17px;
+        overflow: hidden;
+        text-align: center;
+
+        img {
+            height: 140px;
+            width: 100%;
+        }
+        p {
+            height: 37px;
+            line-height: 37px;
+            &:nth-child(2) {
+                color: #b3b3b3;
+            }
+            &:nth-child(3) {
+                color: #ed3a3a;
+            }
+        }
+    }
+
+    .no-result {
+        color: #ccc;
+        text-align: center;
+    }
+
+    .loading-more {
+        color: #ccc;
+        text-align: center;
+    }
+}

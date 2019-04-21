@@ -1,0 +1,50 @@
+.home-header {
+    background-color: #000;
+    height: 56px;
+    left: 0;
+    line-height: 56px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    .home-logo {
+        color: #fff;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            margin-right: 8px;
+        }
+
+        img {
+            height: 30px;
+            margin-left: 8px;
+            width: 106px;
+        }
+    }
+
+    .fade {
+        
+    }
+    .home-menus {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 56px;
+
+        li {
+            background-color: #000;
+            color: #fff;
+            border-top: 1px solid #2a2a2a;
+            text-align: center;
+            line-height: 45px;
+            &.active {
+                color: orange;
+            }
+
+        }
+    }
+}

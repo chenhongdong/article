@@ -1,0 +1,178 @@
+module.exports = [
+    {
+        id: 1,
+        title: '1.React全栈架构',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥100.00元',
+        category: 'react'
+    },
+    {
+        id: 2,
+        title: '2.Vue实战课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥600.00元',
+        category: 'vue'
+    },
+    {
+        id: 3,
+        title: '3.React实战',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥100.00元',
+        category: 'react'
+    },
+    {
+        id: 4,
+        title: '4.Vue精品课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥600.00元',
+        category: 'vue'
+    },
+    {
+        id: 5,
+        title: '5.React全栈开发',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥3000.00元',
+        category: 'react'
+    },
+    {
+        id: 6,
+        title: '6.Vue基础入门',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥600.00元',
+        category: 'vue'
+    },
+    {
+        id: 7,
+        title: '7.React全栈架构',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥100.00元',
+        category: 'react'
+    },
+    {
+        id: 8,
+        title: '8.Vue实战课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥600.00元',
+        category: 'vue'
+    },
+    {
+        id: 9,
+        title: '9.React实战',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥100.00元',
+        category: 'react'
+    },
+    {
+        id: 10,
+        title: '10.Vue精品课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥600.00元',
+        category: 'vue'
+    },
+    {
+        id: 11,
+        title: '11.React全栈开发',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥3000.00元',
+        category: 'react'
+    },
+    {
+        id: 12,
+        title: '12.Vue基础入门',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥900.00元',
+        category: 'vue'
+    },
+    {
+        id: 13,
+        title: '13.Vue精品课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥300.00元',
+        category: 'vue'
+    },
+    {
+        id: 14,
+        title: '14.Javascript高级开发',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥1000.00元',
+        category: 'react'
+    },
+    {
+        id: 15,
+        title: '15.Vue从入门到精通',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥800.00元',
+        category: 'vue'
+    },
+    {
+        id: 16,
+        title: '16.React全栈架构',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥200.00元',
+        category: 'react'
+    },
+    {
+        id: 17,
+        title: '17.Vue实战课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥500.00元',
+        category: 'vue'
+    },
+    {
+        id: 18,
+        title: '18.React实战',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥100.00元',
+        category: 'react'
+    },
+    {
+        id: 19,
+        title: '19.Vue精品课程',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥600.00元',
+        category: 'vue'
+    },
+    {
+        id: 20,
+        title: '20.React全栈开发',
+        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        url: 'http://image.so.com/',
+        price: '￥3000.00元',
+        category: 'react'
+    },
+    {
+        id: 21,
+        title: '21.Vue基础入门',
+        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        url: 'http://www.so.com/',
+        price: '￥900.00元',
+        category: 'vue'
+    },
+    {
+        id: 22,
+        title: '22.Vue实现音乐app',
+        poster: 'http://img.mukewang.com/szimg/5be39caf00018a8d05400300-500-284.jpg',
+        url: 'http://www.so.com/',
+        price: '￥299.00元',
+        category: 'vue'
+    },
+];

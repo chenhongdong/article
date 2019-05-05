@@ -15,6 +15,7 @@ const initState = {
 function home(state = initState, action) {
     switch (action.type) {
         case types.CHANGE_CATEGORY:
+            console.log('reducer', action);
             return { ...state, category: action.payload };
         case types.SET_HOME_SLIDERS:
             return { ...state, sliders: action.payload };

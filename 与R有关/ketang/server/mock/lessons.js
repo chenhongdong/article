@@ -2,7 +2,7 @@ module.exports = [
     {
         id: 1,
         title: '1.React全栈架构',
-        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        poster: 'http://p3.so.qhmsg.com/bdr/326__/t01de834451caa89248.jpg',
         url: 'http://image.so.com/',
         price: '￥100.00元',
         category: 'react'
@@ -10,7 +10,7 @@ module.exports = [
     {
         id: 2,
         title: '2.Vue实战课程',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p3.so.qhmsg.com/bdr/326__/t0154687f04bb6e87c8.jpg',
         url: 'http://www.so.com/',
         price: '￥600.00元',
         category: 'vue'
@@ -18,7 +18,7 @@ module.exports = [
     {
         id: 3,
         title: '3.React实战',
-        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        poster: 'http://p3.so.qhimgs1.com/bdr/326__/t0121f197d096b708e3.jpg',
         url: 'http://image.so.com/',
         price: '￥100.00元',
         category: 'react'
@@ -26,7 +26,7 @@ module.exports = [
     {
         id: 4,
         title: '4.Vue精品课程',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p2.so.qhmsg.com/bdr/326__/t01f8e065cacb3e6577.jpg',
         url: 'http://www.so.com/',
         price: '￥600.00元',
         category: 'vue'
@@ -34,7 +34,7 @@ module.exports = [
     {
         id: 5,
         title: '5.React全栈开发',
-        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        poster: 'http://p2.so.qhimgs1.com/bdr/326__/t01e19a6311b620067e.png',
         url: 'http://image.so.com/',
         price: '￥3000.00元',
         category: 'react'
@@ -42,7 +42,7 @@ module.exports = [
     {
         id: 6,
         title: '6.Vue基础入门',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p2.so.qhimgs1.com/bdr/326__/t01f58f54ce238993b2.jpg',
         url: 'http://www.so.com/',
         price: '￥600.00元',
         category: 'vue'
@@ -50,7 +50,7 @@ module.exports = [
     {
         id: 7,
         title: '7.React全栈架构',
-        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        poster: 'http://p3.so.qhmsg.com/bdr/326__/t0156743ae893f84248.jpg',
         url: 'http://image.so.com/',
         price: '￥100.00元',
         category: 'react'
@@ -58,7 +58,7 @@ module.exports = [
     {
         id: 8,
         title: '8.Vue实战课程',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p0.so.qhimgs1.com/bdr/326__/t01ed7deb8fc9db5f8a.jpg',
         url: 'http://www.so.com/',
         price: '￥600.00元',
         category: 'vue'
@@ -66,7 +66,7 @@ module.exports = [
     {
         id: 9,
         title: '9.React实战',
-        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        poster: 'http://p2.so.qhimgs1.com/bdr/326__/t011d6de038ad0b20b2.jpg',
         url: 'http://image.so.com/',
         price: '￥100.00元',
         category: 'react'
@@ -74,7 +74,7 @@ module.exports = [
     {
         id: 10,
         title: '10.Vue精品课程',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p3.so.qhimgs1.com/bdr/326__/t012736804d403e3233.jpg',
         url: 'http://www.so.com/',
         price: '￥600.00元',
         category: 'vue'
@@ -82,7 +82,7 @@ module.exports = [
     {
         id: 11,
         title: '11.React全栈开发',
-        poster: 'http://www.zhufengpeixun.cn/react/img/react.jpg',
+        poster: 'http://p0.so.qhmsg.com/bdr/326__/t01e7473d55942066af.png',
         url: 'http://image.so.com/',
         price: '￥3000.00元',
         category: 'react'
@@ -90,7 +90,7 @@ module.exports = [
     {
         id: 12,
         title: '12.Vue基础入门',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p0.so.qhimgs1.com/bdr/326__/t014d00789d23635730.jpg',
         url: 'http://www.so.com/',
         price: '￥900.00元',
         category: 'vue'
@@ -98,7 +98,7 @@ module.exports = [
     {
         id: 13,
         title: '13.Vue精品课程',
-        poster: 'http://www.zhufengpeixun.cn/vue/img/vue.png',
+        poster: 'http://p5.so.qhimgs1.com/bdr/326__/t01d6431991688ea34b.jpg',
         url: 'http://www.so.com/',
         price: '￥300.00元',
         category: 'vue'

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Home from './containers/Home';
@@ -13,9 +13,9 @@ import Reg from './containers/Reg';
 import { ConnectedRouter } from 'react-router-redux';
 import history from './history';
 
-console.log(history);
+
 render(<Provider store={store}>
-    <ConnectedRouter history={history}>
+    <Router>
         <Layout>
             <Switch>
                 <Route exact path="/" component={Home} />
@@ -26,5 +26,5 @@ render(<Provider store={store}>
                 <Route path="/reg" component={Reg} />
             </Switch>
         </Layout>
-    </ConnectedRouter>
+    </Router>
 </Provider>, window.root);

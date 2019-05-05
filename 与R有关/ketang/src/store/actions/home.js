@@ -3,6 +3,7 @@ import { getSliders, getLessons } from '@/api/home';
 
 export default {
     changeCategory(category) {
+        console.log('actiona', category);
         return { type: types.CHANGE_CATEGORY, payload: category };
     },
     getSliders() {

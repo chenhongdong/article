@@ -10,7 +10,7 @@ export default {
                 // 如果注册成功，跳到登录页登录
                 // 如果注册失败，重新填写提交
                 if (!payload.error) {
-                    dispatch(push('/login'));
+                    // dispatch(push('/login'));
                 }
             });
         }
@@ -21,7 +21,7 @@ export default {
                 dispatch({type: types.SET_SESSION, payload});
 
                 if (!payload.error) {
-                    dispatch(push('/profile'));
+                    // dispatch(push('/profile'));
                 }
 
             });

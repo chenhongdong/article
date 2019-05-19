@@ -50,3 +50,12 @@ function arrayFilter(arr, predicate) {
 
 let arr = [[1, 2], [1, 3]];
 console.log(arrayFilter(arr, isArrayLikeObject))
+
+
+setTimeout(() => {
+    console.log('timeout')
+}, 0);
+
+let p = new Promise(resolve => {
+    console.log('resolve')
+})

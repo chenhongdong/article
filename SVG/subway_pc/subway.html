@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" media="(device-height: 568px)"
+    />
+    <meta name="format-detection" content="telephone=no" searchtype="map">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>360地铁</title>
+    <link type="text/css" rel="stylesheet" href="./static/css/style.css" />
+    <style>
+        .app_download_con {
+            display: none;
+            position: absolute;
+            left: 10px;
+            bottom: 40px;
+            z-index: 100;
+        }
+
+        .app_download_icon {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin-bottom: 5px;
+            background: url('https://p1.ssl.qhimg.com/t01fd23f88ead940622.png') no-repeat 0 0;
+            background-size: contain;
+        }
+
+        .app_download_tip_con {
+            position: absolute;
+            left: 45px;
+            top: -7px;
+            width: 170px;
+            height: 48px;
+            padding: 5px 5px 5px 50px;
+            background: #3f8af8;
+            border-radius: 5px 5px 5px 5px;
+            font-size: 14px;
+            color: #fff;
+            line-height: 18px;
+            box-shadow: 0 1.5px 2.5px 0 rgba(166, 166, 166, 0.50);
+            box-sizing: border-box;
+            opacity: 1;
+            -webkit-transition: 1s;
+            transition: 1s;
+        }
+
+        .app_download_tip_con.app_download_tip_hide {
+            opacity: 0;
+        }
+
+        .app_download_tip_con::before {
+            content: "";
+            position: absolute;
+            left: -4px;
+            top: 20px;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px rgba(166, 166, 166, 0.5);
+            transform: rotate(-45deg) skewY(23deg)
+        }
+
+        .app_download_tip_con::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 43px;
+            height: 100%;
+            background: #fff url('https://p1.ssl.qhimg.com/t0197089e07dbc432b6.png') no-repeat center center;
+            background-size: 21px 21px;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .app_download_tip_con1 {
+            width: 240px;
+            height: 43px;
+            background: url("https://p3.ssl.qhimg.com/t01b1ef9579095ca1a3.png") no-repeat center center;
+            background-size: 240px 43px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="subway-nav" id="subway-nav">
+        <a class="goback" href="javascript:;"></a>
+        <div class="title">
+            <span>地铁专题图</span>
+        </div>
+    </div>
+    <div class="subway-select">
+        <a href="javascript:;" class="select-title">切换城市</a>
+        <ul class="select-box"></ul>
+        <div class="select-mask"></div>
+    </div>
+    <script>
+        (function () {
+            var userAgent = window.navigator.userAgent,
+                hidenavigation = userAgent.indexOf('360around') > -1 || userAgent.indexOf('360shenbian') > -1 || userAgent.indexOf('360map') > -1 || userAgent.indexOf('mso_app (map_') > -1,
+                subwayNav = document.getElementById('subway-nav');
+
+            if (hidenavigation && subwayNav) {
+                subwayNav.style.display = 'none';
+            }
+        })();
+    </script>
+    <div id="subway_zoom" class="needsclick" style="">
+        <div id="subway_zoomout" class="block_zoom_btn block_zoom_out_btn">
+            <div class="inline_zoom_btn inline_zoom_out"></div>
+        </div>
+        <div id="subway_zoomin" class="block_zoom_btn block_zoom_in_btn">
+            <div class="inline_zoom_btn inline_zoom_in"></div>
+        </div>
+    </div>
+    <div class="app_download_con">
+        <div class="app_download_icon"></div>
+        <div class="app_download_tip_con">
+            360搜索·地图App
+            <br/>随时随地查位置
+        </div>
+    </div>
+    <div id="map_canvas" style='width:100%;height:100%;'></div>
+
+</body>
+<!-- tmpl 的模板 -->
+<script id="info_template" type="text/html">
+  <div id="sw_pw" style="display: block; left: 819.5px; top: 133.5px; ">
+    <ul class="sw-pw-title" style="text-indent:-42px;">
+        <li class="sw-pw-tl" style="display:none;"></li>
+        <li class="sw-pw-tc"> <%=name%></li>
+        <li class="sw-pw-tr"></li>
+    </ul>
+    <div class="sw-pw-content">
+        <div class="sw-pw-line">
+            <div class="sw-pw-line-title" style="border-color:<%=lines[i].lc%>"> <span class="line_title_content" style="background-color:<%=lines[i].lc%>"><%=lines[i].linename%></span> 
+            </div>
+            <ul class="sw-pw-line-list">
+                <li class="sw-pw-line-dir">
+                <span class="sw-pw-line-dir-name"><%=lines[i].stations[0].forward%></span><span class="sw-pw-text-green">方向</span> 
+                </li>
+                <li class="sw-pw-line-time">
+                  <span class="sw-pw-text-green-bkg">始</span><span class="sw-pw-text-inline-block"><%=lines[i].stations[0].start%></span>
+                  <span class="sw-pw-text-green-bkg">末</span><span class="sw-pw-text-inline-block"><%=lines[i].stations[0].end%></span> 
+                </li>
+            </ul>
+            <ul class="sw-pw-line-list">
+                <li class="sw-pw-line-dir">
+                <span class="sw-pw-line-dir-name"><%=lines[i].stations[1].forward%></span><span class="sw-pw-text-green">方向</span> 
+                </li>               
+                <li class="sw-pw-line-time">
+                  <span class="sw-pw-text-green-bkg">始</span><span class="sw-pw-text-inline-block"><%=lines[i].stations[1].start%></span>
+                  <span class="sw-pw-text-green-bkg">末</span><span class="sw-pw-text-inline-block"><%=lines[i].stations[1].end%></span> 
+                </li>
+            </ul>
+        </div>
+</div>
+</script>
+<script id="nearest_template" type="text/html">
+    <div id="sw_pw" style="display: block; left: 819.5px; top: 133.5px; ">
+        <div class="sw-pw-content">
+            <div class="sw-pw-line nearest-notice">
+                这是离您最近的地铁
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/javascript" src="./static/js/lib/sea.js"></script>
+<script>
+    window.So = {};
+    seajs.config({
+        base: "./",
+        // preload: ['//s.ssl.qhres.com/lib/jquery/183.js', '//s.ssl.qhimg.com/static/32ea1a8972889917/monitor_analytic.js'],
+        debug: typeof SO_PRODUCTION == 'undefined',
+        cdn: window._cdn_files
+    });
+    seajs.use("./static/js/subway.js");
+</script>
+
+</html>

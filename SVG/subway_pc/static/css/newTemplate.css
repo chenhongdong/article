@@ -1,0 +1,660 @@
+.iconGroup .icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff!important;
+    padding:0 1px;
+    height: 14px;
+    text-align: center;
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 2px;
+}
+.goHereBox {
+    margin-left:10px;
+    border-left:1px solid #ededed;
+    padding-left: 10px;
+}
+.goHereBox .goHereBtn {
+    display: block;
+    color:#999;
+    padding-top: 20px;
+    background: url(//p0.ssl.qhimg.com/d/inn/f747c57e/goherebtn.png) no-repeat 50% 8px;
+    -webkit-background-size:12px 9px;
+    background-size:12px 9px;
+}
+.newTemplate .iconBottomBox {
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    margin: 8px 0 -5px 0;
+}
+.newTemplate .iconBottomBox .iconGroup {
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.newTemplate .iconBottomBox .iconGroup .icon {
+    margin-left: 0;
+}
+.newTemplate .iconBottomBox .lineBox {
+    padding: 1px 0;
+    overflow: hidden;
+    line-height: 23px;
+}
+.iconGroup {
+    font-size: 0;
+    line-height: 0;
+}
+.iconTuan {
+    background: #ff6600;
+}
+.iconSeat {
+    background: #8fc031;
+}
+.iconSale {
+    background: #ff7bac;
+}
+.iconPai {
+    background: #30bae4;
+}
+.iconYanchu {
+    background: #7366c9;
+}
+.iconHuodong {
+    background: #ff6464;
+}
+.iconAtm {
+    background: #ff6464;
+}
+.iconLobby {
+    background: #5698fc;
+}
+.iconSuspend {
+    background: #bbb;
+}
+.iconOrange {
+    background: #ff6600;
+}
+.iconDao {
+    background: #8fc031;
+}
+.iconDing {
+    background: #8fc031;
+}
+.iconHhours24 {
+    background: #ff7800;
+}
+.iconZong {
+    background: #c389c3;
+}
+.iconFan {
+    background: #4cf292;
+}
+.iconWai {
+    background: #ff7727;
+}
+.iconVideo {
+    background: #ff6600;
+}
+.iconPiao {
+    background: #cd95cd;
+}
+.iconKitchenVideo {
+    background: #e31105
+}
+.iconETCP {
+    background: #ff7e30;
+}
+.iconRoad{
+    background:#20b7ff;
+}
+.iconTips {
+    background: #ff1818;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.padr5 {
+    padding-right: 5px;
+}
+.newTemplate .row,.row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.newTemplate .cell,.listBt a,.cell {
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    flex-basis: 50%;
+}
+.verCenter {
+    -webkit-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.horCenter {
+    -webkit-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content:center;
+    justify-content:center;
+}
+.newTemplate .ellipsis {
+    overflow: hidden;
+    outline: 0 !important;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.newTemplate {
+    color:#999!important;
+    font:14px/21px '-apple-system','Arial','Helvetica','sans-serif';
+    padding:0 15px;
+}
+
+.new_list_con ul.newTemplate {
+    border: none;
+    margin: 0;
+}
+.new_list_con ul.newTemplate .mainCon {
+    padding:15px;
+}
+
+#poi-content .newTemplate .mainCon{
+    border-bottom: 1px solid #eaeaea;
+}
+
+#poi-content .newTemplate .mainCon:nth-last-child(1){
+    border-bottom: 0;
+}
+
+.newTemplate .iconDaner {
+    background: url(//p0.ssl.qhimg.com/t01f7f80ea1444e8af7.png) center;
+    background-size: cover;
+    display: inline-block;
+    height: 13px;
+    margin-right: 5px;
+    width: 13px;
+    position: relative;
+    top: 2px;
+}
+
+.newTemplate .mainCon {
+    font-size: 14px;
+    padding:12px 0;
+}
+.newTemplate .mainCon.noPic{
+    padding:6px 0 8px;
+}
+.newTemplate .orange {
+    color:#ff6600!important;
+}
+.newTemplate .gray,.gray,.listBt a.gray {
+    color:#ccc!important;
+}
+.newTemplate .info {
+    color:#999!important;
+}
+.newTemplate .sn {
+    width: 17px;
+    height: 28px;
+    margin-right: 8px;
+    background: url(//p0.ssl.qhimg.com/d/inn/f3cbb495/sn.png) no-repeat center top;
+    background-size: 17px 56px;
+    text-align: center;
+    overflow: hidden;
+}
+.newTemplate .sn .snNum {
+    font-size: 20px;
+    color:#fff!important;
+    display: block;
+    margin-top: -1px;
+    -webkit-transform: scale(0.55);
+    transform: scale(0.55);
+}
+.newTemplate .sn.red {
+    background-position: center top;
+}
+.newTemplate .sn.blue {
+    background-position: center bottom;
+}
+.newTemplate .picture {
+    margin-left: 10px;
+}
+.newTemplate .picture .thumb {
+    width: 84px;
+    height: 69px;
+    vertical-align: middle;
+    background: #eee url('//p0.ssl.qhimg.com/t01905d5ed9c2524016.png') no-repeat center center;
+    background-size: 28px 35px;
+}
+.newTemplate h4,.newH4Title {
+    font-weight: normal;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+.h4Caption {
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+.newTemplate .title,.newH4Text {
+    color: #333!important;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.newTemplate .star,
+.newTemplate .star .starLevel{
+    font-size: 0;
+    line-height: 0;
+    width: 73px;
+    height: 12px;
+    display: inline-block;
+    background: url(//p0.ssl.qhimg.com/d/inn/254f63ce/star.png) no-repeat left top;
+    background-size: 73px 24px;
+}
+.newTemplate .star .starLevel {
+    background-position: left bottom;
+}
+.newTemplate .margin5 {
+    margin-right: 5px;
+}
+.newTemplate .gasBox {
+    margin: 0 -10px;
+    font-size: 0;
+    -o-text-overflow: initial;
+    text-overflow: initial;
+    white-space: normal;
+    word-wrap: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .newTemplate .gasBox {
+        letter-spacing: -5px;
+    }
+}
+.newTemplate .gasBox div {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 25%;
+    vertical-align: top;
+    padding: 0 10px;
+    border-left: 1px solid #eaeaea;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+.newTemplate .gasBox p {
+    line-height: 1.1;
+}
+.newTemplate .gasBox .orange {
+    padding-top: 5px;
+}
+.newTemplate .tipsInfo {
+    background: #f5f5f5;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 10px;
+}
+.newTemplate .twoline {
+    height: 21px;
+}
+.newTemplate .address{
+    font-size: 12px;
+}
+.newTemplate .address .distance{
+    margin-right: 10px;
+}
+
+.listBt {
+    height: 40px;
+    -webkit-box-align:center;
+    box-align:center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.listBt a {
+    color:#333!important;
+    text-align: center;
+    border-right: 1px solid #eaeaea;
+    height: 16px;
+    line-height: 1;
+}
+.listBt span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.listBt a:last-child {
+    border-right: none;
+}
+.btIcon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    background: url(//p0.ssl.qhimg.com/d/inn/f5284a54/mapIcon.png) no-repeat;
+    background-size: 32px 192px;
+}
+.btIcon.line {
+    background-position: 0 0;
+}
+.btIcon.tel {
+    background-position: 0 -16px;
+}
+.btIcon.ding {
+    background-position: 0 -32px;
+}
+.btIcon.num {
+    background-position: 0 -48px;
+}
+.btIcon.guide {
+    background-position: 0 -64px;
+}
+.btIcon.shopping {
+    background-position: 0 -80px;
+}
+.btIcon.ticket {
+    background-position: 0 -96px;
+}
+.btIcon.map {
+    background-position: 0 -112px;
+}
+.btIcon.hourRoom {
+    background-position: 0 -128px;
+}
+.btIcon.busLine {
+    background-position: 0 -144px;
+}
+
+.btIcon.grayTel {
+    color: #999;
+}
+
+.btIcon.grayLine {
+    background-position: -16px 0;
+}
+.btIcon.grayTel {
+    background-position: -16px -16px;
+}
+.btIcon.grayDing {
+    background-position: -16px -32px;
+}
+.btIcon.grayNum {
+    background-position: -16px -48px;
+}
+.btIcon.grayGuide {
+    background-position: -16px -64px;
+}
+.btIcon.grayShopping {
+    background-position: -16px -80px;
+}
+.btIcon.grayTicket {
+    background-position: -16px -96px;
+}
+.btIcon.grayMap {
+    background-position: -16px -112px;
+}
+.btIcon.grayHourRoom {
+    background-position: -16px -128px;
+}
+.btIcon.grayBusLine {
+    background-position: -16px -144px;
+}
+
+.groupbar,.groupbar span {
+    display: block;
+}
+.groupbar {
+    clear: both;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background: #f5f5f5;
+    padding:0 10px;
+    height: 30px;
+    overflow: hidden;
+    font-size:12px;
+    line-height: 30px;
+    margin-top:10px;
+}
+.groupbar span {
+    color: #999;
+    word-wrap: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0 !important;
+}
+.groupbar .groupbar-title {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.groupbar .cl-green {
+    color: #00be3c;
+    padding-left: 10px;
+}
+.groupbar b {
+    color: #ff6600;
+    font-weight: normal;
+}
+
+
+.newTemplate.new_groupon{
+    padding:0;
+    margin: 4px 0 0;
+    border:0;
+}
+
+.newTemplate.new_groupon ul{
+    margin-bottom: 5px;
+    background:#fff;
+}
+
+.newTemplate.new_groupon li {
+    color: #999;
+    font-size: 14px;
+    overflow: hidden;
+    padding:15px 15px 15px 105px;
+    position: relative;
+    border:0;
+    margin-bottom:0!important;
+}
+.newTemplate.new_groupon li:first-child{
+    margin-top: 0!important;
+}
+.newTemplate.new_groupon li:before {
+    border-top: #e7e7e7 solid 1px;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    width: 200%;
+}
+.newTemplate.new_groupon li img{
+    position: absolute;
+    background: #eee url('//p0.ssl.qhimg.com/t01905d5ed9c2524016.png') no-repeat center center;
+    background-size: 28px 35px;
+    left: 15px;    
+    top: 18px;
+}
+
+.newTemplate.new_groupon .name{
+    position:relative;
+    height:50px;
+    line-height:50px;
+    padding: 0 10px;
+    font-size:16px;
+    color:#333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 70px;
+    margin:0;
+    background:#fff;
+    padding-left:15px;
+}
+.newTemplate.new_groupon .name .distance{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: #999;
+    font-size: 14px;
+}
+.newTemplate.new_groupon .sale_title{
+    outline: 0 !important;
+    height:38px;
+    color: #333;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    line-height: 19px;
+}
+.newTemplate.new_groupon .sale_price{
+    margin-top:8px;
+    margin-bottom:-9px;
+}
+.newTemplate.new_groupon .sale_price .highlight{
+    font-size:19px;
+    color:#f60;
+}
+.newTemplate.new_groupon .sale_num{
+}
+.newTemplate.new_groupon del{
+    margin-left:10px;
+}
+.newTemplate.new_groupon .showmore{
+    height: 34px;
+    background: #fafafa;
+    font-size: 14px;
+    color: #222;
+    padding: 0;
+    text-align: center;
+    line-height: 34px;
+}
+.newTemplate.new_groupon .showmore em{
+    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAARCAYAAADOk8xKAAAApklEQVQ4T73UbQ7AEAwGYFxWnGJ2CnFZWYjKZlSL2J8ls7yP+qgUhx952BMf0Ht/xQlore8dE2nlFTAP2gzZVbSXV0DnnFVKpQpX0QoTIYTbGJOK+SzpDhTDfmD8sIKOsCY4i1KwLshFqRgKUlEONgRHKBcjgT0Urg7coffRx5oGubU1Tm/JpWLkCiG5hXIwNlgvLxebAgGNb2hX2J7VY+Q95IRi/z6W5JIS01EbCgAAAABJRU5ErkJggg==") no-repeat right 5px;
+    background-size: 14px 8px;
+    padding-right: 15px;
+}
+
+.boxType1 a,.btnBottomBox a {
+    color: #999;
+}
+.boxType1,.boxtype2,.boxType3 {
+    padding: 12px 15px;
+    font-size: 14px;
+    overflow: hidden;
+    display: block;
+    color: #999!important;
+}
+.boxType1 .distanceBox,.boxtype2 .distanceBox,.boxType3 .distanceBox {
+    color: #ccc;
+    margin-left: 3px;
+}
+.boxType1 h4,.boxtype2 h4,.boxType3 h4 {
+    font-size: 16px;
+    color: #4c4c4c;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+.boxType1 .btnGoHere {
+    width: 65px;
+    border-left: 1px solid #ededed;
+    text-align: center;
+    margin: 0 -10px 0 3px;
+}
+.boxType1 .btIconLine {
+    display: block;
+    height: 21px;
+    background:url(//p0.ssl.qhimg.com/d/inn/5004c6c9/btIconLine.png) no-repeat center;
+    background-size: contain;
+}
+
+.boxBusType a{
+    color:#999;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+}
+.btnBottomBox {
+    text-align: center;
+    border-top: 1px solid #ededed;
+    height: 40px;
+    line-height: 40px;
+    font-size:0;
+}
+.btnBottomBox a {
+    position: relative;
+}
+.btnBottomBox a:not(:last-child):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 35%;
+    height: 30%;
+    width: 1px;
+    background: #ededed;
+}
+.btnBottomBox span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.btnBottomBox .txt {
+    font-size: 14px;
+}
+.btnBottomBox .icon {
+    width: 16px;
+    height: 16px;
+    background: red;
+    font-size: 0;
+    margin-right: 3px;
+    background: url(//p0.ssl.qhimg.com/d/inn/7db07c73/newicon.png) no-repeat;
+    background-size: 48px 32px;
+}
+.btnBottomBox .gray {
+    color:#999;
+}
+.btnBottomBox .icon.iconhere {
+    background-position: 0 0;
+}
+.btnBottomBox .icon.icontel {
+    background-position: -16px 0;
+}
+.btnBottomBox .gray .icontel {
+    background-position: -16px -16px;
+}
+.btnBottomBox .icon.iconorder {
+    background-position: -32px 0;
+}
+

@@ -1,7 +1,8 @@
+// import './css/index.css';
 import * as subway from '../mock/index';
-import renderSvg from './components/render';
+import render from './components/render';
 
 
 let baseData = subway.bjSubWay;
 
-renderSvg(baseData);
+render(baseData);

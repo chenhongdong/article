@@ -1,4 +1,6 @@
-var eventsHandler = {
+import Hammer from 'hammerjs';
+
+const eventsHandler = {
     haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
     init: function(options) {
         var instance = options.instance,
@@ -47,3 +49,5 @@ var eventsHandler = {
         this.hammer.destroy()
     }
 }
+
+export default eventsHandler;

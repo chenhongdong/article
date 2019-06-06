@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-    <svg id="mobile-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="g-box" font-size="10" transform="translate(400, 400) scale(1.8)"></g>
-    </svg>
-</body>
-</html>
-<!-- <script src="./libs/svg-pan-zoom.js"></script>
-<script src="./libs/hammer.min.js"></script> -->
-<script src="./libs/jquery.js"></script>
-<script src="./libs//limitTextNum.js"></script>
-<!-- <script src="./js/data.js"></script> -->
-<script src="./js/render.js"></script>
-<script>
-    const data = {
+export default {
     "result": {
         "type": 920,
         "error": 0
@@ -9108,14 +9086,3 @@
         }
     }
 }
-    render(data);
-
-
-    $('path').hover(function() {
-        console.log($(this));
-        
-        $(this).css('stroke-width', 8);
-    }, function() {
-        $(this).css('stroke-width', 5);
-    });
-</script>

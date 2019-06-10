@@ -1,11 +1,10 @@
-import * as city from './data';
+import * as citys from './data';
 import render from './js/render';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './js/handle';
 
 // 渲染地铁图
-render(city.bj);
-
+render(citys.bj);
 
 svgPanZoom('#subways-svg', {
     zoomEnabled: true,

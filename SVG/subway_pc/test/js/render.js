@@ -19,9 +19,9 @@ function render(data) {
     //地铁线路
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
-        const { lb, loop, uid, lc, lbx, lby } = l_xmlattr;
+        const { lb, loop, lc, lbx, lby } = l_xmlattr;
 
-        let pathStr = ""; //地铁线路点
+        let pathStr = ''; //地铁线路点
         let isRc = false; //是否圆润拐点
         for (let j = 0; j < p.length; j++) {
             const { x, y, lb, rc } = p[j].p_xmlattr;
@@ -58,22 +58,22 @@ function render(data) {
         rect.attr({
             width: 70,
             height: 20,
-            x: lbx - 26,
-            y: lby + 1
+            x: lbx,
+            y: lby
         }).css("fill", color);
 
         let text = svgEle('text').appendTo('#g-box').html(lb).addClass("subway-name")
         text.attr({
-            x: lbx - 10,
+            x: lbx + 6,
             y: lby + 15,
             fill: '#fff'
-        });
+        }).css('font-size', 12);
         
     }
 
     
     for (let i = 0; i < l.length; i++) {
-        const { l_xmlattr, p } = l[i];
+        const { p } = l[i];
 
         for (let j = 0; j < p.length; j++) {
             const { x, y, rx, ry, lb, ex, rc, st, uid } = p[j].p_xmlattr;

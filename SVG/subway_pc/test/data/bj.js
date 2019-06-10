@@ -471,14 +471,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c11\u53f7\u7ebf",
-                    "lb": "1\u53f7\u7ebf",
+                    "lb": "\u5730\u94c11\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
-                    "lbx": -428.9,
-                    "lby": 139.1,
+                    "lbx": -700,
+                    "lby": 193,
                     "lbr": 0,
-                    "lc": "0xCC0000",
+                    "lc": "0xC23A30",
                     "uid": "3e210d94b51b7a184107c1b7",
                     "uid2": "bce557d6f7fadd4ea5da39b7"
                 }
@@ -944,14 +944,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c12\u53f7\u7ebf",
-                    "lb": "2\u53f7\u7ebf",
+                    "lb": "\u5730\u94c12\u53f7\u7ebf",
                     "slb": false,
                     "n": 18,
                     "loop": true,
-                    "lbx": -67.8,
+                    "lbx": -102,
                     "lby": 22.7,
                     "lbr": 0,
-                    "lc": "0x0066CC",
+                    "lc": "0x006098",
                     "uid": "9dc3b3dab4becfaea2a934b7",
                     "uid2": "32c31282e310f2aacb213db7"
                 }
@@ -1284,8 +1284,8 @@ export default {
                             "lb": "\u65b0\u8857\u53e3",
                             "x": -110,
                             "y": 50,
-                            "rx": 0,
-                            "ry": -22.3,
+                            "rx": -40,
+                            "ry": -3,
                             "st": true,
                             "ex": false,
                             "iu": true,
@@ -1755,14 +1755,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
-                    "lb": "4\u53f7\u7ebf\u5927\u5174\u7ebf",
+                    "lb": "\u5730\u94c14\u53f7\u7ebf",
                     "slb": false,
                     "n": 35,
                     "loop": false,
-                    "lbx": -395.1,
+                    "lbx": -540,
                     "lby": -224,
                     "lbr": 0,
-                    "lc": "0x00CCCC",
+                    "lc": "0x008E9C",
                     "uid": "1479a7007b19e457ebf8536c",
                     "uid2": "277df81e6219d2b192114c6c"
                 }
@@ -2231,14 +2231,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c15\u53f7\u7ebf",
-                    "lb": "5\u53f7\u7ebf",
+                    "lb": "\u5730\u94c15\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
-                    "lbx": 18,
-                    "lby": 37,
+                    "lbx": -10,
+                    "lby": -370,
                     "lbr": 0,
-                    "lc": "0x990066",
+                    "lc": "0xA6217F",
                     "uid": "76464b1774e4f36841d63eb7",
                     "uid2": "3039f3071bdd32f0f7e73bb7"
                 }
@@ -2901,14 +2901,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c16\u53f7\u7ebf",
-                    "lb": "6\u53f7\u7ebf",
+                    "lb": "\u5730\u94c16\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
-                    "lbx": 358,
-                    "lby": 70,
+                    "lbx": 858,
+                    "lby": 180,
                     "lbr": 0,
-                    "lc": "0xea9914",
+                    "lc": "0xD29700",
                     "uid": "a15f370891be585133870acc",
                     "uid2": "c813960a8a3d3ac08adb73cc"
                 }
@@ -3333,14 +3333,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c17\u53f7\u7ebf",
-                    "lb": "7\u53f7\u7ebf",
+                    "lb": "\u5730\u94c17\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
-                    "lbx": 330,
-                    "lby": 280,
+                    "lbx": 550,
+                    "lby": 450,
                     "lbr": 0,
-                    "lc": "0xe7600e",
+                    "lc": "0xf6c582",
                     "uid": "7b91975794680a2d8bdb7351",
                     "uid2": "9720448fad9bd8b1f50e778f"
                 }
@@ -3744,14 +3744,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c18\u53f7\u7ebf",
-                    "lb": "8\u53f7\u7ebf",
+                    "lb": "\u5730\u94c18\u53f7\u7ebf",
                     "slb": false,
                     "n": 10,
                     "loop": false,
-                    "lbx": -80.5,
-                    "lby": -187.1,
+                    "lbx": -20,
+                    "lby": -330,
                     "lbr": 0,
-                    "lc": "0x006633",
+                    "lc": "0x009B6B",
                     "uid": "d25acca9ad2e8a57f21937ac",
                     "uid2": "86147d290c19ca50a2d230ac"
                 }
@@ -4032,14 +4032,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c18\u53f7\u7ebf\u5357\u6bb5",
-                    "lb": "8\u53f7\u7ebf\u5357\u6bb5",
+                    "lb": "\u5730\u94c18\u53f7\u7ebf",
                     "slb": false,
                     "n": 10,
                     "loop": false,
                     "lbx": 140.5,
                     "lby": 687.1,
                     "lbr": 0,
-                    "lc": "0x006633",
+                    "lc": "0x009B6B",
                     "uid": "cfce3c74821e9522c7f0253e",
                     "uid2": "2bf09adde63f27874054d721"
                 }
@@ -4308,14 +4308,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c19\u53f7\u7ebf",
-                    "lb": "9\u53f7\u7ebf",
+                    "lb": "\u5730\u94c19\u53f7\u7ebf",
                     "slb": false,
                     "n": 9,
                     "loop": false,
-                    "lbx": -340,
-                    "lby": 260,
+                    "lbx": -380,
+                    "lby": 380,
                     "lbr": 0,
-                    "lc": "0xADCB13",
+                    "lc": "0x8FC31F",
                     "uid": "3494dc1e4c1e9a9b3ce231ac",
                     "uid2": "94a39c191cd504ab471a32ac"
                 }
@@ -5305,14 +5305,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c110\u53f7\u7ebf",
-                    "lb": "10\u53f7\u7ebf",
+                    "lb": "\u5730\u94c110\u53f7\u7ebf",
                     "slb": false,
                     "n": 45,
                     "loop": true,
-                    "lbx": -150.5,
-                    "lby": -110.5,
+                    "lbx": -520,
+                    "lby": -80,
                     "lbr": 0,
-                    "lc": "0x0099FF",
+                    "lc": "0x009BC0",
                     "uid": "de6d05290c19ca50a2d230b7",
                     "uid2": "28d3dce37526799f49fd3fb7"
                 }
@@ -5737,14 +5737,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c113\u53f7\u7ebf",
-                    "lb": "13\u53f7\u7ebf",
+                    "lb": "\u5730\u94c113\u53f7\u7ebf",
                     "slb": false,
                     "n": 16,
                     "loop": false,
-                    "lbx": -104.5,
-                    "lby": -218.4,
+                    "lbx": 124.5,
+                    "lby": -282.4,
                     "lbr": 0,
-                    "lc": "0xFFCC33",
+                    "lc": "0xF9E700",
                     "uid": "7ad85451ff003ccb5d17c3b7",
                     "uid2": "75501d1cfc56794e0482c2b7"
                 }
@@ -5894,14 +5894,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
-                    "lb": "14\u53f7\u7ebf\u897f\u6bb5",
+                    "lb": "\u5730\u94c114\u53f7\u7ebf",
                     "slb": false,
                     "n": 6,
                     "loop": false,
-                    "lbx": -580,
-                    "lby": 250,
+                    "lbx": -720,
+                    "lby": 285,
                     "lbr": 0,
-                    "lc": "0xD39188",
+                    "lc": "0xD5A7A1",
                     "uid": "d53d841d8d65c36b82a00ccd",
                     "uid2": "8816b6b9de1f0ace70210bcd"
                 }
@@ -6382,14 +6382,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
-                    "lb": "14\u53f7\u7ebf\u4e1c\u6bb5",
+                    "lb": "\u5730\u94c114\u53f7\u7ebf",
                     "slb": false,
                     "n": 6,
                     "loop": false,
-                    "lbx": 320,
-                    "lby": -232.3,
+                    "lbx": 190,
+                    "lby": -260,
                     "lbr": 0,
-                    "lc": "0xD39188",
+                    "lc": "0xD5A7A1",
                     "uid": "d79471cb1c5e11681029359e",
                     "uid2": "a29055b05b19575787154113"
                 }
@@ -6832,14 +6832,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c115\u53f7\u7ebf",
-                    "lb": "15\u53f7\u7ebf",
+                    "lb": "\u5730\u94c115\u53f7\u7ebf",
                     "slb": false,
                     "n": 13,
                     "loop": false,
-                    "lbx": 305.5,
-                    "lby": -314.4,
+                    "lbx": 400,
+                    "lby": -350,
                     "lbr": 0,
-                    "lc": "0x5c2a69",
+                    "lc": "0x5B2C68",
                     "uid": "6363d7f82d1625bed7b74e6c",
                     "uid2": "7963e11e54ffab581cf74d6c"
                 }
@@ -7049,14 +7049,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c116\u53f7\u7ebf",
-                    "lb": "16\u53f7\u7ebf",
+                    "lb": "\u5730\u94c116\u53f7\u7ebf",
                     "slb": false,
                     "n": 10,
                     "loop": false,
-                    "lbx": -706,
-                    "lby": -290,
+                    "lbx": -786,
+                    "lby": -320,
                     "lbr": 0,
-                    "lc": "0x5DB85E",
+                    "lc": "0x76A32E",
                     "uid": "df70782f9677438a373a71e9",
                     "uid2": "1c7438e02ac59124f5c59c83"
                 }
@@ -7327,14 +7327,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u516b\u901a\u7ebf",
-                    "lb": "\u516b\u901a\u7ebf",
+                    "lb": "\u5730\u94c1\u516b\u901a\u7ebf",
                     "slb": false,
                     "n": 13,
                     "loop": false,
-                    "lbx": 435.1,
-                    "lby": 150.8,
+                    "lbx": 383,
+                    "lby": 200,
                     "lbr": 0,
-                    "lc": "0xCC0000",
+                    "lc": "0xC23A30",
                     "uid": "37125ffd5b009d930ab93ab7",
                     "uid2": "32955707ba85655ecae33cb7"
                 }
@@ -7626,14 +7626,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u660c\u5e73\u7ebf",
-                    "lb": "\u660c\u5e73\u7ebf",
+                    "lb": "\u5730\u94c1\u660c\u5e73\u7ebf",
                     "slb": false,
                     "n": 7,
                     "loop": false,
-                    "lbx": -170,
-                    "lby": -340,
+                    "lbx": -270,
+                    "lby": -460,
                     "lbr": 0,
-                    "lc": "0xC40082",
+                    "lc": "0xDE82B2",
                     "uid": "0f5b9ac71003a249c41e516c",
                     "uid2": "1cba93042407fd57dd1e526c"
                 }
@@ -7934,14 +7934,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u4ea6\u5e84\u7ebf",
-                    "lb": "\u4ea6\u5e84\u7ebf",
+                    "lb": "\u5730\u94c1\u4ea6\u5e84\u7ebf",
                     "slb": false,
                     "n": 14,
                     "loop": false,
-                    "lbx": 295,
+                    "lbx": 395,
                     "lby": 567,
                     "lbr": 0,
-                    "lc": "0xFF3703",
+                    "lc": "0xE40077",
                     "uid": "15ca3c2994fb88054acc4a6c",
                     "uid2": "dd8aebb7bf2e12b5b14c496c"
                 }
@@ -8204,14 +8204,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u623f\u5c71\u7ebf",
-                    "lb": "\u623f\u5c71\u7ebf",
+                    "lb": "\u5730\u94c1\u623f\u5c71\u7ebf",
                     "slb": false,
                     "n": 12,
                     "loop": false,
                     "lbx": -655,
                     "lby": 558,
                     "lbr": 0,
-                    "lc": "0xD5353F",
+                    "lc": "0xE46022",
                     "uid": "5485ae11a3f0eefe00294f6c",
                     "uid2": "526c20f768b039602bfc486c"
                 }
@@ -8571,7 +8571,7 @@ export default {
                     "lbx": 400,
                     "lby": -100,
                     "lbr": -25,
-                    "lc": "0xB699BD",
+                    "lc": "0xA29BBB",
                     "uid": "8a23b4a9ad2e8a57f21937b7",
                     "uid2": null
                 }
@@ -8741,14 +8741,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1s1\u7ebf",
-                    "lb": "s1\u7ebf",
+                    "lb": "\u5730\u94c1S1\u7ebf",
                     "slb": true,
                     "n": 8,
                     "loop": false,
                     "lbx": -1160,
                     "lby": 256,
                     "lbr": -25,
-                    "lc": "0xa02024",
+                    "lc": "0xB35A20",
                     "uid": "8e08d3bb7043c9149e95de7a",
                     "uid2": "2e868a270a6a144a08ccdde1"
                 }
@@ -8937,14 +8937,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u71d5\u623f\u7ebf",
-                    "lb": "\u71d5\u623f\u7ebf",
+                    "lb": "\u5730\u94c1\u71d5\u623f\u7ebf",
                     "slb": true,
                     "n": 9,
                     "loop": false,
                     "lbx": -1280,
                     "lby": 736,
                     "lbr": -25,
-                    "lc": "0xdd6a24",
+                    "lc": "0xE46022",
                     "uid": "63959882982627d69ee321c2",
                     "uid2": "8b1c930b98f74c240d3dda57"
                 }
@@ -9062,14 +9062,14 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u897f\u90ca\u7ebf",
-                    "lb": "\u897f\u90ca\u7ebf",
+                    "lb": "\u5730\u94c1\u897f\u90ca\u7ebf",
                     "slb": true,
                     "n": 9,
                     "loop": false,
                     "lbx": -780,
                     "lby": -116,
                     "lbr": -25,
-                    "lc": "0xcc3736",
+                    "lc": "0xE50619",
                     "uid": "aa7cc23dc6fa5f7b97031977",
                     "uid2": "d3cf791cf883f83912882470"
                 }

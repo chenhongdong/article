@@ -13,7 +13,6 @@ function render(data) {
         
         for (let j = 0; j < p.length; j++) {
             const { lb, x, y, ex, st, rc } = p[j].p_xmlattr;
-            console.log(p[j].p_xmlattr)
 
             if (isRc) {
                 isRc = false;

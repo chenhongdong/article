@@ -10,13 +10,17 @@ function svgEle(name) {
 }
 
 
-//ex 换乘标志
-//rc 圆润拐弯
-//st 有效站点
+// ex 换乘标志
+// rc 圆润拐弯
+// st 有效站点
+// no 暂缓开通
 
 function render(data) {
-    const { l } = data.subways;
-    //地铁线路
+    const { l, sw_xmlattr } = data.subways;
+    const { c } = sw_xmlattr;
+    console.log(data);
+    console.log(c);
+
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
         const { lb, loop, lc, lbx, lby } = l_xmlattr;
@@ -36,7 +40,7 @@ function render(data) {
                     if (j == 0) {
                         pathStr += `M${x} ${y} `;
                     } else {
-                        pathStr += `L${x} ${y}`;
+                        pathStr += `L${x} ${y} `;
                     }
                     if (j === p.length - 1) {
                         if (loop) {
@@ -47,26 +51,35 @@ function render(data) {
             }
         }
 
-        const color = lc.replace(/0x/, '#');
+        const color = lc.replace(/^0x/, '#');
+        const txtColor = c === '北京' ? '#fff' : color;
+
+        // 绘制线路path
         let path = svgEle('path').appendTo('#g-box')
         path.attr({
             d: $.trim(pathStr),
             lb: lb,
         }).css("stroke", color);
 
-        let rect = svgEle('rect').appendTo('#g-box').html(lb);
-        rect.attr({
-            width: 70,
-            height: 20,
-            x: lbx,
-            y: lby
-        }).css("fill", color);
-
+        // 绘制线路背景矩形只针对北京城市
+        if (c === '北京') {
+            let rectWidth = lb === '机场线' ? 50 : 70;
+        
+            let rect = svgEle('rect').appendTo('#g-box').html(lb);
+            rect.attr({
+                width: rectWidth,
+                height: 20,
+                x: lbx,
+                y: lby
+            }).css("fill", color);
+        }
+        
+        // 绘制地铁线路名
         let text = svgEle('text').appendTo('#g-box').html(lb).addClass("subway-name")
         text.attr({
             x: lbx + 6,
             y: lby + 15,
-            fill: '#fff'
+            fill: txtColor
         }).css('font-size', 12);
         
     }
@@ -76,7 +89,8 @@ function render(data) {
         const { p } = l[i];
 
         for (let j = 0; j < p.length; j++) {
-            const { x, y, rx, ry, lb, ex, rc, st, uid } = p[j].p_xmlattr;
+            const { x, y, rx, ry, lb, ex, rc, st, uid, tip, no } = p[j].p_xmlattr;
+
             if (st) {
                 if (ex) {
                     if (!repeatStr.includes(uid)) {
@@ -106,6 +120,31 @@ function render(data) {
                         x: x + rx + 2,
                         y: y + ry + 12,
                         fill: '#000'
+                    });
+                    repeatStr += uid
+                }
+            }
+            // no为暂缓开通的站点
+            if (no) {
+                // tip为暂缓开通文本，不需要创建站点图标
+                if (!tip) {
+                    let circle = svgEle('circle').appendTo('#g-box')
+                    circle.attr({
+                        cx: x,
+                        cy: y,
+                        r: 5,
+                        fill: '#fff',
+                        stroke: '#000',
+                        'stroke-width': 1
+                    });
+                }
+
+                if (!repeatStr.includes(uid)) {
+                    let text = svgEle('text').appendTo('#g-box').html(lb).addClass("station-name")
+                    text.attr({
+                        x: x + rx + 2,
+                        y: y + ry + 12,
+                        fill: '#ccc'
                     });
                     repeatStr += uid
                 }

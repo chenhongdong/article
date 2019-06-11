@@ -18,8 +18,6 @@ function svgEle(name) {
 function render(data) {
     const { l, sw_xmlattr } = data.subways;
     const { c } = sw_xmlattr;
-    console.log(data);
-    console.log(c);
 
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
@@ -75,7 +73,7 @@ function render(data) {
         }
         
         // 绘制地铁线路名
-        let text = svgEle('text').appendTo('#g-box').html(lb).addClass("subway-name")
+        let text = svgEle('text').appendTo('#g-box').html(lb).addClass('subway-name');
         text.attr({
             x: lbx + 6,
             y: lby + 15,
@@ -96,15 +94,15 @@ function render(data) {
                     if (!repeatStr.includes(uid)) {
                         let image = svgEle('image').appendTo('#g-box');
                         image.attr({
-                            width: "20",
-                            height: "20",
+                            width: 20,
+                            height: 20,
                             x: x - 10,
                             y: y - 10
                         });
                         image[0].href.baseVal = imgSrc;
                     }
                 } else {
-                    let circle = svgEle('circle').appendTo('#g-box')
+                    let circle = svgEle('circle').appendTo('#g-box');
                     circle.attr({
                         cx: x,
                         cy: y,
@@ -115,7 +113,7 @@ function render(data) {
                     });
                 }
                 if (!repeatStr.includes(uid)) {
-                    let text = svgEle('text').appendTo('#g-box').html(lb).addClass("station-name")
+                    let text = svgEle('text').appendTo('#g-box').html(lb).addClass('station-name');
                     text.attr({
                         x: x + rx + 2,
                         y: y + ry + 12,
@@ -128,7 +126,7 @@ function render(data) {
             if (no) {
                 // tip为暂缓开通文本，不需要创建站点图标
                 if (!tip) {
-                    let circle = svgEle('circle').appendTo('#g-box')
+                    let circle = svgEle('circle').appendTo('#g-box');
                     circle.attr({
                         cx: x,
                         cy: y,
@@ -140,7 +138,7 @@ function render(data) {
                 }
 
                 if (!repeatStr.includes(uid)) {
-                    let text = svgEle('text').appendTo('#g-box').html(lb).addClass("station-name")
+                    let text = svgEle('text').appendTo('#g-box').html(lb).addClass('station-name');
                     text.attr({
                         x: x + rx + 2,
                         y: y + ry + 12,

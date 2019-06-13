@@ -21,12 +21,13 @@ function render(data) {
 
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
-        const { lb, loop, lc, lbx, lby } = l_xmlattr;
+        const { lb, loop, lc, lbx, lby, bgx, bgy, bgurl, bgw, bgh } = l_xmlattr;
 
         let pathStr = ''; //地铁线路点
         let isRc = false; //是否圆润拐点
         for (let j = 0; j < p.length; j++) {
             const { x, y, lb, rc } = p[j].p_xmlattr;
+
             if (isRc) {
                 isRc = false;
                 pathStr += `${x} ${y} `;
@@ -80,6 +81,17 @@ function render(data) {
             fill: txtColor
         }).css('font-size', 12);
         
+         // 标志性建筑图标
+         if (bgurl && bgurl.length) {
+            let bgImg = svgEle('image').appendTo('#g-box');
+            bgImg.attr({
+                width: bgw,
+                height: bgh,
+                x: bgx - 10,
+                y: bgy -10
+            });
+            bgImg[0].href.baseVal = bgurl;
+        }
     }
 
     
@@ -91,6 +103,7 @@ function render(data) {
 
             if (st) {
                 if (ex) {
+                    // 基础换乘图标
                     if (!repeatStr.includes(uid)) {
                         let image = svgEle('image').appendTo('#g-box');
                         image.attr({
@@ -102,11 +115,13 @@ function render(data) {
                         image[0].href.baseVal = imgSrc;
                     }
                 } else {
+                    
+
                     let circle = svgEle('circle').appendTo('#g-box');
                     circle.attr({
                         cx: x,
                         cy: y,
-                        r: 5,
+                        r: 4,
                         fill: '#fff',
                         stroke: '#000',
                         'stroke-width': 1

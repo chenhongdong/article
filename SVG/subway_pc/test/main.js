@@ -3,7 +3,10 @@ import render from './js/render';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './js/event';
 import { handle } from './js/handle';
+import { renderCity, renderLines, selectCity } from './js/city';
 
+selectCity();
+renderLines(citys.sh);
 // 渲染地铁图
 render(citys.bj);
 handle();

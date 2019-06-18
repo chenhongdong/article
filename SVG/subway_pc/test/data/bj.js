@@ -471,7 +471,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c11\u53f7\u7ebf",
-                    "lb": "\u5730\u94c11\u53f7\u7ebf",
+                    "lb": "1\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -485,7 +485,10 @@ export default {
                     "bgh": 26,
                     "bgx": -66,
                     "bgy": 148,
-                    "bgurl": "https://p.ssl.qhimg.com/t01df8d32e0f1a096e7.png"
+                    "bgurl": "https://p.ssl.qhimg.com/t01df8d32e0f1a096e7.png",
+                    "lb2": "\u5730\u94c11\u53f7\u7ebf",
+                    "lb2x": 300,
+                    "lb2y": 200
                 }
             },
             {
@@ -949,7 +952,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c12\u53f7\u7ebf",
-                    "lb": "\u5730\u94c12\u53f7\u7ebf",
+                    "lb": "2\u53f7\u7ebf",
                     "slb": false,
                     "n": 18,
                     "loop": true,
@@ -1744,7 +1747,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
-                    "lb": "\u5730\u94c14\u53f7\u7ebf",
+                    "lb": "4\u53f7\u7ebf",
                     "slb": false,
                     "n": 35,
                     "loop": false,
@@ -1753,7 +1756,10 @@ export default {
                     "lbr": 0,
                     "lc": "0x008E9C",
                     "uid": "1479a7007b19e457ebf8536c",
-                    "uid2": "277df81e6219d2b192114c6c"
+                    "uid2": "277df81e6219d2b192114c6c",
+                    "lb2": "\u5730\u94c14\u53f7\u7ebf",
+                    "lb2x": -200,
+                    "lb2y": 420
                 }
             },
             {
@@ -2220,7 +2226,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c15\u53f7\u7ebf",
-                    "lb": "\u5730\u94c15\u53f7\u7ebf",
+                    "lb": "5\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -2229,7 +2235,10 @@ export default {
                     "lbr": 0,
                     "lc": "0xA6217F",
                     "uid": "76464b1774e4f36841d63eb7",
-                    "uid2": "3039f3071bdd32f0f7e73bb7"
+                    "uid2": "3039f3071bdd32f0f7e73bb7",
+                    "lb2": "\u5730\u94c15\u53f7\u7ebf",
+                    "lb2x": 80,
+                    "lb2y": 320
                 }
             },
             {
@@ -2945,7 +2954,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c16\u53f7\u7ebf",
-                    "lb": "\u5730\u94c16\u53f7\u7ebf",
+                    "lb": "6\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -2954,7 +2963,10 @@ export default {
                     "lbr": 0,
                     "lc": "0xD29700",
                     "uid": "a15f370891be585133870acc",
-                    "uid2": "c813960a8a3d3ac08adb73cc"
+                    "uid2": "c813960a8a3d3ac08adb73cc",
+                    "lb2": "\u5730\u94c16\u53f7\u7ebf",
+                    "lb2x": -730,
+                    "lb2y": 70
                 }
             },
             {
@@ -3394,7 +3406,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c17\u53f7\u7ebf",
-                    "lb": "\u5730\u94c17\u53f7\u7ebf",
+                    "lb": "7\u53f7\u7ebf",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -3805,7 +3817,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c18\u53f7\u7ebf",
-                    "lb": "\u5730\u94c18\u53f7\u7ebf",
+                    "lb": "8\u53f7\u7ebf",
                     "slb": false,
                     "n": 10,
                     "loop": false,
@@ -4093,7 +4105,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c18\u53f7\u7ebf\u5357\u6bb5",
-                    "lb": "\u5730\u94c18\u53f7\u7ebf",
+                    "lb": "8\u53f7\u7ebf",
                     "slb": false,
                     "n": 10,
                     "loop": false,
@@ -4385,7 +4397,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c19\u53f7\u7ebf",
-                    "lb": "\u5730\u94c19\u53f7\u7ebf",
+                    "lb": "9\u53f7\u7ebf",
                     "slb": false,
                     "n": 9,
                     "loop": false,
@@ -5446,7 +5458,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c110\u53f7\u7ebf",
-                    "lb": "\u5730\u94c110\u53f7\u7ebf",
+                    "lb": "10\u53f7\u7ebf",
                     "slb": false,
                     "n": 45,
                     "loop": true,
@@ -5455,7 +5467,10 @@ export default {
                     "lbr": 0,
                     "lc": "0x009BC0",
                     "uid": "de6d05290c19ca50a2d230b7",
-                    "uid2": "28d3dce37526799f49fd3fb7"
+                    "uid2": "28d3dce37526799f49fd3fb7",
+                    "lb2": "\u5730\u94c110\u53f7\u7ebf",
+                    "lb2x": 150,
+                    "lb2y": 380
                 }
             },
             {
@@ -5878,7 +5893,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c113\u53f7\u7ebf",
-                    "lb": "\u5730\u94c113\u53f7\u7ebf",
+                    "lb": "13\u53f7\u7ebf",
                     "slb": false,
                     "n": 16,
                     "loop": false,
@@ -6035,7 +6050,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
-                    "lb": "\u5730\u94c114\u53f7\u7ebf",
+                    "lb": "14\u53f7\u7ebf",
                     "slb": false,
                     "n": 6,
                     "loop": false,
@@ -6603,7 +6618,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
-                    "lb": "\u5730\u94c114\u53f7\u7ebf",
+                    "lb": "14\u53f7\u7ebf",
                     "slb": false,
                     "n": 6,
                     "loop": false,
@@ -7070,7 +7085,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c115\u53f7\u7ebf",
-                    "lb": "\u5730\u94c115\u53f7\u7ebf",
+                    "lb": "15\u53f7\u7ebf",
                     "slb": false,
                     "n": 13,
                     "loop": false,
@@ -7321,7 +7336,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c116\u53f7\u7ebf",
-                    "lb": "\u5730\u94c116\u53f7\u7ebf",
+                    "lb": "16\u53f7\u7ebf",
                     "slb": false,
                     "n": 10,
                     "loop": false,
@@ -7615,7 +7630,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u516b\u901a\u7ebf",
-                    "lb": "\u5730\u94c1\u516b\u901a\u7ebf",
+                    "lb": "\u516b\u901a\u7ebf",
                     "slb": false,
                     "n": 13,
                     "loop": false,
@@ -7624,7 +7639,10 @@ export default {
                     "lbr": 0,
                     "lc": "0xC23A30",
                     "uid": "37125ffd5b009d930ab93ab7",
-                    "uid2": "32955707ba85655ecae33cb7"
+                    "uid2": "32955707ba85655ecae33cb7",
+                    "lb2": "\u5730\u94c1\u516b\u901a\u7ebf",
+                    "lb2x": 700,
+                    "lb2y": 290
                 }
             },
             {
@@ -7931,7 +7949,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u660c\u5e73\u7ebf",
-                    "lb": "\u5730\u94c1\u660c\u5e73\u7ebf",
+                    "lb": "\u660c\u5e73\u7ebf",
                     "slb": false,
                     "n": 7,
                     "loop": false,
@@ -8239,7 +8257,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u4ea6\u5e84\u7ebf",
-                    "lb": "\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                    "lb": "\u4ea6\u5e84\u7ebf",
                     "slb": false,
                     "n": 14,
                     "loop": false,
@@ -8493,7 +8511,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u623f\u5c71\u7ebf",
-                    "lb": "\u5730\u94c1\u623f\u5c71\u7ebf",
+                    "lb": "\u623f\u5c71\u7ebf",
                     "slb": false,
                     "n": 12,
                     "loop": false,
@@ -8919,7 +8937,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1s1\u7ebf",
-                    "lb": "\u5730\u94c1S1\u7ebf",
+                    "lb": "S1\u7ebf",
                     "slb": true,
                     "n": 8,
                     "loop": false,
@@ -9098,7 +9116,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u71d5\u623f\u7ebf",
-                    "lb": "\u5730\u94c1\u71d5\u623f\u7ebf",
+                    "lb": "\u71d5\u623f\u7ebf",
                     "slb": true,
                     "n": 9,
                     "loop": false,
@@ -9319,7 +9337,7 @@ export default {
                 ],
                 "l_xmlattr": {
                     "lid": "\u5730\u94c1\u897f\u90ca\u7ebf",
-                    "lb": "\u5730\u94c1\u897f\u90ca\u7ebf",
+                    "lb": "\u897f\u90ca\u7ebf",
                     "slb": true,
                     "n": 9,
                     "loop": false,

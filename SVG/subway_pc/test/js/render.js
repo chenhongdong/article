@@ -20,7 +20,7 @@ function render(data) {
 
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
-        const { lb, loop, lc, lbx, lby, bgx, bgy, bgurl, bgw, bgh } = l_xmlattr;
+        const { lb, loop, lc, lbx, lby, bgx, bgy, bgurl, bgw, bgh, lb2, lb2x, lb2y } = l_xmlattr;
 
         let pathStr = ''; //地铁线路点
         let isRc = false; //是否圆润拐点
@@ -74,17 +74,40 @@ function render(data) {
                 width: rectWidth,
                 height: 20,
                 x: lbx,
-                y: lby
-            }).css("fill", color);
+                y: lby,
+                fill: color
+            });
+        }
+        let subwayName = c === '北京' ? `地铁${lb}` : lb;
+        if (c === '北京' && lb === '机场线') {
+            subwayName = '机场线';
         }
         
         // 绘制地铁线路名
-        let text = svgEle('text').appendTo(g).html(lb).addClass('subway-name');
+        let text = svgEle('text').appendTo(g).html(subwayName).addClass('subway-name');
         text.attr({
-            x: lbx + 6,
+            x: lbx + 5,
             y: lby + 15,
             fill: txtColor
         }).css('font-size', 12);
+
+        if (lb2 && lb2.length) {
+            let rect = svgEle('rect').appendTo(g).html(lb2);
+            rect.attr({
+                width: 70,
+                height: 20,
+                x: lb2x,
+                y: lb2y,
+                fill: color
+            });
+
+            let text = svgEle('text').appendTo(g).html(lb2).addClass('subway-name');
+            text.attr({
+                x: lb2x + 6,
+                y: lb2y + 15,
+                fill: txtColor
+            }).css('font-size', 12);
+        }
         
          // 标志性建筑图标
          if (bgurl && bgurl.length) {
@@ -104,6 +127,7 @@ function render(data) {
         const { p } = l[i];
 
         let g = svgEle('g').appendTo('#g-box');
+        g.attr('data-station', 'station');
 
         for (let j = 0; j < p.length; j++) {
             const { x, y, rx, ry, lb, ex, rc, st, uid, tip, no } = p[j].p_xmlattr;
@@ -150,7 +174,7 @@ function render(data) {
                     circle.attr({
                         cx: x,
                         cy: y,
-                        r: 5,
+                        r: 4,
                         fill: '#fff',
                         stroke: '#000',
                         'stroke-width': 1
@@ -169,7 +193,6 @@ function render(data) {
             }
         }
     }
-
 }
 
 

@@ -1,3 +1,4 @@
+import './css/index.css';
 import * as citys from './data';
 import render from './js/render';
 import svgPanZoom from 'svg-pan-zoom';
@@ -6,7 +7,7 @@ import { handle } from './js/handle';
 import { renderCity, renderLines, selectCity } from './js/city';
 
 selectCity();
-renderLines(citys.sh);
+renderLines(citys.bj);
 // 渲染地铁图
 render(citys.bj);
 handle();

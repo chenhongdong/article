@@ -11,18 +11,20 @@ function renderLines(data) {
     lines.forEach(line => {
         const { l_xmlattr } = line;
         let name = l_xmlattr.lb;
+        let color = l_xmlattr.lc.replace(/^0x/, '#');
 
         if (name.indexOf('地铁') > 0) {
             name = l_xmlattr.lb.replace(/地铁/, '');
         }
 
-        html += `<a href="javascript:;">${name}</a>`;
+        html += `<a href="javascript:;" style="color: ${color}">${name}</a>`;
     });
 
     html += '</div>';
 
     $('#subways-wrapper-map').append(html);
 }
+
 
 
 export default renderLines;

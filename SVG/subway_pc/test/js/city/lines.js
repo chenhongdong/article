@@ -17,7 +17,7 @@ function renderLines(data) {
             name = l_xmlattr.lb.replace(/地铁/, '');
         }
 
-        html += `<a href="javascript:;" style="color: ${color}">${name}</a>`;
+        html += `<a href="javascript:;" style="color: ${color}" data-subway="subway_${name}">${name}</a>`;
     });
 
     html += '</div>';

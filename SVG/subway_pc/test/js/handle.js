@@ -1,56 +1,98 @@
 import $ from 'jquery';
 import createSvg from './common/createSvg';
+import * as citys from '../data';
+import render from './render';
+import { renderCity, renderLines } from './city';
+import svgPanZoom from 'svg-pan-zoom';
+import eventsHandler from './event';
+
+
+
+const gBox = $('#g-box');
+
+function init() {
+    renderCity();
+    renderLines(citys.bj);
+    // 渲染地铁图
+    render(citys.bj);
+
+    svgPanZoom('#subways-svg', {
+        zoomEnabled: true,
+        controlIconsEnabled: false,
+        fit: true,
+        center: true,
+        zoomScaleSensitivity: 0.2,
+        minZoom: 0.7,
+        maxZoom: 5,
+        customEventsHandler: eventsHandler
+    });
+}
+
 
 function handle() {
-    // hover到subway路径
-    $('path').hover(function() {
+    hoverPath();
+
+    reset();
+
+    selectCity();
+}
+
+// hover到subway路径
+function hoverPath() {
+    $('#g-box').on('mouseover', 'path', function() {
         $(this).addClass('active');
         $(this).css({
             'stroke-width': 8,
             'transition': 'stroke-width ease .7s'
         });
-    }, function() {
+    }).on('mouseout', 'path', function() {
         $(this).css('stroke-width', 5);
     });
+}
 
-    // hover线路展现对应路径
-    let flag = false;
-    let gBox = $('#g-box');
 
-    $('.subways-city-lines').on('click', 'a', function() {
-        console.log($(this).attr('data-subway'));
-        let curAttr = $(this).attr('data-subway');
 
-        if (!flag) {
-            let rect = createSvg('rect').appendTo(gBox);
-            rect.attr({
-                width: 3000,
-                height: 3000,
-                x: -1500,
-                y: -1500,
-                fill: '#fff',
-                'fill-opacity': 0.9
-            });
 
-            flag = true;
-        }
+// 城市选择
+function selectCity() {
+    $('.current-city').on('click', function() {
+        $(this).parent().toggleClass('selected-city');
+        return false;
+    });
 
-        let children = gBox.find('g');
-
-        for (let i = 0; i < children.length; i++) {
-            let child = $(children[i]);
-            let attr = child.attr('data-subway');
-            
-            if (curAttr === attr) {
-                console.log(child);
-                child.appendTo(gBox);
+    $('.city-list').on('click', 'li', function() {
+        let cityName = $(this).attr('data-city');
+        for (let i in citys) {
+            if (cityName === i) {
+                handleCity(this, citys[i]);
             }
         }
+        return false;
+    });
+}
 
+function handleCity(self, data) {
+    $('#g-box').html('');
+    $('#subways-city-lines').html('123')
+    // 重新渲染地铁图和路线
+    renderLines(data);
+    render(data);
+
+    $(self).parent().parent().removeClass('selected-city');
+    $(self).parent().siblings('.current-city').html($(self).html());
+    $(self).addClass('active').siblings().removeClass('active');
+}
+
+// 重置
+function reset() {
+    $(document).on('click', function() {
+        // $('#rect-mask').hidex();
+        $('.subways-city').removeClass('selected-city');
     });
 }
 
 
 export {
+    init,
     handle
 }

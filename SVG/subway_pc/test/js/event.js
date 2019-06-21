@@ -1,12 +1,14 @@
 import Hammer from 'hammerjs';
+import { showPath } from './city';
 
 const eventsHandler = {
     haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
     init: function(options) {
-        var instance = options.instance,
+        let instance = options.instance,
             initialScale = 1,
             pannedX = 0,
-            pannedY = 0
+            pannedY = 0;
+
         this.hammer = Hammer(options.svgElement, {
             inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput
         })
@@ -41,8 +43,14 @@ const eventsHandler = {
                 y: ev.center.y
             })
         })
-        options.svgElement.addEventListener('touchmove', function(e) {
-            e.preventDefault();
+
+
+        // showPath展示路径操作
+        showPath(function(params) {
+            instance.zoomAtPoint(1.2, {
+                x: params.x,
+                y: params.y
+            })
         });
     },
     destroy: function() {

@@ -1,8 +1,9 @@
 import renderCity from './citys';
-import renderLines from './lines';
+import { showPath, renderLines } from './lines';
 import selectCity from './select';
 
 export {
+    showPath,
     renderLines,
     renderCity,
     selectCity

@@ -11,16 +11,15 @@ function renderLines(data) {
     cityLines.html('');
 
     let html = '';
-    const lines = data.subways.l;
+    const { l, sw_xmlattr } = data.subways;
+    const { c } = sw_xmlattr;
+    const lines = l;
+    
     lines.forEach(line => {
         const { l_xmlattr } = line;
-        const { lbx, lby, lb, lc } = l_xmlattr;
-        let name = lb;
+        const { lbx, lby, sn, lb, lc } = l_xmlattr;
+        let name = c === '北京' ? sn : lb;
         let color = lc.replace(/^0x/, '#');
-
-        if (name.indexOf('地铁') > 0) {
-            name = lb.replace(/地铁/, '');
-        }
 
         html += `<a href="javascript:;" style="color: ${color}" data-subway="subway_${name}" data-x=${lbx} data-y=${lby}>${name}</a>`;
     });

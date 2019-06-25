@@ -15,6 +15,7 @@ import hf from './hf';  // 合肥
 import hz from './hz';  // 杭州
 import jn from './jn';  // 济南
 import km from './km';  // 昆明
+import lz from './lz';  // 兰州
 import nb from './nb';  // 宁波
 import nc from './nc';  // 南昌
 import nj from './nj';  // 南京
@@ -37,4 +38,4 @@ import xm from './xm';  // 厦门
 import zz from './zz';  // 郑州
 
 
-export { bj, cc, cd, cq, cs, dg, dl, fs, fz, gx, gy, gz, heb, hf, hz, jn, km, nb, nc, nj, nn, qd, sh, sjz, suz, sy, sz, tb, tj, wh, wlmq, wx, wz, xa, xg, xm, zz };
+export { bj, cc, cd, cq, cs, dg, dl, fs, fz, gx, gy, gz, heb, hf, hz, jn, km, lz, nb, nc, nj, nn, qd, sh, sjz, suz, sy, sz, tb, tj, wh, wlmq, wx, wz, xa, xg, xm, zz };

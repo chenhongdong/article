@@ -97,6 +97,11 @@ const cityList = [
         name: '青岛'
     },
     {
+        city: 'lz',
+        code: 36,
+        name: '兰州'
+    },
+    {
         city: 'zz',
         code: 268,
         name: '郑州'

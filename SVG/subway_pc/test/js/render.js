@@ -17,15 +17,14 @@ function render(data) {
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
         // bgx, bgy, bgurl, bgw, bgh, lb2, lb2x, lb2y仅针对北京地铁图
-        const { lb, loop, lc, lbx, lby, bgx, bgy, bgurl, bgw, bgh, lb2, lb2x, lb2y } = l_xmlattr;
+        const { lb, loop, lc, lbx, lby, bgx, bgy, bgurl, bgw, bgh, lb2, lb2x, lb2y, sn } = l_xmlattr;
 
         let pathStr = ''; //地铁线路点
         let isRc = false; //是否圆润拐点
-        
 
         for (let j = 0; j < p.length; j++) {
             const { x, y, lb, rc } = p[j].p_xmlattr;
-
+            
             if (isRc) {
                 isRc = false;
                 pathStr += `${x} ${y} `;
@@ -50,10 +49,11 @@ function render(data) {
 
         const color = lc.replace(/^0x/, '#');
         const txtColor = c === '北京' ? '#fff' : color;
-
-        // 绘制组，方便管理
+        
+        // 绘制分组，方便管理
+        const name = c === '北京' ? sn : lb;
         let g = createSvg('g').appendTo('#g-box');
-        g.attr('data-subway', `subway_${lb}`);
+        g.attr('data-subway', `subway_${name}`);
 
         // 绘制线路path
         let path = createSvg('path').appendTo(g)
@@ -75,13 +75,9 @@ function render(data) {
                 fill: color
             });
         }
-        let subwayName = c === '北京' ? `地铁${lb}` : lb;
-        if (c === '北京' && lb === '机场线') {
-            subwayName = '机场线';
-        }
         
         // 绘制地铁线路名
-        let text = createSvg('text').appendTo(g).html(subwayName).addClass('subway-name');
+        let text = createSvg('text').appendTo(g).html(lb).addClass('subway-name');
         text.attr({
             x: lbx + 5,
             y: lby + 15,
@@ -124,8 +120,10 @@ function render(data) {
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
 
+        // 绘制分组
+        const name = c === '北京' ? l_xmlattr.sn : l_xmlattr.lb;
         let g = createSvg('g').appendTo('#g-box');
-        g.attr('data-subway', `subway_${l_xmlattr.lb}`);
+        g.attr('data-subway', `subway_${name}`);
 
         for (let j = 0; j < p.length; j++) {
             const { x, y, rx, ry, lb, ex, rc, st, uid, tip, no } = p[j].p_xmlattr;

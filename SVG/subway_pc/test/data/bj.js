@@ -9,8 +9,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u82f9\u679c\u56edA",
-                            "lb": "\u82f9\u679c\u56ed",
+                            "sid": "苹果园",
+                            "lb": "苹果园",
                             "x": -681.3,
                             "y": 138.3,
                             "rx": 8,
@@ -20,7 +20,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "5",
                             "px": 12933692.29,
                             "py": 4828438.13,
@@ -29,8 +29,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u53e4\u57ce",
-                            "lb": "\u53e4\u57ce",
+                            "sid": "古城",
+                            "lb": "古城",
                             "x": -661.7,
                             "y": 170.6,
                             "rx": -18.8,
@@ -40,7 +40,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12935139.61,
                             "py": 4825694.49,
@@ -49,8 +49,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516b\u89d2\u6e38\u4e50\u56ed",
-                            "lb": "\u516b\u89d2\u6e38\u4e50\u56ed",
+                            "sid": "八角游乐园",
+                            "lb": "八角游乐园",
                             "x": -608.2,
                             "y": 170.6,
                             "rx": -30.1,
@@ -60,7 +60,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12937624.09,
                             "py": 4825645.63,
@@ -69,8 +69,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516b\u5b9d\u5c71",
-                            "lb": "\u516b\u5b9d\u5c71",
+                            "sid": "八宝山",
+                            "lb": "八宝山",
                             "x": -549.2,
                             "y": 170.6,
                             "rx": -18.9,
@@ -80,7 +80,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12940171.89,
                             "py": 4825661.39,
@@ -89,8 +89,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7389\u6cc9\u8def",
-                            "lb": "\u7389\u6cc9\u8def",
+                            "sid": "玉泉路",
+                            "lb": "玉泉路",
                             "x": -501.8,
                             "y": 170.6,
                             "rx": -17.5,
@@ -100,7 +100,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12942085.81,
                             "py": 4825707.07,
@@ -109,8 +109,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e94\u68f5\u677e",
-                            "lb": "\u4e94\u68f5\u677e",
+                            "sid": "五棵松",
+                            "lb": "五棵松",
                             "x": -453.8,
                             "y": 170.6,
                             "rx": -18.7,
@@ -120,7 +120,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12944418.32,
                             "py": 4825755.06,
@@ -129,8 +129,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e07\u5bff\u8def",
-                            "lb": "\u4e07\u5bff\u8def",
+                            "sid": "万寿路",
+                            "lb": "万寿路",
                             "x": -409.2,
                             "y": 170.6,
                             "rx": -18.4,
@@ -140,7 +140,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12946770.19,
                             "py": 4825737.28,
@@ -149,8 +149,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516c\u4e3b\u575f",
-                            "lb": "\u516c\u4e3b\u575f",
+                            "sid": "公主坟",
+                            "lb": "公主坟",
                             "x": -366,
                             "y": 170.6,
                             "rx": -40,
@@ -160,7 +160,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁10号线",
                             "int": "2",
                             "px": 12948442.62,
                             "py": 4825707.35,
@@ -169,8 +169,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u519b\u4e8b\u535a\u7269\u9986",
-                            "lb": "\u519b\u4e8b\u535a\u7269\u9986",
+                            "sid": "军事博物馆",
+                            "lb": "军事博物馆",
                             "x": -311,
                             "y": 170.6,
                             "rx": 5,
@@ -180,7 +180,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁9号线",
                             "int": "2",
                             "px": 12949745.51,
                             "py": 4825699.07,
@@ -189,8 +189,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6728\u6a28\u5730",
-                            "lb": "\u6728\u6a28\u5730",
+                            "sid": "木樨地",
+                            "lb": "木樨地",
                             "x": -253.8,
                             "y": 170.6,
                             "rx": -19.2,
@@ -200,7 +200,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "3",
                             "px": 12951506.51,
                             "py": 4825652.76,
@@ -209,8 +209,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5357\u793c\u58eb\u8def",
-                            "lb": "\u5357\u793c\u58eb\u8def",
+                            "sid": "南礼士路",
+                            "lb": "南礼士路",
                             "x": -205.4,
                             "y": 170.6,
                             "rx": -23.4,
@@ -220,7 +220,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "2",
                             "px": 12953190.16,
                             "py": 4825631.62,
@@ -229,8 +229,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u590d\u5174\u95e8",
-                            "lb": "\u590d\u5174\u95e8",
+                            "sid": "复兴门",
+                            "lb": "复兴门",
                             "x": -170.3,
                             "y": 170.6,
                             "rx": 6.4,
@@ -240,7 +240,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁2号线",
                             "int": "3",
                             "px": 12953626.86,
                             "py": 4825637.55,
@@ -249,8 +249,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u5355",
-                            "lb": "\u897f\u5355",
+                            "sid": "西单",
+                            "lb": "西单",
                             "x": -105.3,
                             "y": 170.6,
                             "rx": 6.1,
@@ -260,7 +260,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12955567.35,
                             "py": 4825679.29,
@@ -269,8 +269,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u5b89\u95e8\u897f",
-                            "lb": "\u5929\u5b89\u95e8\u897f",
+                            "sid": "天安门西",
+                            "lb": "天安门西",
                             "x": -61.5,
                             "y": 170.6,
                             "rx": -23.7,
@@ -280,7 +280,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "2",
                             "px": 12957512.66,
                             "py": 4825746.82,
@@ -289,8 +289,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u5b89\u95e8\u4e1c",
-                            "lb": "\u5929\u5b89\u95e8\u4e1c",
+                            "sid": "天安门东",
+                            "lb": "天安门东",
                             "x": -8.3,
                             "y": 170.6,
                             "rx": -23.8,
@@ -300,7 +300,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "2",
                             "px": 12958603.67,
                             "py": 4825790.79,
@@ -309,8 +309,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u738b\u5e9c\u4e95",
-                            "lb": "\u738b\u5e9c\u4e95",
+                            "sid": "王府井",
+                            "lb": "王府井",
                             "x": 38.5,
                             "y": 170.6,
                             "rx": -20,
@@ -320,7 +320,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "2",
                             "px": 12959710.8,
                             "py": 4825836.8,
@@ -329,8 +329,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u5355",
-                            "lb": "\u4e1c\u5355",
+                            "sid": "东单",
+                            "lb": "东单",
                             "x": 72,
                             "y": 170.6,
                             "rx": -26,
@@ -340,7 +340,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁5号线",
                             "int": "4",
                             "px": 12960624.28,
                             "py": 4825851.99,
@@ -349,8 +349,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5efa\u56fd\u95e8",
-                            "lb": "\u5efa\u56fd\u95e8",
+                            "sid": "建国门",
+                            "lb": "建国门",
                             "x": 131,
                             "y": 170.6,
                             "rx": -40,
@@ -360,7 +360,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁2号线",
                             "int": "2",
                             "px": 12962439.61,
                             "py": 4825852.31,
@@ -369,8 +369,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c38\u5b89\u91cc",
-                            "lb": "\u6c38\u5b89\u91cc",
+                            "sid": "永安里",
+                            "lb": "永安里",
                             "x": 175.7,
                             "y": 170.6,
                             "rx": -18.5,
@@ -380,7 +380,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线",
                             "int": "2",
                             "px": 12964084.95,
                             "py": 4825811.41,
@@ -389,8 +389,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56fd\u8d38",
-                            "lb": "\u56fd\u8d38",
+                            "sid": "国贸",
+                            "lb": "国贸",
                             "x": 225.1,
                             "y": 170.6,
                             "rx": -26,
@@ -400,7 +400,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12965152.48,
                             "py": 4825798.3,
@@ -409,9 +409,9 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u671b\u8def",
-                            "lb": "\u5927\u671b\u8def",
-                            "x": 279.7,
+                            "sid": "大望路",
+                            "lb": "大望路",
+                            "x": 278,
                             "y": 170.6,
                             "rx": -40,
                             "ry": 5,
@@ -420,7 +420,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁1号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12967131.01,
                             "py": 4825882.32,
@@ -429,8 +429,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56db\u60e0",
-                            "lb": "\u56db\u60e0",
+                            "sid": "四惠",
+                            "lb": "四惠",
                             "x": 313.2,
                             "y": 170.6,
                             "dy": "3",
@@ -441,7 +441,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁八通线",
                             "int": "3",
                             "px": 12969075.43,
                             "py": 4825908.43,
@@ -450,8 +450,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56db\u60e0\u4e1c",
-                            "lb": "\u56db\u60e0\u4e1c",
+                            "sid": "四惠东",
+                            "lb": "四惠东",
                             "x": 346.8,
                             "y": 170.6,
                             "dy": "3",
@@ -462,7 +462,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁八通线",
                             "px": 12971354.88,
                             "py": 4825923.53,
                             "uid": "382fe242b45bfb1ff80cadde"
@@ -470,8 +470,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c11\u53f7\u7ebf",
-                    "lb": "1\u53f7\u7ebf",
+                    "lid": "地铁1号线",
+                    "lb": "地铁1号线",
+                    "sn": "1号线",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -486,7 +487,7 @@ export default {
                     "bgx": -66,
                     "bgy": 148,
                     "bgurl": "https://p.ssl.qhimg.com/t01df8d32e0f1a096e7.png",
-                    "lb2": "\u5730\u94c11\u53f7\u7ebf",
+                    "lb2": "地铁1号线",
                     "lb2x": 300,
                     "lb2y": 200
                 }
@@ -495,8 +496,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u76f4\u95e8",
-                            "lb": "\u897f\u76f4\u95e8",
+                            "sid": "西直门",
+                            "lb": "西直门",
                             "x": -170.3,
                             "y": 43.5,
                             "rx": -48.5,
@@ -506,7 +507,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁4号线大兴线,北京市|地铁13号线",
                             "int": "2",
                             "px": 12953512.16,
                             "py": 4830410.01,
@@ -531,8 +532,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u79ef\u6c34\u6f6d",
-                            "lb": "\u79ef\u6c34\u6f6d",
+                            "sid": "积水潭",
+                            "lb": "积水潭",
                             "x": -126.1,
                             "y": 16.1,
                             "rx": -19.3,
@@ -542,7 +543,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "3",
                             "px": 12955412.58,
                             "py": 4831673.82,
@@ -551,8 +552,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9f13\u697c\u5927\u8857",
-                            "lb": "\u9f13\u697c\u5927\u8857",
+                            "sid": "鼓楼大街",
+                            "lb": "鼓楼大街",
                             "x": -23.6,
                             "y": 16.1,
                             "rx": -56.6,
@@ -562,7 +563,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁8号线",
                             "int": "2",
                             "px": 12957760.68,
                             "py": 4831575.73,
@@ -571,8 +572,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b89\u5b9a\u95e8",
-                            "lb": "\u5b89\u5b9a\u95e8",
+                            "sid": "安定门",
+                            "lb": "安定门",
                             "x": 26.3,
                             "y": 16.1,
                             "rx": -19.3,
@@ -582,7 +583,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "2",
                             "px": 12959354.64,
                             "py": 4831771.59,
@@ -591,8 +592,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u96cd\u548c\u5bab",
-                            "lb": "\u96cd\u548c\u5bab",
+                            "sid": "雍和宫",
+                            "lb": "雍和宫",
                             "x": 72,
                             "y": 16.1,
                             "rx": -40,
@@ -602,7 +603,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁5号线",
                             "int": "4",
                             "px": 12960316.9,
                             "py": 4831790.65,
@@ -627,8 +628,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u76f4\u95e8",
-                            "lb": "\u4e1c\u76f4\u95e8",
+                            "sid": "东直门",
+                            "lb": "东直门",
                             "x": 131,
                             "y": 45.1,
                             "rx": 6.7,
@@ -638,7 +639,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u673a\u573a\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁13号线,北京市|机场线",
                             "int": "3",
                             "px": 12962214.83,
                             "py": 4830596.98,
@@ -647,8 +648,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u56db\u5341\u6761",
-                            "lb": "\u4e1c\u56db\u5341\u6761",
+                            "sid": "东四十条",
+                            "lb": "东四十条",
                             "x": 131,
                             "y": 85.3,
                             "rx": 6.7,
@@ -658,7 +659,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "2",
                             "px": 12962253.58,
                             "py": 4829515.4,
@@ -667,8 +668,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671d\u9633\u95e8",
-                            "lb": "\u671d\u9633\u95e8",
+                            "sid": "朝阳门",
+                            "lb": "朝阳门",
                             "x": 131,
                             "y": 114.6,
                             "rx": -40,
@@ -678,7 +679,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁6号线",
                             "int": "3",
                             "px": 12962204.89,
                             "py": 4828157.93,
@@ -687,8 +688,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5efa\u56fd\u95e8",
-                            "lb": "\u5efa\u56fd\u95e8",
+                            "sid": "建国门",
+                            "lb": "建国门",
                             "x": 131,
                             "y": 170.6,
                             "rx": 6.7,
@@ -698,7 +699,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁2号线",
                             "int": "3",
                             "px": 12962439.61,
                             "py": 4825852.31,
@@ -723,8 +724,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u4eac\u7ad9",
-                            "lb": "\u5317\u4eac\u7ad9",
+                            "sid": "北京站",
+                            "lb": "北京站",
                             "x": 118.6,
                             "y": 203.5,
                             "rx": 3.2,
@@ -734,7 +735,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "4",
                             "px": 12961470.95,
                             "py": 4825363.85,
@@ -759,8 +760,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5d07\u6587\u95e8",
-                            "lb": "\u5d07\u6587\u95e8",
+                            "sid": "崇文门",
+                            "lb": "崇文门",
                             "x": 72,
                             "y": 210.4,
                             "rx": -41.7,
@@ -770,7 +771,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁5号线",
                             "int": "3",
                             "px": 12960388.27,
                             "py": 4824821.12,
@@ -779,8 +780,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u524d\u95e8",
-                            "lb": "\u524d\u95e8",
+                            "sid": "前门",
+                            "lb": "前门",
                             "x": 15.1,
                             "y": 210.4,
                             "rx": -12,
@@ -790,7 +791,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "2",
                             "px": 12958205.72,
                             "py": 4824700,
@@ -799,8 +800,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u548c\u5e73\u95e8",
-                            "lb": "\u548c\u5e73\u95e8",
+                            "sid": "和平门",
+                            "lb": "和平门",
                             "x": -42.4,
                             "y": 210.4,
                             "rx": -17.5,
@@ -810,7 +811,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "2",
                             "px": 12956685.42,
                             "py": 4824675.16,
@@ -819,8 +820,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5ba3\u6b66\u95e8",
-                            "lb": "\u5ba3\u6b66\u95e8",
+                            "sid": "宣武门",
+                            "lb": "宣武门",
                             "x": -105.3,
                             "y": 210.4,
                             "rx": -38,
@@ -830,7 +831,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12955597.69,
                             "py": 4824605.61,
@@ -855,8 +856,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u957f\u693f\u8857",
-                            "lb": "\u957f\u693f\u8857",
+                            "sid": "长椿街",
+                            "lb": "长椿街",
                             "x": -159.9,
                             "y": 201.6,
                             "rx": -41.8,
@@ -866,7 +867,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "3",
                             "px": 12954380.2,
                             "py": 4824527.41,
@@ -891,8 +892,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u590d\u5174\u95e8",
-                            "lb": "\u590d\u5174\u95e8",
+                            "sid": "复兴门",
+                            "lb": "复兴门",
                             "x": -170.3,
                             "y": 170.6,
                             "rx": 6.4,
@@ -902,7 +903,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁2号线",
                             "int": "3",
                             "px": 12953626.86,
                             "py": 4825637.55,
@@ -911,8 +912,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u961c\u6210\u95e8",
-                            "lb": "\u961c\u6210\u95e8",
+                            "sid": "阜成门",
+                            "lb": "阜成门",
                             "x": -170.3,
                             "y": 121.4,
                             "rx": -49.3,
@@ -922,7 +923,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线",
                             "int": "2",
                             "px": 12953590.47,
                             "py": 4828023.27,
@@ -931,8 +932,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8f66\u516c\u5e84",
-                            "lb": "\u8f66\u516c\u5e84",
+                            "sid": "车公庄",
+                            "lb": "车公庄",
                             "x": -170.3,
                             "y": 82.3,
                             "rx": 5,
@@ -942,7 +943,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁6号线",
                             "int": "3",
                             "px": 12953412.7,
                             "py": 4829277.24,
@@ -951,8 +952,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c12\u53f7\u7ebf",
-                    "lb": "2\u53f7\u7ebf",
+                    "lid": "地铁2号线",
+                    "lb": "地铁2号线",
+                    "sn": "2号线",
                     "slb": false,
                     "n": 18,
                     "loop": true,
@@ -968,8 +970,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b89\u6cb3\u6865\u5317",
-                            "lb": "\u5b89\u6cb3\u6865\u5317",
+                            "sid": "安河桥北",
+                            "lb": "安河桥北",
                             "x": -499.3,
                             "y": -193.5,
                             "rx": -24.6,
@@ -979,7 +981,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "1",
                             "px": 12943974.05,
                             "py": 4840919.74,
@@ -988,8 +990,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u5bab\u95e8",
-                            "lb": "\u5317\u5bab\u95e8",
+                            "sid": "北宫门",
+                            "lb": "北宫门",
                             "x": -443.4,
                             "y": -193.5,
                             "rx": -18.2,
@@ -999,7 +1001,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12944815.35,
                             "py": 4839475.06,
@@ -1008,8 +1010,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u82d1",
-                            "lb": "\u897f\u82d1",
+                            "sid": "西苑",
+                            "lb": "西苑",
                             "x": -394.2,
                             "y": -193.5,
                             "rx": -12.7,
@@ -1019,7 +1021,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁16号线",
                             "int": "3",
                             "px": 12946489.9,
                             "py": 4838904.68,
@@ -1060,8 +1062,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5706\u660e\u56ed",
-                            "lb": "\u5706\u660e\u56ed",
+                            "sid": "圆明园",
+                            "lb": "圆明园",
                             "x": -311,
                             "y": -183,
                             "rx": 10,
@@ -1071,7 +1073,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12948371.85,
                             "py": 4839010.16,
@@ -1080,8 +1082,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u4eac\u5927\u5b66\u4e1c\u95e8",
-                            "lb": "\u5317\u4eac\u5927\u5b66\u4e1c\u95e8",
+                            "sid": "北京大学东门",
+                            "lb": "北京大学东门",
                             "x": -311,
                             "y": -154.4,
                             "rx": -81.8,
@@ -1091,7 +1093,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12949076.25,
                             "py": 4837930.37,
@@ -1100,8 +1102,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e2d\u5173\u6751",
-                            "lb": "\u4e2d\u5173\u6751",
+                            "sid": "中关村",
+                            "lb": "中关村",
                             "x": -311,
                             "y": -127.1,
                             "rx": 10,
@@ -1111,7 +1113,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "1",
                             "px": 12949165.38,
                             "py": 4836765.26,
@@ -1120,8 +1122,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6d77\u6dc0\u9ec4\u5e84",
-                            "lb": "\u6d77\u6dc0\u9ec4\u5e84",
+                            "sid": "海淀黄庄",
+                            "lb": "海淀黄庄",
                             "x": -311,
                             "y": -84,
                             "rx": 6,
@@ -1131,7 +1133,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12949308.13,
                             "py": 4835594.47,
@@ -1140,8 +1142,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4eba\u6c11\u5927\u5b66",
-                            "lb": "\u4eba\u6c11\u5927\u5b66",
+                            "sid": "人民大学",
+                            "lb": "人民大学",
                             "x": -311,
                             "y": -34,
                             "rx": 10,
@@ -1151,7 +1153,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12949724.67,
                             "py": 4834278.42,
@@ -1160,8 +1162,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9b4f\u516c\u6751",
-                            "lb": "\u9b4f\u516c\u6751",
+                            "sid": "魏公村",
+                            "lb": "魏公村",
                             "x": -311,
                             "y": -0.2,
                             "rx": 10,
@@ -1171,7 +1173,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12949923.21,
                             "py": 4832931.12,
@@ -1180,8 +1182,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56fd\u5bb6\u56fe\u4e66\u9986",
-                            "lb": "\u56fd\u5bb6\u56fe\u4e66\u9986",
+                            "sid": "国家图书馆",
+                            "lb": "国家图书馆",
                             "x": -311,
                             "y": 43.5,
                             "rx": -65,
@@ -1191,7 +1193,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁9号线",
                             "int": "2",
                             "px": 12950148.43,
                             "py": 4830820.38,
@@ -1216,8 +1218,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u52a8\u7269\u56ed",
-                            "lb": "\u52a8\u7269\u56ed",
+                            "sid": "动物园",
+                            "lb": "动物园",
                             "x": -235,
                             "y": 43.5,
                             "rx": -17.4,
@@ -1227,7 +1229,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12951629.82,
                             "py": 4830105.65,
@@ -1236,8 +1238,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u76f4\u95e8",
-                            "lb": "\u897f\u76f4\u95e8",
+                            "sid": "西直门",
+                            "lb": "西直门",
                             "x": -170.3,
                             "y": 43.5,
                             "rx": -48.5,
@@ -1247,7 +1249,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁4号线大兴线,北京市|地铁13号线",
                             "int": "3",
                             "px": 12953512.16,
                             "py": 4830410.01,
@@ -1272,8 +1274,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u65b0\u8857\u53e3",
-                            "lb": "\u65b0\u8857\u53e3",
+                            "sid": "新街口",
+                            "lb": "新街口",
                             "x": -110,
                             "y": 43.5,
                             "rx": -40,
@@ -1283,7 +1285,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12954850.08,
                             "py": 4830490.04,
@@ -1308,8 +1310,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e73\u5b89\u91cc",
-                            "lb": "\u5e73\u5b89\u91cc",
+                            "sid": "平安里",
+                            "lb": "平安里",
                             "x": -105.3,
                             "y": 82.3,
                             "rx": -40,
@@ -1319,7 +1321,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁6号线",
                             "int": "2",
                             "px": 12955427.41,
                             "py": 4829502.34,
@@ -1328,8 +1330,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u56db",
-                            "lb": "\u897f\u56db",
+                            "sid": "西四",
+                            "lb": "西四",
                             "x": -105.3,
                             "y": 115.1,
                             "rx": 6.1,
@@ -1339,7 +1341,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12955495.54,
                             "py": 4828097.55,
@@ -1348,8 +1350,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7075\u5883\u80e1\u540c",
-                            "lb": "\u7075\u5883\u80e1\u540c",
+                            "sid": "灵境胡同",
+                            "lb": "灵境胡同",
                             "x": -105.3,
                             "y": 138.7,
                             "rx": -50,
@@ -1359,7 +1361,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "1",
                             "px": 12955528.16,
                             "py": 4826955.34,
@@ -1368,8 +1370,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u5355",
-                            "lb": "\u897f\u5355",
+                            "sid": "西单",
+                            "lb": "西单",
                             "x": -105.3,
                             "y": 170.6,
                             "rx": 6.1,
@@ -1379,7 +1381,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12955567.35,
                             "py": 4825679.29,
@@ -1388,8 +1390,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5ba3\u6b66\u95e8",
-                            "lb": "\u5ba3\u6b66\u95e8",
+                            "sid": "宣武门",
+                            "lb": "宣武门",
                             "x": -105.3,
                             "y": 210.4,
                             "rx": -41,
@@ -1399,7 +1401,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12955597.69,
                             "py": 4824605.61,
@@ -1408,8 +1410,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u83dc\u5e02\u53e3",
-                            "lb": "\u83dc\u5e02\u53e3",
+                            "sid": "菜市口",
+                            "lb": "菜市口",
                             "x": -105.3,
                             "y": 242.8,
                             "rx": 6.1,
@@ -1419,7 +1421,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁7号线",
                             "int": "2",
                             "px": 12955611.64,
                             "py": 4823088.8,
@@ -1428,8 +1430,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9676\u7136\u4ead",
-                            "lb": "\u9676\u7136\u4ead",
+                            "sid": "陶然亭",
+                            "lb": "陶然亭",
                             "x": -105.3,
                             "y": 275.2,
                             "rx": -40,
@@ -1439,7 +1441,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12955603.66,
                             "py": 4821533.82,
@@ -1448,8 +1450,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u4eac\u5357\u7ad9",
-                            "lb": "\u5317\u4eac\u5357\u7ad9",
+                            "sid": "北京南站",
+                            "lb": "北京南站",
                             "x": -105.3,
                             "y": 307.1,
                             "rx": -56,
@@ -1459,7 +1461,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12956078.8,
                             "py": 4819560.13,
@@ -1468,8 +1470,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9a6c\u5bb6\u5821",
-                            "lb": "\u9a6c\u5bb6\u5821",
+                            "sid": "马家堡",
+                            "lb": "马家堡",
                             "x": -105.3,
                             "y": 340,
                             "rx": -40,
@@ -1479,7 +1481,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12955267.11,
                             "py": 4817860.55,
@@ -1488,8 +1490,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u89d2\u95e8\u897f",
-                            "lb": "\u89d2\u95e8\u897f",
+                            "sid": "角门西",
+                            "lb": "角门西",
                             "x": -105.3,
                             "y": 372.4,
                             "rx": 5,
@@ -1499,7 +1501,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁10号线",
                             "int": "1",
                             "px": 12955240.98,
                             "py": 4816810.55,
@@ -1508,8 +1510,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516c\u76ca\u897f\u6865",
-                            "lb": "\u516c\u76ca\u897f\u6865",
+                            "sid": "公益西桥",
+                            "lb": "公益西桥",
                             "x": -105.3,
                             "y": 416,
                             "rx": 6.1,
@@ -1519,7 +1521,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "px": 12955204.27,
                             "py": 4815529.14,
                             "uid": "af5466f63b02ce4a6c20b96d"
@@ -1527,8 +1529,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u65b0\u5bab",
-                            "lb": "\u65b0\u5bab",
+                            "sid": "新宫",
+                            "lb": "新宫",
                             "x": -125.3,
                             "y": 451,
                             "rx": 6.1,
@@ -1538,7 +1540,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "6",
                             "px": 12954623.54,
                             "py": 4811955.19,
@@ -1547,8 +1549,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u7ea2\u95e8",
-                            "lb": "\u897f\u7ea2\u95e8",
+                            "sid": "西红门",
+                            "lb": "西红门",
                             "x": -145.3,
                             "y": 481,
                             "rx": -40,
@@ -1558,7 +1560,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12950512.72,
                             "py": 4808656.27,
@@ -1567,8 +1569,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ad8\u7c73\u5e97\u5317",
-                            "lb": "\u9ad8\u7c73\u5e97\u5317",
+                            "sid": "高米店北",
+                            "lb": "高米店北",
                             "x": -145.3,
                             "y": 518,
                             "rx": 6.1,
@@ -1578,7 +1580,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12950753.41,
                             "py": 4806362.38,
@@ -1587,8 +1589,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ad8\u7c73\u5e97\u5357",
-                            "lb": "\u9ad8\u7c73\u5e97\u5357",
+                            "sid": "高米店南",
+                            "lb": "高米店南",
                             "x": -145.3,
                             "y": 548,
                             "rx": -50,
@@ -1598,7 +1600,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12950873.48,
                             "py": 4804849.27,
@@ -1607,8 +1609,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u67a3\u56ed",
-                            "lb": "\u67a3\u56ed",
+                            "sid": "枣园",
+                            "lb": "枣园",
                             "x": -145.3,
                             "y": 578,
                             "rx": 6.1,
@@ -1618,7 +1620,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12950936.32,
                             "py": 4803409.8,
@@ -1627,8 +1629,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6e05\u6e90\u8def",
-                            "lb": "\u6e05\u6e90\u8def",
+                            "sid": "清源路",
+                            "lb": "清源路",
                             "x": -145.3,
                             "y": 608,
                             "rx": -40,
@@ -1638,7 +1640,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12950941.24,
                             "py": 4801863.1,
@@ -1647,8 +1649,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ec4\u6751\u897f\u5927\u8857",
-                            "lb": "\u9ec4\u6751\u897f\u5927\u8857",
+                            "sid": "黄村西大街",
+                            "lb": "黄村西大街",
                             "x": -145.3,
                             "y": 638,
                             "rx": 6.1,
@@ -1658,7 +1660,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12950953.39,
                             "py": 4800280.73,
@@ -1667,8 +1669,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ec4\u6751\u706b\u8f66\u7ad9",
-                            "lb": "\u9ec4\u6751\u706b\u8f66\u7ad9",
+                            "sid": "黄村火车站",
+                            "lb": "黄村火车站",
                             "x": -145.3,
                             "y": 668,
                             "rx": -60,
@@ -1678,7 +1680,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12950992.86,
                             "py": 4798975.35,
@@ -1687,8 +1689,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e49\u548c\u5e84",
-                            "lb": "\u4e49\u548c\u5e84",
+                            "sid": "义和庄",
+                            "lb": "义和庄",
                             "x": -145.3,
                             "y": 694,
                             "rx": 6.1,
@@ -1698,7 +1700,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12949440.58,
                             "py": 4797529.56,
@@ -1707,8 +1709,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u751f\u7269\u533b\u836f\u57fa\u5730",
-                            "lb": "\u751f\u7269\u533b\u836f\u57fa\u5730",
+                            "sid": "生物医药基地",
+                            "lb": "生物医药基地",
                             "x": -145.3,
                             "y": 720,
                             "rx": -70,
@@ -1718,7 +1720,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12949751.28,
                             "py": 4793784.05,
@@ -1727,8 +1729,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u5bab\u9662",
-                            "lb": "\u5929\u5bab\u9662",
+                            "sid": "天宫院",
+                            "lb": "天宫院",
                             "x": -145.3,
                             "y": 745,
                             "rx": 6.1,
@@ -1738,7 +1740,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线",
                             "px": 12949540.61,
                             "py": 4791452.3,
                             "uid": "2373040444453215c256ac6d"
@@ -1746,8 +1748,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
-                    "lb": "4\u53f7\u7ebf",
+                    "lid": "地铁4号线大兴线",
+                    "lb": "地铁4号线",
+                    "sn": "4号线大兴线",
                     "slb": false,
                     "n": 35,
                     "loop": false,
@@ -1757,17 +1760,17 @@ export default {
                     "lc": "0x008E9C",
                     "uid": "1479a7007b19e457ebf8536c",
                     "uid2": "277df81e6219d2b192114c6c",
-                    "lb2": "\u5730\u94c14\u53f7\u7ebf",
-                    "lb2x": -200,
-                    "lb2y": 420
+                    "lb2": "地铁大兴线",
+                    "lb2x": -220,
+                    "lb2y": 440
                 }
             },
             {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u901a\u82d1\u5317",
-                            "lb": "\u5929\u901a\u82d1\u5317",
+                            "sid": "天通苑北",
+                            "lb": "天通苑北",
                             "x": 72,
                             "y": -353.9,
                             "rx": 6.7,
@@ -1777,7 +1780,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12959887.69,
                             "py": 4851195.74,
@@ -1786,8 +1789,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u901a\u82d1",
-                            "lb": "\u5929\u901a\u82d1",
+                            "sid": "天通苑",
+                            "lb": "天通苑",
                             "x": 72,
                             "y": -325.3,
                             "rx": 6.7,
@@ -1797,7 +1800,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12959870.7,
                             "py": 4850019.15,
@@ -1806,8 +1809,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u901a\u82d1\u5357",
-                            "lb": "\u5929\u901a\u82d1\u5357",
+                            "sid": "天通苑南",
+                            "lb": "天通苑南",
                             "x": 72,
                             "y": -296.5,
                             "rx": 6.7,
@@ -1817,7 +1820,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12959857.43,
                             "py": 4848754.69,
@@ -1826,8 +1829,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7acb\u6c34\u6865",
-                            "lb": "\u7acb\u6c34\u6865",
+                            "sid": "立水桥",
+                            "lb": "立水桥",
                             "x": 72,
                             "y": -253.6,
                             "rx": -40,
@@ -1837,7 +1840,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁13号线",
                             "int": "3",
                             "px": 12959821.28,
                             "py": 4846807.89,
@@ -1846,8 +1849,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7acb\u6c34\u6865\u5357",
-                            "lb": "\u7acb\u6c34\u6865\u5357",
+                            "sid": "立水桥南",
+                            "lb": "立水桥南",
                             "x": 72,
                             "y": -219.6,
                             "rx": 6.7,
@@ -1857,7 +1860,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960064.5,
                             "py": 4845189.66,
@@ -1866,8 +1869,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u82d1\u8def\u5317",
-                            "lb": "\u5317\u82d1\u8def\u5317",
+                            "sid": "北苑路北",
+                            "lb": "北苑路北",
                             "x": 72,
                             "y": -185.6,
                             "rx": 6.7,
@@ -1877,7 +1880,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "3",
                             "px": 12960459.81,
                             "py": 4843549.9,
@@ -1886,8 +1889,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u5c6f\u8def\u4e1c",
-                            "lb": "\u5927\u5c6f\u8def\u4e1c",
+                            "sid": "大屯路东",
+                            "lb": "大屯路东",
                             "x": 72,
                             "y": -151.6,
                             "rx": 5,
@@ -1897,7 +1900,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁15号线",
                             "int": "3",
                             "px": 12960539.6,
                             "py": 4839538.34,
@@ -1906,8 +1909,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u60e0\u65b0\u897f\u8857\u5317\u53e3",
-                            "lb": "\u60e0\u65b0\u897f\u8857\u5317\u53e3",
+                            "sid": "惠新西街北口",
+                            "lb": "惠新西街北口",
                             "x": 72,
                             "y": -117.6,
                             "rx": 6.7,
@@ -1917,7 +1920,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960349.32,
                             "py": 4837372.46,
@@ -1926,8 +1929,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u60e0\u65b0\u897f\u8857\u5357\u53e3",
-                            "lb": "\u60e0\u65b0\u897f\u8857\u5357\u53e3",
+                            "sid": "惠新西街南口",
+                            "lb": "惠新西街南口",
                             "x": 72,
                             "y": -84,
                             "rx": 6.7,
@@ -1937,7 +1940,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁10号线",
                             "int": "2",
                             "px": 12960405.9,
                             "py": 4835798.62,
@@ -1946,8 +1949,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u548c\u5e73\u897f\u6865",
-                            "lb": "\u548c\u5e73\u897f\u6865",
+                            "sid": "和平西桥",
+                            "lb": "和平西桥",
                             "x": 72,
                             "y": -47,
                             "rx": -50,
@@ -1957,7 +1960,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960452.91,
                             "py": 4834529.09,
@@ -1966,8 +1969,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u548c\u5e73\u91cc\u5317\u8857",
-                            "lb": "\u548c\u5e73\u91cc\u5317\u8857",
+                            "sid": "和平里北街",
+                            "lb": "和平里北街",
                             "x": 72,
                             "y": -20.6,
                             "rx": 6.7,
@@ -1977,7 +1980,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "3",
                             "px": 12960518.36,
                             "py": 4833118.44,
@@ -1986,8 +1989,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u96cd\u548c\u5bab",
-                            "lb": "\u96cd\u548c\u5bab",
+                            "sid": "雍和宫",
+                            "lb": "雍和宫",
                             "x": 72,
                             "y": 16.1,
                             "rx": 6.7,
@@ -1997,7 +2000,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁5号线",
                             "int": "2",
                             "px": 12960316.9,
                             "py": 4831790.65,
@@ -2006,8 +2009,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u65b0\u6865",
-                            "lb": "\u5317\u65b0\u6865",
+                            "sid": "北新桥",
+                            "lb": "北新桥",
                             "x": 72,
                             "y": 44.4,
                             "rx": 6.7,
@@ -2017,7 +2020,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960323.27,
                             "py": 4830566.93,
@@ -2026,8 +2029,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5f20\u81ea\u5fe0\u8def",
-                            "lb": "\u5f20\u81ea\u5fe0\u8def",
+                            "sid": "张自忠路",
+                            "lb": "张自忠路",
                             "x": 72,
                             "y": 70,
                             "rx": -50,
@@ -2037,7 +2040,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960353.89,
                             "py": 4829525.96,
@@ -2046,8 +2049,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u56db",
-                            "lb": "\u4e1c\u56db",
+                            "sid": "东四",
+                            "lb": "东四",
                             "x": 72,
                             "y": 114.6,
                             "rx": -30,
@@ -2057,7 +2060,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁6号线",
                             "int": "2",
                             "px": 12960276.14,
                             "py": 4828169.77,
@@ -2066,8 +2069,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u706f\u5e02\u53e3",
-                            "lb": "\u706f\u5e02\u53e3",
+                            "sid": "灯市口",
+                            "lb": "灯市口",
                             "x": 72,
                             "y": 142.8,
                             "rx": 6.7,
@@ -2077,7 +2080,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960420.21,
                             "py": 4827167.48,
@@ -2086,8 +2089,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u5355",
-                            "lb": "\u4e1c\u5355",
+                            "sid": "东单",
+                            "lb": "东单",
                             "x": 72,
                             "y": 170.6,
                             "rx": -26,
@@ -2097,7 +2100,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁5号线",
                             "int": "2",
                             "px": 12960624.28,
                             "py": 4825851.99,
@@ -2106,8 +2109,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5d07\u6587\u95e8",
-                            "lb": "\u5d07\u6587\u95e8",
+                            "sid": "崇文门",
+                            "lb": "崇文门",
                             "x": 72,
                             "y": 210.4,
                             "rx": -41.7,
@@ -2117,7 +2120,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁5号线",
                             "int": "2",
                             "px": 12960388.27,
                             "py": 4824821.12,
@@ -2126,8 +2129,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u78c1\u5668\u53e3",
-                            "lb": "\u78c1\u5668\u53e3",
+                            "sid": "磁器口",
+                            "lb": "磁器口",
                             "x": 72,
                             "y": 241.8,
                             "rx": -40,
@@ -2137,7 +2140,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁7号线",
                             "int": "2",
                             "px": 12960705.71,
                             "py": 4823659.24,
@@ -2146,8 +2149,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u575b\u4e1c\u95e8",
-                            "lb": "\u5929\u575b\u4e1c\u95e8",
+                            "sid": "天坛东门",
+                            "lb": "天坛东门",
                             "x": 72,
                             "y": 275.4,
                             "rx": 6.7,
@@ -2157,7 +2160,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "3",
                             "px": 12960778.97,
                             "py": 4822093.28,
@@ -2166,8 +2169,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u84b2\u9ec4\u6986",
-                            "lb": "\u84b2\u9ec4\u6986",
+                            "sid": "蒲黄榆",
+                            "lb": "蒲黄榆",
                             "x": 72,
                             "y": 307.1,
                             "rx": 6.7,
@@ -2177,7 +2180,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁5号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12961025.23,
                             "py": 4819663.3,
@@ -2186,8 +2189,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5218\u5bb6\u7a91",
-                            "lb": "\u5218\u5bb6\u7a91",
+                            "sid": "刘家窑",
+                            "lb": "刘家窑",
                             "x": 72,
                             "y": 340.3,
                             "rx": -40,
@@ -2197,7 +2200,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线",
                             "int": "2",
                             "px": 12960909.57,
                             "py": 4818510.25,
@@ -2206,8 +2209,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b8b\u5bb6\u5e84",
-                            "lb": "\u5b8b\u5bb6\u5e84",
+                            "sid": "宋家庄",
+                            "lb": "宋家庄",
                             "x": 72,
                             "y": 372.4,
                             "rx": 6.7,
@@ -2217,7 +2220,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁10号线,北京市|地铁亦庄线",
                             "px": 12961616.38,
                             "py": 4816812.24,
                             "uid": "f2782ef98b70734a5a3ac8b5"
@@ -2225,8 +2228,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c15\u53f7\u7ebf",
-                    "lb": "5\u53f7\u7ebf",
+                    "lid": "地铁5号线",
+                    "lb": "地铁5号线",
+                    "sn": "5号线",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -2236,7 +2240,7 @@ export default {
                     "lc": "0xA6217F",
                     "uid": "76464b1774e4f36841d63eb7",
                     "uid2": "3039f3071bdd32f0f7e73bb7",
-                    "lb2": "\u5730\u94c15\u53f7\u7ebf",
+                    "lb2": "地铁5号线",
                     "lb2x": 80,
                     "lb2y": 320
                 }
@@ -2245,8 +2249,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u91d1\u5b89\u6865",
-                            "lb": "\u91d1\u5b89\u6865",
+                            "sid": "金安桥",
+                            "lb": "金安桥",
                             "x": -726,
                             "y": 138.3,
                             "rx": -20,
@@ -2256,7 +2260,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁s1线,北京市|地铁6号线",
                             "int": "2",
                             "uid": "4d39b0a0751f44c988b9886b"
                         }
@@ -2274,14 +2278,14 @@ export default {
                             "iu": false,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "5"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6768\u5e84",
-                            "lb": "\u6768\u5e84",
+                            "sid": "杨庄",
+                            "lb": "杨庄",
                             "x": -661.3,
                             "y": 108.3,
                             "rx": -35,
@@ -2291,15 +2295,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "3",
                             "uid": "9f811f20c259193b93114c68"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u9ec4\u6751",
-                            "lb": "\u897f\u9ec4\u6751",
+                            "sid": "西黄村",
+                            "lb": "西黄村",
                             "x": -641.3,
                             "y": 82.3,
                             "rx": -15,
@@ -2309,15 +2313,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "3",
                             "uid": "4c6ec15fcf884e3c5abbbc80"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5ed6\u516c\u5e84",
-                            "lb": "\u5ed6\u516c\u5e84",
+                            "sid": "廖公庄",
+                            "lb": "廖公庄",
                             "x": -600,
                             "y": 82.3,
                             "rx": -15,
@@ -2327,15 +2331,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "3",
                             "uid": "1c4efb8e92463058fda77866"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7530\u6751",
-                            "lb": "\u7530\u6751",
+                            "sid": "田村",
+                            "lb": "田村",
                             "x": -560,
                             "y": 82.3,
                             "rx": -15,
@@ -2345,15 +2349,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "3",
                             "uid": "c572ece4bb6a544d17764350"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6d77\u6dc0\u4e94\u8def\u5c45",
-                            "lb": "\u6d77\u6dc0\u4e94\u8def\u5c45",
+                            "sid": "海淀五路居",
+                            "lb": "海淀五路居",
                             "x": -505,
                             "y": 82.3,
                             "rx": -35,
@@ -2363,7 +2367,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "3",
                             "px": 12944675.77,
                             "py": 4829335.95,
@@ -2372,8 +2376,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6148\u5bff\u5bfa",
-                            "lb": "\u6148\u5bff\u5bfa",
+                            "sid": "慈寿寺",
+                            "lb": "慈寿寺",
                             "x": -449.2,
                             "y": 82.3,
                             "rx": -40,
@@ -2383,7 +2387,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12946608.13,
                             "py": 4829407.04,
@@ -2392,8 +2396,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u82b1\u56ed\u6865",
-                            "lb": "\u82b1\u56ed\u6865",
+                            "sid": "花园桥",
+                            "lb": "花园桥",
                             "x": -380.1,
                             "y": 82.3,
                             "rx": -20,
@@ -2403,7 +2407,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12948552.31,
                             "py": 4829304.43,
@@ -2412,8 +2416,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u767d\u77f3\u6865\u5357",
-                            "lb": "\u767d\u77f3\u6865\u5357",
+                            "sid": "白石桥南",
+                            "lb": "白石桥南",
                             "x": -311,
                             "y": 82.3,
                             "rx": 3,
@@ -2423,7 +2427,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线,北京市|地铁9号线",
                             "int": "3",
                             "px": 12950189.51,
                             "py": 4829340,
@@ -2432,8 +2436,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8f66\u516c\u5e84\u897f",
-                            "lb": "\u8f66\u516c\u5e84\u897f",
+                            "sid": "车公庄西",
+                            "lb": "车公庄西",
                             "x": -240.7,
                             "y": 82.3,
                             "rx": -20,
@@ -2443,7 +2447,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12952235.4,
                             "py": 4829259.93,
@@ -2452,8 +2456,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8f66\u516c\u5e84",
-                            "lb": "\u8f66\u516c\u5e84",
+                            "sid": "车公庄",
+                            "lb": "车公庄",
                             "x": -170.3,
                             "y": 82.3,
                             "rx": -49.3,
@@ -2463,7 +2467,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁6号线",
                             "int": "3",
                             "px": 12953412.7,
                             "py": 4829277.24,
@@ -2472,8 +2476,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e73\u5b89\u91cc",
-                            "lb": "\u5e73\u5b89\u91cc",
+                            "sid": "平安里",
+                            "lb": "平安里",
                             "x": -105.3,
                             "y": 82.3,
                             "rx": -40,
@@ -2483,7 +2487,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁6号线",
                             "int": "3",
                             "px": 12955427.41,
                             "py": 4829502.34,
@@ -2492,8 +2496,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u6d77\u5317",
-                            "lb": "\u5317\u6d77\u5317",
+                            "sid": "北海北",
+                            "lb": "北海北",
                             "x": -64.5,
                             "y": 82.3,
                             "rx": -16.1,
@@ -2503,7 +2507,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12956938.26,
                             "py": 4829465.09,
@@ -2512,8 +2516,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5357\u9523\u9f13\u5df7",
-                            "lb": "\u5357\u9523\u9f13\u5df7",
+                            "sid": "南锣鼓巷",
+                            "lb": "南锣鼓巷",
                             "x": -23.6,
                             "y": 82.3,
                             "rx": 9.1,
@@ -2523,7 +2527,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁6号线",
                             "int": "4",
                             "px": 12958831.86,
                             "py": 4829555.09,
@@ -2548,8 +2552,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u56db",
-                            "lb": "\u4e1c\u56db",
+                            "sid": "东四",
+                            "lb": "东四",
                             "x": 72,
                             "y": 114.6,
                             "rx": 6.7,
@@ -2559,7 +2563,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁6号线",
                             "int": "3",
                             "px": 12960276.14,
                             "py": 4828169.77,
@@ -2568,8 +2572,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671d\u9633\u95e8",
-                            "lb": "\u671d\u9633\u95e8",
+                            "sid": "朝阳门",
+                            "lb": "朝阳门",
                             "x": 131,
                             "y": 114.6,
                             "rx": -40,
@@ -2579,7 +2583,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁6号线",
                             "int": "3",
                             "px": 12962204.89,
                             "py": 4828157.93,
@@ -2588,8 +2592,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u5927\u6865",
-                            "lb": "\u4e1c\u5927\u6865",
+                            "sid": "东大桥",
+                            "lb": "东大桥",
                             "x": 178,
                             "y": 114.6,
                             "rx": -16.1,
@@ -2599,7 +2603,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12964214.39,
                             "py": 4827893.51,
@@ -2608,8 +2612,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u547c\u5bb6\u697c",
-                            "lb": "\u547c\u5bb6\u697c",
+                            "sid": "呼家楼",
+                            "lb": "呼家楼",
                             "x": 225.1,
                             "y": 114.6,
                             "rx": 5,
@@ -2619,7 +2623,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12965325.89,
                             "py": 4827945.05,
@@ -2628,8 +2632,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u91d1\u53f0\u8def",
-                            "lb": "\u91d1\u53f0\u8def",
+                            "sid": "金台路",
+                            "lb": "金台路",
                             "x": 278,
                             "y": 114.6,
                             "rx": 6.1,
@@ -2639,7 +2643,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84),\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁6号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12967161.06,
                             "py": 4828007.23,
@@ -2648,8 +2652,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5341\u91cc\u5821",
-                            "lb": "\u5341\u91cc\u5821",
+                            "sid": "十里堡",
+                            "lb": "十里堡",
                             "x": 319,
                             "y": 114.6,
                             "rx": -16.1,
@@ -2659,7 +2663,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12969805.64,
                             "py": 4827982.26,
@@ -2668,8 +2672,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9752\u5e74\u8def",
-                            "lb": "\u9752\u5e74\u8def",
+                            "sid": "青年路",
+                            "lb": "青年路",
                             "x": 366,
                             "y": 114.6,
                             "rx": -20.1,
@@ -2679,7 +2683,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "5",
                             "px": 12971514.42,
                             "py": 4828015.66,
@@ -2688,8 +2692,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8921\u88e2\u5761",
-                            "lb": "\u8921\u88e2\u5761",
+                            "sid": "褡裢坡",
+                            "lb": "褡裢坡",
                             "x": 413,
                             "y": 114.6,
                             "rx": -16.1,
@@ -2699,7 +2703,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12976679.1,
                             "py": 4828067.16,
@@ -2708,8 +2712,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ec4\u6e20",
-                            "lb": "\u9ec4\u6e20",
+                            "sid": "黄渠",
+                            "lb": "黄渠",
                             "x": 460,
                             "y": 114.6,
                             "rx": -16.1,
@@ -2719,7 +2723,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "3",
                             "px": 12978314.82,
                             "py": 4828083.2,
@@ -2728,8 +2732,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e38\u8425",
-                            "lb": "\u5e38\u8425",
+                            "sid": "常营",
+                            "lb": "常营",
                             "x": 507,
                             "y": 114.6,
                             "rx": -16.1,
@@ -2739,7 +2743,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "int": "2",
                             "px": 12980600.17,
                             "py": 4828310.67,
@@ -2748,8 +2752,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8349\u623f",
-                            "lb": "\u8349\u623f",
+                            "sid": "草房",
+                            "lb": "草房",
                             "x": 554,
                             "y": 114.6,
                             "rx": -16.1,
@@ -2759,7 +2763,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12982503.71,
                             "py": 4828189.64,
                             "uid": "97f3b5e6fbe5fe527fc876cc"
@@ -2767,18 +2771,18 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7269\u8d44\u5b66\u9662\u8def",
-                            "lb": "\u7269\u8d44\u5b66\u9662\u8def",
+                            "sid": "物资学院路",
+                            "lb": "物资学院路",
                             "x": 610,
                             "y": 114,
-                            "rx": -35.1,
-                            "ry": -23.8,
+                            "rx": -26,
+                            "ry": 4,
                             "st": true,
                             "ex": false,
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12985063.77,
                             "py": 4828538.72,
                             "uid": "0fcad81f75d530cc59bbbc69"
@@ -2802,8 +2806,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u901a\u5dde\u5317\u5173",
-                            "lb": "\u901a\u5dde\u5317\u5173",
+                            "sid": "通州北关",
+                            "lb": "通州北关",
                             "x": 665,
                             "y": 130,
                             "rx": -10,
@@ -2813,7 +2817,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12987569.57,
                             "py": 4827324.26,
                             "uid": "b883923f536e816072210bcd"
@@ -2821,8 +2825,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u901a\u8fd0\u95e8",
-                            "lb": "\u901a\u8fd0\u95e8",
+                            "sid": "通运门",
+                            "lb": "通运门",
                             "x": 688,
                             "y": 160,
                             "rx": -56,
@@ -2833,7 +2837,7 @@ export default {
                             "rc": false,
                             "slb": true,
                             "no": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12987569.57,
                             "py": 4827324.26,
                             "uid": "b883923f536e816076710cbd"
@@ -2841,8 +2845,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u0028\u6682\u7f13\u5f00\u901a\u0029",
-                            "lb": "\u0028\u6682\u7f13\u5f00\u901a\u0029",
+                            "sid": "(暂缓开通)",
+                            "lb": "(暂缓开通)",
                             "x": 688,
                             "y": 160,
                             "rx": -52,
@@ -2860,8 +2864,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u8fd0\u6cb3\u897f",
-                            "lb": "\u5317\u8fd0\u6cb3\u897f",
+                            "sid": "北运河西",
+                            "lb": "北运河西",
                             "x": 711,
                             "y": 190,
                             "rx": -20.1,
@@ -2871,7 +2875,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12990506.06,
                             "py": 4825046.26,
                             "uid": "d510b4efb457b9eb921fc9e0"
@@ -2879,8 +2883,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u8fd0\u6cb3\u4e1c",
-                            "lb": "\u5317\u8fd0\u6cb3\u4e1c",
+                            "sid": "北运河东",
+                            "lb": "北运河东",
                             "x": 745,
                             "y": 190,
                             "rx": -20,
@@ -2890,14 +2894,14 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "uid": "594be2f41817aefad6851fb2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u90dd\u5bb6\u5e9c",
-                            "lb": "\u90dd\u5bb6\u5e9c",
+                            "sid": "郝家府",
+                            "lb": "郝家府",
                             "x": 779,
                             "y": 190,
                             "rx": -19.1,
@@ -2907,7 +2911,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12993821.54,
                             "py": 4825097.82,
                             "uid": "3b2b7e68bf1e2e772d4733f5"
@@ -2915,8 +2919,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u590f\u56ed",
-                            "lb": "\u4e1c\u590f\u56ed",
+                            "sid": "东夏园",
+                            "lb": "东夏园",
                             "x": 814,
                             "y": 190,
                             "rx": -19.1,
@@ -2926,7 +2930,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12995678.47,
                             "py": 4825127.77,
                             "uid": "477dab883f6f190fb45f1e30"
@@ -2934,8 +2938,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6f5e\u57ce",
-                            "lb": "\u6f5e\u57ce",
+                            "sid": "潞城",
+                            "lb": "潞城",
                             "x": 848,
                             "y": 190,
                             "rx": -12.1,
@@ -2945,7 +2949,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线",
                             "px": 12997226.23,
                             "py": 4825040.54,
                             "uid": "5e713cd3b1594a282102620c"
@@ -2953,8 +2957,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c16\u53f7\u7ebf",
-                    "lb": "6\u53f7\u7ebf",
+                    "lid": "地铁6号线",
+                    "lb": "地铁6号线",
+                    "sn": "6号线",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -2964,7 +2969,7 @@ export default {
                     "lc": "0xD29700",
                     "uid": "a15f370891be585133870acc",
                     "uid2": "c813960a8a3d3ac08adb73cc",
-                    "lb2": "\u5730\u94c16\u53f7\u7ebf",
+                    "lb2": "地铁6号线",
                     "lb2x": -730,
                     "lb2y": 70
                 }
@@ -2973,8 +2978,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u4eac\u897f\u7ad9",
-                            "lb": "\u5317\u4eac\u897f\u7ad9",
+                            "sid": "北京西站",
+                            "lb": "北京西站",
                             "x": -311,
                             "y": 206,
                             "rx": 8,
@@ -2984,7 +2989,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线,北京市|地铁9号线",
                             "int": "6",
                             "px": 12949696.98,
                             "py": 4823853.25,
@@ -2993,8 +2998,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6e7e\u5b50",
-                            "lb": "\u6e7e\u5b50",
+                            "sid": "湾子",
+                            "lb": "湾子",
                             "x": -265,
                             "y": 240.8,
                             "rx": -14.1,
@@ -3004,7 +3009,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12950427.08,
                             "py": 4823163.29,
@@ -3013,8 +3018,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8fbe\u5b98\u8425",
-                            "lb": "\u8fbe\u5b98\u8425",
+                            "sid": "达官营",
+                            "lb": "达官营",
                             "x": -217,
                             "y": 240.8,
                             "rx": -5.1,
@@ -3024,7 +3029,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12951280.84,
                             "py": 4823129.97,
@@ -3033,8 +3038,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e7f\u5b89\u95e8\u5185",
-                            "lb": "\u5e7f\u5b89\u95e8\u5185",
+                            "sid": "广安门内",
+                            "lb": "广安门内",
                             "x": -159,
                             "y": 241.8,
                             "rx": -19.1,
@@ -3044,7 +3049,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12953791.81,
                             "py": 4823095.11,
@@ -3053,8 +3058,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u83dc\u5e02\u53e3",
-                            "lb": "\u83dc\u5e02\u53e3",
+                            "sid": "菜市口",
+                            "lb": "菜市口",
                             "x": -105.3,
                             "y": 242.8,
                             "rx": 6.1,
@@ -3064,7 +3069,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁7号线,北京市|地铁4号线大兴线",
                             "int": "2",
                             "px": 12955611.64,
                             "py": 4823088.8,
@@ -3073,8 +3078,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u864e\u574a\u6865",
-                            "lb": "\u864e\u574a\u6865",
+                            "sid": "虎坊桥",
+                            "lb": "虎坊桥",
                             "x": -59.3,
                             "y": 241.8,
                             "rx": -19.1,
@@ -3084,7 +3089,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12956689.35,
                             "py": 4823132.92,
@@ -3093,8 +3098,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u73e0\u5e02\u53e3",
-                            "lb": "\u73e0\u5e02\u53e3",
+                            "sid": "珠市口",
+                            "lb": "珠市口",
                             "x": -10.3,
                             "y": 241.8,
                             "rx": -15,
@@ -3104,7 +3109,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线,北京市|地铁8号线",
                             "int": "2",
                             "px": 12958099.56,
                             "py": 4823404.31,
@@ -3113,8 +3118,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6865\u6e7e",
-                            "lb": "\u6865\u6e7e",
+                            "sid": "桥湾",
+                            "lb": "桥湾",
                             "x": 40.3,
                             "y": 241.8,
                             "rx": -12,
@@ -3124,7 +3129,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12959388.51,
                             "py": 4823611.29,
@@ -3133,8 +3138,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u78c1\u5668\u53e3",
-                            "lb": "\u78c1\u5668\u53e3",
+                            "sid": "磁器口",
+                            "lb": "磁器口",
                             "x": 72,
                             "y": 241.8,
                             "rx": 6.7,
@@ -3144,7 +3149,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线,北京市|地铁5号线",
                             "int": "2",
                             "px": 12960705.71,
                             "py": 4823659.24,
@@ -3153,8 +3158,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e7f\u6e20\u95e8\u5185",
-                            "lb": "\u5e7f\u6e20\u95e8\u5185",
+                            "sid": "广渠门内",
+                            "lb": "广渠门内",
                             "x": 120,
                             "y": 241.8,
                             "rx": -24.7,
@@ -3164,7 +3169,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12962287.53,
                             "py": 4823700.1,
@@ -3173,8 +3178,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e7f\u6e20\u95e8\u5916",
-                            "lb": "\u5e7f\u6e20\u95e8\u5916",
+                            "sid": "广渠门外",
+                            "lb": "广渠门外",
                             "x": 172,
                             "y": 241.8,
                             "rx": -24.7,
@@ -3184,7 +3189,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12963953.82,
                             "py": 4823655.7,
@@ -3193,8 +3198,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e5d\u9f99\u5c71",
-                            "lb": "\u4e5d\u9f99\u5c71",
+                            "sid": "九龙山",
+                            "lb": "九龙山",
                             "x": 278.1,
                             "y": 240.3,
                             "rx": 10,
@@ -3204,7 +3209,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁7号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12967084.96,
                             "py": 4823759.81,
@@ -3213,8 +3218,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u90ca\u4ead",
-                            "lb": "\u5927\u90ca\u4ead",
+                            "sid": "大郊亭",
+                            "lb": "大郊亭",
                             "x": 331.1,
                             "y": 240.3,
                             "rx": -20.2,
@@ -3224,7 +3229,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12968272.96,
                             "py": 4823621.42,
@@ -3233,8 +3238,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u767e\u5b50\u6e7e",
-                            "lb": "\u767e\u5b50\u6e7e",
+                            "sid": "百子湾",
+                            "lb": "百子湾",
                             "x": 378.1,
                             "y": 240.3,
                             "rx": 8.2,
@@ -3244,7 +3249,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12969287.07,
                             "py": 4823601.63,
@@ -3270,8 +3275,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5316\u5de5",
-                            "lb": "\u5316\u5de5",
+                            "sid": "化工",
+                            "lb": "化工",
                             "x": 390,
                             "y": 265,
                             "rx": 8.2,
@@ -3281,7 +3286,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12969985.18,
                             "py": 4822776.09,
@@ -3290,8 +3295,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5357\u697c\u6893\u5e84",
-                            "lb": "\u5357\u697c\u6893\u5e84",
+                            "sid": "南楼梓庄",
+                            "lb": "南楼梓庄",
                             "x": 390,
                             "y": 290,
                             "rx": 8.2,
@@ -3301,7 +3306,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12969713.27,
                             "py": 4820981.9,
@@ -3310,8 +3315,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6b22\u4e50\u8c37\u666f\u533a",
-                            "lb": "\u6b22\u4e50\u8c37\u666f\u533a",
+                            "sid": "欢乐谷景区",
+                            "lb": "欢乐谷景区",
                             "x": 390,
                             "y": 315,
                             "rx": -60,
@@ -3321,7 +3326,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12969521.63,
                             "py": 4819841.99,
@@ -3347,8 +3352,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u57a1\u5934",
-                            "lb": "\u57a1\u5934",
+                            "sid": "垡头",
+                            "lb": "垡头",
                             "x": 410,
                             "y": 335,
                             "rx": -12,
@@ -3358,15 +3363,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "uid": "359fd79f94f6d584c26c1418"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u53cc\u5408",
-                            "lb": "\u53cc\u5408",
+                            "sid": "双合",
+                            "lb": "双合",
                             "x": 440,
                             "y": 335,
                             "rx": -12,
@@ -3376,7 +3381,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12972503.28,
                             "py": 4818937.13,
@@ -3385,8 +3390,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7126\u5316\u5382",
-                            "lb": "\u7126\u5316\u5382",
+                            "sid": "焦化厂",
+                            "lb": "焦化厂",
                             "x": 470,
                             "y": 335,
                             "rx": -12,
@@ -3396,7 +3401,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线",
                             "int": "2",
                             "px": 12973838.11,
                             "py": 4818142.64,
@@ -3405,8 +3410,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c17\u53f7\u7ebf",
-                    "lb": "7\u53f7\u7ebf",
+                    "lid": "地铁7号线",
+                    "lb": "地铁7号线",
+                    "sn": "7号线",
                     "slb": false,
                     "n": 23,
                     "loop": false,
@@ -3422,8 +3428,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u6731\u8f9b\u5e84",
-                            "lb": "\u6731\u8f9b\u5e84",
+                            "sid": "朱辛庄",
+                            "lb": "朱辛庄",
                             "x": -153.7,
                             "y": -314.1,
                             "rx": -48.2,
@@ -3433,7 +3439,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁昌平线,北京市|地铁8号线",
                             "int": "4",
                             "px": 12948839.05,
                             "py": 4854201.88,
@@ -3442,8 +3448,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u80b2\u77e5\u8def",
-                            "lb": "\u80b2\u77e5\u8def",
+                            "sid": "育知路",
+                            "lb": "育知路",
                             "x": -123.8,
                             "y": -314.1,
                             "rx": -20,
@@ -3453,7 +3459,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12950371.21,
                             "py": 4851791.87,
@@ -3462,8 +3468,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e73\u897f\u5e9c",
-                            "lb": "\u5e73\u897f\u5e9c",
+                            "sid": "平西府",
+                            "lb": "平西府",
                             "x": -83.6,
                             "y": -314.1,
                             "rx": -20,
@@ -3473,7 +3479,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12952970.46,
                             "py": 4852093.66,
@@ -3493,14 +3499,14 @@ export default {
                             "iu": true,
                             "rc": true,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56de\u9f99\u89c2\u4e1c\u5927\u8857",
-                            "lb": "\u56de\u9f99\u89c2\u4e1c\u5927\u8857",
+                            "sid": "回龙观东大街",
+                            "lb": "回龙观东大街",
                             "x": -63.6,
                             "y": -283,
                             "rx": 5.9,
@@ -3510,7 +3516,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12954362.57,
                             "py": 4850814.3,
@@ -3519,8 +3525,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u970d\u8425",
-                            "lb": "\u970d\u8425",
+                            "sid": "霍营",
+                            "lb": "霍营",
                             "x": -63.6,
                             "y": -251.6,
                             "rx": -30,
@@ -3530,7 +3536,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁13号线",
                             "int": "3",
                             "px": 12954013.35,
                             "py": 4849490.23,
@@ -3539,8 +3545,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u80b2\u65b0",
-                            "lb": "\u80b2\u65b0",
+                            "sid": "育新",
+                            "lb": "育新",
                             "x": -63.6,
                             "y": -230,
                             "rx": 5.9,
@@ -3550,7 +3556,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "3",
                             "px": 12952608.66,
                             "py": 4847794.46,
@@ -3559,8 +3565,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u5c0f\u53e3",
-                            "lb": "\u897f\u5c0f\u53e3",
+                            "sid": "西小口",
+                            "lb": "西小口",
                             "x": -63.6,
                             "y": -215,
                             "rx": -40,
@@ -3570,7 +3576,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12953077.95,
                             "py": 4845852.08,
@@ -3579,8 +3585,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c38\u6cf0\u5e84",
-                            "lb": "\u6c38\u6cf0\u5e84",
+                            "sid": "永泰庄",
+                            "lb": "永泰庄",
                             "x": -63.6,
                             "y": -200,
                             "rx": -40,
@@ -3590,7 +3596,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "4",
                             "px": 12953405.96,
                             "py": 4844544.94,
@@ -3599,8 +3605,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6797\u8403\u6865",
-                            "lb": "\u6797\u8403\u6865",
+                            "sid": "林萃桥",
+                            "lb": "林萃桥",
                             "x": -43.6,
                             "y": -183,
                             "rx": 10,
@@ -3610,7 +3616,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "3",
                             "px": 12955381.4,
                             "py": 4842271.74,
@@ -3619,8 +3625,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u68ee\u6797\u516c\u56ed\u5357\u95e8",
-                            "lb": "\u68ee\u6797\u516c\u56ed\u5357\u95e8",
+                            "sid": "森林公园南门",
+                            "lb": "森林公园南门",
                             "x": -23.6,
                             "y": -170,
                             "rx": 9,
@@ -3630,7 +3636,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12957622.42,
                             "py": 4840565.6,
@@ -3639,8 +3645,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5965\u6797\u5339\u514b\u516c\u56ed",
-                            "lb": "\u5965\u6797\u5339\u514b\u516c\u56ed",
+                            "sid": "奥林匹克公园",
+                            "lb": "奥林匹克公园",
                             "x": -23.6,
                             "y": -149.3,
                             "rx": -70,
@@ -3650,7 +3656,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁15号线",
                             "int": "3",
                             "px": 12957521.79,
                             "py": 4839450.89,
@@ -3659,8 +3665,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5965\u4f53\u4e2d\u5fc3",
-                            "lb": "\u5965\u4f53\u4e2d\u5fc3",
+                            "sid": "奥体中心",
+                            "lb": "奥体中心",
                             "x": -23.6,
                             "y": -115.2,
                             "rx": 5.9,
@@ -3670,7 +3676,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "3",
                             "px": 12957750.95,
                             "py": 4837125.12,
@@ -3679,8 +3685,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u571f\u57ce",
-                            "lb": "\u5317\u571f\u57ce",
+                            "sid": "北土城",
+                            "lb": "北土城",
                             "x": -23.6,
                             "y": -84,
                             "rx": -40,
@@ -3690,7 +3696,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12957803.56,
                             "py": 4835795.6,
@@ -3699,8 +3705,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b89\u534e\u6865",
-                            "lb": "\u5b89\u534e\u6865",
+                            "sid": "安华桥",
+                            "lb": "安华桥",
                             "x": -23.6,
                             "y": -48,
                             "rx": 7.2,
@@ -3710,7 +3716,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12957796.83,
                             "py": 4834583.41,
@@ -3719,8 +3725,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b89\u5fb7\u91cc\u5317\u8857",
-                            "lb": "\u5b89\u5fb7\u91cc\u5317\u8857",
+                            "sid": "安德里北街",
+                            "lb": "安德里北街",
                             "x": -23.6,
                             "y": -20,
                             "rx": -60.2,
@@ -3730,7 +3736,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12957828.13,
                             "py": 4832999.68,
@@ -3739,8 +3745,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9f13\u697c\u5927\u8857",
-                            "lb": "\u9f13\u697c\u5927\u8857",
+                            "sid": "鼓楼大街",
+                            "lb": "鼓楼大街",
                             "x": -23.6,
                             "y": 16.1,
                             "rx": -56.6,
@@ -3750,7 +3756,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁8号线",
                             "px": 12957760.68,
                             "py": 4831575.73,
                             "uid": "d53e841d8d65c36b82a00ccc"
@@ -3758,8 +3764,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4ec0\u5239\u6d77",
-                            "lb": "\u4ec0\u5239\u6d77",
+                            "sid": "什刹海",
+                            "lb": "什刹海",
                             "x": -23.6,
                             "y": 55,
                             "rx": 7.2,
@@ -3769,7 +3775,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "px": 12958013.28,
                             "py": 4830139.17,
@@ -3778,8 +3784,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5357\u9523\u9f13\u5df7",
-                            "lb": "\u5357\u9523\u9f13\u5df7",
+                            "sid": "南锣鼓巷",
+                            "lb": "南锣鼓巷",
                             "x": -23.6,
                             "y": 82.3,
                             "rx": 9.1,
@@ -3789,7 +3795,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁6号线",
                             "int": "2",
                             "px": 12958831.86,
                             "py": 4829555.09,
@@ -3798,8 +3804,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e2d\u56fd\u7f8e\u672f\u9986",
-                            "lb": "\u4e2d\u56fd\u7f8e\u672f\u9986",
+                            "sid": "中国美术馆",
+                            "lb": "中国美术馆",
                             "x": 0,
                             "y": 110.6,
                             "rx": -26,
@@ -3809,15 +3815,16 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "aedafb2683b10d3552e5c53b"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c18\u53f7\u7ebf",
-                    "lb": "8\u53f7\u7ebf",
+                    "lid": "地铁8号线",
+                    "lb": "地铁8号线",
+                    "sn": "8号线北",
                     "slb": false,
                     "n": 10,
                     "loop": false,
@@ -3833,8 +3840,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u73e0\u5e02\u53e3",
-                            "lb": "\u73e0\u5e02\u53e3",
+                            "sid": "珠市口",
+                            "lb": "珠市口",
                             "x": -10.3,
                             "y": 241.8,
                             "rx": 5.1,
@@ -3844,7 +3851,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线,北京市|地铁8号线",
                             "int": "2",
                             "px": 12958099.56,
                             "py": 4823404.31,
@@ -3853,8 +3860,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5929\u6865",
-                            "lb": "\u5929\u6865",
+                            "sid": "天桥",
+                            "lb": "天桥",
                             "x": -10,
                             "y": 276.8,
                             "rx": 5,
@@ -3864,15 +3871,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "3a86cbf0ee81e395095cb358"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c38\u5b9a\u95e8\u5916",
-                            "lb": "\u6c38\u5b9a\u95e8\u5916",
+                            "sid": "永定门外",
+                            "lb": "永定门外",
                             "x": -10,
                             "y": 307.3,
                             "rx": -46,
@@ -3882,7 +3889,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84),\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄),北京市|地铁8号线",
                             "int": "2",
                             "px": 12958358.41,
                             "py": 4819954.35,
@@ -3891,8 +3898,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6728\u6a28\u56ed",
-                            "lb": "\u6728\u6a28\u56ed",
+                            "sid": "木樨园",
+                            "lb": "木樨园",
                             "x": -10,
                             "y": 331.8,
                             "rx": 5,
@@ -3902,15 +3909,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "8cc98a74b6875481badf8f4d"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6d77\u6237\u5c6f",
-                            "lb": "\u6d77\u6237\u5c6f",
+                            "sid": "海户屯",
+                            "lb": "海户屯",
                             "x": -10,
                             "y": 350.8,
                             "rx": 5,
@@ -3920,7 +3927,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "3e98ecc7c3f82c3e51e5c598"
                         }
@@ -3938,14 +3945,14 @@ export default {
                             "iu": false,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u7ea2\u95e8\u5357",
-                            "lb": "\u5927\u7ea2\u95e8\u5357",
+                            "sid": "大红门南",
+                            "lb": "大红门南",
                             "x": -10,
                             "y": 410.8,
                             "rx": 5,
@@ -3955,15 +3962,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "13ab86fd1af3d21beb56fafa"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u548c\u4e49",
-                            "lb": "\u548c\u4e49",
+                            "sid": "和义",
+                            "lb": "和义",
                             "x": -10,
                             "y": 450.8,
                             "rx": 5,
@@ -3973,15 +3980,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "7f947e7b8f8c2fc6f5c59c03"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u9ad8\u5730",
-                            "lb": "\u4e1c\u9ad8\u5730",
+                            "sid": "东高地",
+                            "lb": "东高地",
                             "x": 10,
                             "y": 480.8,
                             "rx": -40,
@@ -3991,15 +3998,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "42fba34c0d128e0d9ce3213e"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u706b\u7bad\u4e07\u6e90",
-                            "lb": "\u706b\u7bad\u4e07\u6e90",
+                            "sid": "火箭万源",
+                            "lb": "火箭万源",
                             "x": 30,
                             "y": 510.8,
                             "rx": -50,
@@ -4009,7 +4016,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "2c1847170a57fe292afc4869"
                         }
@@ -4027,14 +4034,14 @@ export default {
                             "iu": true,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e94\u798f\u5802",
-                            "lb": "\u4e94\u798f\u5802",
+                            "sid": "五福堂",
+                            "lb": "五福堂",
                             "x": 50,
                             "y": 540.8,
                             "rx": -40,
@@ -4044,7 +4051,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "9bdfc4fccbd747aec33644a8"
                         }
@@ -4062,14 +4069,14 @@ export default {
                             "iu": true,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5fb7\u8302",
-                            "lb": "\u5fb7\u8302",
+                            "sid": "德茂",
+                            "lb": "德茂",
                             "x": 70,
                             "y": 570.8,
                             "rx": -30,
@@ -4079,15 +4086,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "30621f4d95bacaab8e772738"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u701b\u6d77",
-                            "lb": "\u701b\u6d77",
+                            "sid": "瀛海",
+                            "lb": "瀛海",
                             "x": 90,
                             "y": 600.8,
                             "rx": -30,
@@ -4097,15 +4104,16 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线",
                             "int": "2",
                             "uid": "06484e90dbc945524354d7be"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c18\u53f7\u7ebf\u5357\u6bb5",
-                    "lb": "8\u53f7\u7ebf",
+                    "lid": "地铁8号线南段",
+                    "lb": "地铁8号线",
+                    "sn": "8号线南",
                     "slb": false,
                     "n": 10,
                     "loop": false,
@@ -4121,8 +4129,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u90ed\u516c\u5e84",
-                            "lb": "\u90ed\u516c\u5e84",
+                            "sid": "郭公庄",
+                            "lb": "郭公庄",
                             "x": -395,
                             "y": 412,
                             "rx": 10,
@@ -4132,7 +4140,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁9号线,北京市|地铁房山线",
                             "int": "2",
                             "px": 12947551.34,
                             "py": 4812310.55,
@@ -4141,8 +4149,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e30\u53f0\u79d1\u6280\u56ed",
-                            "lb": "\u4e30\u53f0\u79d1\u6280\u56ed",
+                            "sid": "丰台科技园",
+                            "lb": "丰台科技园",
                             "x": -395,
                             "y": 388,
                             "rx": -72.2,
@@ -4152,7 +4160,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线",
                             "int": "2",
                             "px": 12947002.75,
                             "py": 4813853.19,
@@ -4161,8 +4169,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u79d1\u6021\u8def",
-                            "lb": "\u79d1\u6021\u8def",
+                            "sid": "科怡路",
+                            "lb": "科怡路",
                             "x": -395,
                             "y": 362,
                             "rx": -48.2,
@@ -4172,7 +4180,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线",
                             "int": "2",
                             "px": 12947021.58,
                             "py": 4814894.84,
@@ -4181,8 +4189,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e30\u53f0\u5357\u8def",
-                            "lb": "\u4e30\u53f0\u5357\u8def",
+                            "sid": "丰台南路",
+                            "lb": "丰台南路",
                             "x": -395,
                             "y": 336,
                             "rx": -58.2,
@@ -4192,7 +4200,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线",
                             "int": "2",
                             "px": 12946915.34,
                             "py": 4816127.72,
@@ -4201,8 +4209,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e30\u53f0\u4e1c\u5927\u8857",
-                            "lb": "\u4e30\u53f0\u4e1c\u5927\u8857",
+                            "sid": "丰台东大街",
+                            "lb": "丰台东大街",
                             "x": -395,
                             "y": 317,
                             "rx": -72.2,
@@ -4212,7 +4220,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线",
                             "int": "3",
                             "px": 12946621.63,
                             "py": 4818184.27,
@@ -4221,8 +4229,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e03\u91cc\u5e84",
-                            "lb": "\u4e03\u91cc\u5e84",
+                            "sid": "七里庄",
+                            "lb": "七里庄",
                             "x": -395,
                             "y": 295,
                             "rx": -30,
@@ -4232,7 +4240,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁9号线,北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12946633.93,
                             "py": 4819795.31,
@@ -4241,8 +4249,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516d\u91cc\u6865",
-                            "lb": "\u516d\u91cc\u6865",
+                            "sid": "六里桥",
+                            "lb": "六里桥",
                             "x": -366,
                             "y": 258,
                             "rx": -40,
@@ -4252,7 +4260,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12947667.44,
                             "py": 4821794.25,
@@ -4261,8 +4269,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516d\u91cc\u6865\u4e1c",
-                            "lb": "\u516d\u91cc\u6865\u4e1c",
+                            "sid": "六里桥东",
+                            "lb": "六里桥东",
                             "x": -330,
                             "y": 246,
                             "rx": 8,
@@ -4272,7 +4280,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线",
                             "int": "2",
                             "px": 12948986.92,
                             "py": 4822712.16,
@@ -4297,8 +4305,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u4eac\u897f\u7ad9",
-                            "lb": "\u5317\u4eac\u897f\u7ad9",
+                            "sid": "北京西站",
+                            "lb": "北京西站",
                             "x": -311,
                             "y": 206,
                             "rx": 8,
@@ -4308,7 +4316,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁7号线,北京市|地铁9号线",
                             "int": "6",
                             "px": 12949696.98,
                             "py": 4823853.25,
@@ -4317,8 +4325,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u519b\u4e8b\u535a\u7269\u9986",
-                            "lb": "\u519b\u4e8b\u535a\u7269\u9986",
+                            "sid": "军事博物馆",
+                            "lb": "军事博物馆",
                             "x": -311,
                             "y": 170.6,
                             "rx": 5,
@@ -4328,7 +4336,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁9号线",
                             "int": "2",
                             "px": 12949745.51,
                             "py": 4825699.07,
@@ -4337,8 +4345,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u767d\u5806\u5b50",
-                            "lb": "\u767d\u5806\u5b50",
+                            "sid": "白堆子",
+                            "lb": "白堆子",
                             "x": -311,
                             "y": 124.9,
                             "rx": 8,
@@ -4348,7 +4356,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线",
                             "int": "2",
                             "px": 12950199.89,
                             "py": 4828050.04,
@@ -4357,8 +4365,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u767d\u77f3\u6865\u5357",
-                            "lb": "\u767d\u77f3\u6865\u5357",
+                            "sid": "白石桥南",
+                            "lb": "白石桥南",
                             "x": -311,
                             "y": 82.3,
                             "rx": 3,
@@ -4368,7 +4376,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线,北京市|地铁9号线",
                             "int": "2",
                             "px": 12950189.51,
                             "py": 4829340,
@@ -4377,8 +4385,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56fd\u5bb6\u56fe\u4e66\u9986",
-                            "lb": "\u56fd\u5bb6\u56fe\u4e66\u9986",
+                            "sid": "国家图书馆",
+                            "lb": "国家图书馆",
                             "x": -311,
                             "y": 39,
                             "rx": -71.9,
@@ -4388,7 +4396,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁9号线",
                             "px": 12950148.43,
                             "py": 4830820.38,
                             "uid": "a911c5ee29ebc3955ebe8628"
@@ -4396,8 +4404,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c19\u53f7\u7ebf",
-                    "lb": "9\u53f7\u7ebf",
+                    "lid": "地铁9号线",
+                    "lb": "地铁9号线",
+                    "sn": "9号线",
                     "slb": false,
                     "n": 9,
                     "loop": false,
@@ -4413,8 +4422,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e30\u53f0\u7ad9",
-                            "lb": "\u4e30\u53f0\u7ad9",
+                            "sid": "丰台站",
+                            "lb": "丰台站",
                             "x": -330,
                             "y": 372.4,
                             "rx": -19,
@@ -4424,7 +4433,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12947875.03,
                             "py": 4817402.22,
@@ -4450,8 +4459,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6ce5\u6d3c",
-                            "lb": "\u6ce5\u6d3c",
+                            "sid": "泥洼",
+                            "lb": "泥洼",
                             "x": -366,
                             "y": 333,
                             "rx": 6,
@@ -4461,7 +4470,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12947801.33,
                             "py": 4818655.18,
@@ -4470,8 +4479,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u5c40",
-                            "lb": "\u897f\u5c40",
+                            "sid": "西局",
+                            "lb": "西局",
                             "x": -366,
                             "y": 295,
                             "rx": 10,
@@ -4481,7 +4490,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁10号线,北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12947698.9,
                             "py": 4819785.01,
@@ -4490,8 +4499,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516d\u91cc\u6865",
-                            "lb": "\u516d\u91cc\u6865",
+                            "sid": "六里桥",
+                            "lb": "六里桥",
                             "x": -366,
                             "y": 258,
                             "rx": -40,
@@ -4501,7 +4510,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁9号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12947667.44,
                             "py": 4821794.25,
@@ -4510,8 +4519,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u83b2\u82b1\u6865",
-                            "lb": "\u83b2\u82b1\u6865",
+                            "sid": "莲花桥",
+                            "lb": "莲花桥",
                             "x": -366,
                             "y": 214.3,
                             "rx": -40,
@@ -4521,7 +4530,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12948470.39,
                             "py": 4824345.44,
@@ -4530,8 +4539,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516c\u4e3b\u575f",
-                            "lb": "\u516c\u4e3b\u575f",
+                            "sid": "公主坟",
+                            "lb": "公主坟",
                             "x": -366,
                             "y": 170.6,
                             "rx": 6.5,
@@ -4541,7 +4550,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12948442.62,
                             "py": 4825707.35,
@@ -4566,8 +4575,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u9493\u9c7c\u53f0",
-                            "lb": "\u897f\u9493\u9c7c\u53f0",
+                            "sid": "西钓鱼台",
+                            "lb": "西钓鱼台",
                             "x": -407.6,
                             "y": 126.3,
                             "rx": 0,
@@ -4577,7 +4586,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12947063.66,
                             "py": 4828044.74,
@@ -4602,8 +4611,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6148\u5bff\u5bfa",
-                            "lb": "\u6148\u5bff\u5bfa",
+                            "sid": "慈寿寺",
+                            "lb": "慈寿寺",
                             "x": -449.2,
                             "y": 82.3,
                             "rx": 6,
@@ -4613,7 +4622,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线,北京市|地铁10号线",
                             "int": "2",
                             "px": 12946608.13,
                             "py": 4829407.04,
@@ -4622,8 +4631,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8f66\u9053\u6c9f",
-                            "lb": "\u8f66\u9053\u6c9f",
+                            "sid": "车道沟",
+                            "lb": "车道沟",
                             "x": -449.2,
                             "y": 40.3,
                             "rx": -40,
@@ -4633,7 +4642,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12946628.2,
                             "py": 4831692.62,
@@ -4642,8 +4651,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u957f\u6625\u6865",
-                            "lb": "\u957f\u6625\u6865",
+                            "sid": "长春桥",
+                            "lb": "长春桥",
                             "x": -449.2,
                             "y": -3.3,
                             "rx": -40,
@@ -4653,7 +4662,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12946649,
                             "py": 4833136.45,
@@ -4662,8 +4671,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u706b\u5668\u8425",
-                            "lb": "\u706b\u5668\u8425",
+                            "sid": "火器营",
+                            "lb": "火器营",
                             "x": -449.2,
                             "y": -45,
                             "rx": 5,
@@ -4673,7 +4682,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12946108.91,
                             "py": 4834222.5,
@@ -4698,8 +4707,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5df4\u6c9f",
-                            "lb": "\u5df4\u6c9f",
+                            "sid": "巴沟",
+                            "lb": "巴沟",
                             "x": -438,
                             "y": -84,
                             "rx": -35,
@@ -4709,7 +4718,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|地铁西郊线",
                             "int": "1",
                             "px": 12946654.41,
                             "py": 4835380.83,
@@ -4718,8 +4727,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u82cf\u5dde\u8857",
-                            "lb": "\u82cf\u5dde\u8857",
+                            "sid": "苏州街",
+                            "lb": "苏州街",
                             "x": -378.8,
                             "y": -84,
                             "rx": -20.6,
@@ -4729,7 +4738,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12948018.98,
                             "py": 4835571.16,
@@ -4738,8 +4747,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6d77\u6dc0\u9ec4\u5e84",
-                            "lb": "\u6d77\u6dc0\u9ec4\u5e84",
+                            "sid": "海淀黄庄",
+                            "lb": "海淀黄庄",
                             "x": -319.6,
                             "y": -84,
                             "rx": 6,
@@ -4749,7 +4758,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁10号线",
                             "int": "2",
                             "px": 12949308.13,
                             "py": 4835594.47,
@@ -4758,8 +4767,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u77e5\u6625\u91cc",
-                            "lb": "\u77e5\u6625\u91cc",
+                            "sid": "知春里",
+                            "lb": "知春里",
                             "x": -269.8,
                             "y": -84,
                             "rx": -20.6,
@@ -4769,7 +4778,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12950615.31,
                             "py": 4835622.79,
@@ -4778,8 +4787,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u77e5\u6625\u8def",
-                            "lb": "\u77e5\u6625\u8def",
+                            "sid": "知春路",
+                            "lb": "知春路",
                             "x": -183.7,
                             "y": -84,
                             "rx": -47.8,
@@ -4789,7 +4798,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|地铁13号线",
                             "int": "2",
                             "px": 12952007.37,
                             "py": 4835623.03,
@@ -4798,8 +4807,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u571f\u57ce",
-                            "lb": "\u897f\u571f\u57ce",
+                            "sid": "西土城",
+                            "lb": "西土城",
                             "x": -150.7,
                             "y": -84,
                             "rx": -20.6,
@@ -4809,7 +4818,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12953330.74,
                             "py": 4835617.75,
@@ -4818,8 +4827,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7261\u4e39\u56ed",
-                            "lb": "\u7261\u4e39\u56ed",
+                            "sid": "牡丹园",
+                            "lb": "牡丹园",
                             "x": -110.3,
                             "y": -84,
                             "rx": -20.6,
@@ -4829,7 +4838,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12955107.65,
                             "py": 4835667.67,
@@ -4838,8 +4847,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5065\u5fb7\u95e8",
-                            "lb": "\u5065\u5fb7\u95e8",
+                            "sid": "健德门",
+                            "lb": "健德门",
                             "x": -66.4,
                             "y": -84,
                             "rx": -20.6,
@@ -4849,7 +4858,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12956373.39,
                             "py": 4835734.51,
@@ -4858,8 +4867,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u571f\u57ce",
-                            "lb": "\u5317\u571f\u57ce",
+                            "sid": "北土城",
+                            "lb": "北土城",
                             "x": -23.6,
                             "y": -84,
                             "rx": -40,
@@ -4869,7 +4878,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁10号线",
                             "int": "2",
                             "px": 12957803.56,
                             "py": 4835795.6,
@@ -4878,8 +4887,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b89\u8d1e\u95e8",
-                            "lb": "\u5b89\u8d1e\u95e8",
+                            "sid": "安贞门",
+                            "lb": "安贞门",
                             "x": 25,
                             "y": -84,
                             "rx": -20.6,
@@ -4889,7 +4898,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12959106.86,
                             "py": 4835805.28,
@@ -4898,8 +4907,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u60e0\u65b0\u897f\u8857\u5357\u53e3",
-                            "lb": "\u60e0\u65b0\u897f\u8857\u5357\u53e3",
+                            "sid": "惠新西街南口",
+                            "lb": "惠新西街南口",
                             "x": 72,
                             "y": -84,
                             "rx": 6.7,
@@ -4909,7 +4918,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12960405.9,
                             "py": 4835798.62,
@@ -4918,8 +4927,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u828d\u836f\u5c45",
-                            "lb": "\u828d\u836f\u5c45",
+                            "sid": "芍药居",
+                            "lb": "芍药居",
                             "x": 152.2,
                             "y": -84,
                             "rx": 4.8,
@@ -4929,7 +4938,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|地铁13号线",
                             "int": "1",
                             "px": 12962658.43,
                             "py": 4835768.51,
@@ -4938,8 +4947,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u592a\u9633\u5bab",
-                            "lb": "\u592a\u9633\u5bab",
+                            "sid": "太阳宫",
+                            "lb": "太阳宫",
                             "x": 209.6,
                             "y": -84,
                             "rx": -29.9,
@@ -4949,7 +4958,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12963747.6,
                             "py": 4835088.3,
@@ -4990,8 +4999,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e09\u5143\u6865",
-                            "lb": "\u4e09\u5143\u6865",
+                            "sid": "三元桥",
+                            "lb": "三元桥",
                             "x": 225.1,
                             "y": -40.5,
                             "rx": 7,
@@ -5001,7 +5010,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u673a\u573a\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|机场线",
                             "int": "3",
                             "px": 12964822.62,
                             "py": 4833492.9,
@@ -5010,8 +5019,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4eae\u9a6c\u6865",
-                            "lb": "\u4eae\u9a6c\u6865",
+                            "sid": "亮马桥",
+                            "lb": "亮马桥",
                             "x": 225.1,
                             "y": -3.5,
                             "rx": 5,
@@ -5021,7 +5030,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12965382.23,
                             "py": 4831708.68,
@@ -5030,8 +5039,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u519c\u4e1a\u5c55\u89c8\u9986",
-                            "lb": "\u519c\u4e1a\u5c55\u89c8\u9986",
+                            "sid": "农业展览馆",
+                            "lb": "农业展览馆",
                             "x": 225.1,
                             "y": 30.9,
                             "rx": -58,
@@ -5041,7 +5050,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12965385.52,
                             "py": 4830548.95,
@@ -5050,8 +5059,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56e2\u7ed3\u6e56",
-                            "lb": "\u56e2\u7ed3\u6e56",
+                            "sid": "团结湖",
+                            "lb": "团结湖",
                             "x": 225.1,
                             "y": 65.3,
                             "rx": 5,
@@ -5061,7 +5070,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "1",
                             "px": 12965337.03,
                             "py": 4829449.03,
@@ -5070,8 +5079,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u547c\u5bb6\u697c",
-                            "lb": "\u547c\u5bb6\u697c",
+                            "sid": "呼家楼",
+                            "lb": "呼家楼",
                             "x": 225.1,
                             "y": 114.6,
                             "rx": 5,
@@ -5081,7 +5090,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁6号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12965325.89,
                             "py": 4827945.05,
@@ -5090,8 +5099,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u91d1\u53f0\u5915\u7167",
-                            "lb": "\u91d1\u53f0\u5915\u7167",
+                            "sid": "金台夕照",
+                            "lb": "金台夕照",
                             "x": 225.1,
                             "y": 143.8,
                             "rx": -50,
@@ -5101,7 +5110,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "1",
                             "px": 12965330.9,
                             "py": 4827074.65,
@@ -5110,8 +5119,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56fd\u8d38",
-                            "lb": "\u56fd\u8d38",
+                            "sid": "国贸",
+                            "lb": "国贸",
                             "x": 225.1,
                             "y": 170.6,
                             "rx": -26,
@@ -5121,7 +5130,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁10号线",
                             "int": "3",
                             "px": 12965152.48,
                             "py": 4825798.3,
@@ -5130,8 +5139,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u53cc\u4e95",
-                            "lb": "\u53cc\u4e95",
+                            "sid": "双井",
+                            "lb": "双井",
                             "x": 225.1,
                             "y": 241.3,
                             "rx": 8.2,
@@ -5141,7 +5150,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12965349.97,
                             "py": 4823638,
@@ -5150,8 +5159,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u52b2\u677e",
-                            "lb": "\u52b2\u677e",
+                            "sid": "劲松",
+                            "lb": "劲松",
                             "x": 225.1,
                             "y": 260.3,
                             "rx": 11.2,
@@ -5161,7 +5170,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12965300.68,
                             "py": 4822314.34,
@@ -5170,8 +5179,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6f58\u5bb6\u56ed",
-                            "lb": "\u6f58\u5bb6\u56ed",
+                            "sid": "潘家园",
+                            "lb": "潘家园",
                             "x": 225.1,
                             "y": 280,
                             "rx": -40,
@@ -5181,7 +5190,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12965270.74,
                             "py": 4821116.25,
@@ -5190,8 +5199,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5341\u91cc\u6cb3",
-                            "lb": "\u5341\u91cc\u6cb3",
+                            "sid": "十里河",
+                            "lb": "十里河",
                             "x": 225.1,
                             "y": 307.3,
                             "rx": -45,
@@ -5201,7 +5210,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁10号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12964921.21,
                             "py": 4819687.8,
@@ -5226,8 +5235,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5206\u949f\u5bfa",
-                            "lb": "\u5206\u949f\u5bfa",
+                            "sid": "分钟寺",
+                            "lb": "分钟寺",
                             "x": 220,
                             "y": 360,
                             "rx": 10.2,
@@ -5237,7 +5246,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12964447.75,
                             "py": 4817670.92,
@@ -5278,8 +5287,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6210\u5bff\u5bfa",
-                            "lb": "\u6210\u5bff\u5bfa",
+                            "sid": "成寿寺",
+                            "lb": "成寿寺",
                             "x": 150,
                             "y": 372.4,
                             "rx": -20.2,
@@ -5289,7 +5298,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12963776.13,
                             "py": 4816742.39,
@@ -5298,8 +5307,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b8b\u5bb6\u5e84",
-                            "lb": "\u5b8b\u5bb6\u5e84",
+                            "sid": "宋家庄",
+                            "lb": "宋家庄",
                             "x": 72,
                             "y": 372.4,
                             "rx": 6.7,
@@ -5309,7 +5318,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁10号线,北京市|地铁亦庄线",
                             "int": "3",
                             "px": 12961616.38,
                             "py": 4816812.24,
@@ -5318,8 +5327,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u77f3\u69b4\u5e84",
-                            "lb": "\u77f3\u69b4\u5e84",
+                            "sid": "石榴庄",
+                            "lb": "石榴庄",
                             "x": 27.7,
                             "y": 372.4,
                             "rx": -19.2,
@@ -5329,7 +5338,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12960019.1,
                             "py": 4816836.48,
@@ -5338,8 +5347,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u7ea2\u95e8",
-                            "lb": "\u5927\u7ea2\u95e8",
+                            "sid": "大红门",
+                            "lb": "大红门",
                             "x": -10,
                             "y": 372.4,
                             "rx": -37,
@@ -5349,7 +5358,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12958276.98,
                             "py": 4816792.33,
@@ -5358,8 +5367,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u89d2\u95e8\u4e1c",
-                            "lb": "\u89d2\u95e8\u4e1c",
+                            "sid": "角门东",
+                            "lb": "角门东",
                             "x": -60.9,
                             "y": 372.4,
                             "rx": -19.2,
@@ -5369,7 +5378,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "4",
                             "px": 12956922.71,
                             "py": 4816746.64,
@@ -5378,8 +5387,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u89d2\u95e8\u897f",
-                            "lb": "\u89d2\u95e8\u897f",
+                            "sid": "角门西",
+                            "lb": "角门西",
                             "x": -105.3,
                             "y": 372.4,
                             "rx": -43,
@@ -5389,7 +5398,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁10号线",
                             "int": "2",
                             "px": 12955240.98,
                             "py": 4816810.55,
@@ -5398,8 +5407,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8349\u6865",
-                            "lb": "\u8349\u6865",
+                            "sid": "草桥",
+                            "lb": "草桥",
                             "x": -159.9,
                             "y": 372.4,
                             "rx": -12,
@@ -5409,7 +5418,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "3",
                             "px": 12953192.4,
                             "py": 4816762.52,
@@ -5418,8 +5427,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7eaa\u5bb6\u5e99",
-                            "lb": "\u7eaa\u5bb6\u5e99",
+                            "sid": "纪家庙",
+                            "lb": "纪家庙",
                             "x": -214.5,
                             "y": 372.4,
                             "rx": -19.2,
@@ -5429,7 +5438,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "int": "2",
                             "px": 12950998.47,
                             "py": 4816549.86,
@@ -5438,8 +5447,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9996\u7ecf\u8d38",
-                            "lb": "\u9996\u7ecf\u8d38",
+                            "sid": "首经贸",
+                            "lb": "首经贸",
                             "x": -269.9,
                             "y": 372.4,
                             "rx": -19.2,
@@ -5449,7 +5458,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线",
                             "px": 12949560.24,
                             "py": 4816578.12,
                             "uid": "688753fadf6f7773a9175acc"
@@ -5457,8 +5466,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c110\u53f7\u7ebf",
-                    "lb": "10\u53f7\u7ebf",
+                    "lid": "地铁10号线",
+                    "lb": "地铁10号线",
+                    "sn": "10号线",
                     "slb": false,
                     "n": 45,
                     "loop": true,
@@ -5468,7 +5478,7 @@ export default {
                     "lc": "0x009BC0",
                     "uid": "de6d05290c19ca50a2d230b7",
                     "uid2": "28d3dce37526799f49fd3fb7",
-                    "lb2": "\u5730\u94c110\u53f7\u7ebf",
+                    "lb2": "地铁10号线",
                     "lb2x": 150,
                     "lb2y": 380
                 }
@@ -5477,8 +5487,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u76f4\u95e8",
-                            "lb": "\u897f\u76f4\u95e8",
+                            "sid": "西直门",
+                            "lb": "西直门",
                             "x": -170.3,
                             "y": 43.5,
                             "rx": -48.5,
@@ -5488,7 +5498,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁4号线大兴线,北京市|地铁13号线",
                             "int": "3",
                             "px": 12953512.16,
                             "py": 4830410.01,
@@ -5513,8 +5523,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u949f\u5bfa",
-                            "lb": "\u5927\u949f\u5bfa",
+                            "sid": "大钟寺",
+                            "lb": "大钟寺",
                             "x": -183.7,
                             "y": -13.6,
                             "rx": -48.2,
@@ -5524,7 +5534,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "2",
                             "px": 12952366.33,
                             "py": 4834171.94,
@@ -5533,8 +5543,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u77e5\u6625\u8def",
-                            "lb": "\u77e5\u6625\u8def",
+                            "sid": "知春路",
+                            "lb": "知春路",
                             "x": -183.7,
                             "y": -84,
                             "rx": -47.8,
@@ -5544,7 +5554,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|地铁13号线",
                             "int": "3",
                             "px": 12952007.37,
                             "py": 4835623.03,
@@ -5553,8 +5563,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e94\u9053\u53e3",
-                            "lb": "\u4e94\u9053\u53e3",
+                            "sid": "五道口",
+                            "lb": "五道口",
                             "x": -183.7,
                             "y": -122.3,
                             "rx": -48.2,
@@ -5564,7 +5574,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "6",
                             "px": 12951544.06,
                             "py": 4838011.7,
@@ -5573,8 +5583,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e0a\u5730",
-                            "lb": "\u4e0a\u5730",
+                            "sid": "上地",
+                            "lb": "上地",
                             "x": -183.7,
                             "y": -167.4,
                             "rx": -37.5,
@@ -5584,7 +5594,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "4",
                             "px": 12949585.09,
                             "py": 4843821.87,
@@ -5593,8 +5603,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u4e8c\u65d7",
-                            "lb": "\u897f\u4e8c\u65d7",
+                            "sid": "西二旗",
+                            "lb": "西二旗",
                             "x": -183.7,
                             "y": -224,
                             "rx": -48.2,
@@ -5604,7 +5614,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁13号线,北京市|地铁昌平线",
                             "int": "5",
                             "px": 12947997.82,
                             "py": 4846749.06,
@@ -5629,8 +5639,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9f99\u6cfd",
-                            "lb": "\u9f99\u6cfd",
+                            "sid": "龙泽",
+                            "lb": "龙泽",
                             "x": -146.9,
                             "y": -253.6,
                             "rx": -13.8,
@@ -5640,7 +5650,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "3",
                             "px": 12949511.27,
                             "py": 4849319.16,
@@ -5649,8 +5659,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56de\u9f99\u89c2",
-                            "lb": "\u56de\u9f99\u89c2",
+                            "sid": "回龙观",
+                            "lb": "回龙观",
                             "x": -101.3,
                             "y": -253.6,
                             "rx": -18.9,
@@ -5660,7 +5670,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "4",
                             "px": 12951308.78,
                             "py": 4849287.04,
@@ -5669,8 +5679,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u970d\u8425",
-                            "lb": "\u970d\u8425",
+                            "sid": "霍营",
+                            "lb": "霍营",
                             "x": -23.6,
                             "y": -253.6,
                             "rx": -30,
@@ -5680,7 +5690,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁8号线,北京市|地铁13号线",
                             "int": "6",
                             "px": 12954013.35,
                             "py": 4849490.23,
@@ -5689,8 +5699,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7acb\u6c34\u6865",
-                            "lb": "\u7acb\u6c34\u6865",
+                            "sid": "立水桥",
+                            "lb": "立水桥",
                             "x": 72,
                             "y": -253.6,
                             "rx": 6.7,
@@ -5700,7 +5710,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁13号线",
                             "int": "3",
                             "px": 12959821.28,
                             "py": 4846807.89,
@@ -5757,8 +5767,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u82d1",
-                            "lb": "\u5317\u82d1",
+                            "sid": "北苑",
+                            "lb": "北苑",
                             "x": 152.2,
                             "y": -186.6,
                             "rx": 4.8,
@@ -5768,7 +5778,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "8",
                             "px": 12962328.88,
                             "py": 4845295.24,
@@ -5777,8 +5787,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671b\u4eac\u897f",
-                            "lb": "\u671b\u4eac\u897f",
+                            "sid": "望京西",
+                            "lb": "望京西",
                             "x": 152.2,
                             "y": -148.3,
                             "rx": 4.8,
@@ -5788,7 +5798,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线,北京市|地铁15号线",
                             "int": "3",
                             "px": 12964122.86,
                             "py": 4838479.75,
@@ -5797,8 +5807,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u828d\u836f\u5c45",
-                            "lb": "\u828d\u836f\u5c45",
+                            "sid": "芍药居",
+                            "lb": "芍药居",
                             "x": 152.2,
                             "y": -84,
                             "rx": 4.8,
@@ -5808,7 +5818,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|地铁13号线",
                             "int": "2",
                             "px": 12962658.43,
                             "py": 4835768.51,
@@ -5817,8 +5827,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5149\u7199\u95e8",
-                            "lb": "\u5149\u7199\u95e8",
+                            "sid": "光熙门",
+                            "lb": "光熙门",
                             "x": 152.2,
                             "y": -33,
                             "rx": 4.8,
@@ -5828,7 +5838,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "2",
                             "px": 12961999.42,
                             "py": 4834525.02,
@@ -5837,8 +5847,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u67f3\u82b3",
-                            "lb": "\u67f3\u82b3",
+                            "sid": "柳芳",
+                            "lb": "柳芳",
                             "x": 152.2,
                             "y": 5.8,
                             "rx": 4.8,
@@ -5848,7 +5858,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线",
                             "int": "2",
                             "px": 12962100.78,
                             "py": 4833024.97,
@@ -5873,8 +5883,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u76f4\u95e8",
-                            "lb": "\u4e1c\u76f4\u95e8",
+                            "sid": "东直门",
+                            "lb": "东直门",
                             "x": 131,
                             "y": 45.1,
                             "rx": 6.7,
@@ -5884,7 +5894,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u673a\u573a\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁13号线,北京市|机场线",
                             "px": 12962214.83,
                             "py": 4830596.98,
                             "uid": "8a281c7c1c1aa5cb09f5ebdf"
@@ -5892,8 +5902,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c113\u53f7\u7ebf",
-                    "lb": "13\u53f7\u7ebf",
+                    "lid": "地铁13号线",
+                    "lb": "地铁13号线",
+                    "sn": "13号线",
                     "slb": false,
                     "n": 16,
                     "loop": false,
@@ -5909,8 +5920,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u5c40",
-                            "lb": "\u897f\u5c40",
+                            "sid": "西局",
+                            "lb": "西局",
                             "x": -366,
                             "y": 295,
                             "rx": 10,
@@ -5920,7 +5931,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁10号线,北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12947698.9,
                             "py": 4819785.01,
@@ -5929,8 +5940,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e03\u91cc\u5e84",
-                            "lb": "\u4e03\u91cc\u5e84",
+                            "sid": "七里庄",
+                            "lb": "七里庄",
                             "x": -395,
                             "y": 295,
                             "rx": -30,
@@ -5940,7 +5951,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁9号线,北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12946633.93,
                             "py": 4819795.31,
@@ -5949,8 +5960,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u4e95",
-                            "lb": "\u5927\u4e95",
+                            "sid": "大井",
+                            "lb": "大井",
                             "x": -443,
                             "y": 295,
                             "rx": -16,
@@ -5960,7 +5971,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12944574.46,
                             "py": 4819647.68,
@@ -5969,8 +5980,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u90ed\u5e84\u5b50",
-                            "lb": "\u90ed\u5e84\u5b50",
+                            "sid": "郭庄子",
+                            "lb": "郭庄子",
                             "x": -488,
                             "y": 295,
                             "rx": -19,
@@ -5980,7 +5991,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12942126.45,
                             "py": 4819529.8,
@@ -5989,8 +6000,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u74e6\u7a91",
-                            "lb": "\u5927\u74e6\u7a91",
+                            "sid": "大瓦窑",
+                            "lb": "大瓦窑",
                             "x": -530,
                             "y": 295,
                             "rx": -19,
@@ -6000,7 +6011,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12940692.43,
                             "py": 4818729.55,
@@ -6009,8 +6020,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56ed\u535a\u56ed",
-                            "lb": "\u56ed\u535a\u56ed",
+                            "sid": "园博园",
+                            "lb": "园博园",
                             "x": -570,
                             "y": 295,
                             "rx": -19,
@@ -6020,7 +6031,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12936396.7,
                             "py": 4819001.74,
@@ -6029,8 +6040,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5f20\u90ed\u5e84",
-                            "lb": "\u5f20\u90ed\u5e84",
+                            "sid": "张郭庄",
+                            "lb": "张郭庄",
                             "x": -618,
                             "y": 295,
                             "rx": -19,
@@ -6040,7 +6051,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
+                            "ln": "北京市|地铁14号线西段(张郭庄-西局)",
                             "int": "3",
                             "px": 12934731.53,
                             "py": 4818568.7,
@@ -6049,8 +6060,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c114\u53f7\u7ebf\u897f\u6bb5(\u5f20\u90ed\u5e84-\u897f\u5c40)",
-                    "lb": "14\u53f7\u7ebf",
+                    "lid": "地铁14号线西段(张郭庄-西局)",
+                    "lb": "地铁14号线",
+                    "sn": "14号线西",
                     "slb": false,
                     "n": 6,
                     "loop": false,
@@ -6066,8 +6078,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5584\u5404\u5e84",
-                            "lb": "\u5584\u5404\u5e84",
+                            "sid": "善各庄",
+                            "lb": "善各庄",
                             "x": 195.5,
                             "y": -232.3,
                             "rx": 7,
@@ -6077,7 +6089,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "5",
                             "px": 12967165.51,
                             "py": 4843009.59,
@@ -6086,8 +6098,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6765\u5e7f\u8425",
-                            "lb": "\u6765\u5e7f\u8425",
+                            "sid": "来广营",
+                            "lb": "来广营",
                             "x": 195.5,
                             "y": -203.3,
                             "rx": 7,
@@ -6097,7 +6109,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "5",
                             "px": 12965910.59,
                             "py": 4842003.87,
@@ -6106,8 +6118,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u6e56\u6e20",
-                            "lb": "\u4e1c\u6e56\u6e20",
+                            "sid": "东湖渠",
+                            "lb": "东湖渠",
                             "x": 195.5,
                             "y": -172.3,
                             "rx": 7,
@@ -6117,7 +6129,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "5",
                             "px": 12965970.98,
                             "py": 4840568.07,
@@ -6126,8 +6138,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671b\u4eac",
-                            "lb": "\u671b\u4eac",
+                            "sid": "望京",
+                            "lb": "望京",
                             "x": 196,
                             "y": -148.3,
                             "rx": 4.8,
@@ -6137,7 +6149,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84),\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄),北京市|地铁15号线",
                             "int": "5",
                             "px": 12966192.92,
                             "py": 4838834.76,
@@ -6163,8 +6175,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u961c\u901a",
-                            "lb": "\u961c\u901a",
+                            "sid": "阜通",
+                            "lb": "阜通",
                             "x": 210,
                             "y": -108.2,
                             "rx": 6.1,
@@ -6174,7 +6186,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12966372.9,
                             "py": 4837913.05,
@@ -6183,8 +6195,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671b\u4eac\u5357",
-                            "lb": "\u671b\u4eac\u5357",
+                            "sid": "望京南",
+                            "lb": "望京南",
                             "x": 245,
                             "y": -75.2,
                             "rx": 6.1,
@@ -6194,7 +6206,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12967576.48,
                             "py": 4836848.96,
@@ -6220,8 +6232,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ad8\u5bb6\u56ed",
-                            "lb": "\u9ad8\u5bb6\u56ed",
+                            "sid": "高家园",
+                            "lb": "高家园",
                             "x": 278,
                             "y": -30,
                             "rx": 6.1,
@@ -6232,7 +6244,7 @@ export default {
                             "rc": false,
                             "slb": true,
                             "no": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁12号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12968444.68,
                             "py": 4834884.7,
@@ -6241,8 +6253,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u0028\u6682\u7f13\u5f00\u901a\u0029",
-                            "lb": "\u0028\u6682\u7f13\u5f00\u901a\u0029",
+                            "sid": "(暂缓开通)",
+                            "lb": "(暂缓开通)",
                             "x": 278,
                             "y": -30,
                             "rx": 10,
@@ -6260,8 +6272,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5c06\u53f0",
-                            "lb": "\u5c06\u53f0",
+                            "sid": "将台",
+                            "lb": "将台",
                             "x": 278,
                             "y": -8.2,
                             "rx": 6.1,
@@ -6271,7 +6283,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12968444.68,
                             "py": 4834884.7,
@@ -6280,8 +6292,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u98ce\u5317\u6865",
-                            "lb": "\u4e1c\u98ce\u5317\u6865",
+                            "sid": "东风北桥",
+                            "lb": "东风北桥",
                             "x": 278,
                             "y": 16.2,
                             "rx": 6.1,
@@ -6291,7 +6303,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12968035.63,
                             "py": 4833081.97,
@@ -6300,8 +6312,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u67a3\u8425",
-                            "lb": "\u67a3\u8425",
+                            "sid": "枣营",
+                            "lb": "枣营",
                             "x": 278,
                             "y": 46.6,
                             "rx": -30,
@@ -6311,7 +6323,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12966781.03,
                             "py": 4831010.01,
@@ -6320,8 +6332,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671d\u9633\u516c\u56ed",
-                            "lb": "\u671d\u9633\u516c\u56ed",
+                            "sid": "朝阳公园",
+                            "lb": "朝阳公园",
                             "x": 278,
                             "y": 72,
                             "rx": 6.1,
@@ -6331,7 +6343,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12967185.95,
                             "py": 4829457.88,
@@ -6340,8 +6352,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u91d1\u53f0\u8def",
-                            "lb": "\u91d1\u53f0\u8def",
+                            "sid": "金台路",
+                            "lb": "金台路",
                             "x": 278,
                             "y": 114.6,
                             "rx": 6.1,
@@ -6351,7 +6363,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84),\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\uff08\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84\uff09",
+                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(北京南站-\u5584\u5404\u5e84),北京市|地铁6号线,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\uff08\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84\uff09",
                             "int": "3",
                             "px": 12967161.06,
                             "py": 4828007.23,
@@ -6360,9 +6372,9 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u671b\u8def",
-                            "lb": "\u5927\u671b\u8def",
-                            "x": 279.7,
+                            "sid": "大望路",
+                            "lb": "大望路",
+                            "x": 278,
                             "y": 170.6,
                             "rx": -40,
                             "ry": 5,
@@ -6371,7 +6383,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁1号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12967131.01,
                             "py": 4825882.32,
@@ -6380,8 +6392,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e5d\u9f99\u5c71",
-                            "lb": "\u4e5d\u9f99\u5c71",
+                            "sid": "九龙山",
+                            "lb": "九龙山",
                             "x": 278.1,
                             "y": 240.3,
                             "rx": 10,
@@ -6391,7 +6403,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁7号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12967084.96,
                             "py": 4823759.81,
@@ -6400,8 +6412,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e73\u4e50\u56ed",
-                            "lb": "\u5e73\u4e50\u56ed",
+                            "sid": "平乐园",
+                            "lb": "平乐园",
                             "x": 278.1,
                             "y": 268,
                             "rx": 5,
@@ -6411,7 +6423,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c17\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12967084.96,
                             "py": 4823759.81,
@@ -6431,14 +6443,14 @@ export default {
                             "iu": false,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u5de5\u5927\u897f\u95e8",
-                            "lb": "\u5317\u5de5\u5927\u897f\u95e8",
+                            "sid": "北工大西门",
+                            "lb": "北工大西门",
                             "x": 254.1,
                             "y": 307.3,
                             "rx": -20,
@@ -6448,7 +6460,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12967082.59,
                             "py": 4820973.41,
@@ -6457,8 +6469,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5341\u91cc\u6cb3",
-                            "lb": "\u5341\u91cc\u6cb3",
+                            "sid": "十里河",
+                            "lb": "十里河",
                             "x": 225.1,
                             "y": 307.3,
                             "rx": -45,
@@ -6468,7 +6480,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁10号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "3",
                             "px": 12964921.21,
                             "py": 4819687.8,
@@ -6477,8 +6489,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u65b9\u5e84",
-                            "lb": "\u65b9\u5e84",
+                            "sid": "方庄",
+                            "lb": "方庄",
                             "x": 150.1,
                             "y": 307.3,
                             "rx": -5,
@@ -6488,7 +6500,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12962872.31,
                             "py": 4819673.47,
@@ -6497,8 +6509,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u84b2\u9ec4\u6986",
-                            "lb": "\u84b2\u9ec4\u6986",
+                            "sid": "蒲黄榆",
+                            "lb": "蒲黄榆",
                             "x": 72,
                             "y": 307.1,
                             "rx": 6.7,
@@ -6508,7 +6520,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁5号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12961025.23,
                             "py": 4819663.3,
@@ -6517,8 +6529,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u666f\u6cf0",
-                            "lb": "\u666f\u6cf0",
+                            "sid": "景泰",
+                            "lb": "景泰",
                             "x": 34.1,
                             "y": 307.3,
                             "rx": -15,
@@ -6528,7 +6540,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12959640.46,
                             "py": 4819629.17,
@@ -6537,8 +6549,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c38\u5b9a\u95e8\u5916",
-                            "lb": "\u6c38\u5b9a\u95e8\u5916",
+                            "sid": "永定门外",
+                            "lb": "永定门外",
                             "x": -10,
                             "y": 307.3,
                             "rx": -46,
@@ -6548,7 +6560,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84),\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄),北京市|地铁8号线",
                             "int": "2",
                             "px": 12958358.41,
                             "py": 4819954.35,
@@ -6557,19 +6569,19 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9676\u7136\u6865",
-                            "lb": "\u9676\u7136\u6865",
+                            "sid": "陶然桥",
+                            "lb": "陶然桥",
                             "x": -55,
                             "y": 307.3,
-                            "rx": -12,
-                            "ry": -38,
+                            "rx": -20,
+                            "ry": -34,
                             "st": false,
                             "ex": true,
                             "iu": true,
                             "rc": false,
                             "slb": true,
                             "no": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84),\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12958358.41,
                             "py": 4819954.35,
@@ -6578,12 +6590,12 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u0028\u6682\u7f13\u5f00\u901a\u0029",
-                            "lb": "\u0028\u6682\u7f13\u5f00\u901a\u0029",
+                            "sid": "(暂缓开通)",
+                            "lb": "(暂缓开通)",
                             "x": -55,
                             "y": 307.3,
-                            "rx": -8,
-                            "ry": -26,
+                            "rx": -14,
+                            "ry": -22,
                             "st": false,
                             "ex": true,
                             "iu": true,
@@ -6597,8 +6609,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u4eac\u5357\u7ad9",
-                            "lb": "\u5317\u4eac\u5357\u7ad9",
+                            "sid": "北京南站",
+                            "lb": "北京南站",
                             "x": -105.3,
                             "y": 307.6,
                             "rx": -56,
@@ -6608,7 +6620,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁4号线大兴线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "2",
                             "px": 12956078.8,
                             "py": 4819560.13,
@@ -6617,8 +6629,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
-                    "lb": "14\u53f7\u7ebf",
+                    "lid": "地铁14号线东段(北京南站-善各庄)",
+                    "lb": "地铁14号线",
+                    "sn": "14号线东",
                     "slb": false,
                     "n": 6,
                     "loop": false,
@@ -6634,8 +6647,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u6e05\u534e\u4e1c\u8def\u897f\u53e3",
-                            "lb": "\u6e05\u534e\u4e1c\u8def\u897f\u53e3",
+                            "sid": "清华东路西口",
+                            "lb": "清华东路西口",
                             "x": -163.6,
                             "y": -149.3,
                             "rx": -10.9,
@@ -6645,7 +6658,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "3",
                             "px": 12951665.77,
                             "py": 4839130.87,
@@ -6654,8 +6667,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516d\u9053\u53e3",
-                            "lb": "\u516d\u9053\u53e3",
+                            "sid": "六道口",
+                            "lb": "六道口",
                             "x": -117.6,
                             "y": -149.3,
                             "rx": -20.9,
@@ -6665,7 +6678,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "3",
                             "px": 12953199.94,
                             "py": 4839191.37,
@@ -6674,8 +6687,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u6c99\u6ee9",
-                            "lb": "\u5317\u6c99\u6ee9",
+                            "sid": "北沙滩",
+                            "lb": "北沙滩",
                             "x": -67.6,
                             "y": -149.3,
                             "rx": -20.9,
@@ -6685,7 +6698,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "3",
                             "px": 12955009.18,
                             "py": 4839310.13,
@@ -6694,8 +6707,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5965\u6797\u5339\u514b\u516c\u56ed",
-                            "lb": "\u5965\u6797\u5339\u514b\u516c\u56ed",
+                            "sid": "奥林匹克公园",
+                            "lb": "奥林匹克公园",
                             "x": -23.6,
                             "y": -149.3,
                             "rx": -70,
@@ -6705,7 +6718,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线,北京市|地铁8号线",
                             "int": "3",
                             "px": 12957521.79,
                             "py": 4839450.89,
@@ -6714,8 +6727,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b89\u7acb\u8def",
-                            "lb": "\u5b89\u7acb\u8def",
+                            "sid": "安立路",
+                            "lb": "安立路",
                             "x": 23,
                             "y": -149.3,
                             "rx": -20.7,
@@ -6725,7 +6738,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "3",
                             "px": 12959319.9,
                             "py": 4839513.88,
@@ -6734,8 +6747,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u5c6f\u8def\u4e1c",
-                            "lb": "\u5927\u5c6f\u8def\u4e1c",
+                            "sid": "大屯路东",
+                            "lb": "大屯路东",
                             "x": 72,
                             "y": -149.3,
                             "rx": 5,
@@ -6745,7 +6758,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线,北京市|地铁5号线",
                             "int": "3",
                             "px": 12960539.6,
                             "py": 4839538.34,
@@ -6754,8 +6767,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5173\u5e84",
-                            "lb": "\u5173\u5e84",
+                            "sid": "关庄",
+                            "lb": "关庄",
                             "x": 112.2,
                             "y": -149.3,
                             "rx": -12,
@@ -6765,7 +6778,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "2",
                             "px": 12961947.53,
                             "py": 4839251.82,
@@ -6774,8 +6787,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671b\u4eac\u897f",
-                            "lb": "\u671b\u4eac\u897f",
+                            "sid": "望京西",
+                            "lb": "望京西",
                             "x": 152.2,
                             "y": -148.3,
                             "rx": 4.8,
@@ -6785,7 +6798,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁13号线,北京市|地铁15号线",
                             "int": "2",
                             "px": 12964122.86,
                             "py": 4838479.75,
@@ -6794,8 +6807,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671b\u4eac",
-                            "lb": "\u671b\u4eac",
+                            "sid": "望京",
+                            "lb": "望京",
                             "x": 196,
                             "y": -148.3,
                             "rx": 7,
@@ -6805,7 +6818,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c114\u53f7\u7ebf\u4e1c\u6bb5(\u5317\u4eac\u5357\u7ad9-\u5584\u5404\u5e84)",
+                            "ln": "北京市|地铁15号线,北京市|地铁14号线东段(北京南站-善各庄)",
                             "int": "5",
                             "px": 12966192.92,
                             "py": 4838834.76,
@@ -6814,8 +6827,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u671b\u4eac\u4e1c",
-                            "lb": "\u671b\u4eac\u4e1c",
+                            "sid": "望京东",
+                            "lb": "望京东",
                             "x": 257.2,
                             "y": -148.3,
                             "rx": -18.8,
@@ -6825,7 +6838,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "5",
                             "px": 12968115.9,
                             "py": 4839560.8,
@@ -6868,8 +6881,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5d14\u5404\u5e84",
-                            "lb": "\u5d14\u5404\u5e84",
+                            "sid": "崔各庄",
+                            "lb": "崔各庄",
                             "x": 286.8,
                             "y": -178.3,
                             "rx": 5.8,
@@ -6879,7 +6892,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "3",
                             "px": 12968766.61,
                             "py": 4842335.77,
@@ -6888,8 +6901,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9a6c\u6cc9\u8425",
-                            "lb": "\u9a6c\u6cc9\u8425",
+                            "sid": "马泉营",
+                            "lb": "马泉营",
                             "x": 286.8,
                             "y": -210.6,
                             "rx": 5.8,
@@ -6899,7 +6912,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "4",
                             "px": 12969934.68,
                             "py": 4843988.1,
@@ -6908,8 +6921,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b59\u6cb3",
-                            "lb": "\u5b59\u6cb3",
+                            "sid": "孙河",
+                            "lb": "孙河",
                             "x": 286.8,
                             "y": -242.9,
                             "rx": 5.8,
@@ -6919,7 +6932,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "4",
                             "px": 12973430.43,
                             "py": 4845641.65,
@@ -6928,8 +6941,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56fd\u5c55",
-                            "lb": "\u56fd\u5c55",
+                            "sid": "国展",
+                            "lb": "国展",
                             "x": 286.8,
                             "y": -274.6,
                             "rx": -33.8,
@@ -6939,7 +6952,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "2",
                             "px": 12975732.6,
                             "py": 4849215.49,
@@ -6948,8 +6961,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u82b1\u68a8\u574e",
-                            "lb": "\u82b1\u68a8\u574e",
+                            "sid": "花梨坎",
+                            "lb": "花梨坎",
                             "x": 286.8,
                             "y": -306.4,
                             "rx": -45.8,
@@ -6959,7 +6972,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "3",
                             "px": 12976011.13,
                             "py": 4851299.45,
@@ -6968,8 +6981,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u540e\u6c99\u5cea",
-                            "lb": "\u540e\u6c99\u5cea",
+                            "sid": "后沙峪",
+                            "lb": "后沙峪",
                             "x": 286.8,
                             "y": -338.7,
                             "rx": -45.8,
@@ -6979,7 +6992,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "4",
                             "px": 12976742.5,
                             "py": 4855583.56,
@@ -7005,8 +7018,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5357\u6cd5\u4fe1",
-                            "lb": "\u5357\u6cd5\u4fe1",
+                            "sid": "南法信",
+                            "lb": "南法信",
                             "x": 340,
                             "y": -356,
                             "rx": -20,
@@ -7016,7 +7029,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "2",
                             "px": 12981820.78,
                             "py": 4857699.76,
@@ -7025,8 +7038,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u77f3\u95e8",
-                            "lb": "\u77f3\u95e8",
+                            "sid": "石门",
+                            "lb": "石门",
                             "x": 400,
                             "y": -356,
                             "rx": -14.8,
@@ -7036,7 +7049,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "1",
                             "px": 12985281.5,
                             "py": 4857968.88,
@@ -7045,8 +7058,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u987a\u4e49",
-                            "lb": "\u987a\u4e49",
+                            "sid": "顺义",
+                            "lb": "顺义",
                             "x": 460,
                             "y": -356,
                             "rx": -14.8,
@@ -7056,7 +7069,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "int": "2",
                             "px": 12987060.29,
                             "py": 4857943.41,
@@ -7065,8 +7078,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4ff8\u4f2f",
-                            "lb": "\u4ff8\u4f2f",
+                            "sid": "俸伯",
+                            "lb": "俸伯",
                             "x": 520,
                             "y": -356,
                             "rx": -14.8,
@@ -7076,7 +7089,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c115\u53f7\u7ebf",
+                            "ln": "北京市|地铁15号线",
                             "px": 12990174.11,
                             "py": 4858257.53,
                             "uid": "6da74047d2c73bb682a12eac"
@@ -7084,8 +7097,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c115\u53f7\u7ebf",
-                    "lb": "15\u53f7\u7ebf",
+                    "lid": "地铁15号线",
+                    "lb": "地铁15号线",
+                    "sn": "15号线",
                     "slb": false,
                     "n": 13,
                     "loop": false,
@@ -7101,8 +7115,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u5b89\u6cb3",
-                            "lb": "\u5317\u5b89\u6cb3",
+                            "sid": "北安河",
+                            "lb": "北安河",
                             "x": -640,
                             "y": -344,
                             "rx": -5,
@@ -7112,7 +7126,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12928432.87,
                             "py": 4848915.76,
@@ -7121,8 +7135,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6e29\u9633\u8def",
-                            "lb": "\u6e29\u9633\u8def",
+                            "sid": "温阳路",
+                            "lb": "温阳路",
                             "x": -590,
                             "y": -344,
                             "rx": -15,
@@ -7132,7 +7146,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12931917.83,
                             "py": 4849039.8,
@@ -7141,8 +7155,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7a3b\u9999\u6e56\u8def",
-                            "lb": "\u7a3b\u9999\u6e56\u8def",
+                            "sid": "稻香湖路",
+                            "lb": "稻香湖路",
                             "x": -540,
                             "y": -344,
                             "rx": -8,
@@ -7152,7 +7166,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12934875.92,
                             "py": 4848987.68,
@@ -7161,8 +7175,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5c6f\u4f43",
-                            "lb": "\u5c6f\u4f43",
+                            "sid": "屯佃",
+                            "lb": "屯佃",
                             "x": -490,
                             "y": -344,
                             "rx": -10,
@@ -7172,7 +7186,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12937941.89,
                             "py": 4848895.81,
@@ -7181,8 +7195,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c38\u4e30",
-                            "lb": "\u6c38\u4e30",
+                            "sid": "永丰",
+                            "lb": "永丰",
                             "x": -440,
                             "y": -344,
                             "rx": -12,
@@ -7192,7 +7206,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12940448.93,
                             "py": 4849463.65,
@@ -7218,8 +7232,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c38\u4e30\u5357",
-                            "lb": "\u6c38\u4e30\u5357",
+                            "sid": "永丰南",
+                            "lb": "永丰南",
                             "x": -400,
                             "y": -316,
                             "rx": 5,
@@ -7229,7 +7243,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12941544.91,
                             "py": 4848597.85,
@@ -7255,8 +7269,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u5317\u65fa",
-                            "lb": "\u897f\u5317\u65fa",
+                            "sid": "西北旺",
+                            "lb": "西北旺",
                             "x": -394.2,
                             "y": -283,
                             "rx": 5,
@@ -7266,7 +7280,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12942598.82,
                             "py": 4846225.97,
@@ -7275,8 +7289,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9a6c\u8fde\u6d3c",
-                            "lb": "\u9a6c\u8fde\u6d3c",
+                            "sid": "马连洼",
+                            "lb": "马连洼",
                             "x": -394.2,
                             "y": -253,
                             "rx": 5,
@@ -7286,7 +7300,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12944288.92,
                             "py": 4843831.98,
@@ -7295,8 +7309,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u519c\u5927\u5357\u8def",
-                            "lb": "\u519c\u5927\u5357\u8def",
+                            "sid": "农大南路",
+                            "lb": "农大南路",
                             "x": -394.2,
                             "y": -223,
                             "rx": 5,
@@ -7306,7 +7320,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf",
+                            "ln": "北京市|地铁16号线",
                             "int": "2",
                             "px": 12944288.92,
                             "py": 4843831.98,
@@ -7315,8 +7329,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u82d1",
-                            "lb": "\u897f\u82d1",
+                            "sid": "西苑",
+                            "lb": "西苑",
                             "x": -394.2,
                             "y": -193.5,
                             "rx": -12.7,
@@ -7326,7 +7340,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c116\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c14\u53f7\u7ebf\u5927\u5174\u7ebf",
+                            "ln": "北京市|地铁16号线,北京市|地铁4号线大兴线",
                             "int": "3",
                             "px": 12946489.9,
                             "py": 4838904.68,
@@ -7335,8 +7349,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c116\u53f7\u7ebf",
-                    "lb": "16\u53f7\u7ebf",
+                    "lid": "地铁16号线",
+                    "lb": "地铁16号线",
+                    "sn": "16号线",
                     "slb": false,
                     "n": 10,
                     "loop": false,
@@ -7352,8 +7367,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u56db\u60e0",
-                            "lb": "\u56db\u60e0",
+                            "sid": "四惠",
+                            "lb": "四惠",
                             "x": 313.2,
                             "y": 176.6,
                             "dy": "-3",
@@ -7364,7 +7379,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁八通线",
                             "int": "3",
                             "px": 12969075.43,
                             "py": 4825908.43,
@@ -7373,8 +7388,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56db\u60e0\u4e1c",
-                            "lb": "\u56db\u60e0\u4e1c",
+                            "sid": "四惠东",
+                            "lb": "四惠东",
                             "x": 346.8,
                             "y": 176.6,
                             "dy": "-3",
@@ -7385,7 +7400,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁1号线,北京市|地铁八通线",
                             "int": "2",
                             "px": 12971354.88,
                             "py": 4825923.53,
@@ -7394,8 +7409,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9ad8\u7891\u5e97",
-                            "lb": "\u9ad8\u7891\u5e97",
+                            "sid": "高碑店",
+                            "lb": "高碑店",
                             "x": 397.9,
                             "y": 176.6,
                             "rx": -18.3,
@@ -7405,7 +7420,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12973091.99,
                             "py": 4826039.12,
@@ -7414,8 +7429,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4f20\u5a92\u5927\u5b66",
-                            "lb": "\u4f20\u5a92\u5927\u5b66",
+                            "sid": "传媒大学",
+                            "lb": "传媒大学",
                             "x": 451.6,
                             "y": 176.6,
                             "rx": -23.5,
@@ -7425,7 +7440,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12975694.09,
                             "py": 4825952.23,
@@ -7434,8 +7449,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u53cc\u6865",
-                            "lb": "\u53cc\u6865",
+                            "sid": "双桥",
+                            "lb": "双桥",
                             "x": 493.8,
                             "y": 176.6,
                             "rx": -10.9,
@@ -7445,7 +7460,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12978138.41,
                             "py": 4826051.68,
@@ -7454,8 +7469,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7ba1\u5e84",
-                            "lb": "\u7ba1\u5e84",
+                            "sid": "管庄",
+                            "lb": "管庄",
                             "x": 529,
                             "y": 176.6,
                             "rx": -12.8,
@@ -7465,7 +7480,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12980637.52,
                             "py": 4825910.3,
@@ -7474,8 +7489,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u516b\u91cc\u6865",
-                            "lb": "\u516b\u91cc\u6865",
+                            "sid": "八里桥",
+                            "lb": "八里桥",
                             "x": 580,
                             "y": 176.6,
                             "rx": -10,
@@ -7485,7 +7500,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12982792.53,
                             "py": 4825521.61,
@@ -7510,8 +7525,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u901a\u5dde\u5317\u82d1",
-                            "lb": "\u901a\u5dde\u5317\u82d1",
+                            "sid": "通州北苑",
+                            "lb": "通州北苑",
                             "x": 610,
                             "y": 197.6,
                             "rx": -56.2,
@@ -7521,7 +7536,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12984848.6,
                             "py": 4825210.18,
@@ -7530,8 +7545,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u679c\u56ed",
-                            "lb": "\u679c\u56ed",
+                            "sid": "果园",
+                            "lb": "果园",
                             "x": 625,
                             "y": 220,
                             "rx": -38.2,
@@ -7541,7 +7556,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "2",
                             "px": 12985898.7,
                             "py": 4823706.44,
@@ -7550,8 +7565,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e5d\u68f5\u6811",
-                            "lb": "\u4e5d\u68f5\u6811",
+                            "sid": "九棵树",
+                            "lb": "九棵树",
                             "x": 640,
                             "y": 243,
                             "rx": 10,
@@ -7561,7 +7576,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "3",
                             "px": 12987107.06,
                             "py": 4823238.84,
@@ -7570,8 +7585,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u68a8\u56ed",
-                            "lb": "\u68a8\u56ed",
+                            "sid": "梨园",
+                            "lb": "梨园",
                             "x": 655,
                             "y": 266,
                             "rx": -37.2,
@@ -7581,7 +7596,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "2",
                             "px": 12988367.23,
                             "py": 4822269.46,
@@ -7590,8 +7605,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e34\u6cb3\u91cc",
-                            "lb": "\u4e34\u6cb3\u91cc",
+                            "sid": "临河里",
+                            "lb": "临河里",
                             "x": 670,
                             "y": 289,
                             "rx": -45.8,
@@ -7601,7 +7616,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "int": "2",
                             "px": 12989508.14,
                             "py": 4821044.48,
@@ -7610,8 +7625,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u571f\u6865",
-                            "lb": "\u571f\u6865",
+                            "sid": "土桥",
+                            "lb": "土桥",
                             "x": 685,
                             "y": 312,
                             "rx": -36.6,
@@ -7621,7 +7636,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u516b\u901a\u7ebf",
+                            "ln": "北京市|地铁八通线",
                             "px": 12990344.51,
                             "py": 4820522.94,
                             "uid": "8acece184009014dfb42b2df"
@@ -7629,8 +7644,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1\u516b\u901a\u7ebf",
-                    "lb": "\u516b\u901a\u7ebf",
+                    "lid": "地铁八通线",
+                    "lb": "地铁八通线",
+                    "sn": "八通线",
                     "slb": false,
                     "n": 13,
                     "loop": false,
@@ -7640,7 +7656,7 @@ export default {
                     "lc": "0xC23A30",
                     "uid": "37125ffd5b009d930ab93ab7",
                     "uid2": "32955707ba85655ecae33cb7",
-                    "lb2": "\u5730\u94c1\u516b\u901a\u7ebf",
+                    "lb2": "地铁八通线",
                     "lb2x": 700,
                     "lb2y": 290
                 }
@@ -7649,8 +7665,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u897f\u4e8c\u65d7",
-                            "lb": "\u897f\u4e8c\u65d7",
+                            "sid": "西二旗",
+                            "lb": "西二旗",
                             "x": -183.7,
                             "y": -224,
                             "rx": -48.2,
@@ -7660,7 +7676,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁13号线,北京市|地铁昌平线",
                             "int": "5",
                             "px": 12947997.82,
                             "py": 4846749.06,
@@ -7669,8 +7685,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u751f\u547d\u79d1\u5b66\u56ed",
-                            "lb": "\u751f\u547d\u79d1\u5b66\u56ed",
+                            "sid": "生命科学园",
+                            "lb": "生命科学园",
                             "x": -183.7,
                             "y": -262.2,
                             "rx": -72.2,
@@ -7680,7 +7696,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "int": "4",
                             "px": 12946658.82,
                             "py": 4852844.96,
@@ -7706,8 +7722,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6731\u8f9b\u5e84",
-                            "lb": "\u6731\u8f9b\u5e84",
+                            "sid": "朱辛庄",
+                            "lb": "朱辛庄",
                             "x": -153.7,
                             "y": -314.1,
                             "rx": -48.2,
@@ -7717,7 +7733,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c18\u53f7\u7ebf",
+                            "ln": "北京市|地铁昌平线,北京市|地铁8号线",
                             "int": "4",
                             "px": 12948839.05,
                             "py": 4854201.88,
@@ -7726,8 +7742,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5de9\u534e\u57ce",
-                            "lb": "\u5de9\u534e\u57ce",
+                            "sid": "巩华城",
+                            "lb": "巩华城",
                             "x": -153.7,
                             "y": -342,
                             "rx": -48.2,
@@ -7737,7 +7753,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "int": "3",
                             "px": 12946645.92,
                             "py": 4858114.58,
@@ -7746,8 +7762,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c99\u6cb3",
-                            "lb": "\u6c99\u6cb3",
+                            "sid": "沙河",
+                            "lb": "沙河",
                             "x": -153.7,
                             "y": -370.6,
                             "rx": -35.5,
@@ -7757,7 +7773,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "int": "3",
                             "px": 12946047.47,
                             "py": 4860634.8,
@@ -7766,8 +7782,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6c99\u6cb3\u9ad8\u6559\u56ed",
-                            "lb": "\u6c99\u6cb3\u9ad8\u6559\u56ed",
+                            "sid": "沙河高教园",
+                            "lb": "沙河高教园",
                             "x": -153.7,
                             "y": -397.8,
                             "rx": 5.5,
@@ -7777,7 +7793,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "int": "5",
                             "px": 12945123.45,
                             "py": 4863002.5,
@@ -7786,8 +7802,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5357\u90b5",
-                            "lb": "\u5357\u90b5",
+                            "sid": "南邵",
+                            "lb": "南邵",
                             "x": -153.7,
                             "y": -427.1,
                             "rx": 5.5,
@@ -7797,7 +7813,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "px": 12945874.59,
                             "py": 4869159.6,
                             "uid": "c35417fc0e4b738515b54b6c"
@@ -7816,13 +7832,13 @@ export default {
                             "iu": false,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf"
+                            "ln": "北京市|地铁昌平线"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5317\u90b5\u6d3c",
-                            "lb": "\u5317\u90b5\u6d3c",
+                            "sid": "北邵洼",
+                            "lb": "北邵洼",
                             "x": -175,
                             "y": -465,
                             "rx": -15.5,
@@ -7832,7 +7848,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "px": 12945259.03,
                             "py": 4871292,
                             "uid": "0204e5050a8f7c7388fc06bc"
@@ -7840,8 +7856,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u660c\u5e73\u4e1c\u5173",
-                            "lb": "\u660c\u5e73\u4e1c\u5173",
+                            "sid": "昌平东关",
+                            "lb": "昌平东关",
                             "x": -260.7,
                             "y": -465,
                             "rx": -20,
@@ -7851,7 +7867,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "px": 12943094.75,
                             "py": 4871267.61,
                             "uid": "233f6799b27ae5cbaaf0cd4e"
@@ -7859,8 +7875,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u660c\u5e73",
-                            "lb": "\u660c\u5e73",
+                            "sid": "昌平",
+                            "lb": "昌平",
                             "x": -333.7,
                             "y": -465,
                             "rx": -10,
@@ -7870,7 +7886,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "px": 12939928.23,
                             "py": 4871035.87,
                             "uid": "2bb3be4ec2d0315ab64f5494"
@@ -7889,13 +7905,13 @@ export default {
                             "iu": false,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf"
+                            "ln": "北京市|地铁昌平线"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5341\u4e09\u9675\u666f\u533a",
-                            "lb": "\u5341\u4e09\u9675\u666f\u533a",
+                            "sid": "十三陵景区",
+                            "lb": "十三陵景区",
                             "x": -378.7,
                             "y": -499.1,
                             "rx": -30.5,
@@ -7905,7 +7921,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "px": 12937062.55,
                             "py": 4873852.42,
                             "uid": "4e09cf16837b1a75cd04effc"
@@ -7924,13 +7940,13 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf"
+                            "ln": "北京市|地铁昌平线"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u660c\u5e73\u897f\u5c71\u53e3",
-                            "lb": "\u660c\u5e73\u897f\u5c71\u53e3",
+                            "sid": "昌平西山口",
+                            "lb": "昌平西山口",
                             "x": -441.2,
                             "y": -509.1,
                             "rx": -30.5,
@@ -7940,7 +7956,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u660c\u5e73\u7ebf",
+                            "ln": "北京市|地铁昌平线",
                             "px": 12935713.37,
                             "py": 4874513.76,
                             "uid": "3e7ade317445275e83a00c88"
@@ -7948,8 +7964,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1\u660c\u5e73\u7ebf",
-                    "lb": "\u660c\u5e73\u7ebf",
+                    "lid": "地铁昌平线",
+                    "lb": "地铁昌平线",
+                    "sn": "昌平线",
                     "slb": false,
                     "n": 7,
                     "loop": false,
@@ -7965,8 +7982,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5b8b\u5bb6\u5e84",
-                            "lb": "\u5b8b\u5bb6\u5e84",
+                            "sid": "宋家庄",
+                            "lb": "宋家庄",
                             "x": 72,
                             "y": 372.4,
                             "rx": 6.7,
@@ -7976,7 +7993,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c15\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁5号线,北京市|地铁10号线,北京市|地铁亦庄线",
                             "px": 12961616.38,
                             "py": 4816812.24,
                             "uid": "f2782ef98b70734a5a3ac8b5"
@@ -7984,8 +8001,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8096\u6751",
-                            "lb": "\u8096\u6751",
+                            "sid": "肖村",
+                            "lb": "肖村",
                             "x": 72,
                             "y": 405.4,
                             "rx": -30,
@@ -7995,7 +8012,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12963855,
                             "py": 4815077.07,
@@ -8004,8 +8021,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5c0f\u7ea2\u95e8",
-                            "lb": "\u5c0f\u7ea2\u95e8",
+                            "sid": "小红门",
+                            "lb": "小红门",
                             "x": 91,
                             "y": 433.5,
                             "rx": 8.7,
@@ -8015,7 +8032,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "4",
                             "px": 12965055.46,
                             "py": 4814220.08,
@@ -8024,8 +8041,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u65e7\u5bab",
-                            "lb": "\u65e7\u5bab",
+                            "sid": "旧宫",
+                            "lb": "旧宫",
                             "x": 106,
                             "y": 455.7,
                             "rx": -30,
@@ -8035,7 +8052,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12965236.24,
                             "py": 4811123.81,
@@ -8044,8 +8061,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4ea6\u5e84\u6865",
-                            "lb": "\u4ea6\u5e84\u6865",
+                            "sid": "亦庄桥",
+                            "lb": "亦庄桥",
                             "x": 121,
                             "y": 477.9,
                             "rx": 8.7,
@@ -8055,7 +8072,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12967397.99,
                             "py": 4810587.35,
@@ -8064,8 +8081,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4ea6\u5e84\u6587\u5316\u56ed",
-                            "lb": "\u4ea6\u5e84\u6587\u5316\u56ed",
+                            "sid": "亦庄文化园",
+                            "lb": "亦庄文化园",
                             "x": 137,
                             "y": 501.6,
                             "rx": -60,
@@ -8075,7 +8092,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "3",
                             "px": 12968528.92,
                             "py": 4811166.56,
@@ -8084,8 +8101,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e07\u6e90\u8857",
-                            "lb": "\u4e07\u6e90\u8857",
+                            "sid": "万源街",
+                            "lb": "万源街",
                             "x": 153,
                             "y": 525.3,
                             "rx": 8.7,
@@ -8095,7 +8112,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12970189.64,
                             "py": 4810648.75,
@@ -8104,8 +8121,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8363\u4eac\u4e1c\u8857",
-                            "lb": "\u8363\u4eac\u4e1c\u8857",
+                            "sid": "荣京东街",
+                            "lb": "荣京东街",
                             "x": 169,
                             "y": 549,
                             "rx": 8.7,
@@ -8115,7 +8132,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12971059.72,
                             "py": 4809258.06,
@@ -8124,8 +8141,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8363\u660c\u4e1c\u8857",
-                            "lb": "\u8363\u660c\u4e1c\u8857",
+                            "sid": "荣昌东街",
+                            "lb": "荣昌东街",
                             "x": 184,
                             "y": 571.2,
                             "rx": -63.7,
@@ -8135,7 +8152,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "4",
                             "px": 12971983.02,
                             "py": 4807754.12,
@@ -8160,8 +8177,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u540c\u6d4e\u5357\u8def",
-                            "lb": "\u540c\u6d4e\u5357\u8def",
+                            "sid": "同济南路",
+                            "lb": "同济南路",
                             "x": 219.5,
                             "y": 596.6,
                             "rx": -24.7,
@@ -8171,7 +8188,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "3",
                             "px": 12974025.19,
                             "py": 4806304.61,
@@ -8180,8 +8197,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7ecf\u6d77\u8def",
-                            "lb": "\u7ecf\u6d77\u8def",
+                            "sid": "经海路",
+                            "lb": "经海路",
                             "x": 269.5,
                             "y": 596.6,
                             "rx": -20.7,
@@ -8191,7 +8208,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12976533.15,
                             "py": 4807797.37,
@@ -8200,8 +8217,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6b21\u6e20\u5357",
-                            "lb": "\u6b21\u6e20\u5357",
+                            "sid": "次渠南",
+                            "lb": "次渠南",
                             "x": 319.5,
                             "y": 596.6,
                             "rx": -20.7,
@@ -8211,7 +8228,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "int": "2",
                             "px": 12978650.65,
                             "py": 4809429.55,
@@ -8220,8 +8237,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6b21\u6e20",
-                            "lb": "\u6b21\u6e20",
+                            "sid": "次渠",
+                            "lb": "次渠",
                             "x": 369.5,
                             "y": 596.6,
                             "rx": -16.7,
@@ -8231,7 +8248,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "px": 12979761.35,
                             "py": 4810640.02,
                             "uid": "bd42d5e54e2acca33813fd6d"
@@ -8239,8 +8256,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4ea6\u5e84\u706b\u8f66\u7ad9",
-                            "lb": "\u4ea6\u5e84\u706b\u8f66\u7ad9",
+                            "sid": "亦庄火车站",
+                            "lb": "亦庄火车站",
                             "x": 419.5,
                             "y": 596.6,
                             "rx": -30.7,
@@ -8250,14 +8267,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u4ea6\u5e84\u7ebf",
+                            "ln": "北京市|地铁亦庄线",
                             "uid": "9db4da1cda816e969122e026"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1\u4ea6\u5e84\u7ebf",
-                    "lb": "\u4ea6\u5e84\u7ebf",
+                    "lid": "地铁亦庄线",
+                    "lb": "地铁亦庄线",
+                    "sn": "亦庄线",
                     "slb": false,
                     "n": 14,
                     "loop": false,
@@ -8273,8 +8291,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u90ed\u516c\u5e84",
-                            "lb": "\u90ed\u516c\u5e84",
+                            "sid": "郭公庄",
+                            "lb": "郭公庄",
                             "x": -395,
                             "y": 412,
                             "rx": -48.2,
@@ -8284,7 +8302,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c19\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁9号线,北京市|地铁房山线",
                             "int": "2",
                             "px": 12947551.34,
                             "py": 4812310.55,
@@ -8293,8 +8311,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u8446\u53f0",
-                            "lb": "\u5927\u8446\u53f0",
+                            "sid": "大葆台",
+                            "lb": "大葆台",
                             "x": -413.3,
                             "y": 441,
                             "rx": -48.2,
@@ -8304,7 +8322,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "6",
                             "px": 12946392.8,
                             "py": 4811350.35,
@@ -8313,8 +8331,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7a3b\u7530",
-                            "lb": "\u7a3b\u7530",
+                            "sid": "稻田",
+                            "lb": "稻田",
                             "x": -429.9,
                             "y": 467.6,
                             "rx": 8.5,
@@ -8324,7 +8342,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "5",
                             "px": 12938296.36,
                             "py": 4809386.98,
@@ -8333,8 +8351,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u957f\u9633",
-                            "lb": "\u957f\u9633",
+                            "sid": "长阳",
+                            "lb": "长阳",
                             "x": -446.5,
                             "y": 494.2,
                             "rx": -35.5,
@@ -8344,7 +8362,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "3",
                             "px": 12937609.9,
                             "py": 4804900.05,
@@ -8353,8 +8371,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u7bf1\u7b06\u623f",
-                            "lb": "\u7bf1\u7b06\u623f",
+                            "sid": "篱笆房",
+                            "lb": "篱笆房",
                             "x": -463.1,
                             "y": 520.8,
                             "rx": 8.2,
@@ -8364,7 +8382,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "3",
                             "px": 12935012.33,
                             "py": 4804508.53,
@@ -8373,8 +8391,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5e7f\u9633\u57ce",
-                            "lb": "\u5e7f\u9633\u57ce",
+                            "sid": "广阳城",
+                            "lb": "广阳城",
                             "x": -479.7,
                             "y": 547.4,
                             "rx": -48.2,
@@ -8384,7 +8402,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "3",
                             "px": 12934507.7,
                             "py": 4802679.55,
@@ -8393,8 +8411,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u826f\u4e61\u5927\u5b66\u57ce\u5317",
-                            "lb": "\u826f\u4e61\u5927\u5b66\u57ce\u5317",
+                            "sid": "良乡大学城北",
+                            "lb": "良乡大学城北",
                             "x": -495,
                             "y": 574,
                             "rx": 8.2,
@@ -8404,7 +8422,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "2",
                             "px": 12934336.94,
                             "py": 4800097.37,
@@ -8413,8 +8431,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u826f\u4e61\u5927\u5b66\u57ce",
-                            "lb": "\u826f\u4e61\u5927\u5b66\u57ce",
+                            "sid": "良乡大学城",
+                            "lb": "良乡大学城",
                             "x": -511,
                             "y": 598.5,
                             "rx": -7,
@@ -8424,7 +8442,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "3",
                             "px": 12933558.84,
                             "py": 4799144.48,
@@ -8433,8 +8451,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u826f\u4e61\u5927\u5b66\u57ce\u897f",
-                            "lb": "\u826f\u4e61\u5927\u5b66\u57ce\u897f",
+                            "sid": "良乡大学城西",
+                            "lb": "良乡大学城西",
                             "x": -561,
                             "y": 598.5,
                             "rx": -37,
@@ -8444,7 +8462,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "2",
                             "px": 12931311.57,
                             "py": 4799159.03,
@@ -8453,8 +8471,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u826f\u4e61\u5357\u5173",
-                            "lb": "\u826f\u4e61\u5357\u5173",
+                            "sid": "良乡南关",
+                            "lb": "良乡南关",
                             "x": -611,
                             "y": 598.5,
                             "rx": -26,
@@ -8464,7 +8482,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "int": "2",
                             "px": 12929593.97,
                             "py": 4799140.22,
@@ -8473,8 +8491,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u82cf\u5e84",
-                            "lb": "\u82cf\u5e84",
+                            "sid": "苏庄",
+                            "lb": "苏庄",
                             "x": -661,
                             "y": 598.5,
                             "rx": -16,
@@ -8484,7 +8502,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf",
+                            "ln": "北京市|地铁房山线",
                             "px": 12927884.43,
                             "py": 4799100.84,
                             "uid": "14ea87df36beb45380288a6d"
@@ -8492,8 +8510,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u960e\u6751\u4e1c",
-                            "lb": "\u960e\u6751\u4e1c",
+                            "sid": "阎村东",
+                            "lb": "阎村东",
                             "x": -700,
                             "y": 598.5,
                             "rx": -16,
@@ -8503,15 +8521,16 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u623f\u5c71\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁房山线,北京市|地铁燕房线",
                             "int": "2",
                             "uid": "9002600f28f2370d4e2fdf8f"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1\u623f\u5c71\u7ebf",
-                    "lb": "\u623f\u5c71\u7ebf",
+                    "lid": "地铁房山线",
+                    "lb": "地铁房山线",
+                    "sn": "房山线",
                     "slb": false,
                     "n": 12,
                     "loop": false,
@@ -8527,8 +8546,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e1c\u76f4\u95e8",
-                            "lb": "\u4e1c\u76f4\u95e8",
+                            "sid": "东直门",
+                            "lb": "东直门",
                             "x": 131,
                             "y": 45.1,
                             "rx": 6.7,
@@ -8538,7 +8557,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c12\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c113\u53f7\u7ebf,\u5317\u4eac\u5e02|\u673a\u573a\u7ebf",
+                            "ln": "北京市|地铁2号线,北京市|地铁13号线,北京市|机场线",
                             "int": "10",
                             "px": 12962214.83,
                             "py": 4830596.98,
@@ -8563,8 +8582,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e09\u5143\u6865",
-                            "lb": "\u4e09\u5143\u6865",
+                            "sid": "三元桥",
+                            "lb": "三元桥",
                             "x": 225.1,
                             "y": -40.5,
                             "rx": 12.2,
@@ -8574,7 +8593,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u673a\u573a\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|机场线",
                             "int": "15",
                             "px": 12964822.62,
                             "py": 4833492.9,
@@ -8615,8 +8634,8 @@ export default {
                     },
                     {
                         p_xmlattr: {
-                            sid: "\u0054\u0033\u822a\u7ad9\u697c",
-                            lb: "\u0054\u0033\u822a\u7ad9\u697c",
+                            sid: "T3航站楼",
+                            lb: "T3航站楼",
                             x: 567,
                             y: -213.9,
                             rx: 10,
@@ -8626,7 +8645,7 @@ export default {
                             iu: true,
                             rc: false,
                             slb: true,
-                            ln: "\u5317\u4eac\u5e02\u007c\u673a\u573a\u7ebf",
+                            ln: "北京市|机场线",
                             bold: true,
                             icon: "icon_beijing_ap3,-13.2,-31",
                             int: "4",
@@ -8685,8 +8704,8 @@ export default {
                     },
                     {
                         p_xmlattr: {
-                            sid: "\u0054\u0032\u822a\u7ad9\u697c",
-                            lb: "\u0054\u0032\u822a\u7ad9\u697c",
+                            sid: "T2航站楼",
+                            lb: "T2航站楼",
                             x: 500,
                             y: -210,
                             rx: -55,
@@ -8696,7 +8715,7 @@ export default {
                             iu: true,
                             rc: false,
                             slb: true,
-                            ln: "\u5317\u4eac\u5e02\u007c\u673a\u573a\u7ebf",
+                            ln: "北京市|机场线",
                             bold: true,
                             icon: "icon_beijing_ap2,-13.3,-30.9",
                             px: 12979945.25,
@@ -8754,8 +8773,9 @@ export default {
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u673a\u573a\u7ebf",
-                    "lb": "\u673a\u573a\u7ebf",
+                    "lid": "机场线",
+                    "lb": "机场线",
+                    "sn": "机场线",
                     "slb": false,
                     "n": 4,
                     "loop": false,
@@ -8776,8 +8796,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u91d1\u5b89\u6865",
-                            "lb": "\u91d1\u5b89\u6865",
+                            "sid": "金安桥",
+                            "lb": "金安桥",
                             "x": -726,
                             "y": 138.3,
                             "rx": -20,
@@ -8787,15 +8807,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c16\u53f7\u7ebf",
+                            "ln": "北京市|地铁s1线,北京市|地铁6号线",
                             "int": "2",
                             "uid": "4d39b0a0751f44c988b9886b"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u56db\u9053\u6865",
-                            "lb": "\u56db\u9053\u6865",
+                            "sid": "四道桥",
+                            "lb": "四道桥",
                             "x": -766,
                             "y": 138.3,
                             "rx": -20,
@@ -8805,15 +8825,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2",
                             "uid": "26c7b03098bc2197d22dd62a"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6865\u6237\u8425",
-                            "lb": "\u6865\u6237\u8425",
+                            "sid": "桥户营",
+                            "lb": "桥户营",
                             "x": -806,
                             "y": 138.3,
                             "rx": -20,
@@ -8823,7 +8843,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2",
                             "uid": "a5e38c162c229f20abf7291b"
                         }
@@ -8841,14 +8861,14 @@ export default {
                             "iu": true,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e0a\u5cb8",
-                            "lb": "\u4e0a\u5cb8",
+                            "sid": "上岸",
+                            "lb": "上岸",
                             "x": -846,
                             "y": 170,
                             "rx": -35,
@@ -8858,15 +8878,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c11\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2",
                             "uid": "ef7a9f2e9bafc62d88fc062c"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u6817\u56ed\u5e84",
-                            "lb": "\u6817\u56ed\u5e84",
+                            "sid": "栗园庄",
+                            "lb": "栗园庄",
                             "x": -846,
                             "y": 210,
                             "rx": 10,
@@ -8876,7 +8896,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2",
                             "uid": "08b8cced88e5c0e2120daafa"
                         }
@@ -8894,14 +8914,14 @@ export default {
                             "iu": true,
                             "rc": true,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2"
                         }
                     },
                     {
                         "p_xmlattr": {
                             "sid": "\u5c0f\u56ed",
-                            "lb": "\u5c0f\u56ed",
+                            "lb": "小园",
                             "x": -886,
                             "y": 250,
                             "rx": -15,
@@ -8911,15 +8931,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2",
                             "uid": "d6f5420c924ab8cb5cbe86df"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u77f3\u5382",
-                            "lb": "\u77f3\u5382",
+                            "sid": "石厂",
+                            "lb": "石厂",
                             "x": -926,
                             "y": 250,
                             "rx": -15,
@@ -8929,15 +8949,16 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1s1\u7ebf",
+                            "ln": "北京市|地铁s1线",
                             "int": "2",
                             "uid": "241139f1d4e97a9e48cc4ac5"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1s1\u7ebf",
-                    "lb": "S1\u7ebf",
+                    "lid": "地铁S1线",
+                    "lb": "地铁S1线",
+                    "sn": "S1线",
                     "slb": true,
                     "n": 8,
                     "loop": false,
@@ -8953,8 +8974,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u960e\u6751\u4e1c",
-                            "lb": "\u960e\u6751\u4e1c",
+                            "sid": "阎村东",
+                            "lb": "阎村东",
                             "x": -700,
                             "y": 598.5,
                             "rx": -16,
@@ -8964,7 +8985,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "9002600f28f2370d4e2fdf8f"
                         }
@@ -8972,7 +8993,7 @@ export default {
                     {
                         "p_xmlattr": {
                             "sid": "\u7d2b\u8349\u575e",
-                            "lb": "\u7d2b\u8349\u575e",
+                            "lb": "紫草坞",
                             "x": -740,
                             "y": 598.5,
                             "rx": -20,
@@ -8982,15 +9003,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "e3ba8e85fde9a08136b06c89"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u960e\u6751",
-                            "lb": "\u960e\u6751",
+                            "sid": "阎村",
+                            "lb": "阎村",
                             "x": -780,
                             "y": 598.5,
                             "rx": -10,
@@ -9000,15 +9021,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "f6e319da24cbe9c2b1077d9f"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u661f\u57ce",
-                            "lb": "\u661f\u57ce",
+                            "sid": "星城",
+                            "lb": "星城",
                             "x": -820,
                             "y": 598.5,
                             "rx": -10,
@@ -9018,15 +9039,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "33a4137171b4aa7cf7b916a3"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u5927\u77f3\u6cb3\u4e1c",
-                            "lb": "\u5927\u77f3\u6cb3\u4e1c",
+                            "sid": "大石河东",
+                            "lb": "大石河东",
                             "x": -860,
                             "y": 598.5,
                             "rx": -25,
@@ -9036,15 +9057,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "c73780d4ca990ce38f55ec85"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9a6c\u5404\u5e84",
-                            "lb": "\u9a6c\u5404\u5e84",
+                            "sid": "马各庄",
+                            "lb": "马各庄",
                             "x": -900,
                             "y": 598.5,
                             "rx": -20,
@@ -9054,15 +9075,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "bcaaab7ec9bade3809b93a02"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9976\u4e50\u5e9c",
-                            "lb": "\u9976\u4e50\u5e9c",
+                            "sid": "饶乐府",
+                            "lb": "饶乐府",
                             "x": -940,
                             "y": 598.5,
                             "rx": -20,
@@ -9072,15 +9093,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "cfc687b8f76b6b6915a19014"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u623f\u5c71\u57ce\u5173",
-                            "lb": "\u623f\u5c71\u57ce\u5173",
+                            "sid": "房山城关",
+                            "lb": "房山城关",
                             "x": -960,
                             "y": 574,
                             "rx": 6,
@@ -9090,15 +9111,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "cc0f323dbe5b70ebdb1318c8"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u71d5\u5c71",
-                            "lb": "\u71d5\u5c71",
+                            "sid": "燕山",
+                            "lb": "燕山",
                             "x": -980,
                             "y": 547.4,
                             "rx": -10,
@@ -9108,15 +9129,16 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u71d5\u623f\u7ebf",
+                            "ln": "北京市|地铁燕房线",
                             "int": "2",
                             "uid": "194e55c5212df2b79ff779a5"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1\u71d5\u623f\u7ebf",
-                    "lb": "\u71d5\u623f\u7ebf",
+                    "lid": "地铁燕房线",
+                    "lb": "地铁燕房线",
+                    "sn": "燕房线",
                     "slb": true,
                     "n": 9,
                     "loop": false,
@@ -9132,8 +9154,8 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
-                            "sid": "\u5df4\u6c9f",
-                            "lb": "\u5df4\u6c9f",
+                            "sid": "巴沟",
+                            "lb": "巴沟",
                             "x": -438,
                             "y": -84,
                             "rx": -35,
@@ -9143,7 +9165,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": false,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c110\u53f7\u7ebf,\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁10号线,北京市|地铁西郊线",
                             "int": "2",
                             "uid": "9d13c721622a3be1aa059d62"
                         }
@@ -9214,8 +9236,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9890\u548c\u56ed\u897f\u95e8",
-                            "lb": "\u9890\u548c\u56ed\u897f\u95e8",
+                            "sid": "颐和园西门",
+                            "lb": "颐和园西门",
                             "x": -520.9,
                             "y": -130,
                             "rx": -35.2,
@@ -9225,15 +9247,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁西郊线",
                             "int": "2",
                             "uid": "d52b0d6ff8e8dc985abbbc31"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u8336\u68da",
-                            "lb": "\u8336\u68da",
+                            "sid": "茶棚",
+                            "lb": "茶棚",
                             "x": -570.9,
                             "y": -130,
                             "rx": -15.2,
@@ -9243,7 +9265,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁西郊线",
                             "int": "2",
                             "uid": "4ff3c268eed9a1479b68b416"
                         }
@@ -9266,8 +9288,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u4e07\u5b89",
-                            "lb": "\u4e07\u5b89",
+                            "sid": "万安",
+                            "lb": "万安",
                             "x": -600.9,
                             "y": -160,
                             "rx": -30.2,
@@ -9277,7 +9299,7 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁西郊线",
                             "int": "2",
                             "uid": "3a529a2f3b14a80e83a00ce4"
                         }
@@ -9300,8 +9322,8 @@ export default {
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u690d\u7269\u56ed",
-                            "lb": "\u690d\u7269\u56ed",
+                            "sid": "植物园",
+                            "lb": "植物园",
                             "x": -615,
                             "y": -185,
                             "rx": -10,
@@ -9311,15 +9333,15 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁西郊线",
                             "int": "2",
                             "uid": "5b9aedfc24e60e25b74f54a8"
                         }
                     },
                     {
                         "p_xmlattr": {
-                            "sid": "\u9999\u5c71",
-                            "lb": "\u9999\u5c71",
+                            "sid": "香山",
+                            "lb": "香山",
                             "x": -665,
                             "y": -185,
                             "rx": -10,
@@ -9329,15 +9351,16 @@ export default {
                             "iu": true,
                             "rc": false,
                             "slb": true,
-                            "ln": "\u5317\u4eac\u5e02|\u5730\u94c1\u897f\u90ca\u7ebf",
+                            "ln": "北京市|地铁西郊线",
                             "int": "2",
                             "uid": "24081e60e748a60a0b69d98a"
                         }
                     }
                 ],
                 "l_xmlattr": {
-                    "lid": "\u5730\u94c1\u897f\u90ca\u7ebf",
-                    "lb": "\u897f\u90ca\u7ebf",
+                    "lid": "地铁西郊线",
+                    "lb": "地铁西郊线",
+                    "sn": "西郊线",
                     "slb": true,
                     "n": 9,
                     "loop": false,
@@ -9351,9 +9374,9 @@ export default {
             }
         ],
         "sw_xmlattr": {
-            "cid": "\u5317\u4eac\u5e02",
+            "cid": "北京市",
             "n": 16,
-            "c": "\u5317\u4eac",
+            "c": "北京",
             "src": "",
             "bg": "",
             "icon": "icon_beijing",

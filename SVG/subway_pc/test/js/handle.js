@@ -5,7 +5,7 @@ import render from './render';
 import { renderCity, renderLines } from './city';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
-
+import { hidePath } from './city/lines';
 
 
 const gBox = $('#g-box');
@@ -35,11 +35,28 @@ function handle() {
     reset();
 
     selectCity();
+
+    tooltip();
 }
 
 // hover到subway路径
 function hoverPath() {
-    $('#g-box').on('mouseover', 'path', function() {
+    gBox.on('mouseover', 'path', function(e) {
+        let $self = $(this);
+        let strokeColor = $self.attr('stroke');
+        let content = $self.attr('lb');
+        let $tooltip = $('#subways-tooltip');
+
+        let iLeft = e.pageX - $tooltip.width() / 2 - 12;
+        let iTop = e.pageY - $tooltip.height() / 2 - 30;
+        
+        $tooltip.css({
+            backgroundColor: strokeColor,
+            left: iLeft,
+            top: iTop
+        }).find('.subways-tooltip-txt').html(content);
+        $tooltip.find('.subways-tooltip-icon').css({borderTopColor: strokeColor});
+
         $(this).addClass('active');
         $(this).css({
             'stroke-width': 8,
@@ -48,6 +65,19 @@ function hoverPath() {
     }).on('mouseout', 'path', function() {
         $(this).css('stroke-width', 5);
     });
+}
+
+function tooltip(type = 'line', content = '') {
+    let $tip = $('<div>');
+    $tip.attr('id', 'subways-tooltip').html(`<div class="subways-tooltip-wrap"><div class="subways-tooltip-txt">${content}</div><span class="subways-tooltip-icon"></span></div>`);
+
+    if (type === 'line') {
+        $tip.addClass('s-tooltip-lines');
+    } else if (type === 'station') {
+        $tip.addClass('s-tooltip-station');
+    }
+
+    $tip.appendTo($('#subways-wrapper-map'));
 }
 
 
@@ -86,7 +116,7 @@ function handleCity(self, data) {
 // 重置
 function reset() {
     $(document).on('click', function() {
-        // $('#rect-mask').hidex();
+        hidePath();
         $('.subways-city').removeClass('selected-city');
     });
 }

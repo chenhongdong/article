@@ -6,6 +6,8 @@ $('#subways-wrapper-map').append(cityLines);
 
 const gBox = $('#g-box');
 
+let subChild;
+
 // 渲染城市线路
 function renderLines(data) {
     cityLines.html('');
@@ -28,39 +30,42 @@ function renderLines(data) {
 }
 
 // 点击线路展现对应路径
+
 function showPath(cb) {
-    let flag = false;
 
     $('.subways-city-lines').on('click', 'a', function() {
-        let curAttr = $(this).attr('data-subway');
+        const curAttr = $(this).attr('data-subway');
         const x = $(this).attr('data-x');
         const y = $(this).attr('data-y');
 
         $(this).addClass('active').siblings().removeClass('active');
 
-        if (!flag) {
-            let rect = createSvg('rect').appendTo(gBox);
-            rect.attr({
-                id: 'rect-mask',
-                width: 3000,
-                height: 3000,
-                x: -1500,
-                y: -1500,
-                fill: '#fff',
-                'fill-opacity': 0.9
-            });
+        $('#rect-mask').remove();
 
-            flag = true;
-        }
+        let rect = createSvg('rect').appendTo(gBox);
+        rect.attr({
+            id: 'rect-mask',
+            width: 3000,
+            height: 3000,
+            x: -1500,
+            y: -1500,
+            fill: '#fff',
+            'fill-opacity': 0.9
+        });
 
+
+        // 展示选中线路
         let children = gBox.find('g');
-
+        
         for (let i = 0; i < children.length; i++) {
             let child = $(children[i]);
             let attr = child.attr('data-subway');
-            
+
             if (curAttr === attr) {
-                child.appendTo(gBox);
+                // 拷贝DOM，不改变原有children数据显示位置
+                subChild = child.clone();
+                subChild.attr('class', 'subways-copy-path');
+                subChild.appendTo(gBox);
             }
         }
 
@@ -72,8 +77,18 @@ function showPath(cb) {
     });
 }
 
+function hidePath() {
+    // 清除矩形背景
+    $('#rect-mask').remove();
+    // 清除拷贝DOM元素
+    $('.subways-copy-path').remove();
+
+    $('#subways-city-lines').find('a').removeClass('active');
+}
+
 
 export {
     renderLines,
-    showPath
+    showPath,
+    hidePath
 };

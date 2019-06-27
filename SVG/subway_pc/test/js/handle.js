@@ -1,14 +1,18 @@
 import $ from 'jquery';
-import createSvg from './common/createSvg';
+import createSvg from './components/createSvg';
+import { showTooltip, hideTooltip } from './components/tooltip';
+import { showPopover, hidePopover } from './components/popover';
 import * as citys from '../data';
 import render from './render';
 import { renderCity, renderLines } from './city';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
 import { hidePath } from './city/lines';
+import { request } from './components/request';
 
 
 const gBox = $('#g-box');
+const toolWidth = 50;
 
 function init() {
     renderCity();
@@ -36,26 +40,29 @@ function handle() {
 
     selectCity();
 
-    tooltip();
+    
 }
 
 // hover到subway路径
 function hoverPath() {
+    const cityCode = $('.current-city').attr('data-code');
+    
+
     gBox.on('mouseover', 'path', function(e) {
         let $self = $(this);
-        let strokeColor = $self.attr('stroke');
+        let color = $self.attr('stroke');
         let content = $self.attr('lb');
-        let $tooltip = $('#subways-tooltip');
+        let left = e.pageX - toolWidth + 15;
+        let top = e.pageY - toolWidth - 5;
 
-        let iLeft = e.pageX - $tooltip.width() / 2 - 12;
-        let iTop = e.pageY - $tooltip.height() / 2 - 30;
-        
-        $tooltip.css({
-            backgroundColor: strokeColor,
-            left: iLeft,
-            top: iTop
-        }).find('.subways-tooltip-txt').html(content);
-        $tooltip.find('.subways-tooltip-icon').css({borderTopColor: strokeColor});
+        // 创建气泡
+        showTooltip({
+            content,
+            left,
+            top,
+            color
+        });
+
 
         $(this).addClass('active');
         $(this).css({
@@ -64,21 +71,59 @@ function hoverPath() {
         });
     }).on('mouseout', 'path', function() {
         $(this).css('stroke-width', 5);
+        hideTooltip();
+    }).on('mouseover', 'circle', function() {
+        request({
+            qt: 'inf',
+            newmap: 1,
+            it: 3,
+            ie: 'utf-8',
+            f: '[1,12,13]',
+            c: cityCode,
+            m: 'sbw',
+            ccode: cityCode,
+            uid: $(this).attr('data-uid')
+        }).then(res => {
+            console.log(res);
+            if (!res.content) {
+                return;
+            }
+            const data = res.content;
+            showPopover({
+                type: 'single',
+                title: data.name,
+                datas: data.ext.line_info
+            });
+        });
+    }).on('mouseover', 'image', function() {
+        request({
+            qt: 'inf',
+            newmap: 1,
+            it: 3,
+            ie: 'utf-8',
+            f: '[1,12,13]',
+            c: cityCode,
+            m: 'sbw',
+            ccode: cityCode,
+            uid: $(this).attr('data-uid')
+        }).then(res => {
+            console.log(res);
+            if (!res.content) {
+                return;
+            }
+            const data = res.content;
+            showPopover({
+                type: 'multi',
+                title: data.name,
+                datas: data.ext.line_info
+            });
+        });
     });
+
+
 }
 
-function tooltip(type = 'line', content = '') {
-    let $tip = $('<div>');
-    $tip.attr('id', 'subways-tooltip').html(`<div class="subways-tooltip-wrap"><div class="subways-tooltip-txt">${content}</div><span class="subways-tooltip-icon"></span></div>`);
 
-    if (type === 'line') {
-        $tip.addClass('s-tooltip-lines');
-    } else if (type === 'station') {
-        $tip.addClass('s-tooltip-station');
-    }
-
-    $tip.appendTo($('#subways-wrapper-map'));
-}
 
 
 

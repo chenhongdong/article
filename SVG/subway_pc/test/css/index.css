@@ -142,7 +142,7 @@ select {
     font-size: 12px;
     left: -500px;
     line-height: 24px;
-    padding: 2px 4px;
+    padding: 2px 6px;
     position: absolute;
     text-align: center;
     transition: all .4s;
@@ -160,4 +160,65 @@ select {
     bottom: -16px;
     margin-left: -8px;
     width: 0;
+}
+/* 站点首末车弹框 */
+#subways-popover {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    left: 500px;
+    padding: 8px;
+    position: absolute;
+    top: 500px;
+    width: 200px;
+    z-index: 11;
+}
+#subways-popover:after {
+    content: '';
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+    border-width: 6px;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -6px;
+    position: absolute;
+}
+#subways-popover .subways-popover-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+#subways-popover .subways-popover-list {
+    list-style: none;
+    font-size: 0;
+    padding: 4px 0;
+}
+#subways-popover .subways-popover-list li {
+    display: inline-block;
+    font-size: 0;
+    overflow: hidden;
+    width: 50%;
+}
+#subways-popover .subways-popover-list li span {
+    display: inline-block;
+    font-size: 12px;
+}
+#subways-popover .subways-popover-list .dir {
+    color: gray;
+}
+#subways-popover .subways-popover-list .flag {
+    background-color: rgb(68, 109, 7);
+    background-color: gray;
+    color: #fff;
+    padding-left: 0;
+}
+#subways-popover .subways-popover-list .time {
+    padding: 0 3px;
+}
+#subways-popover .subways-popover-txt {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.subways-popover-single .subways-popover-line:nth-of-type(2) .subways-popover-txt {
+    display: none;
 }

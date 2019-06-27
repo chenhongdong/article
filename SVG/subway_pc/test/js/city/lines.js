@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import createSvg from '../common/createSvg';
+import createSvg from '../components/createSvg';
 
 let cityLines = $('<div class="subways-city-lines" id="subways-city-lines"></div>');
 $('#subways-wrapper-map').append(cityLines);

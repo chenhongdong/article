@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import createSvg from './components/createSvg';
 import { showTooltip, hideTooltip } from './components/tooltip';
-import { showPopover, hidePopover } from './components/popover';
+import { initPopover, showPopover, hidePopover } from './components/popover';
 import * as citys from '../data';
 import render from './render';
 import { renderCity, renderLines } from './city';
@@ -40,7 +40,7 @@ function handle() {
 
     selectCity();
 
-    
+    initPopover();
 }
 
 // hover到subway路径
@@ -72,7 +72,31 @@ function hoverPath() {
     }).on('mouseout', 'path', function() {
         $(this).css('stroke-width', 5);
         hideTooltip();
-    }).on('mouseover', 'circle', function() {
+    }).on('mouseover', 'circle', function(e) {
+        request({
+            qt: 'inf',
+            newmap: 1,
+            it: 3,
+            ie: 'utf-8',
+            f: '[1,12,13]',
+            c: cityCode,
+            m: 'sbw',
+            ccode: cityCode,
+            uid: $(this).attr('data-uid')
+        }).then(res => {
+            if (!res.content) {
+                return;
+            }
+            const data = res.content;
+            showPopover({
+                title: data.name,
+                datas: data.ext.line_info
+            });
+        });
+    }).on('mouseout', 'circle', function() {
+        hidePopover();  
+    }).on('mouseover', 'image', function(e) {
+        
         request({
             qt: 'inf',
             newmap: 1,
@@ -90,34 +114,14 @@ function hoverPath() {
             }
             const data = res.content;
             showPopover({
-                type: 'single',
                 title: data.name,
-                datas: data.ext.line_info
+                datas: data.ext.line_info,
+                left: e.pageX,
+                top: e.pageY
             });
         });
-    }).on('mouseover', 'image', function() {
-        request({
-            qt: 'inf',
-            newmap: 1,
-            it: 3,
-            ie: 'utf-8',
-            f: '[1,12,13]',
-            c: cityCode,
-            m: 'sbw',
-            ccode: cityCode,
-            uid: $(this).attr('data-uid')
-        }).then(res => {
-            console.log(res);
-            if (!res.content) {
-                return;
-            }
-            const data = res.content;
-            showPopover({
-                type: 'multi',
-                title: data.name,
-                datas: data.ext.line_info
-            });
-        });
+    }).on('mouseout', 'image', function() {
+        hidePopover();  
     });
 
 

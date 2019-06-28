@@ -118,7 +118,7 @@ function render(data) {
     }
 
     let repeatStr = '';  //uid字符串判断重复点
-    
+
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];
         const { lb, sn } = l_xmlattr;
@@ -134,10 +134,8 @@ function render(data) {
             if (st) {
                 if (ex) {
                     // 基础换乘图标
-                    if (!repeatStr.includes(uid)) {
+                    // if (!repeatStr.includes(uid)) {
                         let image = createSvg('image').appendTo(g);
-
-                        // let posY = dy === '-3' ? y - 16 : y - 10;
 
                         image.attr({
                             width: 20,
@@ -148,7 +146,7 @@ function render(data) {
                             'data-lb': lb
                         });
                         image[0].href.baseVal = imgSrc;
-                    }
+                    // }
                 } else {
                     let circle = createSvg('circle').appendTo(g);
                     circle.attr({
@@ -162,7 +160,7 @@ function render(data) {
                         'data-lb': lb
                     });
                 }
-                if (!repeatStr.includes(uid)) {
+                // if (!repeatStr.includes(uid)) {
                     let text = createSvg('text').appendTo(g).html(lb).addClass('station-name');
                     text.attr({
                         x: x + rx + 2,
@@ -170,7 +168,7 @@ function render(data) {
                         fill: '#000'
                     });
                     repeatStr += uid
-                }
+                // }
             }
             // no为暂缓开通的站点
             if (no) {
@@ -182,7 +180,7 @@ function render(data) {
                         cy: y,
                         r: 4,
                         fill: '#fff',
-                        stroke: '#ccc',
+                        stroke: '#000',
                         'stroke-dasharray': '2, 2',
                         'stroke-width': 1
                     });

@@ -45,6 +45,10 @@ select {
 #subways-wrapper-map svg {
     margin-top: 100px;
 }
+#subways-wrapper-map image,
+#subways-wrapper-map circle {
+    cursor: pointer;
+}
 /* 地铁城市选择 */
 #subways-wrapper-map .subways-city {
     height: 32px;
@@ -165,10 +169,10 @@ select {
 #subways-popover {
     background-color: #fff;
     border: 1px solid #ccc;
-    left: 500px;
+    left: 300px;
     padding: 8px;
     position: absolute;
-    top: 500px;
+    top: 50px;
     width: 200px;
     z-index: 11;
 }
@@ -219,6 +223,6 @@ select {
     font-size: 14px;
     text-align: center;
 }
-.subways-popover-single .subways-popover-line:nth-of-type(2) .subways-popover-txt {
+/* #subways-popover .subways-popover-line:nth-of-type(2n) .subways-popover-txt {
     display: none;
-}
+} */

@@ -1,16 +1,33 @@
 import $ from 'jquery';
+import serialize from '../utils/serialize';
 
-function showPopover(options) {
+function initPopover() {
     let html = `
         <div id="subways-popover">
-            <div class="subways-popover-title">${options.title}</div>
-            <div class="subways-popover-content ${options.type === 'single' ? 'subways-popover-single' : ''}">         
+            <div class="subways-popover-title"></div>
+            <div class="subways-popover-content">
+            </div>
+        </div>        
+    `;
+
+    $(html).appendTo($('#subways-wrapper-map'));
+}
+
+/* function showPopover(opts) {
+    let html = `
+        <div id="subways-popover" style="left: ${opts.left}px;top: ${opts.top}px;">
+            <div class="subways-popover-title">${opts.title}</div>
+            <div class="subways-popover-content">         
     `;
     const noTime = '-- : --';
-    console.log(options);
-    options.datas.forEach(item => {
+
+    // 序列化数据
+    let serializeData = serialize(opts.datas);
+
+    serializeData.forEach(item => {
+        let title = item.ways ? `<p class="subways-popover-txt" style="background-color: #${item.clr.slice(2)}">${item.ways}</p>` : '';
         html += `<div class="subways-popover-line">
-                    <p class="subways-popover-txt" style="background-color: #${item.clr.slice(2)}">${item.abb}</p>
+                    ${title}
                     <ul class="subways-popover-list">
                         <li>
                             <span>${item.terminals}</span>
@@ -27,15 +44,54 @@ function showPopover(options) {
     });
 
     html += '</div></div>';
+} */
 
-    $(html).appendTo($('#subways-wrapper-map'));
+function showPopover(opts) {
+    const $pop = $('#subways-popover');
+    const $title = $pop.find('.subways-popover-title');
+    const $main = $pop.find('.subways-popover-content');
+    console.log(opts);
+    console.log('show',$pop.height())
+    
+
+    let serializeData = serialize(opts.datas);
+    let content = '';
+
+    serializeData.forEach(item => {
+        let title = item.ways ? `<p class="subways-popover-txt" style="background-color: #${item.clr.slice(2)}">${item.ways}</p>` : '';
+
+        content += `<div class="subways-popover-line">
+                        ${title}
+                        <ul class="subways-popover-list">
+                            <li>
+                                <span>${item.terminals}</span>
+                                <span class="dir">方向</span>
+                            </li>
+                            <li>
+                                <span class="flag">始</span>
+                                <span class="time">${item.first_time || noTime}</span>
+                                <span class="flag">末</span>
+                                <span class="time">${item.last_time || noTime}</span>
+                            </li>
+                        </ul>
+                    </div>`;
+    });
+    $title.text(opts.title);
+    $main.html(content);
+
+    console.log('show-show',$pop.height())
+    $pop.css({
+        left: opts.left - $pop.width() / 2,
+        top: opts.top - $pop.height() - 30
+    });
 }
 
 function hidePopover() {
-
+    // $('#subways-popover').remove();
 }
 
 export {
+    initPopover,
     showPopover,
     hidePopover
 };

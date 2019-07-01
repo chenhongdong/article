@@ -167,7 +167,7 @@ function render(data) {
                         y: y + ry + 12,
                         fill: '#000'
                     });
-                    repeatStr += uid
+                    // repeatStr += uid
                 // }
             }
             // no为暂缓开通的站点

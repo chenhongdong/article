@@ -8,7 +8,7 @@ import { renderCity, renderLines } from './city';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
 import { hidePath } from './city/lines';
-import { request } from './components/request';
+import { reqInfo } from './components/request';
 
 
 const gBox = $('#g-box');
@@ -67,48 +67,20 @@ function hoverPath() {
         $(this).addClass('active');
         $(this).css({
             'stroke-width': 8,
-            'transition': 'stroke-width ease .7s'
+            'transition': 'stroke-width ease .5s'
         });
     }).on('mouseout', 'path', function() {
         $(this).css('stroke-width', 5);
         hideTooltip();
-    }).on('mouseover', 'circle', function(e) {
-        request({
-            qt: 'inf',
-            newmap: 1,
-            it: 3,
-            ie: 'utf-8',
-            f: '[1,12,13]',
+    }).on('mouseover', 'circle', function(e) {  // 非换乘站首末车时间
+        const left = parseInt($(this).offset().left),
+              top = parseInt($(this).offset().top);
+
+        reqInfo({
             c: cityCode,
-            m: 'sbw',
             ccode: cityCode,
             uid: $(this).attr('data-uid')
         }).then(res => {
-            if (!res.content) {
-                return;
-            }
-            const data = res.content;
-            showPopover({
-                title: data.name,
-                datas: data.ext.line_info
-            });
-        });
-    }).on('mouseout', 'circle', function() {
-        hidePopover();  
-    }).on('mouseover', 'image', function(e) {
-        
-        request({
-            qt: 'inf',
-            newmap: 1,
-            it: 3,
-            ie: 'utf-8',
-            f: '[1,12,13]',
-            c: cityCode,
-            m: 'sbw',
-            ccode: cityCode,
-            uid: $(this).attr('data-uid')
-        }).then(res => {
-            console.log(res);
             if (!res.content) {
                 return;
             }
@@ -116,8 +88,30 @@ function hoverPath() {
             showPopover({
                 title: data.name,
                 datas: data.ext.line_info,
-                left: e.pageX,
-                top: e.pageY
+                left,
+                top
+            });
+        });
+    }).on('mouseout', 'circle', function() {
+        hidePopover();  
+    }).on('mouseenter', 'image', function(e) {  // 换乘站首末车信息
+        const left = parseInt($(this).offset().left),
+              top = parseInt($(this).offset().top);
+
+        reqInfo({
+            c: cityCode,
+            ccode: cityCode,
+            uid: $(this).attr('data-uid')
+        }).then(res => {
+            if (!res.content) {
+                return;
+            }
+            const data = res.content;
+            showPopover({
+                title: data.name,
+                datas: data.ext.line_info,
+                left,
+                top
             });
         });
     }).on('mouseout', 'image', function() {
@@ -156,6 +150,7 @@ function handleCity(self, data) {
     // 重新渲染地铁图和路线
     renderLines(data);
     render(data);
+    hidePopover();
 
     $(self).parent().parent().removeClass('selected-city');
     $(self).parent().siblings('.current-city').html($(self).html());
@@ -166,6 +161,7 @@ function handleCity(self, data) {
 function reset() {
     $(document).on('click', function() {
         hidePath();
+        hidePopover();
         $('.subways-city').removeClass('selected-city');
     });
 }

@@ -997,8 +997,8 @@ export default {
                     },
                     {
                         p_xmlattr: {
-                            sid: "双d港",
-                            lb: "双d港",
+                            sid: "双D港",
+                            lb: "双D港",
                             x: 218.55,
                             y: -92.65,
                             rx: -27,

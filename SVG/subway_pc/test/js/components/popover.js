@@ -13,45 +13,11 @@ function initPopover() {
     $(html).appendTo($('#subways-wrapper-map'));
 }
 
-/* function showPopover(opts) {
-    let html = `
-        <div id="subways-popover" style="left: ${opts.left}px;top: ${opts.top}px;">
-            <div class="subways-popover-title">${opts.title}</div>
-            <div class="subways-popover-content">         
-    `;
-    const noTime = '-- : --';
-
-    // 序列化数据
-    let serializeData = serialize(opts.datas);
-
-    serializeData.forEach(item => {
-        let title = item.ways ? `<p class="subways-popover-txt" style="background-color: #${item.clr.slice(2)}">${item.ways}</p>` : '';
-        html += `<div class="subways-popover-line">
-                    ${title}
-                    <ul class="subways-popover-list">
-                        <li>
-                            <span>${item.terminals}</span>
-                            <span class="dir">方向</span>
-                        </li>
-                        <li>
-                            <span class="flag">始</span>
-                            <span class="time">${item.first_time || noTime}</span>
-                            <span class="flag">末</span>
-                            <span class="time">${item.last_time || noTime}</span>
-                        </li>
-                    </ul>
-                </div>`;
-    });
-
-    html += '</div></div>';
-} */
-
 function showPopover(opts) {
     const $pop = $('#subways-popover');
     const $title = $pop.find('.subways-popover-title');
     const $main = $pop.find('.subways-popover-content');
-    console.log(opts);
-    console.log('show',$pop.height())
+    const noTime = '-- : --';
     
 
     let serializeData = serialize(opts.datas);
@@ -79,15 +45,15 @@ function showPopover(opts) {
     $title.text(opts.title);
     $main.html(content);
 
-    console.log('show-show',$pop.height())
     $pop.css({
-        left: opts.left - $pop.width() / 2,
+        left: opts.left - $pop.width() / 2 + 4,
         top: opts.top - $pop.height() - 30
-    });
+       
+    }).show();
 }
 
 function hidePopover() {
-    // $('#subways-popover').remove();
+    $('#subways-popover').hide();
 }
 
 export {

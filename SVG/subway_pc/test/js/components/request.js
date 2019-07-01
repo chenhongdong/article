@@ -1,11 +1,20 @@
 import $ from 'jquery';
 
-function request(options) {
+const base = {
+    qt: 'inf',
+    newmap: 1,
+    it: 3,
+    ie: 'utf-8',
+    f: '[1,12,13]',
+    m: 'sbw'
+};
+// 请求站点首末车经过时间
+function reqInfo(options) {
     return new Promise((resolve, reject) => {
         $.ajax({
             url: 'https://map.baidu.com',
             dataType: 'jsonp',
-            data: {...options},
+            data: { ...base, ...options },
             success: (data) => {
                 resolve(data);
             },
@@ -17,5 +26,5 @@ function request(options) {
 }
 
 export {
-    request
+    reqInfo
 }

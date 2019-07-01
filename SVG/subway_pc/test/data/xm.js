@@ -131,7 +131,7 @@ export default {
                             x: 43.4,
                             y: -322.2,
                             rx: -25,
-                            ry: 10,
+                            ry: -20,
                             st: true,
                             ex: false,
                             iu: true,

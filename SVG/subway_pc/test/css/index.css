@@ -169,11 +169,12 @@ select {
 #subways-popover {
     background-color: #fff;
     border: 1px solid #ccc;
+    display: none;
     left: 300px;
     padding: 8px;
     position: absolute;
     top: 50px;
-    width: 200px;
+    width: 210px;
     z-index: 11;
 }
 #subways-popover:after {
@@ -199,6 +200,7 @@ select {
 #subways-popover .subways-popover-list li {
     display: inline-block;
     font-size: 0;
+    height: 18px;
     overflow: hidden;
     width: 50%;
 }

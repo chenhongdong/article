@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import createSvg from '../components/createSvg';
+import svgPanZoom from 'svg-pan-zoom';
+import eventsHandler from '../event';
 
 let cityLines = $('<div class="subways-city-lines" id="subways-city-lines"></div>');
 $('#subways-wrapper-map').append(cityLines);
@@ -8,6 +10,10 @@ const gBox = $('#g-box');
 
 let subChild;
 
+
+
+
+
 // 渲染城市线路
 function renderLines(data) {
     cityLines.html('');
@@ -15,9 +21,9 @@ function renderLines(data) {
     let html = '';
     const { l, sw_xmlattr } = data.subways;
     const { c } = sw_xmlattr;
-    const lines = l;
-    
-    lines.forEach(line => {
+
+
+    l.forEach(line => {
         const { l_xmlattr } = line;
         const { lbx, lby, sn, lb, lc } = l_xmlattr;
         let name = c === '北京' ? sn : lb;
@@ -31,12 +37,12 @@ function renderLines(data) {
 
 // 点击线路展现对应路径
 
-function showPath(cb) {
+function showPath(ele) {
 
-    $('.subways-city-lines').on('click', 'a', function() {
+    $('.subways-city-lines').on('click', 'a', function () {
         const curAttr = $(this).attr('data-subway');
-        const x = $(this).attr('data-x');
-        const y = $(this).attr('data-y');
+        const x = Math.abs($(this).attr('data-x'));
+        const y = Math.abs($(this).attr('data-y') / 2);
 
         $(this).addClass('active').siblings().removeClass('active');
 
@@ -56,7 +62,7 @@ function showPath(cb) {
 
         // 展示选中线路
         let children = gBox.find('g');
-        
+
         for (let i = 0; i < children.length; i++) {
             let child = $(children[i]);
             let attr = child.attr('data-subway');
@@ -69,10 +75,12 @@ function showPath(cb) {
             }
         }
 
-        cb && cb({
-            x,
-            y
-        });
+
+        
+
+        ele.pan({ x: 940, y: 314 });
+        // ele.zoomBy(0.5);
+
         return false;
     });
 }
@@ -82,7 +90,7 @@ function hidePath() {
     $('#rect-mask').remove();
     // 清除拷贝DOM元素
     $('.subways-copy-path').remove();
-
+    // 清除高亮样式
     $('#subways-city-lines').find('a').removeClass('active');
 }
 

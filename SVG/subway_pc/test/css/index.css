@@ -138,23 +138,22 @@ select {
     background-color: #ccc;
 }
 /* 气泡提示框 */
-#subways-wrapper-map .s-tooltip-lines {
+#subways-tooltip {
     background-color: #fff;
     border-radius: 4px;
     box-sizing: border-box;
     color: #fff;
     font-size: 12px;
-    left: -500px;
+    left: 0;
     line-height: 24px;
     padding: 2px 6px;
     position: absolute;
     text-align: center;
-    transition: all .4s;
-    top: -500px;
+    top: 0;
     max-width: 100px;
     z-index: 10;
 }
-#subways-wrapper-map .s-tooltip-lines .subways-tooltip-icon {
+#subways-tooltip .subways-tooltip-icon {
     border-style: solid;
     border-width: 8px;
     border-color: #fff transparent transparent transparent;

@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-const base = {
+const baseInfo = {
     qt: 'inf',
     newmap: 1,
     it: 3,
@@ -14,11 +14,36 @@ function reqInfo(options) {
         $.ajax({
             url: 'https://map.baidu.com',
             dataType: 'jsonp',
-            data: { ...base, ...options },
-            success: (data) => {
+            data: { ...baseInfo, ...options },
+            success: data => {
                 resolve(data);
             },
-            error: (err) => {
+            error: err => {
+                reject(err);
+            }
+        });
+    });
+}
+
+
+const basePath = {
+    sid: 7003,
+    output: 'json',
+    nightflag: 0,
+    strategy: 7,
+    count: 1
+};
+
+function reqPath(options) {
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: 'https://restapi.map.so.com/api/simple',
+            dataType: 'jsonp',
+            data: { ...basePath, ...options },
+            success: data => {
+                resolve(data);
+            },
+            error: err => {
                 reject(err);
             }
         });
@@ -26,5 +51,6 @@ function reqInfo(options) {
 }
 
 export {
-    reqInfo
+    reqInfo,
+    reqPath
 }

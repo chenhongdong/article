@@ -1,9 +1,19 @@
 import $ from 'jquery';
-import throttle from '../utils/throttle';
 
+function initTooltip() {
+    let html = `
+        <div id="subways-tooltip">
+            <div class="subways-tooltip-wrap">
+                <div class="subways-tooltip-txt"></div>
+                <span class="subways-tooltip-icon"></span>
+            </div>
+        </div>`;
+
+    $(html).appendTo($('#subways-wrapper-map'));
+}
 
 function showTooltip(options) {
-    let $tip = $('<div id="subways-tooltip">');
+    const $tip = $('#subways-tooltip');
     let html = `
         <div class="subways-tooltip-wrap">
             <div class="subways-tooltip-txt">${options.content}</div>
@@ -11,24 +21,20 @@ function showTooltip(options) {
         </div>`;
 
     $tip.css({
-            backgroundColor: options.color || '#fff',
-            left: options.left || -500,
-            top: options.top || -500
-        })
-        .addClass('s-tooltip-lines')
-        .html(html)
-        .appendTo($('#subways-wrapper-map'));
+        backgroundColor: options.color || '#fff',
+        left: options.left || -500,
+        top: options.top || -500
+    })
+    .html(html)
+    .show();
 }
 
 function hideTooltip() {
-    let timer;
-    timer = setTimeout(() => {
-        $('#subways-tooltip').remove();
-        clearTimeout(timer);
-    }, 70);
+    $('#subways-tooltip').hide();
 }
 
 export {
+    initTooltip,
     showTooltip,
     hideTooltip
 }

@@ -1,26 +1,34 @@
 import $ from 'jquery';
 import createSvg from './components/createSvg';
-import { showTooltip, hideTooltip } from './components/tooltip';
+import { initTooltip, showTooltip, hideTooltip } from './components/tooltip';
 import { initPopover, showPopover, hidePopover } from './components/popover';
 import * as citys from '../data';
 import render from './render';
 import { renderCity, renderLines } from './city';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
-import { hidePath } from './city/lines';
-import { reqInfo } from './components/request';
+import { showPath, hidePath } from './city/lines';
+import { reqInfo, reqPath } from './components/request';
 
 
 const gBox = $('#g-box');
 const toolWidth = 50;
 
+let num = 0;
+let panZoom;
+
+
+
+
 function init() {
+    // 渲染地铁城市列表
     renderCity();
-    renderLines(citys.bj);
     // 渲染地铁图
     render(citys.bj);
+    // 渲染地铁线路表
+    renderLines(citys.bj);
 
-    svgPanZoom('#subways-svg', {
+    panZoom = svgPanZoom('#subways-svg', {
         zoomEnabled: true,
         controlIconsEnabled: false,
         fit: true,
@@ -30,6 +38,10 @@ function init() {
         maxZoom: 5,
         customEventsHandler: eventsHandler
     });
+
+    initTooltip();
+
+    initPopover();
 }
 
 
@@ -40,7 +52,9 @@ function handle() {
 
     selectCity();
 
-    initPopover();
+    showPath(panZoom);
+
+    searchPath();
 }
 
 // hover到subway路径
@@ -94,7 +108,7 @@ function hoverPath() {
         });
     }).on('mouseout', 'circle', function() {
         hidePopover();  
-    }).on('mouseenter', 'image', function(e) {  // 换乘站首末车信息
+    }).on('mouseover', 'image', function(e) {  // 换乘站首末车信息
         const left = parseInt($(this).offset().left),
               top = parseInt($(this).offset().top);
 
@@ -122,9 +136,21 @@ function hoverPath() {
 }
 
 
+function searchPath() {
+    gBox.on('click', 'circle', function() {
+        
+        num++;
 
-
-
+        if (num === 2) {
+            reqPath({
+                origin: '116.352721,40.001009',
+                destination: '116.373218,39.948715'
+            }).then(res => {
+                console.log(res);
+            });
+        }
+    })
+}
 
 // 城市选择
 function selectCity() {

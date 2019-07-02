@@ -48,7 +48,6 @@ function showPopover(opts) {
     $pop.css({
         left: opts.left - $pop.width() / 2 + 4,
         top: opts.top - $pop.height() - 30
-       
     }).show();
 }
 

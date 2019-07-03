@@ -25,11 +25,11 @@ function renderLines(data) {
 
     l.forEach(line => {
         const { l_xmlattr } = line;
-        const { lbx, lby, sn, lb, lc } = l_xmlattr;
+        const { px, py, pz, sn, lb, lc } = l_xmlattr;
         let name = c === '北京' ? sn : lb;
         let color = lc.replace(/^0x/, '#');
 
-        html += `<a href="javascript:;" style="color: ${color}" data-subway="subway_${name}" data-x=${lbx} data-y=${lby}>${name}</a>`;
+        html += `<a href="javascript:;" style="color: ${color}" data-subway="subway_${name}" data-x=${px} data-y=${py} data-z=${pz}>${name}</a>`;
     });
 
     cityLines.html(html);
@@ -40,13 +40,16 @@ function renderLines(data) {
 function showPath(ele) {
 
     $('.subways-city-lines').on('click', 'a', function () {
-        const curAttr = $(this).attr('data-subway');
-        const x = Math.abs($(this).attr('data-x'));
-        const y = Math.abs($(this).attr('data-y') / 2);
+        const self = $(this);
+        const curAttr = self.attr('data-subway');
+        const x = Number(self.attr('data-x'));
+        const y = Number(self.attr('data-y'));
+        const z = Number(self.attr('data-z'));
+
+        // 清除path
+        hidePath();
 
         $(this).addClass('active').siblings().removeClass('active');
-
-        $('#rect-mask').remove();
 
         let rect = createSvg('rect').appendTo(gBox);
         rect.attr({
@@ -59,7 +62,7 @@ function showPath(ele) {
             'fill-opacity': 0.9
         });
 
-
+       
         // 展示选中线路
         let children = gBox.find('g');
 
@@ -74,12 +77,14 @@ function showPath(ele) {
                 subChild.appendTo(gBox);
             }
         }
-
-
         
-
-        ele.pan({ x: 940, y: 314 });
-        // ele.zoomBy(0.5);
+        
+        if (x && y && z) {
+            console.log(x,y,z)
+            ele.pan({ x, y });
+            ele.zoom(z);
+        }
+       
 
         return false;
     });

@@ -480,6 +480,9 @@ export default {
                     "lby": 193,
                     "lbr": 0,
                     "lc": "0xC23A30",
+                    "px": 1000,
+                    "py": 500,
+                    "pz": 1.2,
                     "uid": "3e210d94b51b7a184107c1b7",
                     "uid2": "bce557d6f7fadd4ea5da39b7",
                     "bgw": 85,
@@ -962,6 +965,9 @@ export default {
                     "lby": 22.7,
                     "lbr": 0,
                     "lc": "0x006098",
+                    "px": 1000,
+                    "py": 600,
+                    "pz": 1.2,
                     "uid": "9dc3b3dab4becfaea2a934b7",
                     "uid2": "32c31282e310f2aacb213db7"
                 }
@@ -1758,6 +1764,9 @@ export default {
                     "lby": -224,
                     "lbr": 0,
                     "lc": "0x008E9C",
+                    "px": 1200,
+                    "py": 500,
+                    "pz": 0.8,
                     "uid": "1479a7007b19e457ebf8536c",
                     "uid2": "277df81e6219d2b192114c6c",
                     "lb2": "地铁大兴线",
@@ -2238,6 +2247,9 @@ export default {
                     "lby": -370,
                     "lbr": 0,
                     "lc": "0xA6217F",
+                    "px": 1000,
+                    "py": 700,
+                    "pz": 1,
                     "uid": "76464b1774e4f36841d63eb7",
                     "uid2": "3039f3071bdd32f0f7e73bb7",
                     "lb2": "地铁5号线",
@@ -2967,6 +2979,9 @@ export default {
                     "lby": 140,
                     "lbr": 0,
                     "lc": "0xD29700",
+                    "px": 900,
+                    "py": 620,
+                    "pz": 1,
                     "uid": "a15f370891be585133870acc",
                     "uid2": "c813960a8a3d3ac08adb73cc",
                     "lb2": "地铁6号线",
@@ -3420,6 +3435,9 @@ export default {
                     "lby": 350,
                     "lbr": 0,
                     "lc": "0xf6c582",
+                    "px": 930,
+                    "py": 640,
+                    "pz": 1.2,
                     "uid": "7b91975794680a2d8bdb7351",
                     "uid2": "9720448fad9bd8b1f50e778f"
                 }
@@ -3609,8 +3627,8 @@ export default {
                             "lb": "林萃桥",
                             "x": -43.6,
                             "y": -183,
-                            "rx": 10,
-                            "ry": -7.5,
+                            "rx": 4,
+                            "ry": -15,
                             "st": true,
                             "ex": false,
                             "iu": true,
@@ -3832,6 +3850,9 @@ export default {
                     "lby": -325,
                     "lbr": 0,
                     "lc": "0x009B6B",
+                    "px": 1000,
+                    "py": 700,
+                    "pz": 1.2,
                     "uid": "d25acca9ad2e8a57f21937ac",
                     "uid2": "86147d290c19ca50a2d230ac"
                 }
@@ -4121,6 +4142,9 @@ export default {
                     "lby": 590.1,
                     "lbr": 0,
                     "lc": "0x009B6B",
+                    "px": 1000,
+                    "py": 250,
+                    "pz": 1.2,
                     "uid": "cfce3c74821e9522c7f0253e",
                     "uid2": "2bf09adde63f27874054d721"
                 }
@@ -4414,6 +4438,9 @@ export default {
                     "lby": 390,
                     "lbr": 0,
                     "lc": "0x8FC31F",
+                    "px": 1000,
+                    "py": 450,
+                    "pz": 1.2,
                     "uid": "3494dc1e4c1e9a9b3ce231ac",
                     "uid2": "94a39c191cd504ab471a32ac"
                 }
@@ -5476,6 +5503,9 @@ export default {
                     "lby": -60,
                     "lbr": 0,
                     "lc": "0x009BC0",
+                    "px": 1000,
+                    "py": 500,
+                    "pz": 1.2,
                     "uid": "de6d05290c19ca50a2d230b7",
                     "uid2": "28d3dce37526799f49fd3fb7",
                     "lb2": "地铁10号线",
@@ -5912,6 +5942,9 @@ export default {
                     "lby": -282.4,
                     "lbr": 0,
                     "lc": "0xF9E700",
+                    "px": 1000,
+                    "py": 600,
+                    "pz": 1.2,
                     "uid": "7ad85451ff003ccb5d17c3b7",
                     "uid2": "75501d1cfc56794e0482c2b7"
                 }
@@ -6070,6 +6103,9 @@ export default {
                     "lby": 285,
                     "lbr": 0,
                     "lc": "0xD5A7A1",
+                    "px": 1200,
+                    "py": 500,
+                    "pz": 1.2,
                     "uid": "d53d841d8d65c36b82a00ccd",
                     "uid2": "8816b6b9de1f0ace70210bcd"
                 }
@@ -6639,6 +6675,9 @@ export default {
                     "lby": -260,
                     "lbr": 0,
                     "lc": "0xD5A7A1",
+                    "px": 1000,
+                    "py": 550,
+                    "pz": 1.2,
                     "uid": "d79471cb1c5e11681029359e",
                     "uid2": "a29055b05b19575787154113"
                 }
@@ -7107,6 +7146,9 @@ export default {
                     "lby": -340,
                     "lbr": 0,
                     "lc": "0x5B2C68",
+                    "px": 900,
+                    "py": 840,
+                    "pz": 1.2,
                     "uid": "6363d7f82d1625bed7b74e6c",
                     "uid2": "7963e11e54ffab581cf74d6c"
                 }
@@ -7359,6 +7401,9 @@ export default {
                     "lby": -350,
                     "lbr": 0,
                     "lc": "0x76A32E",
+                    "px": 1100,
+                    "py": 800,
+                    "pz": 1.2,
                     "uid": "df70782f9677438a373a71e9",
                     "uid2": "1c7438e02ac59124f5c59c83"
                 }
@@ -7654,6 +7699,9 @@ export default {
                     "lby": 200,
                     "lbr": 0,
                     "lc": "0xC23A30",
+                    "px": 900,
+                    "py": 350,
+                    "pz": 1.2,
                     "uid": "37125ffd5b009d930ab93ab7",
                     "uid2": "32955707ba85655ecae33cb7",
                     "lb2": "地铁八通线",
@@ -7974,6 +8022,9 @@ export default {
                     "lby": -440,
                     "lbr": 0,
                     "lc": "0xDE82B2",
+                    "px": 980,
+                    "py": 880,
+                    "pz": 1.2,
                     "uid": "0f5b9ac71003a249c41e516c",
                     "uid2": "1cba93042407fd57dd1e526c"
                 }
@@ -8283,6 +8334,9 @@ export default {
                     "lby": 610,
                     "lbr": 0,
                     "lc": "0xE40077",
+                    "px": 900,
+                    "py": 300,
+                    "pz": 1.2,
                     "uid": "15ca3c2994fb88054acc4a6c",
                     "uid2": "dd8aebb7bf2e12b5b14c496c"
                 }
@@ -8538,6 +8592,9 @@ export default {
                     "lby": 628,
                     "lbr": 0,
                     "lc": "0xE46022",
+                    "px": 1200,
+                    "py": 250,
+                    "pz": 1.2,
                     "uid": "5485ae11a3f0eefe00294f6c",
                     "uid2": "526c20f768b039602bfc486c"
                 }
@@ -8783,6 +8840,9 @@ export default {
                     "lby": -80,
                     "lbr": -25,
                     "lc": "0xA29BBB",
+                    "px": 600,
+                    "py": 600,
+                    "pz": 1.2,
                     "uid": "8a23b4a9ad2e8a57f21937b7",
                     "uid2": null,
                     "bgw": 40,
@@ -8966,6 +9026,9 @@ export default {
                     "lby": 280,
                     "lbr": -25,
                     "lc": "0xB35A20",
+                    "px": 1200,
+                    "py": 300,
+                    "pz": 1.2,
                     "uid": "8e08d3bb7043c9149e95de7a",
                     "uid2": "2e868a270a6a144a08ccdde1"
                 }
@@ -9146,6 +9209,9 @@ export default {
                     "lby": 496,
                     "lbr": -25,
                     "lc": "0xE46022",
+                    "px": 1300,
+                    "py": 250,
+                    "pz": 1.2,
                     "uid": "63959882982627d69ee321c2",
                     "uid2": "8b1c930b98f74c240d3dda57"
                 }
@@ -9368,6 +9434,9 @@ export default {
                     "lby": -166,
                     "lbr": -25,
                     "lc": "0xE50619",
+                    "px": 1100,
+                    "py": 680,
+                    "pz": 1.2,
                     "uid": "aa7cc23dc6fa5f7b97031977",
                     "uid2": "d3cf791cf883f83912882470"
                 }

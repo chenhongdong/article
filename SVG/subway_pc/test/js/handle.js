@@ -24,9 +24,9 @@ function init() {
     // 渲染地铁城市列表
     renderCity();
     // 渲染地铁图
-    render(citys.bj);
+    render(citys.xg);
     // 渲染地铁线路表
-    renderLines(citys.bj);
+    renderLines(citys.xg);
 
     panZoom = svgPanZoom('#subways-svg', {
         zoomEnabled: true,
@@ -34,7 +34,7 @@ function init() {
         fit: true,
         center: true,
         zoomScaleSensitivity: 0.2,
-        minZoom: 0.7,
+        minZoom: 0.5,
         maxZoom: 5,
         customEventsHandler: eventsHandler
     });
@@ -54,7 +54,7 @@ function handle() {
 
     showPath(panZoom);
 
-    searchPath();
+    // searchPath();
 }
 
 // hover到subway路径

@@ -25,7 +25,7 @@ function renderPath(options = {}) {
         let pathStr = ''; //地铁线路点
         let isRc = false; //是否圆润拐点
         const data = segments[i].subway;
-        const stops = data.stops;
+        const {color, stops} = data;
 
         for (let j = 0; j < stops.length; j++) {
             const { name, location, rc, ex } = stops[j];
@@ -45,11 +45,6 @@ function renderPath(options = {}) {
                     } else {
                         pathStr += `L${x} ${y} `;
                     }
-                    if (j === len - 1) {
-                        if (options.loop) {
-                            pathStr += 'Z';
-                        }
-                    }
                 }
             }
         }
@@ -58,8 +53,7 @@ function renderPath(options = {}) {
         let path = createSvg('path').appendTo(options.wrapper)
         path.attr({
             d: $.trim(pathStr),
-            lb: options.lb,
-            stroke: options.color
+            stroke: `#${color}`
         });
     }
 }

@@ -19,35 +19,6 @@ function render(data) {
         const { l_xmlattr, p } = l[i];
         // bgx, bgy, bgurl, bgw, bgh, lb2, lb2x, lb2y仅针对北京地铁图
         const { lb, loop, lc, lbx, lby, bgx, bgy, bgurl, bgw, bgh, lb2, lb2x, lb2y, sn } = l_xmlattr;
-
-        let pathStr = ''; //地铁线路点
-        let isRc = false; //是否圆润拐点
-
-        for (let j = 0; j < p.length; j++) {
-            const { x, y, lb, rc } = p[j].p_xmlattr;
-            
-            if (isRc) {
-                isRc = false;
-                pathStr += `${x} ${y} `;
-            } else {
-                if (rc) {
-                    isRc = true
-                    pathStr += `Q${x} ${y} `;
-                } else {
-                    if (j == 0) {
-                        pathStr += `M${x} ${y} `;
-                    } else {
-                        pathStr += `L${x} ${y} `;
-                    }
-                    if (j === p.length - 1) {
-                        if (loop) {
-                            pathStr += 'Z';
-                        }
-                    }
-                }
-            }
-        }
-
         const color = lc.replace(/^0x/, '#');
         const txtColor = c === '北京' ? '#fff' : color;
         
@@ -56,12 +27,13 @@ function render(data) {
         let g = createSvg('g').appendTo('#g-box');
         g.attr('data-subway', `subway_${name}`).attr('data-pos', i);
 
-        // 绘制线路path
-        let path = createSvg('path').appendTo(g)
-        path.attr({
-            d: $.trim(pathStr),
-            lb: lb,
-            stroke: color
+        // 绘制路径
+        renderPath({
+            data: p,
+            loop,
+            lb,
+            color,
+            wrapper: g
         });
 
         // 绘制线路背景矩形只针对北京城市
@@ -200,5 +172,43 @@ function render(data) {
     }
 }
 
+function renderPath(options = {}) {
+    let pathStr = ''; //地铁线路点
+    let isRc = false; //是否圆润拐点
+    let len = options.data.length;
+
+    for (let j = 0; j < len; j++) {
+        const { x, y, lb, rc } = options.data[j].p_xmlattr;
+        
+        if (isRc) {
+            isRc = false;
+            pathStr += `${x} ${y} `;
+        } else {
+            if (rc) {
+                isRc = true
+                pathStr += `Q${x} ${y} `;
+            } else {
+                if (j == 0) {
+                    pathStr += `M${x} ${y} `;
+                } else {
+                    pathStr += `L${x} ${y} `;
+                }
+                if (j === len - 1) {
+                    if (options.loop) {
+                        pathStr += 'Z';
+                    }
+                }
+            }
+        }
+    }
+
+    // 绘制线路path
+    let path = createSvg('path').appendTo(options.wrapper)
+    path.attr({
+        d: $.trim(pathStr),
+        lb: options.lb,
+        stroke: options.color
+    });
+}
 
 export default render;

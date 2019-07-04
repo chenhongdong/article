@@ -9,7 +9,8 @@ import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
 import { showPath, hidePath } from './city/lines';
 import { reqInfo, reqPath } from './components/request';
-
+import routePlan from './components/routePlan';
+import routeApi from './api/route';
 
 const gBox = $('#g-box');
 const toolWidth = 50;
@@ -24,9 +25,9 @@ function init() {
     // 渲染地铁城市列表
     renderCity();
     // 渲染地铁图
-    render(citys.xg);
+    render(citys.bj);
     // 渲染地铁线路表
-    renderLines(citys.xg);
+    renderLines(citys.bj);
 
     panZoom = svgPanZoom('#subways-svg', {
         zoomEnabled: true,
@@ -55,6 +56,7 @@ function handle() {
     showPath(panZoom);
 
     // searchPath();
+    routePlan(routeApi.route);
 }
 
 // hover到subway路径

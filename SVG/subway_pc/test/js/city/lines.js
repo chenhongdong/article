@@ -2,6 +2,7 @@ import $ from 'jquery';
 import createSvg from '../components/createSvg';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from '../event';
+import { hidePopover } from '../components/popover';
 
 let cityLines = $('<div class="subways-city-lines" id="subways-city-lines"></div>');
 $('#subways-wrapper-map').append(cityLines);
@@ -48,6 +49,7 @@ function showPath(ele) {
 
         // 清除path
         hidePath();
+        hidePopover();
 
         $(this).addClass('active').siblings().removeClass('active');
 
@@ -80,10 +82,17 @@ function showPath(ele) {
         
         
         if (x && y && z) {
-            console.log(x,y,z)
             ele.pan({ x, y });
             ele.zoom(z);
         }
+
+        // gBox.css({
+        //     transition: 'transform 1s'
+        // });
+
+        // document.getElementById('g-box').addEventListener('transitionEnd', function() {
+        //     alert('over');
+        // });
        
 
         return false;

@@ -1,7 +1,5 @@
 import $ from 'jquery';
 import createSvg from '../components/createSvg';
-import svgPanZoom from 'svg-pan-zoom';
-import eventsHandler from '../event';
 import { hidePopover } from '../components/popover';
 
 let cityLines = $('<div class="subways-city-lines" id="subways-city-lines"></div>');

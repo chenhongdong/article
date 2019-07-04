@@ -17,6 +17,7 @@ export default {
                                 location: '-63.6,-200',
                                 ex: false,
                                 rc: false,
+                                st: true,
                                 uid: '2535aaf0fb50b53e210220ac'
                             },
                             {
@@ -24,6 +25,7 @@ export default {
                                 location: '-63.6,-215',
                                 ex: false,
                                 rc: false,
+                                st: true,
                                 uid: 'f34d2b573370194b9de321ac'
                             },
                             {
@@ -31,6 +33,7 @@ export default {
                                 location: '-63.6,-230',
                                 ex: false,
                                 rc: false,
+                                st: true,
                                 uid: '73eae3779f05a5aabfa822ac'
                             },
                             {
@@ -38,6 +41,7 @@ export default {
                                 location: '-63.6,-253.6',
                                 ex: true,
                                 rc: false,
+                                st: true,
                                 uid: 'b4ca4f0223e487e1d0ff23ac'
                             }
                         ],
@@ -54,6 +58,7 @@ export default {
                                 location: '-63.6,-253.6',
                                 ex: true,
                                 rc: false,
+                                st: true,
                                 uid: 'b4ca4f0223e487e1d0ff23ac'
                             },
                             {
@@ -61,6 +66,7 @@ export default {
                                 location: '-101.3,-253.6',
                                 ex: false,
                                 rc: false,
+                                st: true,
                                 uid: '611070493252e3a58b36eede',
                             },
                             {
@@ -68,6 +74,7 @@ export default {
                                 location: '-146.9,-253.6',
                                 ex: false,
                                 rc: false,
+                                st: true,
                                 uid: '2b62945565ebb27fcc04efde',
                             },
                             {
@@ -75,6 +82,7 @@ export default {
                                 location: '-177.1,-247.6',
                                 ex: false,
                                 rc: true,
+                                st: false,
                                 uid: '',
                             },
                             {
@@ -82,6 +90,7 @@ export default {
                                 location: '-183.7,-224',
                                 ex: true,
                                 rc: false,
+                                st: true,
                                 uid: 'f33f29f9c7d5c8bc4e2fdf96',
                             }
                         ],

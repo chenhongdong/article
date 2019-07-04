@@ -64,7 +64,7 @@ function hoverPath() {
     const cityCode = $('.current-city').attr('data-code');
     
 
-    gBox.on('mouseover', 'path', function(e) {
+    gBox.on('mouseover', '.path', function(e) {
         let $self = $(this);
         let color = $self.attr('stroke');
         let content = $self.attr('lb');
@@ -85,7 +85,7 @@ function hoverPath() {
             'stroke-width': 8,
             'transition': 'stroke-width ease .5s'
         });
-    }).on('mouseout', 'path', function() {
+    }).on('mouseout', '.path', function() {
         $(this).css('stroke-width', 5);
         hideTooltip();
     }).on('mouseover', 'circle', function(e) {  // 非换乘站首末车时间

@@ -6,7 +6,9 @@ const baseInfo = {
     it: 3,
     ie: 'utf-8',
     f: '[1,12,13]',
-    m: 'sbw'
+    m: 'sbw',
+    c: 131,
+    ccode: 131
 };
 // 请求站点首末车经过时间
 function reqInfo(options) {

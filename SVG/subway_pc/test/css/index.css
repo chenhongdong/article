@@ -224,6 +224,58 @@ select {
     font-size: 14px;
     text-align: center;
 }
-/* #subways-popover .subways-popover-line:nth-of-type(2n) .subways-popover-txt {
-    display: none;
-} */
+
+/* 路程信息 */
+#subways-route {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    left: 300px;
+    padding: 6px;
+    position: absolute;
+    top: 200px;
+    width: 150px;
+    z-index: 10;
+}
+#subways-route .subways-route-title {
+    font-weight: bold;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 130px;
+}
+#subways-route .subways-route-list {
+    list-style: none;
+    margin-top: 4px;
+}
+#subways-route .subways-route-list li {
+    font-size: 0;
+    margin: 5px 0;
+}
+#subways-route .subways-route-list li span {
+    display: inline-block;
+    font-size: 14px;
+    width: 75px;
+}
+#subways-route .subways-route-list li .name {
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#subways-route .subways-route-list li .value {
+    text-align: right;
+}
+#subways-route .subways-route-list .value em {
+    color: red;
+    font-style: normal;
+    padding-right: 8px;
+}
+#subways-route .cancel {
+    border: 1px solid #19b955;
+    color: #19b955;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    width: 50px;
+}

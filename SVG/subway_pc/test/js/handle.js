@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import createSvg from './components/createSvg';
 import { initTooltip, showTooltip, hideTooltip } from './components/tooltip';
-import { initPopover, showPopover, hidePopover } from './components/popover';
+import { initPopover, hidePopover, renderPopover } from './components/popover';
 import * as citys from '../data';
 import render from './render';
 import { renderCity, renderLines } from './city';
@@ -9,13 +9,11 @@ import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
 import { showPath, hidePath } from './city/lines';
 import { reqInfo, reqPath } from './components/request';
-import routePlan from './components/routePlan';
-import routeApi from './api/route';
+import { searchPath, removeRoute } from './components/routePlan';
 
 const gBox = $('#g-box');
 const toolWidth = 50;
 
-let num = 0;
 let panZoom;
 
 
@@ -49,22 +47,21 @@ function init() {
 function handle() {
     hoverPath();
 
-    reset();
-
     selectCity();
 
     showPath(panZoom);
 
-    // searchPath();
-    routePlan(routeApi.route);
+    searchPath();
+
+    $(document).on('click', reset);
 }
 
 // hover到subway路径
 function hoverPath() {
     const cityCode = $('.current-city').attr('data-code');
-    
 
-    gBox.on('mouseover', '.path', function(e) {
+
+    gBox.on('mouseover', '.path', function (e) {
         let $self = $(this);
         let color = $self.attr('stroke');
         let content = $self.attr('lb');
@@ -85,83 +82,41 @@ function hoverPath() {
             'stroke-width': 8,
             'transition': 'stroke-width ease .5s'
         });
-    }).on('mouseout', '.path', function() {
+    }).on('mouseout', '.path', function () {
         $(this).css('stroke-width', 5);
         hideTooltip();
-    }).on('mouseover', 'circle', function(e) {  // 非换乘站首末车时间
+    }).on('mouseover', 'circle', function (e) {  // 非换乘站首末车时间
         const left = parseInt($(this).offset().left),
-              top = parseInt($(this).offset().top);
+            top = parseInt($(this).offset().top),
+            uid = $(this).attr('data-uid');
 
-        reqInfo({
-            c: cityCode,
-            ccode: cityCode,
-            uid: $(this).attr('data-uid')
-        }).then(res => {
-            if (!res.content) {
-                return;
-            }
-            const data = res.content;
-            showPopover({
-                title: data.name,
-                datas: data.ext.line_info,
-                left,
-                top
-            });
-        });
-    }).on('mouseout', 'circle', function() {
-        hidePopover();  
-    }).on('mouseover', 'image', function(e) {  // 换乘站首末车信息
+        renderPopover(uid, left, top);
+    }).on('mouseout', 'circle', function () {
+        hidePopover();
+    }).on('mouseover', 'image', function (e) {  // 换乘站首末车信息
         const left = parseInt($(this).offset().left),
-              top = parseInt($(this).offset().top);
+            top = parseInt($(this).offset().top),
+            uid = $(this).attr('data-uid');
 
-        reqInfo({
-            c: cityCode,
-            ccode: cityCode,
-            uid: $(this).attr('data-uid')
-        }).then(res => {
-            if (!res.content) {
-                return;
-            }
-            const data = res.content;
-            showPopover({
-                title: data.name,
-                datas: data.ext.line_info,
-                left,
-                top
-            });
-        });
-    }).on('mouseout', 'image', function() {
-        hidePopover();  
+        renderPopover(uid, left, top);
+    }).on('mouseout', 'image', function () {
+        hidePopover();
     });
 
 
 }
 
 
-function searchPath() {
-    gBox.on('click', 'circle', function() {
-        
-        num++;
 
-        if (num === 2) {
-            reqPath({
-                origin: '116.352721,40.001009',
-                destination: '116.373218,39.948715'
-            }).then(res => {
-                console.log(res);
-            });
-        }
-    })
-}
 
 // 城市选择
 function selectCity() {
-    $('.current-city').on('click', function() {
+    $('.current-city').on('click', function () {
         $(this).parent().toggleClass('selected-city');
         return false;
     });
 
-    $('.city-list').on('click', 'li', function() {
+    $('.city-list').on('click', 'li', function () {
         let cityName = $(this).attr('data-city');
         for (let i in citys) {
             if (cityName === i) {
@@ -187,15 +142,15 @@ function handleCity(self, data) {
 
 // 重置
 function reset() {
-    $(document).on('click', function() {
-        hidePath();
-        hidePopover();
-        $('.subways-city').removeClass('selected-city');
-    });
+    hidePath();
+    hidePopover();
+    removeRoute();
+    $('.subways-city').removeClass('selected-city');
 }
 
 
 export {
     init,
-    handle
+    handle,
+    reset
 }

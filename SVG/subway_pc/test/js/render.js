@@ -112,6 +112,8 @@ function render(data) {
                         height: 20,
                         x: x - 10,
                         y: y - 10,
+                        cx: x,
+                        cy: y,
                         'data-uid': uid,
                         'data-lb': lb
                     });

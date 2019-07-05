@@ -7699,7 +7699,7 @@ export default {
                     "lby": 200,
                     "lbr": 0,
                     "lc": "0xC23A30",
-                    "px": 900,
+                    "px": 650,
                     "py": 300,
                     "pz": 1.2,
                     "uid": "37125ffd5b009d930ab93ab7",

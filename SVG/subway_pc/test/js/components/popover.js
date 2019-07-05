@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import serialize from '../utils/serialize';
+import { reqInfo } from './request';
 
 function initPopover() {
     let html = `
@@ -13,12 +14,29 @@ function initPopover() {
     $(html).appendTo($('#subways-wrapper-map'));
 }
 
+function renderPopover(uid, left, top) {
+    reqInfo({
+        uid
+    }).then(res => {
+        if (!res.content) {
+            return;
+        }
+        const data = res.content;
+        showPopover({
+            title: data.name,
+            datas: data.ext.line_info,
+            left,
+            top
+        });
+    });
+}
+
 function showPopover(opts) {
     const $pop = $('#subways-popover');
     const $title = $pop.find('.subways-popover-title');
     const $main = $pop.find('.subways-popover-content');
     const noTime = '-- : --';
-    
+
 
     let serializeData = serialize(opts.datas);
     let content = '';
@@ -58,5 +76,6 @@ function hidePopover() {
 export {
     initPopover,
     showPopover,
-    hidePopover
+    hidePopover,
+    renderPopover
 };

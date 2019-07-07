@@ -1,9 +1,6 @@
 import $ from 'jquery';
-import createSvg from './components/createSvg';
+import createSvg from './utils/createSvg';
 import { imgSrc } from './common/const';
-
-
-
 
 // ex 换乘标志
 // rc 圆润拐弯

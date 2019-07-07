@@ -1,16 +1,12 @@
 import $ from 'jquery';
-import createSvg from '../components/createSvg';
+import createSvg from '../utils/createSvg';
 import { hidePopover } from '../components/popover';
-
-let cityLines = $('<div class="subways-city-lines" id="subways-city-lines"></div>');
-$('#subways-wrapper-map').append(cityLines);
 
 const gBox = $('#g-box');
 
 let subChild;
-
-
-
+let cityLines = $('<div class="subways-city-lines" id="subways-city-lines"></div>');
+$('#subways-wrapper-map').append(cityLines);
 
 
 // 渲染城市线路
@@ -83,16 +79,6 @@ function showPath(ele) {
             ele.pan({ x, y });
             ele.zoom(z);
         }
-
-        // gBox.css({
-        //     transition: 'transform 1s'
-        // });
-
-        // document.getElementById('g-box').addEventListener('transitionEnd', function() {
-        //     alert('over');
-        // });
-       
-
         return false;
     });
 }

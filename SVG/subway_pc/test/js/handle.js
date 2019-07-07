@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import createSvg from './components/createSvg';
 import { initTooltip, showTooltip, hideTooltip } from './components/tooltip';
 import { initPopover, hidePopover, renderPopover } from './components/popover';
 import * as citys from '../data';
@@ -8,7 +7,6 @@ import { renderCity, renderLines } from './city';
 import svgPanZoom from 'svg-pan-zoom';
 import eventsHandler from './event';
 import { showPath, hidePath } from './city/lines';
-import { reqInfo, reqPath } from './components/request';
 import { searchPath, removeRoute } from './components/routePlan';
 
 const gBox = $('#g-box');
@@ -45,7 +43,7 @@ function init() {
 
 
 function handle() {
-    hoverPath();
+    handlePath();
 
     selectCity();
 
@@ -53,12 +51,14 @@ function handle() {
 
     searchPath();
 
-    $(document).on('click', reset);
+    $(document).on('click', () => {
+        reset();
+    });
 }
 
 // hover到subway路径
-function hoverPath() {
-    const cityCode = $('.current-city').attr('data-code');
+function handlePath() {
+    // const cityCode = $('.current-city').attr('data-code');
 
 
     gBox.on('mouseover', '.path', function (e) {
@@ -85,25 +85,13 @@ function hoverPath() {
     }).on('mouseout', '.path', function () {
         $(this).css('stroke-width', 5);
         hideTooltip();
-    }).on('mouseover', 'circle', function (e) {  // 非换乘站首末车时间
+    }).on('mouseover', 'circle, image', function () {  // 站点首末车时间展示
         const left = parseInt($(this).offset().left),
             top = parseInt($(this).offset().top),
             uid = $(this).attr('data-uid');
 
         renderPopover(uid, left, top);
-    }).on('mouseout', 'circle', function () {
-        hidePopover();
-    }).on('mouseover', 'image', function (e) {  // 换乘站首末车信息
-        const left = parseInt($(this).offset().left),
-            top = parseInt($(this).offset().top),
-            uid = $(this).attr('data-uid');
-
-        renderPopover(uid, left, top);
-    }).on('mouseout', 'image', function () {
-        hidePopover();
-    });
-
-
+    }).on('mouseout', 'circle, image', hidePopover);
 }
 
 
@@ -118,6 +106,8 @@ function selectCity() {
 
     $('.city-list').on('click', 'li', function () {
         let cityName = $(this).attr('data-city');
+        reset();
+
         for (let i in citys) {
             if (cityName === i) {
                 handleCity(this, citys[i]);
@@ -129,11 +119,10 @@ function selectCity() {
 
 function handleCity(self, data) {
     $('#g-box').html('');
-    $('#subways-city-lines').html('123')
+    $('#subways-city-lines').html('');
     // 重新渲染地铁图和路线
     renderLines(data);
     render(data);
-    hidePopover();
 
     $(self).parent().parent().removeClass('selected-city');
     $(self).parent().siblings('.current-city').html($(self).html());

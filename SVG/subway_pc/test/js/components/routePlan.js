@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import createSvg from './createSvg';
+import createSvg from '../utils/createSvg';
 import { imgSrc, startIcon, endIcon, SECONDS } from '../common/const';
 import routeApi from '../api/route';
 import { reset } from '../handle';

@@ -25,13 +25,26 @@ module.exports = {
                     }
                 ],
                 include: resolve('./src'),
-                exclude: /node_modulses/
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
             }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    priority: 1,
+                    test: /node_modules/,
+                    chunks: 'initial',
+                    minSize: 0,
+                    minChunks: 2
+                }
+            }
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({

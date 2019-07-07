@@ -1,5 +1,4 @@
 import Hammer from 'hammerjs';
-import { showPath } from './city';
 
 const eventsHandler = {
     haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],

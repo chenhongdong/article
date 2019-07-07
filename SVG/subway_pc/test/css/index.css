@@ -58,6 +58,7 @@ select {
     overflow: hidden;    
     position: fixed;
     top: 10px;
+    z-index: 12;
 }
 #subways-wrapper-map .subways-city .current-city {
     background-color: #fff;

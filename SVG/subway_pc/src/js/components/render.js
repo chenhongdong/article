@@ -1,6 +1,6 @@
 import $ from 'jquery';
-import createSvg from './utils/createSvg';
-import { imgSrc } from './common/const';
+import createSvg from '../utils/createSvg';
+import { imgSrc } from '../common/const';
 
 // ex 换乘标志
 // rc 圆润拐弯
@@ -54,6 +54,7 @@ function render(data) {
             fill: txtColor
         }).css('font-size', 12);
 
+        // 绘制北京地铁线路两端不同的线路名称（如：4号线和大兴线）
         if (lb2 && lb2.length) {
             let rect = createSvg('rect').appendTo(g).html(lb2);
             rect.attr({
@@ -84,8 +85,6 @@ function render(data) {
             bgImg[0].href.baseVal = bgurl;
         }
     }
-
-    let repeatStr = '';  //uid字符串判断重复点
 
     for (let i = 0; i < l.length; i++) {
         const { l_xmlattr, p } = l[i];

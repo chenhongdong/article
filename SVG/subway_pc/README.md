@@ -1,31 +1,49 @@
-## 语法
+## 项目结构
 ```
-    <svg width="100" height="100">
-        <circle id="circle" cx="50" cy="50" r="50"/>
-    </svg>
-```
-
-### circle圆形
-- cx: 横坐标
-- cy: 纵坐标
-- r:  半径
-
-#### svg的css属性
-- fill: 填充色
-- stroke: 描边色
-- stroke-width: 描边宽度
-
-### line直线
-- x1: 起点的横坐标
-- y1: 起点的纵坐标
-- x2: 终点的横坐标
-- y2: 终点的纵坐标
-```
-<line x1="0" y1="200" x2="200" y2="50" style="stroke:#0cc;stroke-width:5" />
+    --node_modules
+    --src                   // 源文件
+        --css               // css样式
+        --data              // 所有城市地铁数据
+        --js                // js脚本文件
+        index.html          // html模板
+        main.js             // 主入口文件
+    package.json            // 包文件
+    webpack.config.js       // webpack配置文件
 ```
 
-### polyline折线
-- points: 每个端点的坐标，横坐标与纵坐标用,号隔开，每个端点之间用空格隔开
+### html模板
 ```
-<polyline points="3,3 30,28, 3, 53" fill="none" stroke="skyblue" />
+    <div id="subways-wrapper-map">
+        <svg id="subways-svg" width="1680" height="1280">
+            <g id="g-box" font-size="10" fill="none" stroke-width="5"></g>
+        </svg>
+    </div>
+```
+
+### 主入口文件main.js
+- init初始化渲染视图
+- handle处理函数
+
+### js脚本
+```
+    api目录
+        route.js        路径规划接口示例
+    city目录
+        citys.js        渲染地铁城市列表
+        data.js         开通地铁城市列表
+        index.js        地铁城市文件
+        lines.js        渲染当前城市包含线路及高亮线路
+        select.js       切换地铁城市
+    common目录
+        const.js        常量
+    components目录
+        popover.js      站点首末车时间提示框
+        render.js       渲染svg地铁线路图
+        request.js      请求首末车时间
+        routeplan.js    路径规划(起点-终点)
+        tooltip.js      展示当前为哪条线路气泡
+    utils目录
+        createSvg.js    创建svg内部元素
+        serialize.js    序列化首末车线路数据
+    handle.js           初始化及交互处理
 ```

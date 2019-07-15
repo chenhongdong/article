@@ -1,13 +1,11 @@
 import $ from 'jquery';
 import { initTooltip, showTooltip, hideTooltip } from './components/tooltip';
 import { initPopover, hidePopover, renderPopover } from './components/popover';
-import * as citys from '../data';
-import render from './render';
-import { renderCity, renderLines } from './city';
+import render from './components/render';
+import { renderCity, renderLines, selectCity } from './city';
 import svgPanZoom from 'svg-pan-zoom';
-import eventsHandler from './event';
-import { showPath, hidePath } from './city/lines';
-import { searchPath, removeRoute } from './components/routePlan';
+import { showLine, hideLine } from './city/lines';
+import { searchPath, removeRoute } from './components/routeplan';
 
 const gBox = $('#g-box');
 const toolWidth = 50;
@@ -15,16 +13,14 @@ const toolWidth = 50;
 let panZoom;
 
 
-
-
-function init() {
+function init(opt = {}) {
     // 渲染地铁城市列表
     renderCity();
     // 渲染地铁图
-    render(citys.bj);
+    render(opt.data);
     // 渲染地铁线路表
-    renderLines(citys.bj);
-
+    renderLines(opt.data);
+    // 初始化Zoom
     panZoom = svgPanZoom('#subways-svg', {
         zoomEnabled: true,
         controlIconsEnabled: false,
@@ -32,32 +28,31 @@ function init() {
         center: true,
         zoomScaleSensitivity: 0.2,
         minZoom: 0.5,
-        maxZoom: 5,
-        customEventsHandler: eventsHandler
+        maxZoom: 5
     });
-
+    // 初始化线路气泡
     initTooltip();
-
+    // 初始化始末时间
     initPopover();
 }
 
 
 function handle() {
-    handlePath();
-
-    selectCity();
-
-    showPath(panZoom);
-
+    // hover路径
+    hoverPath();
+    // 切换城市
+    selectCity(panZoom);
+    // 高亮线路
+    showLine(panZoom);
+    // 搜索线路
     searchPath();
 
-    $(document).on('click', () => {
-        reset();
-    });
+    $(document).on('click', reset);
 }
 
+
 // hover到subway路径
-function handlePath() {
+function hoverPath() {
     // const cityCode = $('.current-city').attr('data-code');
 
 
@@ -95,43 +90,9 @@ function handlePath() {
 }
 
 
-
-
-// 城市选择
-function selectCity() {
-    $('.current-city').on('click', function () {
-        $(this).parent().toggleClass('selected-city');
-        return false;
-    });
-
-    $('.city-list').on('click', 'li', function () {
-        let cityName = $(this).attr('data-city');
-        reset();
-
-        for (let i in citys) {
-            if (cityName === i) {
-                handleCity(this, citys[i]);
-            }
-        }
-        return false;
-    });
-}
-
-function handleCity(self, data) {
-    $('#g-box').html('');
-    $('#subways-city-lines').html('');
-    // 重新渲染地铁图和路线
-    renderLines(data);
-    render(data);
-
-    $(self).parent().parent().removeClass('selected-city');
-    $(self).parent().siblings('.current-city').html($(self).html());
-    $(self).addClass('active').siblings().removeClass('active');
-}
-
 // 重置
 function reset() {
-    hidePath();
+    hideLine();
     hidePopover();
     removeRoute();
     $('.subways-city').removeClass('selected-city');
@@ -142,4 +103,4 @@ export {
     init,
     handle,
     reset
-}
+};

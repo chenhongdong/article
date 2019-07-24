@@ -54,7 +54,7 @@ function handle() {
 // hover到subway路径
 function hoverPath() {
     // const cityCode = $('.current-city').attr('data-code');
-
+    let timer = null;
 
     gBox.on('mouseover', '.path', function (e) {
         let $self = $(this);
@@ -85,8 +85,11 @@ function hoverPath() {
             top = parseInt($(this).offset().top),
             uid = $(this).attr('data-uid');
 
+        clearTimeout(timer);
         renderPopover(uid, left, top);
-    }).on('mouseout', 'circle, image', hidePopover);
+    }).on('mouseout', 'circle, image', function() {
+        timer = setTimeout(reset, 1000);
+    });
 }
 
 
@@ -94,6 +97,7 @@ function hoverPath() {
 function reset() {
     hideLine();
     hidePopover();
+    hideTooltip();
     removeRoute();
     $('.subways-city').removeClass('selected-city');
 }

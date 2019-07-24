@@ -2,8 +2,6 @@ import $ from 'jquery';
 import serialize from '../utils/serialize';
 import { reqInfo } from './request';
 
-let flag = false;
-
 function initPopover() {
     let html = `
         <div id="subways-popover">
@@ -30,7 +28,6 @@ function renderPopover(uid, left, top) {
             left,
             top
         });
-        flag = true;
     });
 }
 
@@ -73,9 +70,7 @@ function showPopover(opts) {
 }
 
 function hidePopover() {
-    if (flag) {
-        $('#subways-popover').hide();
-    }
+    $('#subways-popover').hide();
 }
 
 export {

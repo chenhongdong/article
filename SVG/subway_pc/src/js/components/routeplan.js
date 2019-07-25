@@ -206,7 +206,6 @@ function searchPath() {
             routePlan(routeApi.route, left, top);
             num = 0;
         }
-
         return false;
     });
 }

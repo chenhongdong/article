@@ -6,6 +6,7 @@ import { renderCity, renderLines, selectCity } from './city';
 import svgPanZoom from 'svg-pan-zoom';
 import { showLine, hideLine } from './city/lines';
 import { searchPath, removeRoute } from './components/routeplan';
+import { log } from 'util';
 
 const gBox = $('#g-box');
 const toolWidth = 50;
@@ -88,7 +89,7 @@ function hoverPath() {
         clearTimeout(timer);
         renderPopover(uid, left, top);
     }).on('mouseout', 'circle, image', function() {
-        timer = setTimeout(reset, 1000);
+        timer = setTimeout(hidePopover, 1000);
     });
 }
 

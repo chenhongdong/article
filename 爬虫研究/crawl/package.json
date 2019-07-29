@@ -13,5 +13,9 @@
     "cheerio": "^1.0.0-rc.3",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request-promise": "^4.2.4"
   }
 }

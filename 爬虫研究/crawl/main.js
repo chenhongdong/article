@@ -1,8 +1,10 @@
-const { tags } = require('./read');
+const read = require('./read');
+const write = require('./write');
 
 const url = 'https://juejin.im/subscribe/all';
 
 (async function() {
-    let tagsArr = await tags(url);
-    console.log(tagsArr);
+    let tags = await read.tags(url);
+    
+    await write.tags(tags);
 })();

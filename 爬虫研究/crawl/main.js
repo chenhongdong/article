@@ -7,4 +7,8 @@ const url = 'https://juejin.im/subscribe/all';
     let tags = await read.tags(url);
     
     await write.tags(tags);
+
+    for (let tag of tags) {
+        
+    }
 })();

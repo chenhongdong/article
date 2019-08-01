@@ -1,8 +1,9 @@
 const request = require('request-promise');
 const cheerio = require('cheerio');
+const debug = require('debug')('crawl:read:tags');
 
-
-exports.tags = async function(url) {
+let tags = async function(url) {
+    debug('开始读取标签');
     let options = {
         url,
         transform: function(body) {
@@ -28,7 +29,12 @@ exports.tags = async function(url) {
                 subscribe: Number(subscribe.text().match(/(\d+)/)[1]),
                 article: Number(article.text().match(/(\d+)/)[1])
             });
+            debug(`读取到一个新的标签:${name}`);
         });
-        return list;
+        return list.slice(0, 1);
     });
 };
+
+module.exports = {
+    tags
+}

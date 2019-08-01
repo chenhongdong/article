@@ -1,5 +1,5 @@
 const query = require('../db');
-const debug = require('debug')('crwal:write:articles');
+const debug = require('debug')('crawl:write:articles');
 // 保存文章的详情和文章和标签的关系
 let articles = async function (list) {
     debug('写入文章列表');
@@ -19,7 +19,7 @@ let articles = async function (list) {
         // 按照标签的名称去查询标签的数
         let where = "'" + article.tagNames.join("','") + "'";   // ['前端','后端']=>'前端','后端'=>('前端','后端')
         const tagSQL = `SELECT id FROM tags WHERE name IN (${where})`;
-        let tagIds = query(tagSQL); // [{id: 1, id: 2}]
+        let tagIds = await query(tagSQL); // [{id: 1, id: 2}]
         for (row of tagIds) {
             await query(`INSERT INTO article_tag(article_id, tag_id) VALUES(?,?)`, [article.id, row.id]);
         }

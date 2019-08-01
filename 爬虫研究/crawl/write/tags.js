@@ -1,13 +1,13 @@
 const query = require('../db');
 const debug = require('debug')('crawl:write:tags');
-console.log(query);
+
 let tags = async function (tags) {
     debug('开始保存标签列表');
 
     for (let tag of tags) {
-        console.log(tags);
+
         let oldTags = await query(`SELECT * FROM tags WHERE name = ? LIMIT 1`, [tag.name]);
-        console.log(oldTags);
+
         // 判断是数组并且长达大于0，就需要更新这张表
         if (Array.isArray(oldTags) && oldTags.length > 0) {
             // 如果数据库里已经有记录了，则需要按老的记录id来更新数据

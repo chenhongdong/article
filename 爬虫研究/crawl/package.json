@@ -20,6 +20,7 @@
   "devDependencies": {
     "cron": "^1.7.1",
     "ejs": "^2.6.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.16.2"
   }
 }

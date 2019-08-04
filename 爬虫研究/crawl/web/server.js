@@ -24,6 +24,12 @@ app.use(session({
     secret: 'crawl'             // 指定密钥
 }));
 
+// 添加一个中间件提供给header模板user变量
+app.use(function(req, res, next) {
+    res.locals.user = req.session.user;
+    next();
+});
+
 // 路由
 app.get('/', async function (req, res) {
     let tagId = req.query.tagId;
@@ -67,8 +73,9 @@ app.post('/login', async function (req, res) {
             email
         };
     }
+    // 把当前的用户信息放在session中，重定向回首页
     req.session.user = user;
-    res.redirect('/');      // 把当前的用户信息放在session中，重定向回首页
+    res.redirect('/');      
 });
 
 

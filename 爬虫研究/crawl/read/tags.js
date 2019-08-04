@@ -31,7 +31,7 @@ let tags = async function(url) {
             });
             debug(`读取到一个新的标签:${name}`);
         });
-        return list.slice(0, 1);
+        return list.slice(0, 3);
     });
 };
 

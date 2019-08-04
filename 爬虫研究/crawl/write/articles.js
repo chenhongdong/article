@@ -10,9 +10,9 @@ let articles = async function (list) {
 
         if (Array.isArray(oldArticles) && oldArticles.length > 0) {
             let oldArticle = oldArticles[0];
-            query(`UPDATE articles SET title=?,content=?,href=? WHERE id=?`, [article.title, article.content, article.href, article.id]);
+            await query(`UPDATE articles SET title=?,content=?,href=? WHERE id=?`, [article.title, article.content, article.href, article.id]);
         } else {
-            query(`INSERT INTO articles(id,title,href,content) VALUES(?,?,?,?)`, [article.id, article.title, article.href, article.content]);
+            await query(`INSERT INTO articles(id,title,href,content) VALUES(?,?,?,?)`, [article.id, article.title, article.href, article.content]);
         }
         // 处理文章和标签的关系（简单处理的方法是全部删除，再全部插入）
         await query(`DELETE FROM article_tag WHERE article_id = ?`, [article.id]);

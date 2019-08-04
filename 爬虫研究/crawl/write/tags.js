@@ -5,7 +5,7 @@ let tags = async function (tags) {
     debug('开始保存标签列表');
 
     for (let tag of tags) {
-
+        console.log(tag);
         let oldTags = await query(`SELECT * FROM tags WHERE name = ? LIMIT 1`, [tag.name]);
 
         // 判断是数组并且长达大于0，就需要更新这张表

@@ -1,0 +1,17 @@
+{
+  "name": "crawl-mongo",
+  "version": "1.0.0",
+  "description": "前端如何抓取数据",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "debug": "^4.1.1",
+    "request-promise": "^4.2.4"
+  }
+}

@@ -73,4 +73,4 @@ async function articleDetail(url) {
 
 module.exports = {
     articles
-};
+}

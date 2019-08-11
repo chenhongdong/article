@@ -2,7 +2,7 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const debug = require('debug')('crawl:read:tags');
 
-let getTags = async function(url) {
+let tags = async function(url) {
     debug('开始读取标签');
     let opts = {
         url,
@@ -33,23 +33,20 @@ let getTags = async function(url) {
             result.push({
                 url: `https://juejin.im/tag/${encodeURIComponent(name)}`,
                 name,
-                imageUrl,
+                image: imageUrl,
                 subscribe,
                 article
             });
         });
-        
+        // console.log('结果： ', result);
 
-        console.log('结果： ', result);
+        return result.slice(0, 6);
     });
 };
 
-const url = 'https://juejin.im/subscribe/all';
-
+/*const url = 'https://juejin.im/subscribe/all';
 (async function() {
     let tags = await getTags(url);
-})();
+})();*/
 
-module.exports = {
-    getTags
-};
+module.exports = { tags };

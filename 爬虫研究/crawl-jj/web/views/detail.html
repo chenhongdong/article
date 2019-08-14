@@ -1,14 +1,12 @@
-<% include header.html %>
+<% include ./components/header.html %>
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-12">
         <div class="panel-panel-default">
             <div class="panel-heading">
                 <h3><%-article.title%></h3>
             </div>
-            <div class="panel-body">
-                <%-article.content%>
-            </div>
+            <div class="panel-body"><%-article.content%></div>
         </div>
     </div>
 </div>
-<% include footer.html %>
+<% include ./components/footer.html %>

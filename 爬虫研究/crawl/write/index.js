@@ -1,7 +1,7 @@
-let { tags } = require('./tags');
-let { articles } = require('./articles');
+const articles = require('./articles');
+const tags = require('./tags');
 
 module.exports = {
-    tags,
-    articles
-}
+    articles,
+    tags
+};

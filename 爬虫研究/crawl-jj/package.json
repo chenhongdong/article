@@ -11,8 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "bluebird": "^3.5.5",
+    "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.3",
     "debug": "^4.1.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "mysql": "^2.17.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"

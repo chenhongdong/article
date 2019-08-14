@@ -18,4 +18,6 @@ const write = require('./write');
     let list = Object.values(all);
     console.log('list', list);
     await write.articles(list);
+
+    process.exit();
 })();

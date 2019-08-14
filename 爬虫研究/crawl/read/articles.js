@@ -1,73 +1,69 @@
 const request = require('request-promise');
 const cheerio = require('cheerio');
-const debug = require('debug')('crawl:read:tags');
-
+const debug = require('debug')('crawl:read:articles');
 
 let articles = async function (url, tagName) {
-    debug(`开始读取${tagName}标签下面的文章列表`);
+    debug('开始读取文章列表');
 
-    let options = {
+    let opts = {
         url,
-        transform: function (body) {
+        transform: body => {
             return cheerio.load(body);
         }
     };
 
-    let $ = await request(options);
-    let list = [];
-    let items = $('.item .title');
-    for (let i = 0; i < items.length; i++) {
-        let article = $(items[i]);
-        let href = article.attr('href').trim();
+    return request(opts).then(async $ => {
+        let result = [];
+        let titles = $('.item .title');
 
-        if (!href.startsWith('/entry')) {
-            let title = article.text().trim();
-            let id = href.match(/\/(\w+)$/)[1];
-            href = 'https://juejin.im' + href;
-            let { content, tagNames } = await readArticle(id, href);
-            list.push({
-                href,
-                title,
-                id,
-                content,
-                tagNames
-            });
+        for (let i = 0; i < titles.length; i++) {
+            let $ele = $(titles[i]);
+            let href = $ele.attr('href');
+            // 过滤掉广告类的文章
+            if (!href.startsWith('/entry')) {
+                let id = href.match(/\/(\w+)$/)[1];
+                let title = $ele.text().trim();
+                href = 'https://juejin.im' + href;
+                let {content, tagNames} = await detail(href);
 
-            debug(`读取到文章：${title}`);
+                result.push({
+                    id,
+                    href,
+                    title,
+                    content,
+                    tagNames
+                });
+            }
         }
-    }
-    return list;
+    });
 };
 
-async function readArticle(id, url) {
-    let options = {
+async function detail(url) {
+    let opts = {
         url,
-        transform: function (body) {
-            return cheerio.load(body);
+        transform: body => {
+            return cheerio.load(body)
         }
     };
 
-    return request(options).then($ => {
+    return request(opts).then($ => {
         let $main = $('.main-container');
-        let title = $main.find('.article-title').text().trim();
         let content = $main.find('.article-content').html();
-        let tags = $main.find('.tag-title');
+        let tags = $main.find('.tag-list .item');
         let tagNames = [];
-
-        tags.each((index, item) => {
-            tagNames.push($(item).text());
+        tags.each((i, item) => {
+            tagNames.push($(item).text().trim());
         });
 
         return {
-            id,
-            title,
             content,
             tagNames
-        };
+        }
     });
 }
 
-module.exports = {
-    articles,
-    readArticle
-}
+(async function () {
+    let r = await articles('https://juejin.im/tag/%E5%90%8E%E7%AB%AF', '后端')
+})();
+
+module.exports = articles;

@@ -1,0 +1,28 @@
+<% include ./components/header.html %>
+<div class="row">
+    <div class="col-md-2">
+        <ul class="list-group">
+            <%
+                for (let i=0;i<tags.length;i++) {
+                    let tag = tags[i];
+            %>
+                    <li class="list-group-item text-center">
+                        <a href="/?tagId=<%=tag.id%>"><%=tag.name%></a>
+                    </li>
+            <%  } %>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <ul class="list-group">
+            <%
+                for (let i=0;i<articles.length;i++) {
+                    let article = articles[i];
+            %>
+                    <li class="list-group-item">
+                        <a href="/detail/<%=article.id%>"><%=article.title%></a>
+                    </li>
+            <%  } %>
+        </ul>
+    </div>
+</div>
+<% include ./components/footer.html %>

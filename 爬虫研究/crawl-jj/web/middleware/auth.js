@@ -1,5 +1,3 @@
-// 检查登录
-
 function checkLogin(req, res, next) {
     if (req.session && req.session.user) {
         next();
@@ -10,4 +8,4 @@ function checkLogin(req, res, next) {
 
 module.exports = {
     checkLogin
-}
+};

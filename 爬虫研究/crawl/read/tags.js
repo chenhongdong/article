@@ -2,39 +2,39 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const debug = require('debug')('crawl:read:tags');
 
-let tags = async function(url) {
-    debug('开始读取标签');
-    let options = {
+let tags = async function (url) {
+    debug('开始读取全部标签');
+
+    let opts = {
         url,
-        transform: function(body) {
-            return cheerio.load(body);
+        transform: body => {
+            return cheerio.load(body)
         }
     };
 
-    return request(options).then($ => {
-        let list = [];
-        $('.item').each((index, item) => {
+    return request(opts).then($ => {
+        // 用来存储所有抓取到的标签数组
+        let result = [];
+        $('li.item').each((index, item) => {
             let $ele = $(item);
-            let title = $ele.find('.title').first();
-            let image = $ele.find('div.thumb').first();
-            let imageUrl = image.data('src').trim();
-            let subscribe = $ele.find('.subscribe').first();
-            let article = $ele.find('.article').first();
-            let name = title.text().trim();
+            let name = $ele.find('.title').text().trim();
+            let image = $ele.find('.thumb').data('src');
+            let subscribe = $ele.find('.subscribe').text().match(/(\d+)/)[1];
+            let articles = $ele.find('.article').text().match(/(\d+)/)[1];
 
-            list.push({
-                image: imageUrl,
-                name,
+            result.push({
                 url: `https://juejin.im/tag/${encodeURIComponent(name)}`,
-                subscribe: Number(subscribe.text().match(/(\d+)/)[1]),
-                article: Number(article.text().match(/(\d+)/)[1])
+                name,
+                image,
+                subscribe: parseInt(subscribe),
+                articles: parseInt(articles)
             });
-            debug(`读取到一个新的标签:${name}`);
+
+            debug(`当前读取到标签${name}`);
         });
-        return list.slice(0, 3);
+
+        return result.slice(0, 9);  // 截取10个标签结果就可以了
     });
 };
 
-module.exports = {
-    tags
-}
+module.exports = tags;

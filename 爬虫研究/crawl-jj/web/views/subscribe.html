@@ -1,0 +1,23 @@
+<% include ./components/header.html %>
+<div class="row">
+    <form method="POST">
+        <% for(let i=0;i<tags.length;i++){ 
+            let tag = tags[i];    
+        %>
+            <div class="col-md-3 tag">
+                <img src="<%=tag.image%>" alt="">
+                <p><%=tag.name%></p>
+                <p>
+                    <%=tag.subscribe%>&nbsp;关注&nbsp;<%=tag.article%>&nbsp;文章
+                </p>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="tags" value="<%=tag.id%>" <%=tag.checked?"checked":""%>>
+                    </label>
+                </div>
+            </div>
+        <% } %>
+        <input type="submit" class="btn btn-primary">
+    </form>
+</div>
+<% include ./components/footer.html %>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热映的电影</title>
+    <style>
+    *{margin:0;padding:0;}
+    ul,ol{list-style: none;}
+    a {text-decoration: none;}
+    .container {
+        margin: 50px auto;
+    }
+    .list {
+        font-size: 0;
+        margin: 0 auto;
+        width: 900px;
+    }
+    .list li {
+        display: inline-block;
+        font-size: 14px;
+        height: 200px;
+        margin: 5px;
+        overflow: hidden;
+        padding: 10px 0;
+        text-align: center;
+        width: 120px;
+    }
+    .list li a {
+        color: #333;
+        display: block;
+    }
+    .list li img {
+        height: 160px;
+        width: 100%;
+    }
+    .list .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="caption">正在热映的电影</h2>
+        <ul class="list">
+            <% for(let i=0;i<movies.length;i++){ 
+                let movie = movies[i];  
+            %>
+                <li>
+                    <a href="<%=movie.href%>" target="_blank">
+                        <img src="<%=movie.image%>" />
+                        <p class="title"><%=movie.name%></p>
+                        <p class="score">评分：<%=movie.score%></p>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<% include ./common/header.html %>
+<ul class="nav">
+    <% for(let i=0;i<tags.length;i++){ 
+        let tag = tags[i];    
+    %>
+        <li><a href="/?tagId=<%=tag.id%>"><%=tag.name%></a></li>
+    <% } %>
+</ul>
+<div class="main">
+    <ul>
+        <% for(let i=0;i<articles.length;i++){ 
+            let article = articles[i];
+        %>
+            <li><a href="/detail/<%=article.id%>"><%=article.title%></a></li>
+        <% } %>
+    </ul>
+</div>
+<% include ./common/footer.html %>

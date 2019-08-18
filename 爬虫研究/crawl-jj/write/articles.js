@@ -12,7 +12,7 @@ let articles = async function (list) {
         if (Array.isArray(old) && old.length) {
             // 更新文章
             let oldArticle = old[0];
-            await query('UPDATE articles SET title=?,href=?,content=? WHERE id=?', [article.title, article.href, article.content, article.id]);
+            await query('UPDATE articles SET title=?,href=?,content=? WHERE id=?', [article.title, article.href, article.content, oldArticle.id]);
         } else {
             await query('INSERT INTO articles(id,title,href,content) VALUES(?,?,?,?)', [article.id, article.title, article.href, article.content]);
         }

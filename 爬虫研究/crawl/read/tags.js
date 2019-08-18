@@ -33,7 +33,7 @@ let tags = async function (url) {
             debug(`当前读取到标签${name}`);
         });
 
-        return result.slice(0, 9);  // 截取10个标签结果就可以了
+        return result.slice(0, 5);  // 截取5个标签结果就可以了
     });
 };
 

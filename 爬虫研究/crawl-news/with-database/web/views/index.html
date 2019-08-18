@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热点新闻</title>
+    <style>
+    * {margin:0;padding:0;}
+    ul, ol {list-style: none;}
+    a {text-decoration: none;}
+    .container {
+        margin: 50px auto;
+    }
+    .list {
+        border: 1px solid #ddd;
+        margin: 0 auto;
+        text-align: center;
+        width: 500px;
+    }
+    .list li {
+        height: 24px;
+        line-height: 24px;
+        padding: 5px 0;
+    }
+    .list li a {
+        color: #333;
+        display: flex;
+        justify-content: space-around;
+    }
+    .list li a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="list">
+            <% for(let i=0;i<hotnews.length;i++){
+                let news = hotnews[i];    
+            %>
+                <li>
+                    <a href="<%=news.href%>">
+                        <span class="num"><%=news.num%></span>
+                        <span class="title"><%=news.title%></span>
+                        <span class="hot"><%=news.hot%>人在看</span>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>

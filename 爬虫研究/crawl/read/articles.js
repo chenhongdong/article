@@ -33,8 +33,12 @@ let articles = async function (url, tagName) {
                     content,
                     tagNames
                 });
+
+                debug(`正在读取：${title}`);
             }
         }
+
+        return result;
     });
 };
 

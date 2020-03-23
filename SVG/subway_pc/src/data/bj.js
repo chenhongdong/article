@@ -5517,6 +5517,183 @@ export default {
                 "p": [
                     {
                         "p_xmlattr": {
+                            "sid": "草桥",
+                            "lb": "草桥",
+                            "x": -159.9,
+                            "y": 372.4,
+                            "rx": -19.2,
+                            "ry": -25,
+                            "st": true,
+                            "ex": true,
+                            "iu": true,
+                            "rc": false,
+                            "slb": false,
+                            "ln": "北京市|地铁10号线,北京市|新机场线",
+                            "int": "3",
+                            "px": 12952737.51,
+                            "py": 4816909.72,
+                            "uid": "2de6056488e75669fbdc857a"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "",
+                            "lb": "",
+                            "x": -159.9,
+                            "y": 446,
+                            "rx": 0,
+                            "ry": 0,
+                            "st": false,
+                            "ex": false,
+                            "iu": false,
+                            "rc": false,
+                            "slb": false,
+                            "ln": "",
+                            "int": "2"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "",
+                            "lb": "",
+                            "x": -153.9,
+                            "y": 460,
+                            "rx": 0,
+                            "ry": 0,
+                            "st": false,
+                            "ex": false,
+                            "iu": false,
+                            "rc": true,
+                            "slb": false,
+                            "ln": "",
+                            "int": "2"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "",
+                            "lb": "",
+                            "x": -139.9,
+                            "y": 466,
+                            "rx": 0,
+                            "ry": 0,
+                            "st": false,
+                            "ex": false,
+                            "iu": false,
+                            "rc": false,
+                            "slb": false,
+                            "ln": "",
+                            "int": "2"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "",
+                            "lb": "",
+                            "x": -45,
+                            "y": 466,
+                            "rx": 0,
+                            "ry": 0,
+                            "st": false,
+                            "ex": false,
+                            "iu": false,
+                            "rc": false,
+                            "slb": false,
+                            "ln": "",
+                            "int": "2"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "",
+                            "lb": "",
+                            "x": -30,
+                            "y": 470,
+                            "rx": 0,
+                            "ry": 0,
+                            "st": false,
+                            "ex": false,
+                            "iu": false,
+                            "rc": true,
+                            "slb": false,
+                            "ln": "",
+                            "int": "2"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "",
+                            "lb": "",
+                            "x": -25.6,
+                            "y": 485,
+                            "rx": 0,
+                            "ry": 0,
+                            "st": false,
+                            "ex": false,
+                            "iu": false,
+                            "rc": false,
+                            "slb": false,
+                            "ln": "",
+                            "int": "2"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "大兴新城",
+                            "lb": "大兴新城",
+                            "x": -25.6,
+                            "y": 825,
+                            "rx": 6.1,
+                            "ry": -7,
+                            "st": true,
+                            "ex": false,
+                            "iu": true,
+                            "rc": false,
+                            "slb": true,
+                            "ln": "北京市|新机场线",
+                            "px": 12954589.79,
+                            "py": 4800882.57,
+                            "uid": "e2bbfd5bb527050e31870aa3"
+                        }
+                    },
+                    {
+                        "p_xmlattr": {
+                            "sid": "大兴机场",
+                            "lb": "大兴机场",
+                            "x": -25.6,
+                            "y": 1100,
+                            "rx": 6.1,
+                            "ry": -7,
+                            "st": true,
+                            "ex": false,
+                            "iu": true,
+                            "rc": false,
+                            "slb": true,
+                            "ln": "北京市|新机场线",
+                            "px": 12960360.46,
+                            "py": 4768837.34,
+                            "uid": "a8b44cb3225e195aaecb6611"
+                        }
+                    }
+                ],
+                "l_xmlattr": {
+                    "b": "新机场线",
+                    "lbr": 0,
+                    "lbx": -109.9,
+                    "lby": 990,
+                    "lc": "0x2152A3",
+                    "lid": "大兴机场线",
+                    "loop": false,
+                    "n": 10,
+                    "slb": false,
+                    "uid": "8c90dd84356def0cd7851fa1",
+                    "uid2": "6fedbcdd00bdc07678b55c86"
+                }
+            },
+            {
+                "p": [
+                    {
+                        "p_xmlattr": {
                             "sid": "西直门",
                             "lb": "西直门",
                             "x": -170.3,

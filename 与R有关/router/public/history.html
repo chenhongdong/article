@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a onclick="push('/a')">a</a>
+    <a onclick="push('/b')">b</a>
+
+    <script>
+        let push = function(path) {
+            console.log('path', path);
+            history.pushState({path}, null, path);
+        };
+
+        window.addEventListener('popstate', (e) => {
+            console.log(e);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- MVVM 双向数据绑定 angular 脏值检测  vue 数据劫持+发布订阅模式 -->
+    <!-- 不兼容  Object.defineProperty -->
+    <script>
+        let obj = {};
+        Object.defineProperty(obj, 'music', {
+            configurable: true, // 可以配置对象，删除等
+            // writable: true,     // 可以修改
+            enumerable: true,   // 可枚举的
+            // value: '七里香',
+            // get,set设置的时候就不能设置writable和value，它们代替了writable和value
+            get() {     // 获取obj.music值的时候，就会调用get方法
+                return '听妈妈的话';
+            },
+            set(val) {  // obj.music = '七里香'
+                console.log(val);
+            }
+        });
+        // delete obj.music;    configurable设为true时才可
+        // obj.music = '告白气球';  // writable设为true时才是可写的
+        for(let key in obj) {
+            // console.log(key);   // enumerable设为true时才可以枚举对象内定义的属性
+        }
+        // console.log(obj);
+    </script>
+</body>
+</html>
+<script>
+    let o = {};
+    o.singer = '周杰伦';
+    let song = '发如雪';
+    Object.defineProperty(o, 'music', {
+        configurable: true,
+        enumerable: true,
+//         writable: true,
+//         value: '七里香',
+        get() {
+            return song;
+        },
+        set(val) {
+            song = val;
+        }
+    });
+    
+//    console.log(o);
+    // delete o.music;
+//    o.music = '听妈妈的话';
+
+//     for (let key in o) {
+//         console.log(key);
+//     }
+    console.log(o.music);
+    o.music = '夜曲';
+    console.log(o.music);
+</script>

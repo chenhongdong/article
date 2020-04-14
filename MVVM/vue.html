@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+    <!--<div id="app">-->
+        <!--{{a.b}}-->
+        <!--<p>a的值是{{a.b}}</p>-->
+        <!--<div v-on:click="clickMe">b的值是{{c}}</div>-->
+        <!--{{c}}-->
+        <!--<br>-->
+        <!--<input type="text" v-model="c">-->
+        <!--{{sum}}-->
+    <!--</div>-->
+    <div id="app">
+        <h1>{{song}}</h1>
+        <p>《{{album.name}}》是{{singer}}2005年11月发行的专辑</p>
+
+    </div>
+</body>
+</html>
+<script src="vue.js"></script>
+<script>
+    let vue = new Vue({
+        el: '#app',
+        data: {     // Object.defineProperty(obj, 'song', '发如雪');
+            song: '发如雪',
+            album: {
+                name: '十一月的萧邦',
+                theme: '夜曲'
+            },
+            singer: '周杰伦'
+        },
+//        data: {
+//            a: {
+//                b: {
+//                    hi: {
+//                        wow: '你好'
+//                    }
+//                }
+//            },
+//            b: 8,
+//            c: 2
+//        },
+        methods: {
+            clickMe() {
+                alert(1);
+            }
+        },
+        // computed可以缓存 只是把数据挂在了vm上
+        computed: {
+            sum() {
+                return this.b + this.c;
+            },
+            noop() {}
+        },
+        mounted() {
+            setTimeout(() => {
+//                console.log('爱不爱我');
+            }, 1000)
+        }
+    });
+</script>

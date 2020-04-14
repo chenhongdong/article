@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双向绑定实现</title>
+	<style>
+		#app {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <div id="app">
+        {{title}}
+        <h2>{{title}}</h2>
+        <input v-model="name" />
+        <h1>{{name}}</h1>
+        <button v-on:click="clickMe">点击！</button>
+        {{name}}
+    </div>
+    <script src="js/observe.js"></script>
+    <script src="js/watcher.js"></script>
+    <script src="js/compile.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                title: 'vue',
+                name: '绑定'
+            },
+            methods: {
+                clickMe: function() {
+                    this.title = '被点了';
+                }
+            },
+            mounted() {
+                window.setTimeout(() => {
+                    this.title = '1秒变身';
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

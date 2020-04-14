@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" style="color:#0cc;">
+        {{a}}
+        <h1>{{song}}</h1>
+        <p>《{{album.name}}》是{{singer}}于{{year}}年{{month}}月发行的专辑</p>
+        <p>主打歌为{{album.theme}}，专辑的第二主打歌为{{album.second}}</p>
+        <p>作词人为{{singer}}、{{author}}等人。</p>
+        为你弹奏肖邦的{{album.theme}}
+    </div>
+    <script src="mvvm.js"></script>
+    <script>
+        let mvvm = new Mvvm({
+            el: '#app',
+            // data: {     // Object.defineProperty(obj, 'song', '发如雪');
+            //     song: '发如雪',
+            //     album: {
+            //         name: '十一月的萧邦',
+            //         theme: '夜曲',
+            //         second: '听妈妈的话'
+            //     },
+            //     singer: '周杰伦',
+            //     author: '方文山',
+            //     times: {
+            //         year: 2005,
+            //         month: 11
+            //     }
+            // },
+            data: {
+                a: {
+                    a: 1
+                }
+            },
+            methods: {
+
+            }
+        });
+    </script>
+</body>
+</html>

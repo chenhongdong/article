@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{song}}</h1>
+    <p>《{{album.name}}》是{{singer}}2005年11月发行的专辑</p>
+    <p>主打歌曲为{{album.theme}}</p>
+    {{singer}}-{{song}}
+</div>
+<!-- <script src="vue.js"></script> -->
+<script src="vue2-fixed.js"></script>
+<script>
+    let vue = new Vue({
+        el: '#app',
+        data: {     // Object.defineProperty(obj, 'song', '发如雪');
+            song: '发如雪',
+            album: {
+                name: '十一月的萧邦',
+                theme: '夜曲'
+            },
+            singer: '周杰伦'
+        },
+        methods: {
+            clickMe() {
+                alert(1);
+            }
+        },
+        // computed可以缓存 只是把数据挂在了vm上
+        computed: {
+            sum() {
+                return this.b + this.c;
+            },
+            noop() {
+            }
+        },
+        mounted() {
+            setTimeout(() => {
+//                console.log('爱不爱我');
+            }, 1000)
+        }
+    });
+</script>
+</body>
+</html>
+<script>
+    let arr = [10, 20, 30];
+    let o = {
+        song: '发如雪',
+        album: {
+            name: '十一月的肖邦'
+        }
+    };
+
+    let str = 'album.name';
+
+    let sum = arr.reduce((prev, next) => {
+        return prev + next;
+    });
+
+    let res = str.split('.').reduce((val, key) => {
+        console.log(typeof val);
+        return val[key];
+    }, o);
+    console.log(sum);
+    console.log(res);
+
+
+    var matrix = [
+        [1, 2],
+        [3, 4],
+        [5, 6]
+    ];
+
+    // 二维数组扁平化
+    /*var flatten = matrix.reduce(function (previous, current) {
+        return previous.concat(current);
+    });*/
+
+    var flatten = matrix.reduce((acc, x) => [...acc, ...x]);
+
+    console.log(flatten); // [1, 2, 3, 4, 5, 6]
+</script>

@@ -1,15 +1,12 @@
 const loaderUtils = require('loader-utils');
 
 function loader(source) {
-    // 根据content的内容来生成这么一个带hash的扩展名文件
-    let filename = loaderUtils.interpolateName(this, '[hash].[ext]', {content: source})
-    // 生成文件，发射到打包目录下
+    let filename = loaderUtils.interpolateName(this, '[hash].[ext]', {content: source});
+    // 把图片发到dist目录下
     this.emitFile(filename, source);
-
-    return `module.exports="${filename}"`;
+    return `module.exports = "${filename}"`;
 }
 
-loader.raw = true;
-
+loader.raw = true;  // 转成Buffer
 
 module.exports = loader;

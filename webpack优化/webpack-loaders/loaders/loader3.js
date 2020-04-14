@@ -1,10 +1,10 @@
 function loader(source) {
-    console.log('loader1');
+    console.log('loader3');
     return source;
 }
 
 loader.pitch = function() {
-    console.log('loader1-pitch');
+    console.log('loader3-pitch');
 }
 
 module.exports = loader;

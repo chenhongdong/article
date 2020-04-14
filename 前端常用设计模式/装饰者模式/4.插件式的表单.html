@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        用户名: <input id="username" name="username"/>
+        密码: <input id="password" type="password" name="password"/>
+        <input type="button" value="登录" id="btn">
+    </form>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.min.js"></script>
+<script>
+    // 新函数beforeFn的结果是false，就不执行原函数了
+    Function.prototype.before = function(beforeFn) {
+        let self = this;
+        return function() {
+            if (beforeFn.apply(this, arguments) === false) {
+                return;
+            }
+            return self.apply(this, arguments);
+        }
+    };
+
+    // 验证表单
+    let validata = function() {
+        if (username.value === '') {
+            alert('用户名不能为空');
+            return false;
+        }
+        if (password.value === '') {
+            alert('密码不能为空');
+            return false;
+        }
+    };
+    // 提交表单
+    let submit = function() {
+        let param = {
+            username: username.value,
+            password: password.value
+        };
+
+        $.post('http://localhost:7777/login', param);
+    };
+
+    // 在提交表单前做好验证
+    submit = submit.before(validata);
+
+    // 提交点击事件
+    btn.onclick = function() {
+        submit();
+    };
+
+
+    function ajax(url, param) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        xhr.setRequestHeader = 'Content-Type: application/json';
+        xhr.onreadystatechange = function() {
+            if (xhr.status === 200 && xhr.readyState === 4) {
+                console.log(xhr.responseText);
+            }
+        }
+
+        xhr.send(JSON.stringify(param));
+    }
+</script>

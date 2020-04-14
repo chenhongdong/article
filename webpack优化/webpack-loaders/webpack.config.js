@@ -5,19 +5,18 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist')
     },
     resolveLoader: {
         modules: ['node_modules', path.resolve(__dirname, 'loaders')],
-        // alias: {    // 别名
-        //     loader1: path.resolve(__dirname, 'loaders', 'loader1.js')
+        // alias: {
+        //     'loader1': path.resolve(__dirname, 'loaders', 'loader1.js'),
+        //     'loader2': path.resolve(__dirname, 'loaders', 'loader2.js')
         // }
     },
-    devtool: 'source-map',
-    // watch: true,
     module: {
-        rules: [    // loader顺序：从右向左，从下到上
+        rules: [    // loader的顺序是从右向左|从下到上的
             {
                 test: /\.js$/,
                 use: {
@@ -28,17 +27,18 @@ module.exports = {
                 }
             },
             {
-                test: /\.less$/,
-                use: ['style-loader', 'css-loader', 'less-loader']
-            },
-            {
-                test: /\.jpg$/,
+                test: /\.jpg|png$/,
+                // use: 'file-loader'
                 use: {
                     loader: 'url-loader',
                     options: {
-                        limit: 30*1024
+                        limit: 20 * 1024
                     }
                 }
+            },
+            {
+                test: /\.less$/,
+                use: ['style-loader', 'css-loader', 'less-loader']
             }
         ]
     },

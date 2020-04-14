@@ -28,7 +28,7 @@ export default class Login extends Component {
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555864316456&di=0c87f83e54699822ba850e8d9392c9df&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F5cfa26824f7bd9c98357b1995df832031b2377a45947-Wg5Plo_fw658" />
             </div>
             <input type="tel" placeholder="手机号" ref={ref => this.username = ref} />
-            <input type="text" placeholder="密码" ref={ref => this.password = ref} />
+            <input type="password" placeholder="密码" ref={ref => this.password = ref} />
             <Link to="/login">前往注册</Link>
             <button onClick={this.handleReg}>登录</button>
             {

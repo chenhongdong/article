@@ -35,14 +35,16 @@
 
 
 // 懒加载
-let btn = document.createElement('button');
-btn.innerHTML = '点击加载';
+// let btn = document.createElement('button');
+// btn.innerHTML = '点击加载';
 
-btn.addEventListener('click', function() {
-    // es6草案中的语法,通过jsonp动态加载文件，返回一个promise
-    import('./source').then(data => {
-        console.log(data);
-    });
-})
+// btn.addEventListener('click', function() {
+//     // es6草案中的语法,通过jsonp动态加载文件，返回一个promise
+//     import('./source').then(data => {
+//         console.log(data);
+//     });
+// })
 
-document.body.appendChild(btn);
+// document.body.appendChild(btn);
+
+import './index.css';

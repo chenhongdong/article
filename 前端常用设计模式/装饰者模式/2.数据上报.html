@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" tag="login">登录</button>
+</body>
+</html>
+<script>
+    Function.prototype.after = function(afterFn) {
+        let self = this;
+        return function() {
+            let res = self.apply(this, arguments);
+            afterFn.apply(this, arguments);
+            return res;
+        }
+    };
+
+    function showLogin() {
+        alert('打开登录框');
+    }
+
+    let logUrl = 'https://s.360.cn/so_news/click_og.gif';
+    function log(params) {
+        let param = Object.assign({}, params);
+        console.log(param);
+        const {tag, pro, pid} = param;
+        // logUrl += `?tag=${this.getAttribute('tag')}`;
+        logUrl += `?tag=${tag}&pro=${pro}&pid=${pid}`;
+        (new Image).src = logUrl;
+    }
+    // 将打开登录框和打点解耦，打点在showLogin函数之后执行
+    showLogin = showLogin.after(function() {
+        log({
+            tag: 'login',
+            pro: 'news',
+            pid: 'hot_news'
+        });
+    });
+
+    btn.onclick = showLogin;
+</script>

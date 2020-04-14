@@ -20,9 +20,10 @@ export default {
 	data() {
 		return  {
 			currentId: 1,
-			sliders: []
+			sliders: [],
 		}	
 	},
+	
 	async mounted() {
 		this.sliders = await shop.getAlbums();
 	},

@@ -9,9 +9,11 @@
     <h1>{{song}}</h1>
     <p>《{{album.name}}》是{{singer}}2005年11月发行的专辑</p>
     <p>主打歌曲为{{album.theme}}</p>
-    {{singer}}-{{song}}
+    {{singer}}{{song}}
+    <pre>{{list}}</pre>
+    <div>{{all}}</div>
+    <input v-model="singer" />
 </div>
-<!-- <script src="vue.js"></script> -->
 <script src="vue2-fixed.js"></script>
 <script>
     let vue = new Vue({
@@ -22,7 +24,8 @@
                 name: '十一月的萧邦',
                 theme: '夜曲'
             },
-            singer: '周杰伦'
+            singer: '周杰伦',
+            list: ['听妈妈的话', '夜的第七章', '麦芽糖']
         },
         methods: {
             clickMe() {
@@ -31,15 +34,18 @@
         },
         // computed可以缓存 只是把数据挂在了vm上
         computed: {
-            sum() {
-                return this.b + this.c;
+            all() {
+                return this.song + '是一首中国风的歌曲,发表于' + this.album.name;
             },
             noop() {
             }
         },
         mounted() {
             setTimeout(() => {
-//                console.log('爱不爱我');
+                // 不能响应数组长度的变化和直接索引修改值
+                vue.list[2] = '你听得到';
+                vue.list.push('我不配');
+                console.log(vue)
             }, 1000)
         }
     });

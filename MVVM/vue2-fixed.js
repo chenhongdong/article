@@ -127,6 +127,7 @@ function Compile(el, vm) {
                     });
                     node.addEventListener('input', function (e) {
                         let newVal = e.target.value;
+                        console.log(newVal);
                         vm[exp] = newVal;
                     });
                 });

@@ -13,11 +13,12 @@
         <!--<div v-on:click="clickMe">b的值是{{c}}</div>-->
         <!--{{c}}-->
         <!--<br>-->
-        <!--<input type="text" v-model="c">-->
+        
         <!--{{sum}}-->
     <!--</div>-->
     <div id="app">
-        <h1>{{song}}</h1>
+        <input type="text" v-model="song">
+        <h1>{{song}}-{{singer}}</h1>
         <p>《{{album.name}}》是{{singer}}2005年11月发行的专辑</p>
 
     </div>
